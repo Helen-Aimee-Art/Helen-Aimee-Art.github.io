@@ -12,6 +12,7 @@ const appStyles = {
     minHeight: '100vh',
     margin: 0,
     padding: 0,
+    position: 'relative'
 }
 
 const mainStyles = {
@@ -29,6 +30,7 @@ export const App = () => {
         <div style={appStyles}>
             <Header />
             <div style={mainStyles}>
+                <h2>Gallery</h2>
                 <Gallery />
                 {/* <CommissionInfo /> */}
             </div>
