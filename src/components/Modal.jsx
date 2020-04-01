@@ -26,7 +26,7 @@ const imgContainerStyles = {
 }
 
 const imgStyles = {
-    height: '75vh'
+    height: '85vh'
 }
 
 const arrowStyles = {
