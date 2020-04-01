@@ -19,6 +19,8 @@ export const Gallery = (props) => {
     const [currentImage, setCurrentImage] = useState(null)
     const [open, setOpen] = useState(false)
 
+    const filteredImages = props.images.filter(image => image.keywords.includes(props.filter))
+
     const openModal = (id) => {
         setCurrentImage(id)
         setOpen(true)
@@ -31,7 +33,7 @@ export const Gallery = (props) => {
 
     return (
         <div style={galleryStyles}>
-            {props.images.filter(image => image.keywords.includes(props.filter)).map((image, index) => (
+            {filteredImages.map((image, index) => (
                 <GalleryItem
                     key={index}
                     id={index}
@@ -45,10 +47,10 @@ export const Gallery = (props) => {
             <Modal
                 open={open}
                 currentImageId={currentImage}
-                currentImage={props.images[currentImage]}
-                numImages={props.images.length - 1}
+                currentImage={filteredImages[currentImage]}
+                numImages={filteredImages.length - 1}
                 closeModal={closeModal}
-                incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, props.images.length - 1))}
+                incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))}
                 decrementModalImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
             />
         </div>

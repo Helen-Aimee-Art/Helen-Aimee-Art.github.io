@@ -30,7 +30,7 @@ export const FilterDropdown = (props) => {
                 onChange={handleChange}
             >
                 {props.keywords.map((keyword, index) => (
-                    <option key={index} value={keyword}>{keyword}</option>
+                    <option key={index} value={keyword}>{keyword.charAt(0).toUpperCase() + keyword.slice(1)}</option>
                 ))}
             </select>
         </>
