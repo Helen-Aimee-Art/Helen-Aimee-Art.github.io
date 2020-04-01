@@ -4,25 +4,29 @@ import { useState } from 'react'
 const modalContainerStyles = {
     width: '100vw',
     height: '100vh',
-    display: 'flex',
     position: 'absolute',
     top: 0,
     left: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    alignItems: 'center',
-    justifyContent: 'center'
+    backgroundColor: 'rgba(0, 0, 0, 0.5)'
 }
 
 const modalStyles = {
     display: 'flex',
-    flexDirection: 'column',
+    width: '100vw',
+    height: '100vh',
     alignItems: 'center',
-    justifyContent: 'center',
-    position: 'relative'
+    justifyContent: 'center'
+}
+
+const imgContainerStyles = {
+    display: 'flex',
+    position: 'relative',
+    alignItems: 'center',
+    justifyContent: 'center'
 }
 
 const imgStyles = {
-    height: '100vh'
+    height: '75vh'
 }
 
 const arrowStyles = {
@@ -35,7 +39,8 @@ const arrowStyles = {
 }
 
 export const Modal = (props) => {
-    const [opacity, setOpacity] = useState(0.25)
+    const [leftOpacity, setLeftOpacity] = useState(0.25)
+    const [rightOpacity, setRightOpacity] = useState(0.25)
 
     const handleClick = (e) => {
         if (e.currentTarget.id !== "modal-container") {
@@ -45,8 +50,12 @@ export const Modal = (props) => {
         props.closeModal()
     }
 
-    const toggleOpacity = () => {
-        setOpacity(prevOpacity => prevOpacity === 0.25 ? 1 : 0.25)
+    const toggleLeftOpacity = () => {
+        setLeftOpacity(prevOpacity => prevOpacity === 0.25 ? 1 : 0.25)
+    }
+    
+    const toggleRightOpacity = () => {
+        setRightOpacity(prevOpacity => prevOpacity === 0.25 ? 1 : 0.25)
     }
 
     const src = props.currentImage ? props.currentImage.url : ''
@@ -55,28 +64,30 @@ export const Modal = (props) => {
         <div
             id="modal-container"
             style={{ ...modalContainerStyles, display: props.open ? 'block' : 'none' }}
-        // onClick={(e) => handleClick(e)}
+            onClick={(e) => handleClick(e)}
         >
             <div style={modalStyles}>
-                <img style={imgStyles} src={src} alt="" />
-                {props.currentImageId > 0 &&
-                    <img
-                        style={{ ...arrowStyles, left: 0, opacity: opacity }}
-                        src="/arrow-left.png"
-                        alt="left arrow"
-                        onClick={props.decrementModalImage}
-                        onMouseEnter={toggleOpacity}
-                        onMouseLeave={toggleOpacity}
-                    />}
-                {props.currentImageId < props.numImages &&
-                    <img
-                        style={{ ...arrowStyles, right: 0, opacity: opacity }}
-                        src="/arrow-right.png"
-                        alt="right arrow"
-                        onClick={props.incrementModalImage}
-                        onMouseEnter={toggleOpacity}
-                        onMouseLeave={toggleOpacity}
-                    />}
+                <div style={imgContainerStyles}>
+                    <img style={imgStyles} src={src} alt="" />
+                    {props.currentImageId > 0 &&
+                        <img
+                            style={{ ...arrowStyles, left: 0, opacity: leftOpacity }}
+                            src="/arrow-left.png"
+                            alt="left arrow"
+                            onClick={props.decrementModalImage}
+                            onMouseEnter={toggleLeftOpacity}
+                            onMouseLeave={toggleLeftOpacity}
+                        />}
+                    {props.currentImageId < props.numImages &&
+                        <img
+                            style={{ ...arrowStyles, right: 0, opacity: rightOpacity }}
+                            src="/arrow-right.png"
+                            alt="right arrow"
+                            onClick={props.incrementModalImage}
+                            onMouseEnter={toggleRightOpacity}
+                            onMouseLeave={toggleRightOpacity}
+                        />}
+                </div>
             </div>
         </div>
     )

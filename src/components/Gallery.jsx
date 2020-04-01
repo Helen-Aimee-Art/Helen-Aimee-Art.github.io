@@ -55,7 +55,7 @@ const galleryStyles = {
 }
 
 export const Gallery = () => {
-    const [currentImage, setCurrentImage] = useState(-1)
+    const [currentImage, setCurrentImage] = useState(null)
     const [open, setOpen] = useState(false)
 
     const openModal = (id) => {
@@ -64,16 +64,16 @@ export const Gallery = () => {
     }
 
     const closeModal = () => {
-        setCurrentImage(-1)
+        setCurrentImage(null)
         setOpen(false)
     }
 
     return (
         <div style={galleryStyles}>
-            {images.map(image => (
+            {images.map((image, index) => (
                 <GalleryItem
-                    key={images.indexOf(image)}
-                    id={images.indexOf(image)}
+                    key={index}
+                    id={index}
                     title={image.title}
                     desc={image.desc}
                     url={image.url}
