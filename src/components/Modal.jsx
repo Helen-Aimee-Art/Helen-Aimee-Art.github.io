@@ -45,6 +45,8 @@ export const Modal = (props) => {
     const handleClick = (e) => {
         if (e.target.id === 'modal') {
             props.closeModal()
+            setLeftOpacity(0.25)
+            setRightOpacity(0.25)
         }
     }
 

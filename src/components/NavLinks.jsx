@@ -6,32 +6,28 @@ const ulStyles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    flex: 3
+    flex: 3,
+    padding: 0
 }
 
 const liStyles = {
-    margin: '0 25px'
+    fontSize: 20,
+    marginRight: 30
 }
 
 const aStyles = {
     textDecoration: 'none',
-    color: '#f2f2f2',
-    fontSize: 20,
-    margin: '0 25px'
+    color: '#f2f2f2'
 }
 
-export const NavLinks = () => {
+export const NavLinks = (props) => {
     return (
         <ul style={ulStyles}>
-            <li>
-                <FilterDropdown />
+            <li style={liStyles}>
+                <FilterDropdown keywords={props.keywords} setFilter={props.setFilter} />
             </li>
-            <a href="" style={aStyles}>
-                <li style={liStyles}>Gallery</li>
-            </a>
-            <a href="" style={aStyles}>
-                <li style={liStyles}>ComissionInfo</li>
-            </a>
+            <li style={liStyles}><a href='#' style={aStyles}>Gallery</a></li>
+            <li style={liStyles}><a href='#' style={aStyles}>Comission Info</a></li>
         </ul>
     )
 }

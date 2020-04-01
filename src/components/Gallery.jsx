@@ -3,45 +3,6 @@ import { useState } from 'react'
 import { GalleryItem } from './GalleryItem'
 import { Modal } from './Modal'
 
-const images = [
-    {
-        title: 'Darkshift',
-        desc: '',
-        url: '/helen-aimee-darkshift-web.jpg',
-        keywords: ['warcraft', 'gaming', 'fantasy']
-    },
-    {
-        title: 'Neefia',
-        desc: '',
-        url: '/helen-aimee-neefia.jpg',
-        keywords: ['warcraft', 'gaming', 'fantasy']
-    },
-    {
-        title: 'Kait Diaz',
-        desc: '',
-        url: '/helen-aimee-kait-diaz.jpg',
-        keywords: ['gaming']
-    },
-    {
-        title: 'Juliette',
-        desc: '',
-        url: '/helen-aimee-juliette.jpg',
-        keywords: ['gaming']
-    },
-    {
-        title: 'Blue and Quincy',
-        desc: '',
-        url: '/helen-aimee-blue-and-quincy-c.jpg',
-        keywords: ['pets', 'commissions']
-    },
-    {
-        title: 'Sorceress',
-        desc: '',
-        url: '/helen-aimee-sorceressrgbweb.jpg',
-        keywords: ['fantasy']
-    }
-]
-
 const galleryStyles = {
     display: 'grid',
     gridTemplate: '1fr / 1fr 1fr 1fr 1fr',
@@ -54,7 +15,7 @@ const galleryStyles = {
     width: '50%'
 }
 
-export const Gallery = () => {
+export const Gallery = (props) => {
     const [currentImage, setCurrentImage] = useState(null)
     const [open, setOpen] = useState(false)
 
@@ -70,7 +31,7 @@ export const Gallery = () => {
 
     return (
         <div style={galleryStyles}>
-            {images.map((image, index) => (
+            {props.images.filter(image => image.keywords.includes(props.filter)).map((image, index) => (
                 <GalleryItem
                     key={index}
                     id={index}
@@ -84,10 +45,10 @@ export const Gallery = () => {
             <Modal
                 open={open}
                 currentImageId={currentImage}
-                currentImage={images[currentImage]}
-                numImages={images.length - 1}
+                currentImage={props.images[currentImage]}
+                numImages={props.images.length - 1}
                 closeModal={closeModal}
-                incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, images.length - 1))}
+                incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, props.images.length - 1))}
                 decrementModalImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
             />
         </div>
