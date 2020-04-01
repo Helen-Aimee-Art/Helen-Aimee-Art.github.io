@@ -43,11 +43,9 @@ export const Modal = (props) => {
     const [rightOpacity, setRightOpacity] = useState(0.25)
 
     const handleClick = (e) => {
-        if (e.currentTarget.id !== "modal-container") {
-            return
+        if (e.target.id === 'modal') {
+            props.closeModal()
         }
-
-        props.closeModal()
     }
 
     const toggleLeftOpacity = () => {
@@ -66,7 +64,7 @@ export const Modal = (props) => {
             style={{ ...modalContainerStyles, display: props.open ? 'block' : 'none' }}
             onClick={(e) => handleClick(e)}
         >
-            <div style={modalStyles}>
+            <div id="modal" style={modalStyles}>
                 <div style={imgContainerStyles}>
                     <img style={imgStyles} src={src} alt="" />
                     {props.currentImageId > 0 &&
