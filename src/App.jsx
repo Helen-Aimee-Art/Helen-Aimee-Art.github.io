@@ -62,7 +62,7 @@ const mainStyles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    width: '100%',
+    width: '65%',
     flex: 1,
     backgroundImage: 'linear-gradient(45deg, #ffffff 25%, #fafafa 25%, #fafafa 50%, #ffffff 50%, #ffffff 75%, #fafafa 75%, #fafafa 100%)',
     backgroundSize: '56.57px 56.57px'
