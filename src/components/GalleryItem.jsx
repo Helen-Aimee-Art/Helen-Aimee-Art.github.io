@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 const containerStyles = {
     position: 'relative',
-    width: 200,
-    height: 200,
+    width: 218,
+    height: 300,
     cursor: 'pointer'
 }
 

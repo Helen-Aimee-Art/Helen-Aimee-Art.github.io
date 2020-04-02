@@ -5,14 +5,9 @@ import { Modal } from './Modal'
 
 const galleryStyles = {
     display: 'grid',
-    gridTemplate: '1fr / 1fr 1fr 1fr 1fr',
+    gridTemplate: '1fr / 1fr 1fr 1fr 1fr 1fr',
     gridAutoFlow: 'row',
-    alignItems: 'center',
-    justifyItems: 'center',
-    justifyContent: 'center',
-    marginTop: 25,
-    gridGap: 20,
-    width: '50%'
+    gridGap: 10
 }
 
 export const Gallery = (props) => {
@@ -32,27 +27,30 @@ export const Gallery = (props) => {
     }
 
     return (
-        <div style={galleryStyles}>
-            {filteredImages.map((image, index) => (
-                <GalleryItem
-                    key={index}
-                    id={index}
-                    title={image.title}
-                    desc={image.desc}
-                    url={image.url}
-                    keywords={image.keywords}
-                    openModal={openModal}
+        <>
+            <h2>Gallery</h2>
+            <div style={galleryStyles}>
+                {filteredImages.map((image, index) => (
+                    <GalleryItem
+                        key={index}
+                        id={index}
+                        title={image.title}
+                        desc={image.desc}
+                        url={image.url}
+                        keywords={image.keywords}
+                        openModal={openModal}
+                    />
+                ))}
+                <Modal
+                    open={open}
+                    currentImageId={currentImage}
+                    currentImage={filteredImages[currentImage]}
+                    numImages={filteredImages.length - 1}
+                    closeModal={closeModal}
+                    incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))}
+                    decrementModalImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
                 />
-            ))}
-            <Modal
-                open={open}
-                currentImageId={currentImage}
-                currentImage={filteredImages[currentImage]}
-                numImages={filteredImages.length - 1}
-                closeModal={closeModal}
-                incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))}
-                decrementModalImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
-            />
-        </div>
+            </div>
+        </>
     )
 }

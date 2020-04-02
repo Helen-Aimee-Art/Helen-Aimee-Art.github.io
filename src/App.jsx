@@ -79,7 +79,6 @@ export const App = () => {
         <div style={appStyles}>
             <Header keywords={keywords} setFilter={handleFilter}/>
             <div style={mainStyles}>
-                <h2>Gallery</h2>
                 <Gallery images={images} filter={filter}/>
                 {/* <CommissionInfo /> */}
             </div>
