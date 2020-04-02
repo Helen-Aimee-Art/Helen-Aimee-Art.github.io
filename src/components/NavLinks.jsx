@@ -23,9 +23,6 @@ const aStyles = {
 export const NavLinks = (props) => {
     return (
         <ul style={ulStyles}>
-            <li style={liStyles}>
-                <FilterDropdown keywords={props.keywords} setFilter={props.setFilter} />
-            </li>
             <li style={liStyles}><a href='#' style={aStyles}>Gallery</a></li>
             <li style={liStyles}><a href='#' style={aStyles}>Comission Info</a></li>
         </ul>

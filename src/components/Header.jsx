@@ -15,7 +15,7 @@ export const Header = (props) => {
     return (
         <nav style={navStyles}>
             <Logo />
-            <NavLinks keywords={props.keywords} setFilter={props.setFilter} />
+            <NavLinks />
         </nav>
     )
 }

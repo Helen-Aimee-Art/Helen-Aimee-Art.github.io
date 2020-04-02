@@ -77,9 +77,14 @@ export const App = () => {
 
     return (
         <div style={appStyles}>
-            <Header keywords={keywords} setFilter={handleFilter}/>
+            <Header />
             <div style={mainStyles}>
-                <Gallery images={images} filter={filter}/>
+                <Gallery
+                    keywords={keywords}
+                    setFilter={handleFilter}
+                    images={images}
+                    filter={filter}
+                />
                 {/* <CommissionInfo /> */}
             </div>
             <Footer />

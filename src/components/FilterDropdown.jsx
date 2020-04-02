@@ -20,19 +20,19 @@ export const FilterDropdown = (props) => {
     }
 
     return (
-        <>
-            <label htmlFor="keywords">Filter Gallery </label>
+        <div>
             <select
                 id="keywords"
                 style={selectStyles}
-                placeholder="Search Gallery"
+                placeholder="Filter Gallery"
                 value={selected}
                 onChange={handleChange}
             >
+                <option value='' disabled>Filter Gallery</option>
                 {props.keywords.map((keyword, index) => (
                     <option key={index} value={keyword}>{keyword.charAt(0).toUpperCase() + keyword.slice(1)}</option>
                 ))}
             </select>
-        </>
+        </div>
     )
 }
