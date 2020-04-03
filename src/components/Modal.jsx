@@ -1,41 +1,39 @@
 import React from 'react'
 import { useState } from 'react'
 
-const modalContainerStyles = {
-    width: '100vw',
-    height: '100vh',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)'
-}
-
-const modalStyles = {
-    display: 'flex',
-    width: '100vw',
-    height: '100vh',
-    alignItems: 'center',
-    justifyContent: 'center'
-}
-
-const imgContainerStyles = {
-    display: 'flex',
-    position: 'relative',
-    alignItems: 'center',
-    justifyContent: 'center'
-}
-
-const imgStyles = {
-    height: '85vh'
-}
-
-const arrowStyles = {
-    position: 'absolute',
-    width: 50,
-    cursor: 'pointer',
-    userSelect: 'none',
-    opacity: 0.25,
-    transition: 'opacity 0.2s'
+const style = {
+    modalContainer: {
+        width: '100vw',
+        height: '100vh',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        backgroundColor: 'rgba(0, 0, 0, 0.5)'
+    },
+    modal: {
+        display: 'flex',
+        width: '100vw',
+        height: '100vh',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    imgContainer: {
+        display: 'flex',
+        position: 'relative',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    img: {
+        height: '85vh'
+    },
+    arrow: {
+        position: 'absolute',
+        width: 50,
+        cursor: 'pointer',
+        userSelect: 'none',
+        opacity: 0.25,
+        transition: 'opacity 0.2s'
+    }
 }
 
 export const Modal = (props) => {
@@ -53,7 +51,7 @@ export const Modal = (props) => {
     const toggleLeftOpacity = () => {
         setLeftOpacity(prevOpacity => prevOpacity === 0.25 ? 1 : 0.25)
     }
-    
+
     const toggleRightOpacity = () => {
         setRightOpacity(prevOpacity => prevOpacity === 0.25 ? 1 : 0.25)
     }
@@ -63,15 +61,15 @@ export const Modal = (props) => {
     return (
         <div
             id="modal-container"
-            style={{ ...modalContainerStyles, display: props.open ? 'block' : 'none' }}
+            style={{ ...style.modalContainer, display: props.open ? 'block' : 'none' }}
             onClick={(e) => handleClick(e)}
         >
-            <div id="modal" style={modalStyles}>
-                <div style={imgContainerStyles}>
-                    <img style={imgStyles} src={src} alt="" />
+            <div id="modal" style={style.modal}>
+                <div style={style.imgContainer}>
+                    <img style={style.img} src={src} alt="" />
                     {props.currentImageId > 0 &&
                         <img
-                            style={{ ...arrowStyles, left: 0, opacity: leftOpacity }}
+                            style={{ ...style.arrow, left: 0, opacity: leftOpacity }}
                             src="/arrow-left.png"
                             alt="left arrow"
                             onClick={props.decrementModalImage}
@@ -80,7 +78,7 @@ export const Modal = (props) => {
                         />}
                     {props.currentImageId < props.numImages &&
                         <img
-                            style={{ ...arrowStyles, right: 0, opacity: rightOpacity }}
+                            style={{ ...style.arrow, right: 0, opacity: rightOpacity }}
                             src="/arrow-right.png"
                             alt="right arrow"
                             onClick={props.incrementModalImage}

@@ -1,30 +1,30 @@
 import React from 'react'
-import { FilterDropdown } from './FilterDropdown'
+import { Link } from 'react-router-dom'
 
-const ulStyles = {
-    listStyle: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    flex: 3,
-    padding: 0
+const style = {
+    ul: {
+        listStyle: 'none',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'flex-end',
+        flex: 3,
+        padding: 0
+    },
+    li: {
+        fontSize: 20,
+        marginRight: 30
+    },
+    link: {
+        textDecoration: 'none',
+        color: '#f2f2f2'
+    }
 }
 
-const liStyles = {
-    fontSize: 20,
-    marginRight: 30
-}
-
-const aStyles = {
-    textDecoration: 'none',
-    color: '#f2f2f2'
-}
-
-export const NavLinks = (props) => {
+export const NavLinks = () => {
     return (
-        <ul style={ulStyles}>
-            <li style={liStyles}><a href='#' style={aStyles}>Gallery</a></li>
-            <li style={liStyles}><a href='#' style={aStyles}>Comission Info</a></li>
+        <ul style={style.ul}>
+            <li style={style.li}><Link to='/' style={style.link}>Gallery</Link></li>
+            <li style={style.li}><Link to='/commissioninfo' style={style.link}>Comission Info</Link></li>
         </ul>
     )
 }
