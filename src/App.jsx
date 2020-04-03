@@ -14,16 +14,16 @@ const style = {
         minHeight: '100vh',
         margin: 0,
         padding: 0,
-        position: 'relative'
+        position: 'relative',
+        backgroundImage: 'linear-gradient(45deg, #ffffff 25%, #fafafa 25%, #fafafa 50%, #ffffff 50%, #ffffff 75%, #fafafa 75%, #fafafa 100%)',
+        backgroundSize: '56.57px 56.57px'
     },
     main: {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         width: '65%',
-        flex: 1,
-        backgroundImage: 'linear-gradient(45deg, #ffffff 25%, #fafafa 25%, #fafafa 50%, #ffffff 50%, #ffffff 75%, #fafafa 75%, #fafafa 100%)',
-        backgroundSize: '56.57px 56.57px'
+        flex: 1
     }
 }
 

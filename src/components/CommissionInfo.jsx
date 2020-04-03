@@ -28,6 +28,16 @@ const style = {
         flexDirection: 'column',
         alignItems: 'center',
         width: '100%'
+    },
+    ul: {
+        fontSize: 18,
+        display: 'flex',
+        flexDirection: 'column',
+        padding: 0,
+        marginLeft: 20
+    },
+    li: {
+        marginBottom: 10
     }
 }
 
@@ -37,33 +47,33 @@ export const CommissionInfo = () => {
             <h1>Commission Info</h1>
             <CommissionCard
                 title="Portrait"
-                leftContent={
+                details={
                     <ul style={style.ul}>
-                        <li>Details go here</li>
-                        <li>Some more details...</li>
-                        <li>Price: £10</li>
+                        <li style={style.li}>Details go here</li>
+                        <li style={style.li}>Some more details...</li>
+                        <li style={style.li}>Price: £10</li>
                     </ul>
                 }
                 images={images}
             />
             <CommissionCard
                 title="Bust"
-                leftContent={
+                details={
                     <ul style={style.ul}>
-                        <li>Details go here</li>
-                        <li>Some more details...</li>
-                        <li>Price: £10</li>
+                        <li style={style.li}>Details go here</li>
+                        <li style={style.li}>Some more details...</li>
+                        <li style={style.li}>Price: £10</li>
                     </ul>
                 }
                 images={images}
             />
             <CommissionCard
                 title="Half-body"
-                leftContent={
+                details={
                     <ul style={style.ul}>
-                        <li>Details go here</li>
-                        <li>Some more details...</li>
-                        <li>Price: £10</li>
+                        <li style={style.li}>Details go here</li>
+                        <li style={style.li}>Some more details...</li>
+                        <li style={style.li}>Price: £10</li>
                     </ul>
                 }
                 images={images}

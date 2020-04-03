@@ -11,10 +11,6 @@ const style = (props) => {
             padding: 20,
             width: props.width
         },
-        title: {
-            margin: 0,
-            marginBottom: 10
-        },
         content: {
 
         }
@@ -23,13 +19,10 @@ const style = (props) => {
 
 export const Card = (props) => {
     const styles = style(props)
-    const { title, content } = props
+    const { content } = props
 
     return (
         <div style={styles.card}>
-            {title && (
-                <h2 style={styles.title}>{title}</h2>
-            )}
             {content && (
                 <div style={styles.content}>
                     {content}
