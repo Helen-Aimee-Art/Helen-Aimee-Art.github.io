@@ -3,23 +3,53 @@ import { CommissionCard } from '../components/CommissionCard'
 
 const images = [
     {
-        url: '/helen-aimee-darkshift-web.jpg'
+        url: '/new-images-coming-soon.jpg',
+        type: 'portrait'
     },
     {
-        url: '/helen-aimee-neefia.jpg'
+        url: '/new-images-coming-soon.jpg',
+        type: 'portrait'
     },
     {
-        url: '/helen-aimee-kait-diaz.jpg'
+        url: '/new-images-coming-soon.jpg',
+        type: 'portrait'
     },
     {
-        url: '/helen-aimee-juliette.jpg'
+        url: '/helen-aimee-darkshift-web.jpg',
+        type: 'halfbody'
     },
     {
-        url: '/helen-aimee-blue-and-quincy-c.jpg'
+        url: '/new-images-coming-soon.jpg',
+        type: 'halfbody'
     },
     {
-        url: '/helen-aimee-sorceressrgbweb.jpg'
-    }
+        url: '/new-images-coming-soon.jpg',
+        type: 'halfbody'
+    },
+    {
+        url: '/helen-aimee-neefia.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/helen-aimee-kait-diaz.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/new-images-coming-soon.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/helen-aimee-blue-and-quincy-c.jpg',
+        type: 'pet'
+    },
+    {
+        url: '/new-images-coming-soon.jpg',
+        type: 'pet'
+    },
+    {
+        url: '/new-images-coming-soon.jpg',
+        type: 'pet'
+    },
 ]
 
 const style = {
@@ -48,7 +78,7 @@ export const CommissionInfo = () => {
                         <li style={style.li}>Price: £10</li>
                     </ul>
                 }
-                images={images}
+                images={images.filter(image => image.type === 'portrait')}
             />
             <CommissionCard
                 title="Bust"
@@ -59,7 +89,7 @@ export const CommissionInfo = () => {
                         <li style={style.li}>Price: £10</li>
                     </ul>
                 }
-                images={images}
+                images={images.filter(image => image.type === 'bust')}
             />
             <CommissionCard
                 title="Half-body"
@@ -70,7 +100,18 @@ export const CommissionInfo = () => {
                         <li style={style.li}>Price: £10</li>
                     </ul>
                 }
-                images={images}
+                images={images.filter(image => image.type === 'halfbody')}
+            />
+            <CommissionCard
+                title="Pet"
+                details={
+                    <ul style={style.ul}>
+                        <li style={style.li}>Details go here</li>
+                        <li style={style.li}>Some more details...</li>
+                        <li style={style.li}>Price: £10</li>
+                    </ul>
+                }
+                images={images.filter(image => image.type === 'pet')}
             />
         </>
     )
