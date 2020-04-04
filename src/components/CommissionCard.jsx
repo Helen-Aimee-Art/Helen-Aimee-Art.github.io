@@ -20,14 +20,14 @@ const style = {
         justifyContent: 'flex-start',
         alignItems: 'flex-start'
     },
-    carousel: {
+    carouselContainer: {
         display: 'flex',
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center'
     },
-    carouselContainer: {
+    carousel: {
         padding: '0 30px',
         maxWidth: 600,
         margin: '0 auto'
@@ -71,8 +71,8 @@ export const CommissionCard = (props) => {
                         <h2 style={style.title}>{title}</h2>
                         {details}
                     </div>
-                    <div style={style.carousel}>
-                        <div style={style.carouselContainer}>
+                    <div style={style.carouselContainer}>
+                        <div style={style.carousel}>
                             <ItemsCarousel
                                 infiniteLoop={true}
                                 disableSwipe={false}
