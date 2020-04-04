@@ -1,8 +1,8 @@
 import React from 'react'
-import { CommissionInfo } from './components/CommissionInfo'
-import { Footer } from './components/Footer'
-import { Gallery } from './components/Gallery'
-import { Header } from './components/Header'
+import { CommissionInfo } from './CommissionInfo'
+import { Footer } from '../components/Footer'
+import { Gallery } from './Gallery'
+import { Header } from '../components/Header'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 
 const style = {
@@ -23,7 +23,8 @@ const style = {
         flexDirection: 'column',
         alignItems: 'center',
         width: '65%',
-        flex: 1
+        flex: 1,
+        margin: '20px 0'
     }
 }
 

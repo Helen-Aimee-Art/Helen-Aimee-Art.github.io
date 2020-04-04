@@ -4,7 +4,7 @@ import { NavLinks } from './NavLinks'
 
 const style = {
     nav: {
-        padding: '25px 0',
+        padding: '20px 0',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -18,7 +18,7 @@ const style = {
     }
 }
 
-export const Header = (props) => {
+export const Header = () => {
     return (
         <nav style={style.nav}>
             <div style={style.navContent}>

@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-import { GalleryItem } from './GalleryItem'
-import { Modal } from './Modal'
-import { FilterDropdown } from './FilterDropdown'
+import { GalleryItem } from '../components/GalleryItem'
+import { Modal } from '../components/Modal'
+import { FilterDropdown } from '../components/FilterDropdown'
 
 const galleryImages = [
     {
@@ -82,7 +82,7 @@ export const Gallery = () => {
 
     return (
         <>
-            <h1>Gallery</h1>
+            <h1 style={{marginTop: 0}}>Gallery</h1>
             <div style={style.galleryContainer}>
                 <div style={style.filterContainer}>
                     <FilterDropdown keywords={keywords} setFilter={setFilter} />

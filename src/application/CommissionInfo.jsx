@@ -1,5 +1,5 @@
 import React from 'react'
-import { CommissionCard } from './CommissionCard'
+import { CommissionCard } from '../components/CommissionCard'
 
 const images = [
     {
@@ -23,12 +23,6 @@ const images = [
 ]
 
 const style = {
-    container: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        width: '100%'
-    },
     ul: {
         fontSize: 18,
         display: 'flex',
@@ -43,8 +37,8 @@ const style = {
 
 export const CommissionInfo = () => {
     return (
-        <div style={style.container}>
-            <h1>Commission Info</h1>
+        <>
+            <h1 style={{ marginTop: 0 }}>Commission Info</h1>
             <CommissionCard
                 title="Portrait"
                 details={
@@ -78,6 +72,6 @@ export const CommissionInfo = () => {
                 }
                 images={images}
             />
-        </div>
+        </>
     )
 }
