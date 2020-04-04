@@ -18,7 +18,8 @@ const style = {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-start',
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
+        maxWidth: 250
     },
     carousel: {
         padding: '0 30px',

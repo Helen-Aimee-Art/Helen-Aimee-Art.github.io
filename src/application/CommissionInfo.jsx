@@ -3,18 +3,6 @@ import { CommissionCard } from '../components/CommissionCard'
 
 const images = [
     {
-        url: '/new-images-coming-soon.jpg',
-        type: 'portrait'
-    },
-    {
-        url: '/new-images-coming-soon.jpg',
-        type: 'portrait'
-    },
-    {
-        url: '/new-images-coming-soon.jpg',
-        type: 'portrait'
-    },
-    {
         url: '/helen-aimee-darkshift-web.jpg',
         type: 'halfbody'
     },
@@ -70,23 +58,12 @@ export const CommissionInfo = () => {
         <>
             <h1 style={{ marginTop: 0 }}>Commission Info</h1>
             <CommissionCard
-                title="Portrait"
+                title="Portrait / Bust"
                 details={
                     <ul style={style.ul}>
                         <li style={style.li}>Details go here</li>
                         <li style={style.li}>Some more details...</li>
-                        <li style={style.li}>Price: £10</li>
-                    </ul>
-                }
-                images={images.filter(image => image.type === 'portrait')}
-            />
-            <CommissionCard
-                title="Bust"
-                details={
-                    <ul style={style.ul}>
-                        <li style={style.li}>Details go here</li>
-                        <li style={style.li}>Some more details...</li>
-                        <li style={style.li}>Price: £10</li>
+                        <li style={style.li}>Price: $60-$100</li>
                     </ul>
                 }
                 images={images.filter(image => image.type === 'bust')}
@@ -97,7 +74,7 @@ export const CommissionInfo = () => {
                     <ul style={style.ul}>
                         <li style={style.li}>Details go here</li>
                         <li style={style.li}>Some more details...</li>
-                        <li style={style.li}>Price: £10</li>
+                        <li style={style.li}>Price: $150</li>
                     </ul>
                 }
                 images={images.filter(image => image.type === 'halfbody')}
@@ -108,7 +85,7 @@ export const CommissionInfo = () => {
                     <ul style={style.ul}>
                         <li style={style.li}>Details go here</li>
                         <li style={style.li}>Some more details...</li>
-                        <li style={style.li}>Price: £10</li>
+                        <li style={style.li}>Price: Depends on complexity</li>
                     </ul>
                 }
                 images={images.filter(image => image.type === 'pet')}
