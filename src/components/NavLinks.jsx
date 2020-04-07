@@ -25,6 +25,7 @@ export const NavLinks = () => {
         <ul style={style.ul}>
             <li style={style.li}><Link to='/' style={style.link}>Gallery</Link></li>
             <li style={style.li}><Link to='/commissioninfo' style={style.link}>Comission Info</Link></li>
+            <li style={style.li}><Link to='/contact' style={style.link}>Contact</Link></li>
         </ul>
     )
 }

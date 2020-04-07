@@ -1,5 +1,6 @@
 import React from 'react'
 import { CommissionInfo } from './CommissionInfo'
+import { Contact } from './Contact'
 import { Footer } from '../components/Footer'
 import { Gallery } from './Gallery'
 import { Header } from '../components/Header'
@@ -38,6 +39,9 @@ export const App = () => {
                     <Switch>
                         <Route path="/commissioninfo" render={() => (
                             <CommissionInfo />
+                        )} />
+                        <Route path="/contact" render={() => (
+                            <Contact />
                         )} />
                         <Route path="/" render={() => (
                             <Gallery />
