@@ -63,7 +63,7 @@ export const CommissionInfo = () => {
                     <ul style={style.ul}>
                         <li style={style.li}>Details go here</li>
                         <li style={style.li}>Some more details...</li>
-                        <li style={style.li}>Price: $60-$100</li>
+                        <li style={style.li}>Price: $75-$100</li>
                     </ul>
                 }
                 images={images.filter(image => image.type === 'bust')}
