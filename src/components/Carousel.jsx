@@ -11,7 +11,8 @@ const style = {
     },
     imageContainer: {
         width: 200,
-        height: 290
+        height: 290,
+        marginRight: 15
     },
     image: {
         width: '100%',
