@@ -11,6 +11,7 @@ const style = {
     },
     content: {
         display: 'flex',
+        flexDirection: 'row',
         width: '100%'
     },
     details: {

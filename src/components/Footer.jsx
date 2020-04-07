@@ -7,7 +7,7 @@ const style = {
         alignItems: 'center',
         justifyContent: 'center',
         color: '#f2f2f2',
-        backgroundColor: '#282c34'
+        backgroundColor: '#1F2833'
     },
     ul: {
         display: 'flex',

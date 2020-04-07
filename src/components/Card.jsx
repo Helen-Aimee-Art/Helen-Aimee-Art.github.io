@@ -4,7 +4,7 @@ const style = {
     card: {
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: '#282c34',
+        backgroundColor: '#1F2833',
         color: '#f2f2f2',
         borderRadius: 5,
         padding: 20

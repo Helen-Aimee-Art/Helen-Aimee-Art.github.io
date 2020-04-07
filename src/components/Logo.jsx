@@ -34,7 +34,7 @@ export const Logo = () => {
                 <img src="/helen.jpg" alt="Helen" style={style.img} />
                 <div>
                     <h1 style={style.h1}>Helen Aimee Art</h1>
-                    <span style={style.contact} >example@example.com</span>
+                    <span style={style.contact} >helen.aimee.art@gmail.com</span>
                 </div>
             </Link>
         </div>

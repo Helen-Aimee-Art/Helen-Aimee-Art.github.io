@@ -8,7 +8,7 @@ const style = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        backgroundColor: '#282c34',
+        backgroundColor: '#1F2833',
         color: '#f2f2f2',
         width: '100%'
     },
