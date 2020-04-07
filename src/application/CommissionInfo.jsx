@@ -15,15 +15,15 @@ const images = [
         type: 'halfbody'
     },
     {
+        url: '/helen-aimee-flameleaf.jpg',
+        type: 'bust'
+    },
+    {
         url: '/helen-aimee-neefia.jpg',
         type: 'bust'
     },
     {
         url: '/helen-aimee-kait-diaz.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/new-images-coming-soon.jpg',
         type: 'bust'
     },
     {
@@ -62,7 +62,7 @@ export const CommissionInfo = () => {
                 details={
                     <ul style={style.ul}>
                         <li style={style.li}>Details go here</li>
-                        <li style={style.li}>Some more details...</li>
+                        <li style={style.li}>Some more details go here...</li>
                         <li style={style.li}>Price: $75-$100</li>
                     </ul>
                 }
@@ -73,7 +73,7 @@ export const CommissionInfo = () => {
                 details={
                     <ul style={style.ul}>
                         <li style={style.li}>Details go here</li>
-                        <li style={style.li}>Some more details...</li>
+                        <li style={style.li}>Some more details go here...</li>
                         <li style={style.li}>Price: $150</li>
                     </ul>
                 }
@@ -84,7 +84,7 @@ export const CommissionInfo = () => {
                 details={
                     <ul style={style.ul}>
                         <li style={style.li}>Details go here</li>
-                        <li style={style.li}>Some more details...</li>
+                        <li style={style.li}>Some more details go here...</li>
                         <li style={style.li}>Price: Depends on complexity</li>
                     </ul>
                 }

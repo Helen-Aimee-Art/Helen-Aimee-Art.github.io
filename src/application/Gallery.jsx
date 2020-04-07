@@ -6,6 +6,12 @@ import { FilterDropdown } from '../components/FilterDropdown'
 
 const galleryImages = [
     {
+        title: 'Flameleaf',
+        desc: '',
+        url: '/helen-aimee-flameleaf.jpg',
+        keywords: ['all', 'warcraft', 'gaming', 'fantasy']
+    },
+    {
         title: 'Darkshift',
         desc: '',
         url: '/helen-aimee-darkshift-web.jpg',
@@ -82,7 +88,7 @@ export const Gallery = () => {
 
     return (
         <>
-            <h1 style={{marginTop: 0}}>Gallery</h1>
+            <h1 style={{ marginTop: 0 }}>Gallery</h1>
             <div style={style.galleryContainer}>
                 <div style={style.filterContainer}>
                     <FilterDropdown keywords={keywords} setFilter={setFilter} />
