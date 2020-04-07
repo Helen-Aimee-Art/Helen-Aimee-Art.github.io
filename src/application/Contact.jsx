@@ -11,7 +11,8 @@ const style = {
     },
     input: {
         marginBottom: 10,
-        padding: 10
+        padding: 10,
+        borderRadius: 5
     },
     button: {
         width: 75,
@@ -43,13 +44,20 @@ export const Contact = () => {
                     <form onSubmit={sendEmail} style={style.form}>
                         <input type="text" name="name" id="name" placeholder="Enter your name" style={style.input} autoComplete="off" required />
                         <input type="text" name="email" id="email" placeholder="Enter your Email address" style={style.input} autoComplete="off" required />
-                        <input type="text" name="subject" id="subject" placeholder="Enter a subject" style={style.input} autoComplete="off" required />
+                        <select name="subject" id="subject" style={style.input} required>
+                            <option value="none" selected disabled>Choose a subject</option>
+                            <option value="question">Question</option>
+                            <option value="comment">Comment</option>
+                            <option value="commission_request">Commission Request</option>
+                            <option value="other">Other</option>
+                        </select>
                         <textarea
                             name="message"
                             id="message"
-                            placeholder="Ask a question or send me a comment!"
-                            rows="10"
-                            style={{ ...style.input, resize: 'vertical' }}
+                            placeholder="Enter your message"
+                            rows="8"
+                            maxLength="480"
+                            style={{ ...style.input, resize: 'none' }}
                             autoComplete="off"
                             required
                         />
