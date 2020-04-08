@@ -73,7 +73,7 @@ export const Carousel = (props) => {
                     key={index}
                     style={style.imageContainer}
                 >
-                    <img src={image.url} style={style.image} />
+                    <img src={image.url} style={style.image} alt={image.title}/>
                 </div>
             ))}
         </ItemsCarousel>
