@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { GalleryItem } from '../components/GalleryItem'
 import { Modal } from '../components/Modal'
 import { FilterDropdown } from '../components/FilterDropdown'
+import { Drawer } from '../components/Drawer'
 
 const galleryImages = [
     {

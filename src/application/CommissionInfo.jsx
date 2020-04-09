@@ -1,5 +1,6 @@
 import React from 'react'
 import { CommissionCard } from '../components/CommissionCard'
+import { Drawer } from '../components/Drawer'
 
 const images = [
     {
@@ -42,11 +43,7 @@ const images = [
 
 const style = {
     ul: {
-        fontSize: 18,
-        display: 'flex',
-        flexDirection: 'column',
-        padding: 0,
-        marginLeft: 20
+        fontSize: 18
     },
     li: {
         marginBottom: 10
@@ -57,39 +54,42 @@ export const CommissionInfo = () => {
     return (
         <>
             <h1 style={{ marginTop: 0 }}>Commission Info</h1>
-            <CommissionCard
-                title="Portrait / Bust"
-                details={
-                    <ul style={style.ul}>
-                        <li style={style.li}>Details go here</li>
-                        <li style={style.li}>Some more details go here...</li>
-                        <li style={style.li}>Price: $75-$100</li>
-                    </ul>
-                }
-                images={images.filter(image => image.type === 'bust')}
-            />
-            <CommissionCard
-                title="Half-body"
-                details={
-                    <ul style={style.ul}>
-                        <li style={style.li}>Details go here</li>
-                        <li style={style.li}>Some more details go here...</li>
-                        <li style={style.li}>Price: $150</li>
-                    </ul>
-                }
-                images={images.filter(image => image.type === 'halfbody')}
-            />
-            <CommissionCard
-                title="Pet"
-                details={
-                    <ul style={style.ul}>
-                        <li style={style.li}>Details go here</li>
-                        <li style={style.li}>Some more details go here...</li>
-                        <li style={style.li}>Price: Depends on complexity</li>
-                    </ul>
-                }
-                images={images.filter(image => image.type === 'pet')}
-            />
+            <Drawer title="Portrait / Bust" defaultOpen>
+                <CommissionCard
+                    details={
+                        <ul style={style.ul}>
+                            <li style={style.li}>Details go here</li>
+                            <li style={style.li}>Some more details go here...</li>
+                            <li style={style.li}>Price: $75-$100</li>
+                        </ul>
+                    }
+                    images={images.filter(image => image.type === 'bust')}
+                />
+            </Drawer>
+            <Drawer title="Half-body" defaultOpen>
+                <CommissionCard
+                    details={
+                        <ul style={style.ul}>
+                            <li style={style.li}>Details go here</li>
+                            <li style={style.li}>Some more details go here...</li>
+                            <li style={style.li}>Price: $150</li>
+                        </ul>
+                    }
+                    images={images.filter(image => image.type === 'halfbody')}
+                />
+            </Drawer>
+            <Drawer title="Pet" defaultOpen>
+                <CommissionCard
+                    details={
+                        <ul style={style.ul}>
+                            <li style={style.li}>Details go here</li>
+                            <li style={style.li}>Some more details go here...</li>
+                            <li style={style.li}>Price: Depends on complexity</li>
+                        </ul>
+                    }
+                    images={images.filter(image => image.type === 'pet')}
+                />
+            </Drawer>
         </>
     )
 }

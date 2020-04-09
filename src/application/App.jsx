@@ -18,7 +18,8 @@ const style = {
         position: 'relative',
         // backgroundImage: 'linear-gradient(45deg, #ffffff 25%, #fafafa 25%, #fafafa 50%, #ffffff 50%, #ffffff 75%, #fafafa 75%, #fafafa 100%)',
         backgroundColor: '#F2F2F2',
-        backgroundSize: '56.57px 56.57px'
+        backgroundSize: '56.57px 56.57px',
+        boxSizing: 'border-box'
     },
     main: {
         display: 'flex',

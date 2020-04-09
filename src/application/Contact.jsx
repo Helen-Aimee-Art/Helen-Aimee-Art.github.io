@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import { Card } from '../components/Card'
 import { Dialog } from '../components/Dialog'
+import { Drawer } from '../components/Drawer'
 
 const style = {
     form: {
@@ -105,6 +106,7 @@ export const Contact = () => {
                 open={openDialog}
                 onClose={() => setOpenDialog(false)}
             />
+            <hr/>
         </>
     )
 }
