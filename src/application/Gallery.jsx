@@ -7,6 +7,12 @@ import { Drawer } from '../components/Drawer'
 
 const galleryImages = [
     {
+        title: 'Ribbon',
+        desc: '',
+        url: '/helen-aimee-ribbon.jpg',
+        keywords: ['all', 'warcraft', 'gaming', 'fantasy']
+    },
+    {
         title: 'Flameleaf',
         desc: '',
         url: '/helen-aimee-flameleaf.jpg',

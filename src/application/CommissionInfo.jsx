@@ -24,7 +24,7 @@ const images = [
         type: 'bust'
     },
     {
-        url: '/helen-aimee-kait-diaz.jpg',
+        url: '/helen-aimee-ribbon.jpg',
         type: 'bust'
     },
     {
