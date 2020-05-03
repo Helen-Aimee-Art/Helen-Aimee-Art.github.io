@@ -16,6 +16,10 @@ const images = [
         type: 'halfbody'
     },
     {
+        url: '/helen-aimee-serana.jpg',
+        type: 'bust'
+    },
+    {
         url: '/helen-aimee-flameleaf.jpg',
         type: 'bust'
     },

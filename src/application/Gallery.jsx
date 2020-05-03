@@ -7,6 +7,12 @@ import { Drawer } from '../components/Drawer'
 
 const galleryImages = [
     {
+        title: 'Serana',
+        desc: '',
+        url: '/helen-aimee-serana.jpg',
+        keywords: ['all', 'skyrim', 'gaming', 'fantasy']
+    },
+    {
         title: 'Ribbon',
         desc: '',
         url: '/helen-aimee-ribbon.jpg',
