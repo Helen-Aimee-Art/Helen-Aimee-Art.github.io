@@ -1,4 +1,5 @@
 import React from 'react'
+import { About } from './About'
 import { CommissionInfo } from './CommissionInfo'
 import { Contact } from './Contact'
 import { Footer } from '../components/Footer'
@@ -43,6 +44,9 @@ export const App = () => {
                         )} />
                         <Route path="/contact" render={() => (
                             <Contact />
+                        )} />
+                        <Route path="/about" render={() => (
+                            <About />
                         )} />
                         <Route path="/" render={() => (
                             <Gallery />

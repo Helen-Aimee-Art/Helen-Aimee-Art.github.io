@@ -51,7 +51,6 @@ export const Contact = () => {
 
     return (
         <>
-            <h1 style={{ marginTop: 0 }}>Contact</h1>
             <Card>
                 <form onSubmit={sendEmail} style={style.form}>
                     <input

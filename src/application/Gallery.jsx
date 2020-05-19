@@ -101,7 +101,6 @@ export const Gallery = () => {
 
     return (
         <>
-            <h1 style={{ marginTop: 0 }}>Gallery</h1>
             <div style={style.galleryContainer}>
                 <div style={style.filterContainer}>
                     <FilterDropdown keywords={keywords} setFilter={setFilter} />
