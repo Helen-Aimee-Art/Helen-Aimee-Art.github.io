@@ -1,18 +1,21 @@
 import React from 'react'
 import { useState } from 'react'
+import { createUseStyles, useTheme } from 'react-jss'
 
-const style = {
+const useStyles = createUseStyles(theme => ({
     select: {
         backgroundColor: '#282c34',
-        color: '#f2f2f2',
+        color: theme.colorSecondary,
         border: '1px solid #f2f2f2',
         borderRadius: 5,
         padding: 5,
         fontSize: 'inherit'
     }
-}
+}))
 
 export const FilterDropdown = (props) => {
+    const theme = useTheme()
+    const classes = useStyles(theme)
     const [selected, setSelected] = useState('')
 
     const handleChange = e => {
@@ -25,7 +28,7 @@ export const FilterDropdown = (props) => {
         <div>
             <select
                 id="keywords"
-                style={style.select}
+                className={classes.select}
                 placeholder="Filter Gallery"
                 value={selected}
                 onChange={handleChange}

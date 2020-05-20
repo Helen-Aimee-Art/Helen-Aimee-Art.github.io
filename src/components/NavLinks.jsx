@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { createUseStyles, useTheme } from 'react-jss'
 
-const useStyle = (currentLink) => ({
+const useStyles = createUseStyles(theme => ({
     ul: {
         listStyle: 'none',
         display: 'flex',
@@ -17,49 +18,39 @@ const useStyle = (currentLink) => ({
         padding: '8px',
         borderRadius: '10px'
     },
-    gallery: {
-        border: currentLink === 'gallery' ? '1px solid #1F2833' : '',
-        backgroundColor: currentLink === 'gallery' ? '#f2f2f2' : '#1F2833'
-    },
-    commission: {
-        border: currentLink === 'commission' ? '1px solid #1F2833' : '',
-        backgroundColor: currentLink === 'commission' ? '#f2f2f2' : '#1F2833'
-    },
-    contact: {
-        border: currentLink === 'contact' ? '1px solid #1F2833' : '',
-        backgroundColor: currentLink === 'contact' ? '#f2f2f2' : '#1F2833'
-    },
-    about: {
-        border: currentLink === 'about' ? '1px solid #1F2833' : '',
-        backgroundColor: currentLink === 'about' ? '#f2f2f2' : '#1F2833'
-    },
-    galleryLink: {
-        color: currentLink === 'gallery' ? '#1F2833' : '#f2f2f2'
-    },
-    commissionLink: {
-        color: currentLink === 'commission' ? '#1F2833' : '#f2f2f2'
-    },
-    contactLink: {
-        color: currentLink === 'contact' ? '#1F2833' : '#f2f2f2'
-    },
-    aboutLink: {
-        color: currentLink === 'about' ? '#1F2833' : '#f2f2f2'
-    },
     link: {
         textDecoration: 'none',
+        color: theme.colorSecondary
     }
-})
+}))
 
 export const NavLinks = () => {
+    const theme = useTheme()
     const [currentLink, setCurrentLink] = useState('gallery')
-    const style = useStyle(currentLink)
+    const classes = useStyles({ currentLink, theme })
 
     return (
-        <ul style={style.ul}>
-            <li style={{...style.gallery, ...style.li}} onClick={() => setCurrentLink('gallery')}> <Link to='/' style={{...style.link, ...style.galleryLink}}>Gallery</Link></li>
-            <li style={{...style.commission, ...style.li}} onClick={() => setCurrentLink('commission')} > <Link to='/commissioninfo' style={{...style.link, ...style.commissionLink}}>Comission Info</Link></li>
-            <li style={{...style.contact, ...style.li}} onClick={() => setCurrentLink('contact')}> <Link to='/contact' style={{...style.link, ...style.contactLink}}>Contact</Link></li>
-            <li style={{...style.about, ...style.li}} onClick={() => setCurrentLink('about')}><Link to='/about' style={{...style.link, ...style.aboutLink}}>About</Link></li>
+        <ul className={classes.ul}>
+            <Link to='/' className={classes.link}>
+                <li className={classes.li} onClick={() => setCurrentLink('gallery')}>
+                    Gallery
+                </li>
+            </Link>
+            <Link to='/commissioninfo' className={classes.link}>
+                <li className={classes.li} onClick={() => setCurrentLink('commission')}>
+                    Comission Info
+                </li>
+            </Link>
+            <Link to='/contact' className={classes.link}>
+                <li className={classes.li} onClick={() => setCurrentLink('contact')}>
+                    Contact
+                </li>
+            </Link>
+            <Link to='/about' className={classes.link}>
+                <li className={classes.li} onClick={() => setCurrentLink('about')}>
+                    About
+                </li>
+            </Link>
         </ul>
     )
 }

@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import { Card } from '../components/Card'
 import { Dialog } from '../components/Dialog'
-import { Drawer } from '../components/Drawer'
+import { createUseStyles, useTheme } from 'react-jss'
 
-const style = {
+const useStyles = createUseStyles(theme => ({
     form: {
         display: 'flex',
         flexDirection: 'column',
@@ -20,9 +20,11 @@ const style = {
         padding: 10,
         alignSelf: 'flex-end'
     }
-}
+}))
 
 export const Contact = () => {
+    const theme = useTheme()
+    const classes = useStyles(theme)
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
@@ -52,14 +54,14 @@ export const Contact = () => {
     return (
         <>
             <Card>
-                <form onSubmit={sendEmail} style={style.form}>
+                <form onSubmit={sendEmail} className={classes.form}>
                     <input
                         type="text"
                         name="name"
                         value={name}
                         onChange={e => setName(e.target.value)}
                         placeholder="Enter your name"
-                        style={style.input}
+                        className={classes.input}
                         autoComplete="off"
                         required
                     />
@@ -69,7 +71,7 @@ export const Contact = () => {
                         value={email}
                         onChange={e => setEmail(e.target.value)}
                         placeholder="Enter your Email address"
-                        style={style.input}
+                        className={classes.input}
                         autoComplete="off"
                         required
                     />
@@ -77,7 +79,7 @@ export const Contact = () => {
                         name="subject"
                         value={subject}
                         onChange={e => setSubject(e.target.value)}
-                        style={style.input}
+                        className={classes.input}
                         required
                     >
                         <option value="" disabled>Choose a subject</option>
@@ -93,11 +95,12 @@ export const Contact = () => {
                         placeholder="Enter your message"
                         rows="8"
                         maxLength="480"
-                        style={{ ...style.input, resize: 'none' }}
+                        className={classes.input}
+                        style={{resize: 'none'}}
                         autoComplete="off"
                         required
                     />
-                    <input type="submit" value="Submit" style={style.button} />
+                    <input type="submit" value="Submit" className={classes.button} />
                 </form>
             </Card>
             <Dialog

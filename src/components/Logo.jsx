@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { createUseStyles, useTheme } from 'react-jss'
 
-const style = {
+const useStyles = createUseStyles(theme => ({
     logo: {
         flex: 1,
         textAlign: 'left',
@@ -25,16 +26,19 @@ const style = {
         marginBottom: 0,
         fontSize: 36
     }
-}
+}))
 
 export const Logo = () => {
+    const theme = useTheme()
+    const classes = useStyles(theme)
+
     return (
-        <div styles={style.logo}>
-            <Link to="/" style={style.link}>
-                <img src="/helen.jpg" alt="Helen" style={style.img} />
+        <div className={classes.logo}>
+            <Link to="/" className={classes.link}>
+                <img src="/helen.jpg" alt="Helen" className={classes.img} />
                 <div>
-                    <h1 style={style.h1}>Helen Aimee Art</h1>
-                    <span style={style.contact} >helen.aimee.art@gmail.com</span>
+                    <h1 className={classes.h1}>Helen Aimee Art</h1>
+                    <span className={classes.contact} >helen.aimee.art@gmail.com</span>
                 </div>
             </Link>
         </div>

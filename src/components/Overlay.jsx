@@ -1,7 +1,8 @@
 import React from 'react'
+import { createUseStyles, useTheme } from 'react-jss'
 
-const style = {
-    overlay: {
+const useStyles = createUseStyles(theme => ({
+    overlay: ({ opacity }) => ({
         width: '100%',
         height: '100%',
         backgroundImage: 'linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 55%, #282c34)',
@@ -10,21 +11,24 @@ const style = {
         display: 'flex',
         justifyContent: 'flex-start',
         alignItems: 'flex-end',
-        transition: 'opacity 0.2s'
-    },
+        transition: 'opacity 0.2s',
+        opacity: opacity
+    }),
     overlayContent: {
         color: '#f2f2f2',
         marginLeft: 10,
         marginBottom: 10
     }
-}
+}))
 
 export const Overlay = (props) => {
+    const theme = useTheme()
     const opacity = props.open ? 1 : 0
+    const classes = useStyles({ opacity, theme })
 
     return (
-        <div style={{ ...style.overlay, opacity: opacity }}>
-            <div style={style.overlayContent}>
+        <div className={classes.overlay}>
+            <div ClassName={classes.overlayContent}>
                 {props.title}
             </div>
         </div>

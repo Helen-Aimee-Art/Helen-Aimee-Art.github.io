@@ -1,6 +1,7 @@
 import React from 'react'
+import { createUseStyles, useTheme } from 'react-jss'
 
-const style = {
+const useStyles = createUseStyles(theme => ({
     clickAway: {
         position: 'absolute',
         display: 'flex',
@@ -29,20 +30,23 @@ const style = {
     }, actions: {
 
     }
-}
+}))
 
 export const Dialog = (props) => {
+    const theme = useTheme()
+    const classes = useStyles(theme)
     const { open, onClose, title, content, actions } = props
 
     return (
         <div
-            style={{ ...style.clickAway, display: open === true ? 'flex' : 'none' }}
+            className={classes.clickAway}
+            style={{ display: open === true ? 'flex' : 'none' }}
             onClick={onClose}
         >
-            <div style={style.dialog}>
-                {title && <h3 style={style.title}>{title}</h3>}
-                <p style={style.content}>{content}</p>
-                <div style={style.actions}>
+            <div className={classes.dialog}>
+                {title && <h3 className={classes.title}>{title}</h3>}
+                <p className={classes.content}>{content}</p>
+                <div className={classes.actions}>
                     {actions}
                 </div>
             </div>

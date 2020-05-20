@@ -1,6 +1,7 @@
 import React from 'react'
 import { CommissionCard } from '../components/CommissionCard'
 import { Drawer } from '../components/Drawer'
+import { createUseStyles, useTheme } from 'react-jss'
 
 const images = [
     {
@@ -45,7 +46,7 @@ const images = [
     },
 ]
 
-const style = {
+const useStyles = createUseStyles(theme => ({
     cardul: {
         fontSize: 18
     },
@@ -55,18 +56,20 @@ const style = {
     li: {
         marginBottom: 10
     }
-}
+}))
 
 export const CommissionInfo = () => {
+    const theme = useTheme()
+    const classes = useStyles(theme)
     return (
         <>
             <Drawer title="Portrait / Bust" defaultOpen>
                 <CommissionCard
                     details={
-                        <ul style={style.cardul}>
-                            <li style={style.li}>Details go here</li>
-                            <li style={style.li}>Some more details go here...</li>
-                            <li style={style.li}>Price: $75-$100*</li>
+                        <ul className={classes.cardul}>
+                            <li className={classes.li}>Details go here</li>
+                            <li className={classes.li}>Some more details go here...</li>
+                            <li className={classes.li}>Price: $75-$100*</li>
                         </ul>
                     }
                     images={images.filter(image => image.type === 'bust')}
@@ -75,10 +78,10 @@ export const CommissionInfo = () => {
             <Drawer title="Half-body" defaultOpen>
                 <CommissionCard
                     details={
-                        <ul style={style.cardul}>
-                            <li style={style.li}>Details go here</li>
-                            <li style={style.li}>Some more details go here...</li>
-                            <li style={style.li}>Price: $150*</li>
+                        <ul className={classes.cardul}>
+                            <li className={classes.li}>Details go here</li>
+                            <li className={classes.li}>Some more details go here...</li>
+                            <li className={classes.li}>Price: $150*</li>
                         </ul>
                     }
                     images={images.filter(image => image.type === 'halfbody')}
@@ -87,10 +90,10 @@ export const CommissionInfo = () => {
             <Drawer title="Pet" defaultOpen>
                 <CommissionCard
                     details={
-                        <ul style={style.cardul}>
-                            <li style={style.li}>Details go here</li>
-                            <li style={style.li}>Some more details go here...</li>
-                            <li style={style.li}>Price: Depends on complexity</li>
+                        <ul className={classes.cardul}>
+                            <li className={classes.li}>Details go here</li>
+                            <li className={classes.li}>Some more details go here...</li>
+                            <li className={classes.li}>Price: Depends on complexity</li>
                         </ul>
                     }
                     images={images.filter(image => image.type === 'pet')}
@@ -107,7 +110,7 @@ export const CommissionInfo = () => {
                     If you are interested in a commission, please email me with the below information (or submit this through the online form).
                     The number of projects I take on will vary, I will email you with confirmation if I am available to take on the project.
                 </p>
-                <ul style={style.templateul}>
+                <ul className={classes.templateul}>
                     <li>Contact email address for updates and for the invoices</li>
                     <li>Your name and the name of your character(s)</li>
                     <li>Commission type</li>

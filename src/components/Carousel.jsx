@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import ItemsCarousel from 'react-items-carousel'
+import { createUseStyles, useTheme } from 'react-jss'
 
-const style = {
+const useStyles = createUseStyles(theme => ({
     arrow: {
         width: 50,
         userSelect: 'none',
@@ -18,9 +19,11 @@ const style = {
         height: '100%',
         objectFit: 'cover'
     }
-}
+}))
 
 export const Carousel = (props) => {
+    const theme = useTheme()
+    const classes = useStyles(theme)
     const [activeItemIndex, setActiveItemIndex] = useState(0)
     const { images } = props
     const [leftOpacity, setLeftOpacity] = useState(0.25)
@@ -51,7 +54,8 @@ export const Carousel = (props) => {
             alwaysShowChevrons={false}
             leftChevron={
                 <img
-                    style={{ ...style.arrow, opacity: leftOpacity }}
+                    style={{ opacity: leftOpacity }}
+                    className={classes.arrow}
                     src="/arrow-left.png"
                     alt="left arrow"
                     onMouseEnter={toggleLeftOpacity}
@@ -60,7 +64,8 @@ export const Carousel = (props) => {
             }
             rightChevron={
                 <img
-                    style={{ ...style.arrow, opacity: rightOpacity }}
+                    style={{ opacity: rightOpacity }}
+                    className={classes.arrow}
                     src="/arrow-right.png"
                     alt="right arrow"
                     onMouseEnter={toggleRightOpacity}
@@ -71,9 +76,9 @@ export const Carousel = (props) => {
             {images.map((image, index) => (
                 <div
                     key={index}
-                    style={style.imageContainer}
+                    className={classes.imageContainer}
                 >
-                    <img src={image.url} style={style.image} alt={image.title}/>
+                    <img src={image.url} className={classes.image} alt={image.title} />
                 </div>
             ))}
         </ItemsCarousel>

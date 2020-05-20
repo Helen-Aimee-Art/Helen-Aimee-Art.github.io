@@ -1,26 +1,28 @@
 import React from 'react'
+import { createUseStyles, useTheme } from 'react-jss'
 
-const style = {
+const useStyles = createUseStyles(theme => ({
     card: {
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: '#1F2833',
-        color: '#f2f2f2',
+        backgroundColor: theme.colorPrimary,
+        color: theme.colorSecondary,
         borderRadius: 5,
         padding: 20
     },
     content: {
 
     }
-}
-
+}))
 
 export const Card = (props) => {
+    const theme = useTheme()
+    const classes = useStyles(theme)
     const { children } = props
 
     return (
-        <div style={style.card}>
-            <div style={style.content}>
+        <div className={classes.card}>
+            <div className={classes.content}>
                 {children}
             </div>
         </div>

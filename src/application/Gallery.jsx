@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { GalleryItem } from '../components/GalleryItem'
 import { Modal } from '../components/Modal'
 import { FilterDropdown } from '../components/FilterDropdown'
-import { Drawer } from '../components/Drawer'
+import { createUseStyles, useTheme } from 'react-jss'
 
 const galleryImages = [
     {
@@ -65,7 +65,7 @@ const galleryImages = [
 const arrays = galleryImages.map(image => image.keywords)
 const keywords = ['all'].concat(...arrays).filter((value, index, array) => array.indexOf(value) === index)
 
-const style = {
+const useStyles = createUseStyles(theme => ({
     galleryContainer: {
         display: 'flex',
         flexDirection: 'column'
@@ -80,9 +80,11 @@ const style = {
         alignSelf: 'flex-end',
         marginBottom: 5
     }
-}
+}))
 
 export const Gallery = () => {
+    const theme = useTheme()
+    const classes = useStyles(theme)
     const [currentImage, setCurrentImage] = useState(null)
     const [open, setOpen] = useState(false)
     const [filter, setFilter] = useState('all')
@@ -101,11 +103,11 @@ export const Gallery = () => {
 
     return (
         <>
-            <div style={style.galleryContainer}>
-                <div style={style.filterContainer}>
+            <div className={classes.galleryContainer}>
+                <div className={classes.filterContainer}>
                     <FilterDropdown keywords={keywords} setFilter={setFilter} />
                 </div>
-                <div style={style.gallery}>
+                <div className={classes.gallery}>
                     {filteredImages.map((image, index) => (
                         <GalleryItem
                             key={index}
