@@ -14,13 +14,20 @@ const useStyles = createUseStyles(theme => ({
     },
     li: {
         fontSize: 20,
-        marginRight: 30,
         padding: '8px',
         borderRadius: '10px'
     },
     link: {
         textDecoration: 'none',
-        color: theme.colorSecondary
+        color: theme.colorSecondary,
+        marginRight: 20
+    },
+    activeLink: {
+        textDecoration: 'none',
+        color: theme.colorPrimary,
+        backgroundColor: theme.colorSecondary,
+        borderRadius: 10,
+        marginRight: 20
     }
 }))
 
@@ -31,22 +38,22 @@ export const NavLinks = () => {
 
     return (
         <ul className={classes.ul}>
-            <Link to='/' className={classes.link}>
+            <Link to='/' className={currentLink === 'gallery' ? classes.activeLink : classes.link}>
                 <li className={classes.li} onClick={() => setCurrentLink('gallery')}>
                     Gallery
                 </li>
             </Link>
-            <Link to='/commissioninfo' className={classes.link}>
+            <Link to='/commissioninfo' className={currentLink === 'commission' ? classes.activeLink : classes.link}>
                 <li className={classes.li} onClick={() => setCurrentLink('commission')}>
                     Comission Info
                 </li>
             </Link>
-            <Link to='/contact' className={classes.link}>
+            <Link to='/contact' className={currentLink === 'contact' ? classes.activeLink : classes.link}>
                 <li className={classes.li} onClick={() => setCurrentLink('contact')}>
                     Contact
                 </li>
             </Link>
-            <Link to='/about' className={classes.link}>
+            <Link to='/about' className={currentLink === 'about' ? classes.activeLink : classes.link}>
                 <li className={classes.li} onClick={() => setCurrentLink('about')}>
                     About
                 </li>
