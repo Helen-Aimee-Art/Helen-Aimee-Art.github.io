@@ -37,11 +37,11 @@ const images = [
         type: 'pet'
     },
     {
-        url: '/new-images-coming-soon.jpg',
+        url: '/helen-aimee-willow.jpg',
         type: 'pet'
     },
     {
-        url: '/new-images-coming-soon.jpg',
+        url: '/helen-aimee-buttons.jpg',
         type: 'pet'
     },
 ]

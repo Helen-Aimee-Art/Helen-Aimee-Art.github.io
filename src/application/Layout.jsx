@@ -28,7 +28,7 @@ const useStyles = createUseStyles(theme => ({
         alignItems: 'center',
         width: '65%',
         flex: 1,
-        margin: '20px 0'
+        margin: '25px 0'
     }
 }))
 

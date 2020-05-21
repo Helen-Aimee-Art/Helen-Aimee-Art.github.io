@@ -37,6 +37,9 @@ export const Footer = () => {
                 <a href="https://www.artstation.com/helen_aimee" target="_blank" className={classes.a}>
                     <li>Artstation</li>
                 </a>
+                <a href="https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA" target="_blank" className={classes.a}>
+                    <li>Youtube</li>
+                </a>
             </ul>
         </footer>
     )

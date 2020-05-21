@@ -4,33 +4,34 @@ import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
     modalContainer: ({ open }) => ({
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: '100%',
         position: 'absolute',
         top: 0,
         left: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundColor: 'rgba(0, 0, 0, 0.9)',
         display: open ? 'block' : 'none'
     }),
     modal: {
         display: 'flex',
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: '100%',
         alignItems: 'center',
+        position: 'relative',
         justifyContent: 'center'
     },
     imgContainer: {
         display: 'flex',
-        position: 'relative',
         alignItems: 'center',
         justifyContent: 'center'
     },
     img: {
-        height: '85vh'
+        height: '85vh',
+        position: 'absolute',
     },
     arrow: {
         position: 'absolute',
-        width: 50,
+        width: 75,
         cursor: 'pointer',
         userSelect: 'none',
         opacity: 0.25,
@@ -75,7 +76,7 @@ export const Modal = (props) => {
                     {props.currentImageId > 0 &&
                         <img
                             className={classes.arrow}
-                            style={{ left: 0, opacity: leftOpacity }}
+                            style={{ left: '25%', opacity: leftOpacity }}
                             src="/arrow-left.png"
                             alt="left arrow"
                             onClick={props.decrementModalImage}
@@ -85,7 +86,7 @@ export const Modal = (props) => {
                     {props.currentImageId < props.numImages &&
                         <img
                             className={classes.arrow}
-                            style={{ right: 0, opacity: rightOpacity }}
+                            style={{ right: '25%', opacity: rightOpacity }}
                             src="/arrow-right.png"
                             alt="right arrow"
                             onClick={props.incrementModalImage}

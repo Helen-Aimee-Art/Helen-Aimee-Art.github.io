@@ -18,6 +18,18 @@ const useStyles = createUseStyles(theme => ({
     listItem: {
         flex: 1,
         textAlign: 'center'
+    },
+    images: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-around'
+    },
+    image: {
+        display: 'block',
+        height: 300,
+        width: 300,
+        objectFit: 'cover'
     }
 }))
 
@@ -38,6 +50,10 @@ export const About = () => {
                 <p>
                     Thank you for your interest in my art, I hope you have a great day!
                 </p>
+                <div className={classes.images}>
+                    <img src="/helen.jpg" alt="Helen" className={classes.image} />
+                    <img src="/buttons.jpg" alt="Buttons" className={classes.image} />
+                </div>
                 <p>
                     You can find me on the below Social Media platforms:
                 </p>

@@ -7,10 +7,28 @@ import { createUseStyles, useTheme } from 'react-jss'
 
 const galleryImages = [
     {
+        title: 'Willow',
+        desc: '',
+        url: '/helen-aimee-willow.jpg',
+        keywords: ['all', 'pets']
+    },
+    {
+        title: 'Buttons',
+        desc: '',
+        url: '/helen-aimee-buttons.jpg',
+        keywords: ['all', 'pets']
+    },
+    {
+        title: 'Serena',
+        desc: '',
+        url: '/helen-aimee-serena.jpg',
+        keywords: ['all', 'gaming', 'fantasy']
+    },
+    {
         title: 'Serana',
         desc: '',
         url: '/helen-aimee-serana.jpg',
-        keywords: ['all', 'skyrim', 'gaming', 'fantasy']
+        keywords: ['all', 'gaming', 'fantasy']
     },
     {
         title: 'Ribbon',

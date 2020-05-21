@@ -28,7 +28,7 @@ export const Overlay = (props) => {
 
     return (
         <div className={classes.overlay}>
-            <div ClassName={classes.overlayContent}>
+            <div className={classes.overlayContent}>
                 {props.title}
             </div>
         </div>
