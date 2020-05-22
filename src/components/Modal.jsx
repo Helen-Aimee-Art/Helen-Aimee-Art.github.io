@@ -1,12 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
+import { useEffect } from 'react'
 
 const useStyles = createUseStyles(theme => ({
     modalContainer: ({ open }) => ({
         width: '100%',
         height: '100%',
-        position: 'absolute',
+        position: 'fixed',
         top: 0,
         left: 0,
         backgroundColor: 'rgba(0, 0, 0, 0.9)',
@@ -32,10 +33,10 @@ const useStyles = createUseStyles(theme => ({
     arrow: {
         position: 'absolute',
         width: 75,
-        cursor: 'pointer',
         userSelect: 'none',
         opacity: 0.25,
-        transition: 'opacity 0.2s'
+        transition: 'opacity 0.2s',
+        backgroundColor: 'black'
     }
 }))
 
@@ -43,23 +44,26 @@ export const Modal = (props) => {
     const open = props.open
     const theme = useTheme()
     const classes = useStyles({ open, theme })
-    const [leftOpacity, setLeftOpacity] = useState(0.25)
-    const [rightOpacity, setRightOpacity] = useState(0.25)
+    const [leftActive, setLeftActive] = useState(false)
+    const [rightActive, setRightActive] = useState(false)
+
+    useEffect(() => {
+        if (props.currentImageId === 0) {
+            setLeftActive(false)
+        }
+
+        if (props.currentImageId === props.numImages) {
+            setRightActive(false)
+        }
+
+    }, [props.currentImageId])
 
     const handleClick = (e) => {
         if (e.target.id === 'modal') {
             props.closeModal()
-            setLeftOpacity(0.25)
-            setRightOpacity(0.25)
+            setLeftActive(false)
+            setRightActive(false)
         }
-    }
-
-    const toggleLeftOpacity = () => {
-        setLeftOpacity(prevOpacity => prevOpacity === 0.25 ? 1 : 0.25)
-    }
-
-    const toggleRightOpacity = () => {
-        setRightOpacity(prevOpacity => prevOpacity === 0.25 ? 1 : 0.25)
     }
 
     const src = props.currentImage ? props.currentImage.url : ''
@@ -73,26 +77,24 @@ export const Modal = (props) => {
             <div id="modal" className={classes.modal}>
                 <div className={classes.imgContainer}>
                     <img className={classes.img} src={src} alt="" />
-                    {props.currentImageId > 0 &&
-                        <img
-                            className={classes.arrow}
-                            style={{ left: '25%', opacity: leftOpacity }}
-                            src="/arrow-left.png"
-                            alt="left arrow"
-                            onClick={props.decrementModalImage}
-                            onMouseEnter={toggleLeftOpacity}
-                            onMouseLeave={toggleLeftOpacity}
-                        />}
-                    {props.currentImageId < props.numImages &&
-                        <img
-                            className={classes.arrow}
-                            style={{ right: '25%', opacity: rightOpacity }}
-                            src="/arrow-right.png"
-                            alt="right arrow"
-                            onClick={props.incrementModalImage}
-                            onMouseEnter={toggleRightOpacity}
-                            onMouseLeave={toggleRightOpacity}
-                        />}
+                    <img
+                        className={classes.arrow}
+                        style={{ left: 5, opacity: leftActive ? 1 : 0.25, cursor: leftActive ? 'pointer' : 'default' }}
+                        src="/arrow-left.png"
+                        alt="left arrow"
+                        onClick={props.currentImageId > 0 && props.decrementModalImage}
+                        onMouseEnter={props.currentImageId > 0 && (() => setLeftActive(!leftActive))}
+                        onMouseLeave={props.currentImageId > 0 && (() => setLeftActive(!leftActive))}
+                    />
+                    <img
+                        className={classes.arrow}
+                        style={{ right: 5, opacity: rightActive ? 1 : 0.25, cursor: rightActive ? 'pointer' : 'default' }}
+                        src="/arrow-right.png"
+                        alt="right arrow"
+                        onClick={props.currentImageId < props.numImages && props.incrementModalImage}
+                        onMouseEnter={props.currentImageId < props.numImages && (() => setRightActive(!rightActive))}
+                        onMouseLeave={props.currentImageId < props.numImages && (() => setRightActive(!rightActive))}
+                    />
                 </div>
             </div>
         </div>

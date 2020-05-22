@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
@@ -23,19 +24,25 @@ const useStyles = createUseStyles(theme => ({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-around'
+        justifyContent: 'center'
     },
     image: {
         display: 'block',
-        height: 300,
-        width: 300,
-        objectFit: 'cover'
+        height: 150,
+        width: 150,
+        objectFit: 'cover',
+        borderRadius: '50%',
+        padding: 10
     }
 }))
 
-export const About = () => {
+export const About = (props) => {
     const theme = useTheme()
     const classes = useStyles(theme)
+
+    useEffect(() => {
+        props.setCurrentPage('about')
+    }, [])
 
     return (
         <>

@@ -6,6 +6,7 @@ const useStyles = createUseStyles(theme => ({
     logo: {
         flex: 1,
         textAlign: 'left',
+        display: 'flex'
     },
     img: {
         margin: '0 20px',
@@ -23,7 +24,7 @@ const useStyles = createUseStyles(theme => ({
         marginLeft: 2
     },
     h1: {
-        marginBottom: 0,
+        margin: 0,
         fontSize: 36
     }
 }))
@@ -35,7 +36,6 @@ export const Logo = () => {
     return (
         <div className={classes.logo}>
             <Link to="/" className={classes.link}>
-                <img src="/helen.jpg" alt="Helen" className={classes.img} />
                 <div>
                     <h1 className={classes.h1}>Helen Aimee Art</h1>
                     <span className={classes.contact} >helen.aimee.art@gmail.com</span>

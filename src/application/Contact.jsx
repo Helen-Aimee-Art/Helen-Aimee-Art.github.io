@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import emailjs from 'emailjs-com'
 import { Card } from '../components/Card'
 import { Dialog } from '../components/Dialog'
@@ -22,14 +22,20 @@ const useStyles = createUseStyles(theme => ({
     }
 }))
 
-export const Contact = () => {
+export const Contact = (props) => {
     const theme = useTheme()
     const classes = useStyles(theme)
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
+    const [characterName, setCharacterName] = useState('')
+    const [commissionType, setCommissionType] = useState('')
     const [openDialog, setOpenDialog] = useState(false)
+
+    useEffect(() => {
+        props.setCurrentPage('contact')
+    }, [])
 
     const sendEmail = e => {
         e.preventDefault()
@@ -83,20 +89,44 @@ export const Contact = () => {
                         required
                     >
                         <option value="" disabled>Choose a subject</option>
-                        <option value="question">Question</option>
-                        <option value="comment">Comment</option>
-                        <option value="commission_request">Commission Request</option>
-                        <option value="other">Other</option>
+                        <option value="question_comment">Question/Comment</option>
+                        <option value="commission_request">Commission request</option>
                     </select>
+                    {subject === 'commission_request' && (
+                        <>
+                            <input
+                                type="text"
+                                name="character_name"
+                                value={characterName}
+                                onChange={e => setCharacterName(e.target.value)}
+                                placeholder="Enter your character name"
+                                className={classes.input}
+                                autoComplete="off"
+                                required
+                            />
+                            <select
+                                name="commission_type"
+                                value={commissionType}
+                                onChange={e => setCommissionType(e.target.value)}
+                                className={classes.input}
+                                required
+                            >
+                                <option value="" disabled>Choose a commission type</option>
+                                <option value="portrait">Portrait</option>
+                                <option value="half_body">Half body</option>
+                                <option value="pet">Pet</option>
+                            </select>
+                        </>
+                    )}
                     <textarea
                         name="message"
                         value={message}
                         onChange={e => setMessage(e.target.value)}
-                        placeholder="Enter your message"
+                        placeholder={subject === 'commission_request' ? 'Please provide details on your character(s) (Eg. physical description, race, age, personality etc.)' : 'Enter your message'}
                         rows="8"
                         maxLength="480"
                         className={classes.input}
-                        style={{resize: 'none'}}
+                        style={{ resize: 'none' }}
                         autoComplete="off"
                         required
                     />
@@ -108,7 +138,7 @@ export const Contact = () => {
                 open={openDialog}
                 onClose={() => setOpenDialog(false)}
             />
-            <hr/>
+            <hr />
         </>
     )
 }

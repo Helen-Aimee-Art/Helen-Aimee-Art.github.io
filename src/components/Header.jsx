@@ -19,15 +19,15 @@ const useStyles = createUseStyles(theme => ({
     }
 }))
 
-export const Header = () => {
+export const Header = (props) => {
     const theme = useTheme()
     const classes = useStyles(theme)
-    
+
     return (
         <nav className={classes.nav}>
             <div className={classes.navContent}>
                 <Logo />
-                <NavLinks />
+                <NavLinks currentPage={props.currentPage} />
             </div>
         </nav>
     )

@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { createUseStyles, useTheme } from 'react-jss'
+import { useEffect } from 'react'
 
 const useStyles = createUseStyles(theme => ({
     ul: {
@@ -31,30 +32,29 @@ const useStyles = createUseStyles(theme => ({
     }
 }))
 
-export const NavLinks = () => {
+export const NavLinks = (props) => {
     const theme = useTheme()
-    const [currentLink, setCurrentLink] = useState('gallery')
-    const classes = useStyles({ currentLink, theme })
+    const classes = useStyles(theme)
 
     return (
         <ul className={classes.ul}>
-            <Link to='/' className={currentLink === 'gallery' ? classes.activeLink : classes.link}>
-                <li className={classes.li} onClick={() => setCurrentLink('gallery')}>
+            <Link to='/' className={props.currentPage === 'gallery' ? classes.activeLink : classes.link}>
+                <li className={classes.li}>
                     Gallery
                 </li>
             </Link>
-            <Link to='/commissioninfo' className={currentLink === 'commission' ? classes.activeLink : classes.link}>
-                <li className={classes.li} onClick={() => setCurrentLink('commission')}>
+            <Link to='/commissioninfo' className={props.currentPage === 'commissioninfo' ? classes.activeLink : classes.link}>
+                <li className={classes.li}>
                     Comission Info
                 </li>
             </Link>
-            <Link to='/contact' className={currentLink === 'contact' ? classes.activeLink : classes.link}>
-                <li className={classes.li} onClick={() => setCurrentLink('contact')}>
+            <Link to='/contact' className={props.currentPage === 'contact' ? classes.activeLink : classes.link}>
+                <li className={classes.li}>
                     Contact
                 </li>
             </Link>
-            <Link to='/about' className={currentLink === 'about' ? classes.activeLink : classes.link}>
-                <li className={classes.li} onClick={() => setCurrentLink('about')}>
+            <Link to='/about' className={props.currentPage === 'about' ? classes.activeLink : classes.link}>
+                <li className={classes.li}>
                     About
                 </li>
             </Link>

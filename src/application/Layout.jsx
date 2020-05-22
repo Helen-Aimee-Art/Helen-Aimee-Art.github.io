@@ -32,27 +32,27 @@ const useStyles = createUseStyles(theme => ({
     }
 }))
 
-export const Layout = () => {
+export const Layout = (props) => {
     const theme = useTheme()
     const classes = useStyles(theme)
 
     return (
         <Router>
             <div className={classes.app}>
-                <Header />
+                <Header currentPage={props.currentPage} />
                 <div className={classes.main}>
                     <Switch>
                         <Route path="/commissioninfo" render={() => (
-                            <CommissionInfo />
+                            <CommissionInfo setCurrentPage={props.setCurrentPage} />
                         )} />
                         <Route path="/contact" render={() => (
-                            <Contact />
+                            <Contact setCurrentPage={props.setCurrentPage} />
                         )} />
                         <Route path="/about" render={() => (
-                            <About />
+                            <About setCurrentPage={props.setCurrentPage} />
                         )} />
                         <Route path="/" render={() => (
-                            <Gallery />
+                            <Gallery setCurrentPage={props.setCurrentPage} />
                         )} />
                     </Switch>
                 </div>

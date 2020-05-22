@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout } from './Layout'
 import { ThemeProvider } from 'react-jss'
+import { useState } from 'react'
 
 const theme = {
     colorPrimary: '#1F2833',
@@ -8,9 +9,11 @@ const theme = {
 }
 
 export const App = () => {
+    const [currentPage, setCurrentPage] = useState('')
+
     return (
         <ThemeProvider theme={theme}>
-            <Layout />
+            <Layout currentPage={currentPage} setCurrentPage={setCurrentPage} />
         </ThemeProvider>
     )
 }

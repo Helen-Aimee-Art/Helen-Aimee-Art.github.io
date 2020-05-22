@@ -1,50 +1,9 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { CommissionCard } from '../components/CommissionCard'
 import { Drawer } from '../components/Drawer'
 import { createUseStyles, useTheme } from 'react-jss'
-
-const images = [
-    {
-        url: '/helen-aimee-darkshift-web.jpg',
-        type: 'halfbody'
-    },
-    {
-        url: '/new-images-coming-soon.jpg',
-        type: 'halfbody'
-    },
-    {
-        url: '/new-images-coming-soon.jpg',
-        type: 'halfbody'
-    },
-    {
-        url: '/helen-aimee-serana.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-flameleaf.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-neefia.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-ribbon.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-blue-and-quincy-c.jpg',
-        type: 'pet'
-    },
-    {
-        url: '/helen-aimee-willow.jpg',
-        type: 'pet'
-    },
-    {
-        url: '/helen-aimee-buttons.jpg',
-        type: 'pet'
-    },
-]
+import { commissionImages } from '../configuration/commissionImages'
 
 const useStyles = createUseStyles(theme => ({
     cardul: {
@@ -58,9 +17,14 @@ const useStyles = createUseStyles(theme => ({
     }
 }))
 
-export const CommissionInfo = () => {
+export const CommissionInfo = (props) => {
     const theme = useTheme()
     const classes = useStyles(theme)
+
+    useEffect(() => {
+        props.setCurrentPage('commissioninfo')
+    }, [])
+
     return (
         <>
             <Drawer title="Portrait / Bust" defaultOpen>
@@ -72,7 +36,7 @@ export const CommissionInfo = () => {
                             <li className={classes.li}>Price: $75-$100*</li>
                         </ul>
                     }
-                    images={images.filter(image => image.type === 'bust')}
+                    images={commissionImages.filter(image => image.type === 'bust')}
                 />
             </Drawer>
             <Drawer title="Half-body" defaultOpen>
@@ -84,7 +48,7 @@ export const CommissionInfo = () => {
                             <li className={classes.li}>Price: $150*</li>
                         </ul>
                     }
-                    images={images.filter(image => image.type === 'halfbody')}
+                    images={commissionImages.filter(image => image.type === 'halfbody')}
                 />
             </Drawer>
             <Drawer title="Pet" defaultOpen>
@@ -96,7 +60,7 @@ export const CommissionInfo = () => {
                             <li className={classes.li}>Price: Depends on complexity</li>
                         </ul>
                     }
-                    images={images.filter(image => image.type === 'pet')}
+                    images={commissionImages.filter(image => image.type === 'pet')}
                 />
             </Drawer>
             <div>
