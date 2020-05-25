@@ -1,8 +1,6 @@
 import React from 'react'
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { createUseStyles, useTheme } from 'react-jss'
-import { useEffect } from 'react'
 
 const useStyles = createUseStyles(theme => ({
     ul: {
