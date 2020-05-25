@@ -3,8 +3,13 @@ import { useState } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        marginBottom: 8
+    },
     select: {
-        backgroundColor: '#282c34',
+        backgroundColor: theme.colorPrimary,
         color: theme.colorSecondary,
         border: '1px solid #f2f2f2',
         borderRadius: 5,
@@ -14,8 +19,9 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const FilterDropdown = (props) => {
+    const align = props.align
     const theme = useTheme()
-    const classes = useStyles(theme)
+    const classes = useStyles({ align, theme })
     const [selected, setSelected] = useState('')
 
     const handleChange = e => {
@@ -25,7 +31,7 @@ export const FilterDropdown = (props) => {
     }
 
     return (
-        <div>
+        <div className={classes.container}>
             <select
                 id="keywords"
                 className={classes.select}

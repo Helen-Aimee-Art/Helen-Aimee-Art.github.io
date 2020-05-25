@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import { GalleryGrid } from '../components/GalleryGrid'
 import { GalleryItem } from '../components/GalleryItem'
 import { Modal } from '../components/Modal'
 import { FilterDropdown } from '../components/FilterDropdown'
@@ -13,16 +14,6 @@ const useStyles = createUseStyles(theme => ({
     galleryContainer: {
         display: 'flex',
         flexDirection: 'column'
-    },
-    gallery: {
-        display: 'grid',
-        gridTemplate: '1fr / 1fr 1fr 1fr 1fr 1fr',
-        gridAutoFlow: 'row',
-        gridGap: 10
-    },
-    filterContainer: {
-        alignSelf: 'flex-end',
-        marginBottom: 5
     }
 }))
 
@@ -52,10 +43,8 @@ export const Gallery = (props) => {
     return (
         <>
             <div className={classes.galleryContainer}>
-                <div className={classes.filterContainer}>
-                    <FilterDropdown keywords={keywords} setFilter={setFilter} />
-                </div>
-                <div className={classes.gallery}>
+                <FilterDropdown keywords={keywords} setFilter={setFilter} align="flex-end" />
+                <GalleryGrid>
                     {filteredImages.map((image, index) => (
                         <GalleryItem
                             key={index}
@@ -67,16 +56,16 @@ export const Gallery = (props) => {
                             openModal={openModal}
                         />
                     ))}
-                    <Modal
-                        open={open}
-                        currentImageId={currentImage}
-                        currentImage={filteredImages[currentImage]}
-                        numImages={filteredImages.length - 1}
-                        closeModal={closeModal}
-                        incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))}
-                        decrementModalImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
-                    />
-                </div>
+                </GalleryGrid>
+                <Modal
+                    open={open}
+                    currentImageId={currentImage}
+                    currentImage={filteredImages[currentImage]}
+                    numImages={filteredImages.length - 1}
+                    closeModal={closeModal}
+                    incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))}
+                    decrementModalImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
+                />
             </div>
         </>
     )
