@@ -1,4 +1,5 @@
 import React from 'react'
+import { SocialLink } from './SocialLink'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
@@ -7,31 +8,19 @@ const useStyles = createUseStyles(theme => ({
         listStyle: 'none',
         width: '25%',
         justifyContent: 'space-around'
-    },
-    a: {
-        textDecoration: 'none',
-        color: 'inherit'
     }
 }))
 
-export const SocialList = () => {
+export const SocialList = (props) => {
     const theme = useTheme()
     const classes = useStyles(theme)
 
     return (
         <ul className={classes.ul}>
-            <a href="https://www.instagram.com/helen_aimee.art/" target="_blank" className={classes.a}>
-                <li>Instagram</li>
-            </a>
-            <a href="https://www.deviantart.com/missshazira" target="_blank" className={classes.a}>
-                <li>DeviantArt</li>
-            </a>
-            <a href="https://www.artstation.com/helen_aimee" target="_blank" className={classes.a}>
-                <li>Artstation</li>
-            </a>
-            <a href="https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA" target="_blank" className={classes.a}>
-                <li>Youtube</li>
-            </a>
+            <SocialLink link="https://www.instagram.com/helen_aimee.art/"></SocialLink>
+            <SocialLink link="https://www.deviantart.com/missshazira"></SocialLink>
+            <SocialLink link="https://www.artstation.com/helen_aimee"></SocialLink>
+            <SocialLink link="https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA"></SocialLink>
         </ul>
     )
 }

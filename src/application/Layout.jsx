@@ -19,7 +19,6 @@ const useStyles = createUseStyles(theme => ({
         padding: 0,
         position: 'relative',
         backgroundColor: theme.colorSecondary,
-        backgroundSize: '56.57px 56.57px',
         boxSizing: 'border-box'
     },
     main: {
@@ -39,7 +38,7 @@ export const Layout = (props) => {
     return (
         <Router>
             <div className={classes.app}>
-                <Header currentPage={props.currentPage} />
+                <Header currentPage={props.currentPage} isDesktop={props.isDesktop} setIsDesktop={props.setIsDesktop} />
                 <div className={classes.main}>
                     <Switch>
                         <Route path="/commissioninfo" render={() => (
@@ -56,7 +55,7 @@ export const Layout = (props) => {
                         )} />
                     </Switch>
                 </div>
-                <Footer />
+                <Footer isDesktop={props.isDesktop} setIsDesktop={props.setIsDesktop} />
             </div>
         </Router>
     )

@@ -5,39 +5,36 @@ import { useState } from 'react'
 
 const useStyles = createUseStyles(theme => ({
     container: {
-
+        position: 'relative'
     },
     ul: {
         listStyle: 'none',
-        display: 'flex',
         position: 'absolute',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'flex-end',
-        flex: 3,
-        padding: 0,
+        right: 0,
+        top: 48,
         backgroundColor: theme.colorPrimary,
-        zIndex: 10
+        zIndex: 10,
+        padding: 0,
+        margin: 0,
+        borderLeft: `2px solid ${theme.colorTertiary}`,
+        width: 175
     },
     li: {
         fontSize: 20,
-        padding: '8px',
-        borderRadius: '10px'
+        padding: 15,
+        color: theme.colorSecondary
+    },
+    activeLi: {
+        fontSize: 20,
+        padding: 15,
+        color: theme.colorPrimary,
+        backgroundColor: theme.colorSecondary
     },
     link: {
         textDecoration: 'none',
-        color: theme.colorSecondary,
-        marginRight: 20
-    },
-    activeLink: {
-        textDecoration: 'none',
-        color: theme.colorPrimary,
-        backgroundColor: theme.colorSecondary,
-        borderRadius: 10,
-        marginRight: 20
     },
     burger: {
-        width: 64
+        width: 32
     }
 }))
 
@@ -47,29 +44,29 @@ export const MobileNavLinks = (props) => {
     const [active, setActive] = useState(false)
 
     return (
-        <div>
-            <img src="/Hamburger_icon.png" alt="" onClick={() => setActive(!active)} className={classes.burger}/>
+        <div className={classes.container}>
+            <img src="/Hamburger_icon.png" alt="" onClick={() => setActive(!active)} className={classes.burger} />
             {active && (
                 <ul className={classes.ul}>
-                    <Link to='/' className={props.currentPage === 'gallery' ? classes.activeLink : classes.link}>
-                        <li className={classes.li}>
+                    <Link to='/' className={classes.link} onClick={() => setActive(false)}>
+                        <li className={props.currentPage === 'gallery' ? classes.activeLi : classes.li}>
                             Gallery
-                </li>
+                        </li>
                     </Link>
-                    <Link to='/commissioninfo' className={props.currentPage === 'commissioninfo' ? classes.activeLink : classes.link}>
-                        <li className={classes.li}>
+                    <Link to='/commissioninfo' className={classes.link} onClick={() => setActive(false)} >
+                        <li className={props.currentPage === 'commissioninfo' ? classes.activeLi : classes.li}>
                             Comission Info
-                </li>
+                        </li>
                     </Link>
-                    <Link to='/contact' className={props.currentPage === 'contact' ? classes.activeLink : classes.link}>
-                        <li className={classes.li}>
+                    <Link to='/contact' className={classes.link} onClick={() => setActive(false)} >
+                        <li className={props.currentPage === 'contact' ? classes.activeLi : classes.li}>
                             Contact
-                </li>
+                        </li>
                     </Link>
-                    <Link to='/about' className={props.currentPage === 'about' ? classes.activeLink : classes.link}>
-                        <li className={classes.li}>
+                    <Link to='/about' className={classes.link} onClick={() => setActive(false)} >
+                        <li className={props.currentPage === 'about' ? classes.activeLi : classes.li}>
                             About
-                </li>
+                        </li>
                     </Link>
                 </ul>
             )}

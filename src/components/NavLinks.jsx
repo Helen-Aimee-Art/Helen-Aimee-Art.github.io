@@ -5,16 +5,11 @@ import { createUseStyles, useTheme } from 'react-jss'
 const useStyles = createUseStyles(theme => ({
     ul: {
         listStyle: 'none',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'flex-end',
-        flex: 3,
-        padding: 0
+        display: 'flex'
     },
     li: {
         fontSize: 20,
         padding: '8px',
-        borderRadius: '10px'
     },
     link: {
         textDecoration: 'none',

@@ -13,7 +13,7 @@ const useStyles = createUseStyles(theme => ({
     }
 }))
 
-export const Footer = () => {
+export const Footer = (props) => {
     const theme = useTheme()
     const classes = useStyles(theme)
     return (
