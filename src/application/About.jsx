@@ -6,7 +6,7 @@ import { createUseStyles, useTheme } from 'react-jss'
 const useStyles = createUseStyles(theme => ({
     content: {
         textAlign: 'left',
-        width: '75%'
+        width: isDesktop => isDesktop ? '75%' : '100%'
     },
     images: {
         display: 'flex',
@@ -14,29 +14,51 @@ const useStyles = createUseStyles(theme => ({
         alignItems: 'center',
         justifyContent: 'center'
     },
-    image: {
+    image: isDesktop => ({
         display: 'block',
-        height: 150,
-        width: 150,
+        height: isDesktop ? 150 : 75,
+        width: isDesktop ? 150 : 75,
         objectFit: 'cover',
         borderRadius: '50%',
         padding: 10
-    }
+    }),
+    ul: {
+        display: 'flex',
+        listStyle: 'none',
+        margin: 0,
+        padding: 0
+    },
+    li: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 10,
+        margin: 0
+    },
+    a: {
+        textDecoration: 'none',
+        color: 'inherit'
+    },
 }))
 
 export const About = (props) => {
+    const isDesktop = props.isDesktop
     const theme = useTheme()
-    const classes = useStyles(theme)
+    const classes = useStyles(isDesktop, { theme })
 
     useEffect(() => {
         props.setCurrentPage('about')
     }, [])
 
+    const now = new Date()
+    const dateBorn = 1993
+    const myAge = now.getFullYear() - dateBorn
+
     return (
         <>
             <div className={classes.content}>
                 <p>
-                    My name is Helen and I am a 27 year old Digital Artist living in Plymouth, England with my partner and my pet cat Buttons.
+                    My name is Helen and I am a {myAge} year old Digital Artist living in Plymouth, England with my partner and my pet cat Buttons.
                     I have been drawing for as long as I remember. My passions are painting fantasy portraits and pet portraits.
                 </p>
                 <p>

@@ -4,15 +4,16 @@ import { createUseStyles, useTheme } from 'react-jss'
 const useStyles = createUseStyles(theme => ({
     gallery: {
         display: 'grid',
-        gridTemplate: '1fr / 1fr 1fr 1fr 1fr 1fr',
+        gridTemplate: isDesktop => isDesktop ? '1fr / 1fr 1fr 1fr 1fr 1fr' : '1fr / 1fr 1fr 1fr',
         gridAutoFlow: 'row',
         gridGap: 10
     }
 }))
 
-export const GalleryGrid = (props) => {
+export const Grid = (props) => {
+    const isDesktop = props.isDesktop
     const theme = useTheme()
-    const classes = useStyles(theme)
+    const classes = useStyles(isDesktop, { theme })
 
     return (
         <div className={classes.gallery}>

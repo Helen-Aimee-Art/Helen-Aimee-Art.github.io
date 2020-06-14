@@ -25,15 +25,16 @@ const useStyles = createUseStyles(theme => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        width: '65%',
+        width: isDesktop => isDesktop ? '65%' : '90%',
         flex: 1,
         margin: '25px 0'
     }
 }))
 
 export const Layout = (props) => {
+    const isDesktop = props.isDesktop
     const theme = useTheme()
-    const classes = useStyles(theme)
+    const classes = useStyles(isDesktop, { theme })
 
     return (
         <Router>
@@ -42,20 +43,32 @@ export const Layout = (props) => {
                 <div className={classes.main}>
                     <Switch>
                         <Route path="/commissioninfo" render={() => (
-                            <CommissionInfo setCurrentPage={props.setCurrentPage} />
+                            <CommissionInfo
+                                setCurrentPage={props.setCurrentPage}
+                                isDesktop={props.isDesktop}
+                            />
                         )} />
                         <Route path="/contact" render={() => (
-                            <Contact setCurrentPage={props.setCurrentPage} />
+                            <Contact
+                                setCurrentPage={props.setCurrentPage}
+                                isDesktop={props.isDesktop}
+                            />
                         )} />
                         <Route path="/about" render={() => (
-                            <About setCurrentPage={props.setCurrentPage} />
+                            <About
+                                setCurrentPage={props.setCurrentPage}
+                                isDesktop={props.isDesktop}
+                            />
                         )} />
                         <Route path="/" render={() => (
-                            <Gallery setCurrentPage={props.setCurrentPage} />
+                            <Gallery
+                                setCurrentPage={props.setCurrentPage}
+                                isDesktop={props.isDesktop}
+                            />
                         )} />
                     </Switch>
                 </div>
-                <Footer isDesktop={props.isDesktop} setIsDesktop={props.setIsDesktop} />
+                <Footer isDesktop={props.isDesktop} />
             </div>
         </Router>
     )

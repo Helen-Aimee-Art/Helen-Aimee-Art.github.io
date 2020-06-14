@@ -5,15 +5,16 @@ import { MobileNavLinks } from './MobileNavLinks'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
-    nav: {
+    nav: isDesktop => ({
         display: 'flex',
         position: 'relative',
-        justifyContent: isDesktop => isDesktop ? 'space-around' : 'space-between',
+        justifyContent: isDesktop ? 'space-around' : 'space-between',
         alignItems: 'center',
         backgroundColor: theme.colorPrimary,
         color: theme.colorSecondary,
-        width: '100%'
-    }
+        width: '100%',
+        padding: isDesktop ? 0 : 10
+    })
 }))
 
 export const Header = (props) => {

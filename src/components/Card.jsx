@@ -5,13 +5,12 @@ const useStyles = createUseStyles(theme => ({
     card: {
         display: 'flex',
         flexDirection: 'column',
+        alignItems: 'center',
         backgroundColor: theme.colorPrimary,
         color: theme.colorSecondary,
         borderRadius: 5,
-        padding: 20
-    },
-    content: {
-
+        padding: 20,
+        width: '100%'
     }
 }))
 
@@ -22,9 +21,7 @@ export const Card = (props) => {
 
     return (
         <div className={classes.card}>
-            <div className={classes.content}>
-                {children}
-            </div>
+            {children}
         </div>
     )
 }

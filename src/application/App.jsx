@@ -29,7 +29,6 @@ export const App = () => {
                 currentPage={currentPage}
                 setCurrentPage={setCurrentPage}
                 isDesktop={isDesktop}
-                setIsDesktop={setIsDesktop}
             />
         </ThemeProvider>
     )

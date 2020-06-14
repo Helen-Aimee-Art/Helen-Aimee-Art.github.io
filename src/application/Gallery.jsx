@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import { GalleryGrid } from '../components/GalleryGrid'
+import { Grid } from '../components/Grid'
 import { GalleryItem } from '../components/GalleryItem'
 import { Modal } from '../components/Modal'
 import { FilterDropdown } from '../components/FilterDropdown'
@@ -44,7 +44,7 @@ export const Gallery = (props) => {
         <>
             <div className={classes.galleryContainer}>
                 <FilterDropdown keywords={keywords} setFilter={setFilter} align="flex-end" />
-                <GalleryGrid>
+                <Grid isDesktop={props.isDesktop}>
                     {filteredImages.map((image, index) => (
                         <GalleryItem
                             key={index}
@@ -54,9 +54,10 @@ export const Gallery = (props) => {
                             url={image.url}
                             keywords={image.keywords}
                             openModal={openModal}
+                            isDesktop={props.isDesktop}
                         />
                     ))}
-                </GalleryGrid>
+                </Grid>
                 <Modal
                     open={open}
                     currentImageId={currentImage}
@@ -65,6 +66,7 @@ export const Gallery = (props) => {
                     closeModal={closeModal}
                     incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))}
                     decrementModalImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
+                    isDesktop={props.isDesktop}
                 />
             </div>
         </>

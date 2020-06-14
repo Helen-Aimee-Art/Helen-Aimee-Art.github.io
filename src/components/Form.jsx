@@ -7,7 +7,7 @@ const useStyles = createUseStyles(theme => ({
     form: {
         display: 'flex',
         flexDirection: 'column',
-        width: 500
+        width: '100%'
     },
     input: {
         marginBottom: 10,
@@ -22,6 +22,7 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const Form = (props) => {
+    const isDesktop = props.isDesktop
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
@@ -29,7 +30,7 @@ export const Form = (props) => {
     const [characterName, setCharacterName] = useState('')
     const [commissionType, setCommissionType] = useState('')
     const theme = useTheme()
-    const classes = useStyles(theme)
+    const classes = useStyles(isDesktop, { theme })
 
     const sendEmail = e => {
         e.preventDefault()

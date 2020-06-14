@@ -6,8 +6,8 @@ const useStyles = createUseStyles(theme => ({
     ul: {
         display: 'flex',
         listStyle: 'none',
-        width: '25%',
-        justifyContent: 'space-around'
+        margin: 0,
+        padding: 0
     }
 }))
 
@@ -17,10 +17,18 @@ export const SocialList = (props) => {
 
     return (
         <ul className={classes.ul}>
-            <SocialLink link="https://www.instagram.com/helen_aimee.art/"></SocialLink>
-            <SocialLink link="https://www.deviantart.com/missshazira"></SocialLink>
-            <SocialLink link="https://www.artstation.com/helen_aimee"></SocialLink>
-            <SocialLink link="https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA"></SocialLink>
+            <SocialLink link="https://www.instagram.com/helen_aimee.art/">
+
+            </SocialLink>
+            <SocialLink link="https://www.deviantart.com/missshazira">
+
+            </SocialLink>
+            <SocialLink link="https://www.artstation.com/helen_aimee">
+
+            </SocialLink>
+            <SocialLink link="https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA">
+
+            </SocialLink>
         </ul>
     )
 }

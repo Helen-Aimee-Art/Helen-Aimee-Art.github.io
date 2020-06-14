@@ -10,10 +10,10 @@ const useStyles = createUseStyles(theme => ({
         opacity: 0.25,
         transition: 'opacity 0.2s'
     },
-    imageContainer: {
-        width: 200,
-        height: 290
-    },
+    imageContainer: isDesktop => ({
+        width: isDesktop ? 200 : '',
+        height: isDesktop ? 290 : ''
+    }),
     image: {
         width: '100%',
         height: '100%',
@@ -22,10 +22,10 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const Carousel = (props) => {
+    const { images, isDesktop } = props
     const theme = useTheme()
-    const classes = useStyles(theme)
+    const classes = useStyles(isDesktop, { theme })
     const [activeItemIndex, setActiveItemIndex] = useState(0)
-    const { images } = props
     const [leftOpacity, setLeftOpacity] = useState(0.25)
     const [rightOpacity, setRightOpacity] = useState(0.25)
 
@@ -47,8 +47,8 @@ export const Carousel = (props) => {
             firstAndLastGutter={false}
             requestToChangeActive={setActiveItemIndex}
             activeItemIndex={activeItemIndex}
-            numberOfCards={Math.min(images.length, 3)}
-            gutter={10}
+            numberOfCards={isDesktop ? Math.min(images.length, 3) : 1}
+            gutter={isDesktop ? 10 : 0}
             chevronWidth={30}
             outsideChevron={true}
             alwaysShowChevrons={false}

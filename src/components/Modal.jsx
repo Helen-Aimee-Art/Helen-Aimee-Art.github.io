@@ -37,10 +37,23 @@ const useStyles = createUseStyles(theme => ({
         opacity: 0.25,
         transition: 'opacity 0.2s',
         backgroundColor: 'black'
+    },
+    cross: {
+        position: 'absolute',
+        width: 35,
+        height: 35,
+        userSelect: 'none',
+        opacity: 0.5,
+        transition: 'opacity 0.2s',
+        backgroundColor: 'black',
+        right: 0,
+        top: 0,
+        borderRadius: '50%'
     }
 }))
 
 export const Modal = (props) => {
+    const isDesktop = props.isDesktop
     const open = props.open
     const theme = useTheme()
     const classes = useStyles({ open, theme })
@@ -60,10 +73,14 @@ export const Modal = (props) => {
 
     const handleClick = (e) => {
         if (e.target.id === 'modal') {
-            props.closeModal()
-            setLeftActive(false)
-            setRightActive(false)
+            closeModal()
         }
+    }
+
+    const closeModal = () => {
+        props.closeModal()
+        setLeftActive(false)
+        setRightActive(false)
     }
 
     const src = props.currentImage ? props.currentImage.url : ''
@@ -94,6 +111,12 @@ export const Modal = (props) => {
                         onClick={props.currentImageId < props.numImages && props.incrementModalImage}
                         onMouseEnter={props.currentImageId < props.numImages && (() => setRightActive(!rightActive))}
                         onMouseLeave={props.currentImageId < props.numImages && (() => setRightActive(!rightActive))}
+                    />
+                    <img
+                        src="/cross.png"
+                        alt="cross"
+                        className={classes.cross}
+                        onClick={closeModal}
                     />
                 </div>
             </div>

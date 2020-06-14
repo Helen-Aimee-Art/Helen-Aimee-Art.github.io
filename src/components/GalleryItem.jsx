@@ -4,12 +4,12 @@ import { useState } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
-    container: {
+    container: isDesktop => ({
         position: 'relative',
-        width: 218,
-        height: 300,
+        width: isDesktop ? 218 : 109,
+        height: isDesktop ? 300 : 150,
         cursor: 'pointer'
-    },
+    }),
     img: {
         width: '100%',
         height: '100%',
@@ -18,8 +18,9 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const GalleryItem = (props) => {
+    const isDesktop = props.isDesktop
     const theme = useTheme()
-    const classes = useStyles(theme)
+    const classes = useStyles(isDesktop, { theme })
     const [open, setOpen] = useState(false)
 
     const handleHover = () => setOpen(!open)

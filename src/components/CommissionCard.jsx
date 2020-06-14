@@ -6,12 +6,13 @@ const useStyle = createUseStyles(theme => ({
     title: {
         alignSelf: 'center'
     },
-    content: {
+    content: isDesktop => ({
         display: 'flex',
-        justifyContent: 'space-between'
-    },
+        justifyContent: 'space-between',
+        flexDirection: isDesktop ? 'row' : 'column'
+    }),
     details: {
-        maxWidth: 485
+        maxWidth: 485,
     },
     carousel: {
         padding: '0 25px',
@@ -20,9 +21,9 @@ const useStyle = createUseStyles(theme => ({
 }))
 
 export const CommissionCard = (props) => {
+    const { title, details, images, isDesktop } = props
     const theme = useTheme()
-    const classes = useStyle(theme)
-    const { title, details, images } = props
+    const classes = useStyle(isDesktop, { theme })
 
     return (
         <div className={classes.content}>
@@ -32,7 +33,7 @@ export const CommissionCard = (props) => {
             </div>
             <div className={classes.carousel}>
                 {images.length > 0 && (
-                    <Carousel images={images} />
+                    <Carousel images={images} isDesktop={props.isDesktop} />
                 )}
             </div>
         </div>

@@ -34,7 +34,8 @@ const useStyles = createUseStyles(theme => ({
         textDecoration: 'none',
     },
     burger: {
-        width: 32
+        width: 32,
+        marginRight: 10
     }
 }))
 

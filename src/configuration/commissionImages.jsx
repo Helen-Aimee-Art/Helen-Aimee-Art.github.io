@@ -4,12 +4,16 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
-        url: '/new-images-coming-soon.jpg',
+        url: '/helen-aimee-saethyra-both.jpg',
         type: 'halfbody'
     },
     {
         url: '/new-images-coming-soon.jpg',
         type: 'halfbody'
+    },
+    {
+        url: '/helen-aimee-akleja.jpg',
+        type: 'bust'
     },
     {
         url: '/helen-aimee-serana.jpg',

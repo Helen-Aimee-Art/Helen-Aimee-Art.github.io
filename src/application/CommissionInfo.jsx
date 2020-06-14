@@ -18,8 +18,9 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const CommissionInfo = (props) => {
+    const isDesktop = props.isDesktop
     const theme = useTheme()
-    const classes = useStyles(theme)
+    const classes = useStyles(isDesktop, { theme })
 
     useEffect(() => {
         props.setCurrentPage('commissioninfo')
@@ -27,31 +28,33 @@ export const CommissionInfo = (props) => {
 
     return (
         <>
-            <Drawer title="Portrait / Bust" defaultOpen>
+            <Drawer title="Portrait / Bust" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
                         <ul className={classes.cardul}>
                             <li className={classes.li}>Details go here</li>
                             <li className={classes.li}>Some more details go here...</li>
-                            <li className={classes.li}>Price: $75-$100*</li>
+                            <li className={classes.li}>Price: $100-$125*</li>
                         </ul>
                     }
                     images={commissionImages.filter(image => image.type === 'bust')}
+                    isDesktop={props.isDesktop}
                 />
             </Drawer>
-            <Drawer title="Half-body" defaultOpen>
+            <Drawer title="Half-body" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
                         <ul className={classes.cardul}>
                             <li className={classes.li}>Details go here</li>
                             <li className={classes.li}>Some more details go here...</li>
-                            <li className={classes.li}>Price: $150*</li>
+                            <li className={classes.li}>Price: $188*</li>
                         </ul>
                     }
                     images={commissionImages.filter(image => image.type === 'halfbody')}
+                    isDesktop={props.isDesktop}
                 />
             </Drawer>
-            <Drawer title="Pet" defaultOpen>
+            <Drawer title="Pet" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
                         <ul className={classes.cardul}>
@@ -61,6 +64,7 @@ export const CommissionInfo = (props) => {
                         </ul>
                     }
                     images={commissionImages.filter(image => image.type === 'pet')}
+                    isDesktop={props.isDesktop}
                 />
             </Drawer>
             <div>
