@@ -13,19 +13,19 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const Contact = (props) => {
-    const isDesktop = props.isDesktop
+    const { isDesktop, setCurrentPage } = props
     const [openDialog, setOpenDialog] = useState(false)
     const theme = useTheme()
     const classes = useStyles(isDesktop, { theme })
 
     useEffect(() => {
-        props.setCurrentPage('contact')
-    }, [])
+        setCurrentPage('contact')
+    }, [setCurrentPage])
 
     return (
         <div className={classes.container}>
             <Card>
-                <Form setOpenDialog={setOpenDialog} isDesktop={props.isDesktop} />
+                <Form setOpenDialog={setOpenDialog} isDesktop={isDesktop} />
             </Card>
             <Dialog
                 content="Message Sent!"

@@ -10,7 +10,7 @@ const useStyles = createUseStyles(theme => ({
         justifyContent: 'center',
         color: theme.colorSecondary,
         backgroundColor: theme.colorPrimary,
-        padding: '10px 0'
+        height: 80
     }
 }))
 

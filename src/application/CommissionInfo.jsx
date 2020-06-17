@@ -18,13 +18,13 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const CommissionInfo = (props) => {
-    const isDesktop = props.isDesktop
+    const { isDesktop, setCurrentPage } = props
     const theme = useTheme()
     const classes = useStyles(isDesktop, { theme })
 
     useEffect(() => {
-        props.setCurrentPage('commissioninfo')
-    }, [])
+        setCurrentPage('commissioninfo')
+    }, [setCurrentPage])
 
     return (
         <>
@@ -38,7 +38,7 @@ export const CommissionInfo = (props) => {
                         </ul>
                     }
                     images={commissionImages.filter(image => image.type === 'bust')}
-                    isDesktop={props.isDesktop}
+                    isDesktop={isDesktop}
                 />
             </Drawer>
             <Drawer title="Half-body" defaultOpen={isDesktop}>
@@ -51,7 +51,7 @@ export const CommissionInfo = (props) => {
                         </ul>
                     }
                     images={commissionImages.filter(image => image.type === 'halfbody')}
-                    isDesktop={props.isDesktop}
+                    isDesktop={isDesktop}
                 />
             </Drawer>
             <Drawer title="Pet" defaultOpen={isDesktop}>
@@ -64,7 +64,7 @@ export const CommissionInfo = (props) => {
                         </ul>
                     }
                     images={commissionImages.filter(image => image.type === 'pet')}
-                    isDesktop={props.isDesktop}
+                    isDesktop={isDesktop}
                 />
             </Drawer>
             <div>

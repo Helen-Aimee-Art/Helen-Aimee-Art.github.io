@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
+    container: {
+        padding: '0 10px'
+    },
     link: {
         textDecoration: 'none',
         color: 'inherit'
@@ -21,9 +24,13 @@ export const Logo = () => {
     const classes = useStyles(theme)
 
     return (
-        <Link to="/" className={classes.link}>
-            <div className={classes.title}>Helen Aimee Art</div>
-            <div className={classes.contact} >helen.aimee.art@gmail.com</div>
-        </Link>
+        <div className={classes.container}>
+            <Link to="/" className={classes.link}>
+                <div className={classes.title}>Helen Aimee Art</div>
+            </Link>
+            <div className={classes.contact} >
+                <a href="mailto:helen.aimee.art@gmail.com" className={classes.link}>helen.aimee.art@gmail.com</a>
+            </div>
+        </div>
     )
 }

@@ -36,7 +36,7 @@ export const SocialLink = (props) => {
 
     return (
         <div className={classes.container}>
-            <a href={props.link} target="_blank" className={classes.a}>
+            <a href={props.link} target="_blank" rel="noopener noreferrer" className={classes.a}>
                 <li className={classes.li} onMouseEnter={handleHover} onMouseLeave={handleHover}>
                     {props.children ? props.children : props.link.charAt(12).toUpperCase()}
                 </li>

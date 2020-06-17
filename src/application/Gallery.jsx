@@ -18,6 +18,7 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const Gallery = (props) => {
+    const { isDesktop, setCurrentPage } = props
     const theme = useTheme()
     const classes = useStyles(theme)
     const [currentImage, setCurrentImage] = useState(null)
@@ -25,8 +26,8 @@ export const Gallery = (props) => {
     const [filter, setFilter] = useState('all')
 
     useEffect(() => {
-        props.setCurrentPage('gallery')
-    }, [])
+        setCurrentPage('gallery')
+    }, [setCurrentPage])
 
     const filteredImages = galleryImages.filter(image => image.keywords.includes(filter))
 
@@ -44,7 +45,7 @@ export const Gallery = (props) => {
         <>
             <div className={classes.galleryContainer}>
                 <FilterDropdown keywords={keywords} setFilter={setFilter} align="flex-end" />
-                <Grid isDesktop={props.isDesktop}>
+                <Grid isDesktop={isDesktop}>
                     {filteredImages.map((image, index) => (
                         <GalleryItem
                             key={index}
@@ -54,7 +55,7 @@ export const Gallery = (props) => {
                             url={image.url}
                             keywords={image.keywords}
                             openModal={openModal}
-                            isDesktop={props.isDesktop}
+                            isDesktop={isDesktop}
                         />
                     ))}
                 </Grid>
@@ -66,7 +67,7 @@ export const Gallery = (props) => {
                     closeModal={closeModal}
                     incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))}
                     decrementModalImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
-                    isDesktop={props.isDesktop}
+                    isDesktop={isDesktop}
                 />
             </div>
         </>

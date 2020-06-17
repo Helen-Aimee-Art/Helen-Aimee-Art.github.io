@@ -13,10 +13,11 @@ const useStyle = createUseStyles(theme => ({
     }),
     details: {
         maxWidth: 485,
+        alignSelf: 'flex-start'
     },
     carousel: {
         padding: '0 25px',
-        maxWidth: 650
+        maxWidth: isDesktop => isDesktop ? 650 : 200
     }
 }))
 

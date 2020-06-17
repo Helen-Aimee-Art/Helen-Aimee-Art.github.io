@@ -42,13 +42,13 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const About = (props) => {
-    const isDesktop = props.isDesktop
+    const { isDesktop, setCurrentPage } = props
     const theme = useTheme()
     const classes = useStyles(isDesktop, { theme })
 
     useEffect(() => {
-        props.setCurrentPage('about')
-    }, [])
+        setCurrentPage('about')
+    }, [setCurrentPage])
 
     const now = new Date()
     const dateBorn = 1993

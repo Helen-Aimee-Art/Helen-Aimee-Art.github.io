@@ -11,10 +11,10 @@ const theme = {
 
 export const App = () => {
     const [currentPage, setCurrentPage] = useState('')
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1200)
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 800)
 
     const updateMedia = () => {
-        setIsDesktop(window.innerWidth > 1200)
+        setIsDesktop(window.innerWidth > 800)
     }
 
     useEffect(() => {

@@ -7,13 +7,13 @@ import { createUseStyles, useTheme } from 'react-jss'
 const useStyles = createUseStyles(theme => ({
     nav: isDesktop => ({
         display: 'flex',
-        position: 'relative',
+        flexDirection: isDesktop ? 'row' : 'row-reverse',
         justifyContent: isDesktop ? 'space-around' : 'space-between',
         alignItems: 'center',
         backgroundColor: theme.colorPrimary,
         color: theme.colorSecondary,
         width: '100%',
-        padding: isDesktop ? 0 : 10
+        height: 80
     })
 }))
 

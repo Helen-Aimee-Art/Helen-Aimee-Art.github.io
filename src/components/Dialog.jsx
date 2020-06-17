@@ -4,7 +4,6 @@ import { createUseStyles, useTheme } from 'react-jss'
 const useStyles = createUseStyles(theme => ({
     clickAway: props => ({
         position: 'absolute',
-        display: 'flex',
         width: '100vw',
         height: '100vh',
         alignItems: props.align,

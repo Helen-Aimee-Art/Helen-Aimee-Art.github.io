@@ -11,8 +11,8 @@ const useStyles = createUseStyles(theme => ({
         transition: 'opacity 0.2s'
     },
     imageContainer: isDesktop => ({
-        width: isDesktop ? 200 : '',
-        height: isDesktop ? 290 : ''
+        width: isDesktop ? 200 : 200,
+        height: isDesktop ? 290 : 290
     }),
     image: {
         width: '100%',

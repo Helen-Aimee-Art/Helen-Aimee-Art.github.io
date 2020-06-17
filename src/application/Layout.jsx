@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import { About } from './About'
 import { CommissionInfo } from './CommissionInfo'
 import { Contact } from './Contact'
@@ -32,43 +33,43 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const Layout = (props) => {
-    const isDesktop = props.isDesktop
+    const { currentPage, isDesktop, setCurrentPage } = props
     const theme = useTheme()
     const classes = useStyles(isDesktop, { theme })
 
     return (
         <Router>
             <div className={classes.app}>
-                <Header currentPage={props.currentPage} isDesktop={props.isDesktop} setIsDesktop={props.setIsDesktop} />
+                <Header currentPage={currentPage} isDesktop={isDesktop} />
                 <div className={classes.main}>
                     <Switch>
                         <Route path="/commissioninfo" render={() => (
                             <CommissionInfo
-                                setCurrentPage={props.setCurrentPage}
-                                isDesktop={props.isDesktop}
+                                setCurrentPage={setCurrentPage}
+                                isDesktop={isDesktop}
                             />
                         )} />
                         <Route path="/contact" render={() => (
                             <Contact
-                                setCurrentPage={props.setCurrentPage}
-                                isDesktop={props.isDesktop}
+                                setCurrentPage={setCurrentPage}
+                                isDesktop={isDesktop}
                             />
                         )} />
                         <Route path="/about" render={() => (
                             <About
-                                setCurrentPage={props.setCurrentPage}
-                                isDesktop={props.isDesktop}
+                                setCurrentPage={setCurrentPage}
+                                isDesktop={isDesktop}
                             />
                         )} />
                         <Route path="/" render={() => (
                             <Gallery
-                                setCurrentPage={props.setCurrentPage}
-                                isDesktop={props.isDesktop}
+                                setCurrentPage={setCurrentPage}
+                                isDesktop={isDesktop}
                             />
                         )} />
                     </Switch>
                 </div>
-                <Footer isDesktop={props.isDesktop} />
+                <Footer isDesktop={isDesktop} />
             </div>
         </Router>
     )
