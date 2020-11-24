@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACI,qBACJ,CAEA,gBACI,kBACJ","file":"main.f8e5f4d5.chunk.css","sourcesContent":["html {\n    box-sizing: border-box;\n}\n\n*, *:before, *after {\n    box-sizing: inherit;\n}"]}
