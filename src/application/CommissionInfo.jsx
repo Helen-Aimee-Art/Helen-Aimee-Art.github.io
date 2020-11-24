@@ -9,9 +9,6 @@ const useStyles = createUseStyles(theme => ({
     cardul: {
         fontSize: 18
     },
-    templateul: {
-        listStyle: ''
-    },
     li: {
         marginBottom: 10
     }
@@ -31,11 +28,15 @@ export const CommissionInfo = (props) => {
             <Drawer title="Portrait / Bust" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
-                        <ul className={classes.cardul}>
-                            <li className={classes.li}>Details go here</li>
-                            <li className={classes.li}>Some more details go here...</li>
-                            <li className={classes.li}>Price: $100-$125*</li>
-                        </ul>
+                        <>
+                            <p className={classes.cardul}>£74 - £94*</p>
+                            <p className={classes.cardul}>Options:</p>
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>Head to bust</li>
+                                <li className={classes.li}>Head to waist</li>
+                                <li className={classes.li}>Head to waist (pinup/NSFW)</li>
+                            </ul>
+                        </>
                     }
                     images={commissionImages.filter(image => image.type === 'bust')}
                     isDesktop={isDesktop}
@@ -44,17 +45,20 @@ export const CommissionInfo = (props) => {
             <Drawer title="Half-body" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
-                        <ul className={classes.cardul}>
-                            <li className={classes.li}>Details go here</li>
-                            <li className={classes.li}>Some more details go here...</li>
-                            <li className={classes.li}>Price: $188*</li>
-                        </ul>
+                        <>
+                            <p className={classes.cardul}>£140*</p>
+                            <p className={classes.cardul}>Options:</p>
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>Head to thigh (just above the knee)</li>
+                                <li className={classes.li}>Head to thigh (pinup/NSFW)</li>
+                            </ul>
+                        </>
                     }
                     images={commissionImages.filter(image => image.type === 'halfbody')}
                     isDesktop={isDesktop}
                 />
             </Drawer>
-            <Drawer title="Pet" defaultOpen={isDesktop}>
+            {/* <Drawer title="Pet" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
                         <ul className={classes.cardul}>
@@ -66,7 +70,7 @@ export const CommissionInfo = (props) => {
                     images={commissionImages.filter(image => image.type === 'pet')}
                     isDesktop={isDesktop}
                 />
-            </Drawer>
+            </Drawer> */}
             <div>
                 <p style={{ textAlign: 'left', marginTop: 0 }}>
                     *Simple backgrounds are included in the price, at this time I am not offering more complicated backgrounds.<br />
@@ -78,7 +82,7 @@ export const CommissionInfo = (props) => {
                     If you are interested in a commission, please email me with the below information (or submit this through the online form).
                     The number of projects I take on will vary, I will email you with confirmation if I am available to take on the project.
                 </p>
-                <ul className={classes.templateul}>
+                <ul>
                     <li>Contact email address for updates and for the invoices</li>
                     <li>Your name and the name of your character(s)</li>
                     <li>Commission type</li>
@@ -91,6 +95,13 @@ export const CommissionInfo = (props) => {
                     Once completed, I will send a low resolution JPEG of the final piece and if you are happy I will send the final invoice for the remaining amount.
                     When the payment has been recieved I will send the high resolution JPEG.
                 </p>
+                <h2>Pinup / NSFW varients</h2>
+                <ul>
+                    <li>Pinup / NSFW varients are available for the portrait and half body commission options</li>
+                    <li>These can either be nude or underwear/lingerie. However if you choose the nude version I will also include a lingerie version (this will be included within the price at no extra cost)</li>
+                    <li>Please be aware that this is a pinup option, so it will not be explicit NSFW</li>
+                    <li>I will not be accepting explicit NSFW commissions</li>
+                </ul>
                 <h2>Terms and conditions</h2>
                 <h3>Copyright & Ownership</h3>
                 <ul>
@@ -104,15 +115,11 @@ export const CommissionInfo = (props) => {
                 <ul>
                     <li>
                         Any major revisions must be agreed before the sketch is approved, after this stage any major adjustments will be charged.
-                        Minor changes throughout the process are free
+                        You may request up to three minor changes throughout the process, after this any minor changes may be charged.
                     </li>
                     <li>Payment must be made through Paypal once I send you the invoices</li>
                     <li>I have the right to decline a commission request</li>
                     <li>If for any reason I cannot complete your project, you will receive a refund for the full cost through Paypal</li>
-                </ul>
-                <h3>Additional information</h3>
-                <ul>
-                    <li>I accept NSFW commissions - nudity and pinups only</li>
                 </ul>
             </div>
         </>

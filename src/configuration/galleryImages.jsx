@@ -1,5 +1,65 @@
 export const galleryImages = [
     {
+        title: 'Narni',
+        desc: '',
+        url: '/helen-aimee-narni.jpg',
+        keywords: ['all', 'warcraft', 'fantasy', 'gaming']
+    },
+    {
+        title: 'Poppy',
+        desc: '',
+        url: '/helen-aimee-poppy.jpg',
+        keywords: ['all']
+    },
+    {
+        title: 'Ellyra',
+        desc: '',
+        url: '/helen-aimee-ellyra.jpg',
+        keywords: ['all', 'fantasy']
+    },
+    {
+        title: 'Justice',
+        desc: '',
+        url: '/helen-aimee-justicefinal1.jpg',
+        keywords: ['all', 'fantasy', 'gaming']
+    },
+    {
+        title: 'Whitemane',
+        desc: '',
+        url: '/helen-aimee-whitemane.jpg',
+        keywords: ['all', 'warcraft', 'fantasy', 'gaming']
+    },
+    {
+        title: 'Cecilia',
+        desc: '',
+        url: '/helen-aimee-cecilia.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Strawberry',
+        desc: '',
+        url: '/helen-aimee-strawberry.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Darktide',
+        desc: '',
+        url: '/helen-aimee-darktide.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Demon girl',
+        desc: '',
+        url: '/helen-aimee-demon-girl.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Saethyra portrait',
+        desc: '',
+        url: '/helen-aimee-sae.jpg',
+        keywords: ['all', 'warcraft', 'gaming', 'fantasy']
+    },
+    {
         title: 'Akleja',
         desc: '',
         url: '/helen-aimee-akleja.jpg',

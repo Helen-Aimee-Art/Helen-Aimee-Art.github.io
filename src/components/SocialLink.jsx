@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
@@ -16,28 +15,26 @@ const useStyles = createUseStyles(theme => ({
         justifyContent: 'center',
         borderWidth: '1px',
         borderStyle: 'solid',
-        borderColor: active => active ? theme.colorTertiary : 'inherit',
-        padding: 10,
-        minWidth: 20,
-        minHeight: 20,
+        width: 50,
+        height: 50,
         fontSize: 15,
         margin: 0,
         borderRadius: '50%',
-        color: active => active ? theme.colorTertiary : 'inherit'
+        '&:hover': {
+            color: theme.colorTertiary,
+            borderColor: theme.colorTertiary
+        }
     }
 }))
 
 export const SocialLink = (props) => {
     const theme = useTheme()
-    const [active, setActive] = useState(false)
-    const classes = useStyles(active, { theme })
-
-    const handleHover = () => setActive(!active)
+    const classes = useStyles(theme)
 
     return (
         <div className={classes.container}>
             <a href={props.link} target="_blank" rel="noopener noreferrer" className={classes.a}>
-                <li className={classes.li} onMouseEnter={handleHover} onMouseLeave={handleHover}>
+                <li className={classes.li}>
                     {props.children ? props.children : props.link.charAt(12).toUpperCase()}
                 </li>
             </a>

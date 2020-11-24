@@ -8,7 +8,7 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
-        url: '/new-images-coming-soon.jpg',
+        url: '/helen-aimee-whitemane.jpg',
         type: 'halfbody'
     },
     {

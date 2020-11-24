@@ -18,7 +18,6 @@ const useStyles = createUseStyles(theme => ({
         display: 'block',
         height: isDesktop ? 150 : 75,
         width: isDesktop ? 150 : 75,
-        objectFit: 'cover',
         borderRadius: '50%',
         padding: 10
     }),
@@ -59,7 +58,7 @@ export const About = (props) => {
             <div className={classes.content}>
                 <p>
                     My name is Helen and I am a {myAge} year old Digital Artist living in Plymouth, England with my partner and my pet cat Buttons.
-                    I have been drawing for as long as I remember. My passions are painting fantasy portraits and pet portraits.
+                    I have been drawing for as long as I can remember. My passions are painting fantasy portraits and pet portraits.
                 </p>
                 <p>
                     I did my A levels at art college and I also have a BA (Hons) degree in Game Design. I am now focussing on freelance commissioned work.

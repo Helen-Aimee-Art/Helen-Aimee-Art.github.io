@@ -1,8 +1,6 @@
 import React from 'react'
-import { useState } from 'react'
 import { About } from './About'
 import { CommissionInfo } from './CommissionInfo'
-import { Contact } from './Contact'
 import { Footer } from '../components/Footer'
 import { Gallery } from './Gallery'
 import { Header } from '../components/Header'
@@ -45,12 +43,6 @@ export const Layout = (props) => {
                     <Switch>
                         <Route path="/commissioninfo" render={() => (
                             <CommissionInfo
-                                setCurrentPage={setCurrentPage}
-                                isDesktop={isDesktop}
-                            />
-                        )} />
-                        <Route path="/contact" render={() => (
-                            <Contact
                                 setCurrentPage={setCurrentPage}
                                 isDesktop={isDesktop}
                             />

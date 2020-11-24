@@ -6,8 +6,11 @@ const useStyles = createUseStyles(theme => ({
     container: {
         padding: '0 10px'
     },
-    link: {
+    mainLink: {
         textDecoration: 'none',
+        color: 'inherit'
+    },
+    link: {
         color: 'inherit'
     },
     title: {
@@ -25,7 +28,7 @@ export const Logo = () => {
 
     return (
         <div className={classes.container}>
-            <Link to="/" className={classes.link}>
+            <Link to="/" className={classes.mainLink}>
                 <div className={classes.title}>Helen Aimee Art</div>
             </Link>
             <div className={classes.contact} >

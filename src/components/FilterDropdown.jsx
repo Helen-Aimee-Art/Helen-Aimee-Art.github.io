@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormControl, InputLabel, MenuItem, Select } from '@material-ui/core'
 import { useState } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
@@ -9,12 +10,12 @@ const useStyles = createUseStyles(theme => ({
         marginBottom: 8
     },
     select: {
-        backgroundColor: theme.colorPrimary,
-        color: theme.colorSecondary,
-        border: '1px solid #f2f2f2',
-        borderRadius: 5,
-        padding: 5,
-        fontSize: 'inherit'
+        '&:before': {
+            borderColor: theme.colorSecondary,
+        },
+        '&:after': {
+            borderColor: theme.colorSecondary,
+        }
     }
 }))
 
@@ -26,24 +27,25 @@ export const FilterDropdown = (props) => {
 
     const handleChange = e => {
         setSelected(e.target.value)
-
         props.setFilter(e.target.value)
     }
 
     return (
         <div className={classes.container}>
-            <select
-                id="keywords"
-                className={classes.select}
-                placeholder="Filter Gallery"
-                value={selected}
-                onChange={handleChange}
-            >
-                <option value='' disabled>Filter Gallery</option>
-                {props.keywords.map((keyword, index) => (
-                    <option key={index} value={keyword}>{keyword.charAt(0).toUpperCase() + keyword.slice(1)}</option>
-                ))}
-            </select>
+            <FormControl>
+                <InputLabel id="select-label">Filter Gallery</InputLabel>
+                <Select
+                    labelId="select-label"
+                    value={selected}
+                    onChange={handleChange}
+                    backgroundColor={theme.colorSecondary}
+                    className={classes.select}
+                >
+                    {props.keywords.map((keyword, index) => (
+                        <MenuItem key={index} value={keyword}>{keyword.charAt(0).toUpperCase() + keyword.slice(1)}</MenuItem>
+                    ))}
+                </Select>
+            </FormControl>
         </div>
     )
 }

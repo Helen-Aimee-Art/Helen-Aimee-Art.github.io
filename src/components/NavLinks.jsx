@@ -14,14 +14,26 @@ const useStyles = createUseStyles(theme => ({
     link: {
         textDecoration: 'none',
         color: theme.colorSecondary,
-        marginRight: 20
+        backgroundColor: theme.colorPrimary,
+        border: '1px solid rgba(0,0,0,0)',
+        borderRadius: 5,
+        marginRight: 20,
+        padding: 3,
+        '&:hover': {
+            color: theme.colorTertiary
+        }
     },
     activeLink: {
         textDecoration: 'none',
-        color: theme.colorPrimary,
-        backgroundColor: theme.colorSecondary,
-        borderRadius: 10,
-        marginRight: 20
+        color: theme.colorSecondary,
+        backgroundColor: theme.colorPrimary,
+        border: '1px solid',
+        borderRadius: 5,
+        marginRight: 20,
+        padding: 3,
+        '&:hover': {
+            color: theme.colorTertiary
+        }
     }
 }))
 
@@ -39,11 +51,6 @@ export const NavLinks = (props) => {
             <Link to='/commissioninfo' className={props.currentPage === 'commissioninfo' ? classes.activeLink : classes.link}>
                 <li className={classes.li}>
                     Comission Info
-                </li>
-            </Link>
-            <Link to='/contact' className={props.currentPage === 'contact' ? classes.activeLink : classes.link}>
-                <li className={classes.li}>
-                    Contact
                 </li>
             </Link>
             <Link to='/about' className={props.currentPage === 'about' ? classes.activeLink : classes.link}>

@@ -26,8 +26,8 @@ export const Header = (props) => {
     return (
         <nav className={classes.nav}>
             <Logo />
-            {isDesktop ?
-                (<NavLinks currentPage={props.currentPage} />)
+            {isDesktop
+                ? (<NavLinks currentPage={props.currentPage} />)
                 : (<MobileNavLinks currentPage={props.currentPage} />)}
         </nav>
     )
