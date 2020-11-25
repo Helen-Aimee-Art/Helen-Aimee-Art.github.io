@@ -8,34 +8,35 @@ const useStyles = createUseStyles(theme => ({
         listStyle: 'none',
         position: 'absolute',
         left: 0,
-        top: 80,
+        top: 100,
         backgroundColor: theme.colorPrimary,
         zIndex: 1,
         padding: 0,
         margin: 0,
-        borderRight: `2px solid ${theme.colorPrimary}`,
         width: active => active ? 175 : 0,
-        height: 'calc(100% - 160px)',
+        height: 'calc(100% - 180px)',
         transition: 'width 0.2s ease'
     },
     li: {
         fontSize: 20,
-        padding: '15px 5px',
+        padding: '15px 10px',
         width: 175,
         color: theme.colorSecondary,
         display: active => active ? 'block' : 'none',
         overflow: 'hidden',
-        transition: '0.2s ease'
+        transition: '0.2s ease',
+        borderLeft: '5px solid rgba(0, 0, 0, 0)'
     },
     activeLi: {
         fontSize: 20,
-        padding: '15px 5px',
-        width: 170,
-        color: theme.colorPrimary,
-        backgroundColor: theme.colorSecondary,
+        padding: '15px 10px',
+        width: 175,
+        color: theme.colorSecondary,
         display: active => active ? 'block' : 'none',
         overflow: 'hidden',
-        transition: '0.2s ease'
+        transition: '0.2s ease',
+        borderLeft: '5px solid',
+        borderLeftColor: theme.colorTertiary
     },
     link: {
         textDecoration: 'none',
@@ -58,17 +59,17 @@ export const MobileNavLinks = (props) => {
                 <Link to='/' className={classes.link} onClick={() => setActive(false)}>
                     <li className={props.currentPage === 'gallery' ? classes.activeLi : classes.li}>
                         Gallery
-                            </li>
+                    </li>
                 </Link>
                 <Link to='/commissioninfo' className={classes.link} onClick={() => setActive(false)} >
                     <li className={props.currentPage === 'commissioninfo' ? classes.activeLi : classes.li}>
                         Comission Info
-                            </li>
+                    </li>
                 </Link>
                 <Link to='/about' className={classes.link} onClick={() => setActive(false)} >
                     <li className={props.currentPage === 'about' ? classes.activeLi : classes.li}>
                         About
-                            </li>
+                    </li>
                 </Link>
             </ul>
         </>

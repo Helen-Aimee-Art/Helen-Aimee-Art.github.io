@@ -10,7 +10,9 @@ const useStyles = createUseStyles(theme => ({
         justifyContent: 'center',
         color: theme.colorSecondary,
         backgroundColor: theme.colorPrimary,
-        height: 80
+        height: 80,
+        borderTop: '3px solid',
+        borderTopColor: theme.colorTertiary
     }
 }))
 

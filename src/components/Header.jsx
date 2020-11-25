@@ -8,12 +8,14 @@ const useStyles = createUseStyles(theme => ({
     nav: isDesktop => ({
         display: 'flex',
         flexDirection: isDesktop ? 'row' : 'row-reverse',
-        justifyContent: isDesktop ? 'space-around' : 'space-between',
+        justifyContent: isDesktop ? 'space-around' : 'flex-end',
         alignItems: 'center',
         backgroundColor: theme.colorPrimary,
         color: theme.colorSecondary,
         width: '100%',
-        height: 80
+        height: 100,
+        borderBottom: '3px solid',
+        borderBottomColor: theme.colorTertiary
     })
 }))
 

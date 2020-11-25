@@ -7,9 +7,7 @@ const useStyles = createUseStyles(theme => ({
     },
     a: {
         textDecoration: 'none',
-        color: 'inherit'
-    },
-    li: {
+        color: 'inherit',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -32,11 +30,9 @@ export const SocialLink = (props) => {
     const classes = useStyles(theme)
 
     return (
-        <div className={classes.container}>
+        <div className={classes.container} title={props.title}>
             <a href={props.link} target="_blank" rel="noopener noreferrer" className={classes.a}>
-                <li className={classes.li}>
-                    {props.children ? props.children : props.link.charAt(12).toUpperCase()}
-                </li>
+                {props.children ? props.children : props.link.charAt(12).toUpperCase()}
             </a>
         </div>
     )

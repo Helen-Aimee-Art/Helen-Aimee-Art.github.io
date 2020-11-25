@@ -5,11 +5,8 @@ import { SvgIcon } from '@material-ui/core'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
-    ul: {
-        display: 'flex',
-        listStyle: 'none',
-        margin: 0,
-        padding: 0
+    socials: {
+        display: 'flex'
     },
     icon: {
         width: '100%',
@@ -40,22 +37,22 @@ export const SocialList = (props) => {
     const classes = useStyles(theme)
 
     return (
-        <ul className={classes.ul}>
-            <SocialLink link="https://www.twitter.com/helenaimee1/">
+        <div className={classes.socials}>
+            <SocialLink link="https://www.twitter.com/helenaimee1/" title="Twitter">
                 <Twitter />
             </SocialLink>
-            <SocialLink link="https://www.instagram.com/helen_aimee.art/">
+            <SocialLink link="https://www.instagram.com/helen_aimee.art/" title="Instagram">
                 <Instagram />
             </SocialLink>
-            <SocialLink link="https://www.deviantart.com/missshazira">
+            <SocialLink link="https://www.deviantart.com/missshazira" title="DeviantArt">
                 <DeviantArt />
             </SocialLink>
-            <SocialLink link="https://www.artstation.com/helen_aimee">
+            <SocialLink link="https://www.artstation.com/helen_aimee" title="ArtStation">
                 <ArtStation />
             </SocialLink>
-            <SocialLink link="https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA">
+            <SocialLink link="https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA" title="YouTube">
                 <YouTube />
             </SocialLink>
-        </ul >
+        </div >
     )
 }

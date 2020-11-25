@@ -5,20 +5,19 @@ import { createUseStyles, useTheme } from 'react-jss'
 const useStyles = createUseStyles(theme => ({
     ul: {
         listStyle: 'none',
-        display: 'flex'
+        display: 'flex',
+        alignItems: 'center'
     },
     li: {
         fontSize: 20,
-        padding: '8px',
+        padding: 3,
     },
     link: {
         textDecoration: 'none',
         color: theme.colorSecondary,
         backgroundColor: theme.colorPrimary,
-        border: '1px solid rgba(0,0,0,0)',
-        borderRadius: 5,
+        borderBottom: '2px solid rgba(0,0,0,0)',
         marginRight: 20,
-        padding: 3,
         '&:hover': {
             color: theme.colorTertiary
         }
@@ -27,10 +26,9 @@ const useStyles = createUseStyles(theme => ({
         textDecoration: 'none',
         color: theme.colorSecondary,
         backgroundColor: theme.colorPrimary,
-        border: '1px solid',
-        borderRadius: 5,
+        borderBottom: '2px solid',
+        borderBottomColor: theme.colorTertiary,
         marginRight: 20,
-        padding: 3,
         '&:hover': {
             color: theme.colorTertiary
         }

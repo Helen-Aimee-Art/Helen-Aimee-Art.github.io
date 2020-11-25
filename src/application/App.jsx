@@ -4,9 +4,9 @@ import { ThemeProvider } from 'react-jss'
 import { useEffect, useState } from 'react'
 
 const theme = {
-    colorPrimary: '#1F2833',
-    colorSecondary: '#f2f2f2',
-    colorTertiary: '#D21F3C'
+    colorPrimary: '#2D3032',
+    colorSecondary: '#F6F6F6',
+    colorTertiary: '#CCC0EF'
 }
 
 export const App = () => {

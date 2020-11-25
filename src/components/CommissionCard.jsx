@@ -17,7 +17,7 @@ const useStyle = createUseStyles(theme => ({
     },
     carousel: {
         padding: '0 25px',
-        maxWidth: isDesktop => isDesktop ? 650 : 200
+        maxWidth: 650
     }
 }))
 

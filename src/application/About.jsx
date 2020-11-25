@@ -1,5 +1,4 @@
 import React from 'react'
-import { SocialList } from '../components/SocialList'
 import { useEffect } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
@@ -19,7 +18,9 @@ const useStyles = createUseStyles(theme => ({
         height: isDesktop ? 150 : 75,
         width: isDesktop ? 150 : 75,
         borderRadius: '50%',
-        padding: 10
+        margin: 10,
+        border: '5px solid',
+        borderColor: theme.colorTertiary
     }),
     ul: {
         display: 'flex',
@@ -70,11 +71,7 @@ export const About = (props) => {
                     <img src="/helen.jpg" alt="Helen" className={classes.image} />
                     <img src="/buttons.jpg" alt="Buttons" className={classes.image} />
                 </div>
-                <p>
-                    You can find me on the below Social Media platforms:
-                </p>
             </div>
-            <SocialList />
         </>
     )
 }

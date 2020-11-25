@@ -99,10 +99,12 @@ export const CommissionInfo = (props) => {
                 <ul>
                     <li>Pinup / NSFW varients are available for the portrait and half body commission options</li>
                     <li>These can either be nude or underwear/lingerie. However if you choose the nude version I will also include a lingerie version (this will be included within the price at no extra cost)</li>
+                    <li>All pinup / NSFW characters must be at least 18 years old</li>
                     <li>Please be aware that this is a pinup option, so it will not be explicit NSFW</li>
                     <li>I will not be accepting explicit NSFW commissions</li>
                 </ul>
                 <h2>Terms and conditions</h2>
+                <p>I have the right to decline a commission request.</p>
                 <h3>Copyright & Ownership</h3>
                 <ul>
                     <li>I will retain copyright to the artwork. You are not permitted to change or resell the artwork</li>
@@ -118,7 +120,6 @@ export const CommissionInfo = (props) => {
                         You may request up to three minor changes throughout the process, after this any minor changes may be charged.
                     </li>
                     <li>Payment must be made through Paypal once I send you the invoices</li>
-                    <li>I have the right to decline a commission request</li>
                     <li>If for any reason I cannot complete your project, you will receive a refund for the full cost through Paypal</li>
                 </ul>
             </div>

@@ -20,9 +20,8 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const FilterDropdown = (props) => {
-    const align = props.align
     const theme = useTheme()
-    const classes = useStyles(align, { theme })
+    const classes = useStyles(theme)
     const [selected, setSelected] = useState('')
 
     const handleChange = e => {
