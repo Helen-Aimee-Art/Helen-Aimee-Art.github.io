@@ -56,7 +56,13 @@ export const CommissionInfo = (props) => {
                     isDesktop={isDesktop}
                 />
             </Drawer>
-            <Drawer title="Pinup / NSFW" defaultOpen={false} locked={true}>
+            <Drawer
+                title="Pinup / NSFW"
+                defaultOpen={false}
+                locked={true}
+                lockedTitle="NSFW content"
+                lockedMessage="By clicking OK you are confirming that you are 18 years or older."
+            >
                 <CommissionCard
                     details={
                         <>

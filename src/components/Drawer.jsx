@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { Button } from '../components/Button'
+import { Dialog } from '../components/Dialog'
+import { Modal } from '../components/Modal'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
@@ -48,34 +51,54 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const Drawer = (props) => {
-    const { title, children, defaultOpen, locked } = props
+    const { title, children, defaultOpen, locked, lockedTitle, lockedMessage } = props
     const [open, setOpen] = useState(defaultOpen || false)
+    const [openModal, setOpenModal] = useState(false)
     const theme = useTheme()
     const classes = useStyles({ open, theme })
 
-    const canOpen = sessionStorage.getItem('over18')
-
-    const handleOpen = () => {
+    const handleExpand = () => {
         if (locked) {
-            if (canOpen) {
+            if (sessionStorage.getItem('over18')) {
                 setOpen(!open)
             } else {
-                
+                setOpenModal(true)
             }
         } else {
             setOpen(!open)
         }
     }
 
+    const handleButtonClick = () => {
+        sessionStorage.setItem('over18', 'true')
+        setOpenModal(false)
+        setOpen(true)
+    }
+
     return (
-        <div className={classes.root}>
-            <div className={classes.bar} onClick={handleOpen}>
-                <h3>{title}</h3>
-                <img className={classes.arrow} src="/down-arrow.png" alt="down arrow" />
+        <>
+            {locked && <Modal
+                open={openModal}
+                closeModal={() => setOpenModal(false)}
+            >
+                <Dialog
+                    title={lockedTitle}
+                    actions={
+                        <Button label="OK" click={handleButtonClick} />
+                    }
+                >
+                    <p>{lockedMessage}</p>
+                </Dialog>
+            </Modal>}
+            <div className={classes.root}>
+                <div className={classes.bar} onClick={handleExpand}>
+                    <h3>{title}</h3>
+                    <img className={classes.arrow} src="/down-arrow.png" alt="down arrow" />
+                </div>
+                <div className={classes.content}>
+                    {children}
+                </div>
             </div>
-            <div className={classes.content}>
-                {children}
-            </div>
-        </div>
+        </>
     )
 }

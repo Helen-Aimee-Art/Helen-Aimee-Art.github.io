@@ -9,7 +9,7 @@ import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
     app: {
-        fontFamily: 'Arial, Helvetica, sans-serif',
+        fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',

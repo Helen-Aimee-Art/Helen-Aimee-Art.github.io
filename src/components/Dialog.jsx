@@ -2,17 +2,6 @@ import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
-    clickAway: props => ({
-        position: 'absolute',
-        width: '100vw',
-        height: '100vh',
-        alignItems: props.align,
-        justifyContent: 'center',
-        top: 0,
-        left: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        display: props.open ? 'flex' : 'none'
-    }),
     title: {
         margin: 0,
         marginBottom: 5
@@ -29,25 +18,24 @@ const useStyles = createUseStyles(theme => ({
         padding: 20,
     },
     actions: {
-
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'flex-end'
     }
 }))
 
 export const Dialog = (props) => {
     const theme = useTheme()
-    const classes = useStyles({ ...props, theme })
+    const classes = useStyles(theme)
 
     return (
-        <div
-            className={classes.clickAway}
-            onClick={props.onClose}
-        >
-            <div className={classes.dialog}>
-                {props.title && <h3 className={classes.title}>{props.title}</h3>}
-                <p className={classes.content}>{props.content}</p>
-                <div className={classes.actions}>
-                    {props.actions}
-                </div>
+        <div className={classes.dialog}>
+            {props.title && <h3 className={classes.title}>{props.title}</h3>}
+            <div className={classes.content}>
+                {props.children}
+            </div>
+            <div className={classes.actions}>
+                {props.actions}
             </div>
         </div>
     )

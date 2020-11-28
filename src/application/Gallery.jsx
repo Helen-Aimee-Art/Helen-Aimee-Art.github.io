@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { Grid } from '../components/Grid'
 import { GalleryItem } from '../components/GalleryItem'
+import { GalleryViewer } from '../components/GalleryViewer'
 import { Modal } from '../components/Modal'
 import { FilterDropdown } from '../components/FilterDropdown'
 import { galleryImages } from '../configuration/galleryImages'
@@ -50,14 +51,19 @@ export const Gallery = (props) => {
             </Grid>
             <Modal
                 open={open}
-                currentImageId={currentImage}
-                currentImage={filteredImages[currentImage]}
-                numImages={filteredImages.length - 1}
                 closeModal={closeModal}
-                incrementModalImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))}
-                decrementModalImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
                 isDesktop={isDesktop}
-            />
-        </div>
+            >
+                <GalleryViewer
+                    currentImageId={currentImage}
+                    currentImage={filteredImages[currentImage]}
+                    numImages={filteredImages.length - 1}
+                    incrementImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))}
+                    decrementImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
+                    isDesktop={isDesktop}
+                    closeModal={closeModal}
+                />
+            </Modal>
+        </div >
     )
 }
