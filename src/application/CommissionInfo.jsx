@@ -34,7 +34,6 @@ export const CommissionInfo = (props) => {
                             <ul className={classes.cardul}>
                                 <li className={classes.li}>Head to bust</li>
                                 <li className={classes.li}>Head to waist</li>
-                                <li className={classes.li}>Head to waist (pinup/NSFW)</li>
                             </ul>
                         </>
                     }
@@ -50,7 +49,6 @@ export const CommissionInfo = (props) => {
                             <p className={classes.cardul}>Options:</p>
                             <ul className={classes.cardul}>
                                 <li className={classes.li}>Head to thigh (just above the knee)</li>
-                                <li className={classes.li}>Head to thigh (pinup/NSFW)</li>
                             </ul>
                         </>
                     }
@@ -58,19 +56,22 @@ export const CommissionInfo = (props) => {
                     isDesktop={isDesktop}
                 />
             </Drawer>
-            {/* <Drawer title="Pet" defaultOpen={isDesktop}>
+            <Drawer title="Pinup / NSFW" defaultOpen={false} locked={true}>
                 <CommissionCard
                     details={
-                        <ul className={classes.cardul}>
-                            <li className={classes.li}>Details go here</li>
-                            <li className={classes.li}>Some more details go here...</li>
-                            <li className={classes.li}>Price: Depends on complexity</li>
-                        </ul>
+                        <>
+                            <p className={classes.cardul}>£94 - £140*</p>
+                            <p className={classes.cardul}>Options:</p>
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>Head to waist</li>
+                                <li className={classes.li}>Head to thigh</li>
+                            </ul>
+                        </>
                     }
-                    images={commissionImages.filter(image => image.type === 'pet')}
+                    images={commissionImages.filter(image => image.type === 'nsfw')}
                     isDesktop={isDesktop}
                 />
-            </Drawer> */}
+            </Drawer>
             <div>
                 <p style={{ textAlign: 'left', marginTop: 0 }}>
                     *Simple backgrounds are included in the price, at this time I am not offering more complicated backgrounds.<br />
@@ -79,7 +80,7 @@ export const CommissionInfo = (props) => {
                 </p>
                 <h2>Process</h2>
                 <p>
-                    If you are interested in a commission, please email me with the below information (or submit this through the online form).
+                    If you are interested in a commission, please email me with the information below.
                     The number of projects I take on will vary, I will email you with confirmation if I am available to take on the project.
                 </p>
                 <ul>

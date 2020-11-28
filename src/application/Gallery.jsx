@@ -4,20 +4,13 @@ import { Grid } from '../components/Grid'
 import { GalleryItem } from '../components/GalleryItem'
 import { Modal } from '../components/Modal'
 import { FilterDropdown } from '../components/FilterDropdown'
-import { createUseStyles, useTheme } from 'react-jss'
 import { galleryImages } from '../configuration/galleryImages'
 
 const arrays = galleryImages.map(image => image.keywords)
 const keywords = [].concat(...arrays).filter((value, index, array) => array.indexOf(value) === index)
 
-const useStyles = createUseStyles(theme => ({
-
-}))
-
 export const Gallery = (props) => {
     const { isDesktop, setCurrentPage } = props
-    const theme = useTheme()
-    const classes = useStyles(theme)
     const [currentImage, setCurrentImage] = useState(null)
     const [open, setOpen] = useState(false)
     const [filter, setFilter] = useState('all')

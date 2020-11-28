@@ -48,14 +48,28 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const Drawer = (props) => {
-    const { title, children, defaultOpen } = props
+    const { title, children, defaultOpen, locked } = props
     const [open, setOpen] = useState(defaultOpen || false)
     const theme = useTheme()
     const classes = useStyles({ open, theme })
 
+    const canOpen = sessionStorage.getItem('over18')
+
+    const handleOpen = () => {
+        if (locked) {
+            if (canOpen) {
+                setOpen(!open)
+            } else {
+                
+            }
+        } else {
+            setOpen(!open)
+        }
+    }
+
     return (
         <div className={classes.root}>
-            <div className={classes.bar} onClick={() => setOpen(!open)}>
+            <div className={classes.bar} onClick={handleOpen}>
                 <h3>{title}</h3>
                 <img className={classes.arrow} src="/down-arrow.png" alt="down arrow" />
             </div>

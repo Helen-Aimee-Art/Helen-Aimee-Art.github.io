@@ -4,7 +4,7 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-saethyra-both.jpg',
+        url: '/helen-aimee-saethyra.jpg',
         type: 'halfbody'
     },
     {
@@ -32,15 +32,15 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/helen-aimee-blue-and-quincy-c.jpg',
-        type: 'pet'
+        url: '/helen-aimee-saethyra-nsfw.jpg',
+        type: 'nsfw'
     },
     {
-        url: '/helen-aimee-willow.jpg',
-        type: 'pet'
+        url: '/new-images-coming-soon.jpg',
+        type: 'nsfw'
     },
     {
-        url: '/helen-aimee-buttons.jpg',
-        type: 'pet'
+        url: '/new-images-coming-soon.jpg',
+        type: 'nsfw'
     },
 ]
