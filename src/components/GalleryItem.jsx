@@ -4,12 +4,18 @@ import { useState } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
-    container: isDesktop => ({
+    container: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
         position: 'relative',
-        width: isDesktop ? 218 : 109,
-        height: isDesktop ? 300 : 150,
-        cursor: 'pointer'
-    }),
+        cursor: 'pointer',
+        border: '2px solid rgba(0,0,0,0)',
+        transition: 'border-color 0.25s',
+        '&:hover': {
+            borderColor: theme.colorTertiary
+        }
+    },
     img: {
         width: '100%',
         height: '100%',

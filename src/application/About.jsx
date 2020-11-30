@@ -20,7 +20,9 @@ const useStyles = createUseStyles(theme => ({
         borderRadius: '50%',
         margin: 10,
         border: '5px solid',
-        borderColor: theme.colorTertiary
+        borderColor: theme.colorTertiary,
+        objectFit: 'cover',
+        objectPosition: '100% 0%'
     }),
     ul: {
         display: 'flex',

@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({

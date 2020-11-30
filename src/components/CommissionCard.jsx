@@ -1,25 +1,55 @@
 import React from 'react'
-import { Carousel } from './Carousel'
+import Carousel from 'react-multi-carousel'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyle = createUseStyles(theme => ({
-    title: {
-        alignSelf: 'center'
-    },
-    content: isDesktop => ({
+    container: isDesktop => ({
         display: 'flex',
-        justifyContent: 'space-between',
         flexDirection: isDesktop ? 'row' : 'column'
     }),
     details: {
-        maxWidth: 485,
-        alignSelf: 'flex-start'
+        flex: 1
     },
     carousel: {
-        padding: '0 25px',
-        maxWidth: 650
+        width: '100%',
+        flex: 2
+    },
+    slide: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    imageContainer: {
+        margin: '0 20px',
+        width: '100%',
+        height: '100%'
+    },
+    image: {
+        width: '100%',
+        height: '100%',
+        userDrag: 'none',
+        objectFir: 'cover'
     }
 }))
+
+const responsive = {
+    superLargeDesktop: {
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1224 },
+        items: 3
+    },
+    tablet: {
+        breakpoint: { max: 1224, min: 664 },
+        items: 2
+    },
+    mobile: {
+        breakpoint: { max: 664, min: 0 },
+        items: 1
+    }
+}
 
 export const CommissionCard = (props) => {
     const { title, details, images, isDesktop } = props
@@ -27,16 +57,24 @@ export const CommissionCard = (props) => {
     const classes = useStyle(isDesktop, { theme })
 
     return (
-        <div className={classes.content}>
+        <div className={classes.container}>
             <div className={classes.details}>
                 {title && <h2 className={classes.title}>{title}</h2>}
                 {details}
             </div>
-            <div className={classes.carousel}>
-                {images.length > 0 && (
-                    <Carousel images={images} isDesktop={props.isDesktop} />
-                )}
-            </div>
+            <Carousel
+                responsive={responsive}
+                infinite={true}
+                draggable={true}
+                itemClass={classes.slide}
+                containerClass={classes.carousel}
+            >
+                {images.length && images.map((image, index) => (
+                    <div className={classes.imageContainer}>
+                        <img className={classes.image} key={index} src={image.url} alt="" />
+                    </div>
+                ))}
+            </Carousel>
         </div>
     )
 }

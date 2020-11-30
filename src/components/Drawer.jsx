@@ -36,7 +36,7 @@ const useStyles = createUseStyles(theme => ({
         padding: `${open ? 25 : 0}px 25px`,
         backgroundColor: theme.colorPrimary,
         color: theme.colorSecondary,
-        maxHeight: open ? 700 : 0,
+        maxHeight: open ? 1200 : 0,
         transition: 'max-height 0.15s, padding 0.15s',
         overflow: 'hidden',
         boxSizing: 'border-box',
