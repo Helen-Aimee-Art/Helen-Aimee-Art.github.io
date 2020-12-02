@@ -7,8 +7,9 @@ import { createUseStyles, useTheme } from 'react-jss'
 const useStyles = createUseStyles(theme => ({
     nav: isDesktop => ({
         display: 'flex',
-        flexDirection: isDesktop ? 'row' : 'row-reverse',
-        justifyContent: isDesktop ? 'space-around' : 'flex-end',
+        // flexDirection: isDesktop ? 'row' : 'row-reverse',
+        flexDirection: 'row',
+        justifyContent: isDesktop ? 'space-around' : 'space-between',
         alignItems: 'center',
         backgroundColor: theme.colorPrimary,
         color: theme.colorSecondary,

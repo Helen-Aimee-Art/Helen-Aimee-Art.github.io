@@ -9,21 +9,21 @@ const useStyles = createUseStyles(theme => ({
     },
     images: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: isDesktop => isDesktop ? 'row' : 'column',
         alignItems: 'center',
         justifyContent: 'center'
     },
-    image: isDesktop => ({
+    image: {
         display: 'block',
-        height: isDesktop ? 150 : 75,
-        width: isDesktop ? 150 : 75,
+        height: 200,
+        minWidth: 200,
         borderRadius: '50%',
-        margin: 10,
+        margin: 20,
         border: '5px solid',
         borderColor: theme.colorTertiary,
         objectFit: 'cover',
         objectPosition: '100% 0%'
-    }),
+    },
     ul: {
         display: 'flex',
         listStyle: 'none',

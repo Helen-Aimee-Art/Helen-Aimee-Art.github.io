@@ -7,10 +7,19 @@ import { commissionImages } from '../configuration/commissionImages'
 
 const useStyles = createUseStyles(theme => ({
     cardul: {
-        fontSize: 18
+        fontSize: 18,
+        listStyleType: 'none'
     },
     li: {
-        marginBottom: 10
+        marginBottom: 10,
+        '&:before': {
+            content: "'♡'",
+            color: theme.colorTertiary,
+            fontWeight: 'bold',
+            display: 'inline-block',
+            width: '1em',
+            marginLeft: '-1em',
+        }
     }
 }))
 
@@ -35,6 +44,11 @@ export const CommissionInfo = (props) => {
                                 <li className={classes.li}>Head to bust</li>
                                 <li className={classes.li}>Head to waist</li>
                             </ul>
+                            <p className={classes.cardul}>Details:</p>
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>2250px x 3300px</li>
+                                <li className={classes.li}>300dpi resolution</li>
+                            </ul>
                         </>
                     }
                     images={commissionImages.filter(image => image.type === 'bust')}
@@ -50,9 +64,34 @@ export const CommissionInfo = (props) => {
                             <ul className={classes.cardul}>
                                 <li className={classes.li}>Head to thigh (just above the knee)</li>
                             </ul>
+                            <p className={classes.cardul}>Details:</p>
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>3400px x 4900px</li>
+                                <li className={classes.li}>300dpi resolution</li>
+                            </ul>
                         </>
                     }
                     images={commissionImages.filter(image => image.type === 'halfbody')}
+                    isDesktop={isDesktop}
+                />
+            </Drawer>
+            <Drawer title="Sketch" defaultOpen={isDesktop}>
+                <CommissionCard
+                    details={
+                        <>
+                            <p className={classes.cardul}>£30*</p>
+                            <p className={classes.cardul}>Options:</p>
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>Head to bust</li>
+                            </ul>
+                            <p className={classes.cardul}>Details:</p>
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>3300px x 2550px</li>
+                                <li className={classes.li}>300dpi resolution</li>
+                            </ul>
+                        </>
+                    }
+                    images={commissionImages.filter(image => image.type === 'sketch')}
                     isDesktop={isDesktop}
                 />
             </Drawer>
@@ -71,6 +110,12 @@ export const CommissionInfo = (props) => {
                             <ul className={classes.cardul}>
                                 <li className={classes.li}>Head to waist</li>
                                 <li className={classes.li}>Head to thigh</li>
+                            </ul>
+                            <p className={classes.cardul}>Details:</p>
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>2250px x 3300px (Head to waist)</li>
+                                <li className={classes.li}>3400px x 4900px (Head to thigh)</li>
+                                <li className={classes.li}>300dpi resolution</li>
                             </ul>
                         </>
                     }

@@ -7,7 +7,7 @@ const useStyles = createUseStyles(theme => ({
     ul: {
         listStyle: 'none',
         position: 'absolute',
-        left: 0,
+        right: 0,
         top: 100,
         backgroundColor: theme.colorPrimary,
         zIndex: 1,
@@ -15,12 +15,12 @@ const useStyles = createUseStyles(theme => ({
         margin: 0,
         width: active => active ? 175 : 0,
         height: 'calc(100% - 180px)',
-        transition: 'width 0.2s ease'
+        transition: 'width 0.25s ease'
     },
     li: {
         fontSize: 20,
         padding: '15px 10px',
-        width: 175,
+        width: 150,
         color: theme.colorSecondary,
         display: active => active ? 'block' : 'none',
         overflow: 'hidden',
@@ -30,7 +30,7 @@ const useStyles = createUseStyles(theme => ({
     activeLi: {
         fontSize: 20,
         padding: '15px 10px',
-        width: 175,
+        width: 150,
         color: theme.colorSecondary,
         display: active => active ? 'block' : 'none',
         overflow: 'hidden',
@@ -43,7 +43,7 @@ const useStyles = createUseStyles(theme => ({
     },
     burger: {
         width: 32,
-        marginLeft: 10
+        marginRight: 10
     }
 }))
 

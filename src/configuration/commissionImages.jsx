@@ -32,6 +32,18 @@ export const commissionImages = [
         type: 'bust'
     },
     {
+        url: '/helen-aimee-strawberry.jpg',
+        type: 'sketch'
+    },
+    {
+        url: '/helen-aimee-darktide.jpg',
+        type: 'sketch'
+    },
+    {
+        url: '/helen-aimee-cecilia.jpg',
+        type: 'sketch'
+    },
+    {
         url: '/helen-aimee-saethyra-nsfw.jpg',
         type: 'nsfw'
     },
