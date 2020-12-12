@@ -7,40 +7,26 @@ const useStyles = createUseStyles(theme => ({
         textAlign: 'left',
         width: isDesktop => isDesktop ? '75%' : '100%'
     },
-    images: {
+    list: {
+        listStyle: 'none'
+    },
+    listItem: {
+        padding: 0,
+        margin: '10px 0',
         display: 'flex',
-        flexDirection: isDesktop => isDesktop ? 'row' : 'column',
-        alignItems: 'center',
-        justifyContent: 'center'
+        alignItems: 'center'
     },
     image: {
-        display: 'block',
-        height: 200,
-        minWidth: 200,
-        borderRadius: '50%',
-        margin: 20,
-        border: '5px solid',
-        borderColor: theme.colorTertiary,
-        objectFit: 'cover',
-        objectPosition: '100% 0%'
+        width: 50,
+        height: 'auto',
+        marginRight: 10
     },
-    ul: {
-        display: 'flex',
-        listStyle: 'none',
-        margin: 0,
-        padding: 0
-    },
-    li: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 10,
-        margin: 0
-    },
-    a: {
-        textDecoration: 'none',
-        color: 'inherit'
-    },
+    clipImage: {
+        width: 40,
+        height: 'auto',
+        marginRight: 10,
+        padding: 5
+    }
 }))
 
 export const About = (props) => {
@@ -53,14 +39,18 @@ export const About = (props) => {
     }, [setCurrentPage])
 
     const now = new Date()
-    const dateBorn = 1993
-    const myAge = now.getFullYear() - dateBorn
+    const dateBorn = new Date(1993, 2, 9)
+    let years = now.getFullYear() - dateBorn.getFullYear()
+    if (now.getMonth() < dateBorn.getMonth() || now.getMonth() === dateBorn.getMonth() && now.getDate() < dateBorn.getDate()) {
+        years--;
+    }
 
     return (
         <>
             <div className={classes.content}>
+                <h2>About me</h2>
                 <p>
-                    My name is Helen and I am a {myAge} year old Digital Artist living in Plymouth, England with my partner and my pet cat Buttons.
+                    My name is Helen and I am a {years} year old Digital Artist living in Plymouth, England with my partner and my pet cat Buttons.
                     I have been drawing for as long as I can remember. My passions are painting fantasy portraits and pet portraits.
                 </p>
                 <p>
@@ -69,10 +59,25 @@ export const About = (props) => {
                 <p>
                     Thank you for your interest in my art, I hope you have a great day!
                 </p>
-                <div className={classes.images}>
-                    <img src="/helen.jpg" alt="Helen" className={classes.image} />
-                    <img src="/buttons.jpg" alt="Buttons" className={classes.image} />
-                </div>
+                <h2>Tools and Proficiencies</h2>
+                <ul className={classes.list}>
+                    <li className={classes.listItem}>
+                        <img src="/photoshop.png" alt="Photoshop icon" className={classes.image} />
+                        <span>Adobe Photoshop</span>
+                    </li>
+                    <li className={classes.listItem}>
+                        <img src="/clipstudio.png" alt="Clip Studio Paint Pro icon" className={classes.clipImage} />
+                        <span>Clip Studio Paint Pro</span>
+                    </li>
+                    <li className={classes.listItem}>
+                        <img src="/wacom.png" alt="Wacom icon" className={classes.image} />
+                        <span>Wacom Cintiq 27QHD</span>
+                    </li>
+                    <li className={classes.listItem}>
+                        <img src="/microsoft.png" alt="Microsoft icon" className={classes.image} />
+                        <span>Microsoft Surface Pro 7</span>
+                    </li>
+                </ul>
             </div>
         </>
     )

@@ -5,14 +5,23 @@ import { createUseStyles, useTheme } from 'react-jss'
 const useStyles = createUseStyles(theme => ({
     footer: {
         display: 'flex',
+        flexDirection: 'column',
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center',
         color: theme.colorSecondary,
         backgroundColor: theme.colorPrimary,
-        height: 80,
+        height: 100,
         borderTop: '3px solid',
-        borderTopColor: theme.colorTertiary
+        borderTopColor: theme.colorTertiary,
+    },
+    copyright: {
+        fontSize: 12,
+        fontWeight: 'bold',
+        '&>p': {
+            margin: 0,
+            paddingTop: 15
+        }
     }
 }))
 
@@ -22,6 +31,9 @@ export const Footer = (props) => {
     return (
         <footer className={classes.footer}>
             <SocialList />
+            <div className={classes.copyright}>
+                <p>{`© ${new Date().getFullYear()} Helen Aimee Art. All rights reserved.`}</p>
+            </div>
         </footer>
     )
 }

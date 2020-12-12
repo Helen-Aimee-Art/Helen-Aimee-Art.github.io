@@ -157,6 +157,24 @@ export const CommissionInfo = (props) => {
                 </ul>
                 <h2>Terms and conditions</h2>
                 <p>I have the right to decline a commission request.</p>
+                <p>I will draw:</p>
+                <ul>
+                    <li>Personal, original characters</li>
+                    <li>Original characters based in games such as World of Warcraft, ESO, etc.</li>
+                    <li>Existing lore characters</li>
+                    <li>Nudity and sexual themes</li>
+                </ul>
+                <p>I will not draw:</p>
+                <ul>
+                    <li>Explicit content</li>
+                    <li>Anything that portrays illegal activity</li>
+                    <li>Characters under the age of 18</li>
+                    <li>Furries</li>
+                    <li>Excessive violence or gore</li>
+                    <li>Fetishes</li>
+                    <li>Extreme body proportions</li>
+                    <li>Standalone evironments</li>
+                </ul>
                 <h3>Copyright & Ownership</h3>
                 <ul>
                     <li>I will retain copyright to the artwork. You are not permitted to change or resell the artwork</li>
@@ -169,7 +187,7 @@ export const CommissionInfo = (props) => {
                 <ul>
                     <li>
                         Any major revisions must be agreed before the sketch is approved, after this stage any major adjustments will be charged.
-                        You may request up to three minor changes throughout the process, after this any minor changes may be charged.
+                        You may request up to three minor changes throughout the process, after this any minor changes may be charged
                     </li>
                     <li>Payment must be made through Paypal once I send you the invoices</li>
                     <li>If for any reason I cannot complete your project, you will receive a refund for the full cost through Paypal</li>

@@ -14,7 +14,7 @@ const useStyles = createUseStyles(theme => ({
         padding: 0,
         margin: 0,
         width: active => active ? 175 : 0,
-        height: 'calc(100% - 180px)',
+        height: 'calc(100% - 200px)',
         transition: 'width 0.25s ease'
     },
     li: {

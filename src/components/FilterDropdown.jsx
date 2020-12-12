@@ -39,6 +39,17 @@ export const FilterDropdown = (props) => {
                     onChange={handleChange}
                     backgroundColor={theme.colorSecondary}
                     className={classes.select}
+                    MenuProps={{
+                        anchorOrigin: {
+                            vertical: "bottom",
+                            horizontal: "left"
+                        },
+                        transformOrigin: {
+                            vertical: "top",
+                            horizontal: "left"
+                        },
+                        getContentAnchorEl: null
+                    }}
                 >
                     {props.keywords.map((keyword, index) => (
                         <MenuItem key={index} value={keyword}>{keyword.charAt(0).toUpperCase() + keyword.slice(1)}</MenuItem>
