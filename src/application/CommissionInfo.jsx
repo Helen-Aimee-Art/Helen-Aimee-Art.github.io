@@ -166,6 +166,7 @@ export const CommissionInfo = (props) => {
                 </ul>
                 <p>I will not draw:</p>
                 <ul>
+                    <li>Real people</li>
                     <li>Explicit content</li>
                     <li>Anything that portrays illegal activity</li>
                     <li>Characters under the age of 18</li>
