@@ -58,8 +58,14 @@ export const Gallery = (props) => {
                     currentImageId={currentImage}
                     currentImage={filteredImages[currentImage]}
                     numImages={filteredImages.length - 1}
-                    incrementImage={() => setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))}
-                    decrementImage={() => setCurrentImage(prevImage => Math.max(prevImage - 1, 0))}
+                    incrementImage={(e) => {
+                        e.preventDefault()
+                        setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))
+                    }}
+                    decrementImage={(e) => {
+                        e.preventDefault()
+                        setCurrentImage(prevImage => Math.max(prevImage - 1, 0))
+                    }}
                     isDesktop={isDesktop}
                     closeModal={closeModal}
                 />

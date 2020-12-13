@@ -4,7 +4,7 @@ import { CommissionInfo } from './CommissionInfo'
 import { Footer } from '../components/Footer'
 import { Gallery } from './Gallery'
 import { Header } from '../components/Header'
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
+import { Switch, Route, HashRouter as Router } from 'react-router-dom'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({

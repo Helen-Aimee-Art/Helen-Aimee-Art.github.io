@@ -21,7 +21,7 @@ export const galleryImages = [
         title: 'Justice',
         desc: '',
         url: '/helen-aimee-justicefinal1.jpg',
-        keywords: ['all', 'fantasy', 'gaming']
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Whitemane',

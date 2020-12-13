@@ -73,18 +73,18 @@ export const GalleryViewer = (props) => {
                 style={{ left: 5, opacity: leftActive ? 1 : 0.25, cursor: leftActive ? 'pointer' : 'default' }}
                 src="/arrow-left.png"
                 alt="left arrow"
-                onClick={currentImageId > 0 && decrementImage}
-                onMouseEnter={currentImageId > 0 && (() => setLeftActive(!leftActive))}
-                onMouseLeave={currentImageId > 0 && (() => setLeftActive(!leftActive))}
+                onClick={currentImageId > 0 ? decrementImage : undefined}
+                onMouseEnter={currentImageId > 0 ? (() => setLeftActive(!leftActive)) : undefined}
+                onMouseLeave={currentImageId > 0 ? (() => setLeftActive(!leftActive)) : undefined}
             />
             <img
                 className={classes.arrow}
                 style={{ right: 5, opacity: rightActive ? 1 : 0.25, cursor: rightActive ? 'pointer' : 'default' }}
                 src="/arrow-right.png"
                 alt="right arrow"
-                onClick={currentImageId < numImages && incrementImage}
-                onMouseEnter={currentImageId < numImages && (() => setRightActive(!rightActive))}
-                onMouseLeave={currentImageId < numImages && (() => setRightActive(!rightActive))}
+                onClick={currentImageId < numImages ? incrementImage : undefined}
+                onMouseEnter={currentImageId < numImages ? (() => setRightActive(!rightActive)) : undefined}
+                onMouseLeave={currentImageId < numImages ? (() => setRightActive(!rightActive)) : undefined}
             />
             <img
                 src="/cross.png"

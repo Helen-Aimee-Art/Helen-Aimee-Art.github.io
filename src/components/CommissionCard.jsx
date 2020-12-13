@@ -70,8 +70,8 @@ export const CommissionCard = (props) => {
                 containerClass={classes.carousel}
             >
                 {images.length && images.map((image, index) => (
-                    <div className={classes.imageContainer}>
-                        <img className={classes.image} key={index} src={image.url} alt="" />
+                    <div className={classes.imageContainer} key={index} >
+                        <img className={classes.image} src={image.url} alt="" />
                     </div>
                 ))}
             </Carousel>

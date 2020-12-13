@@ -37,7 +37,6 @@ export const FilterDropdown = (props) => {
                     labelId="select-label"
                     value={selected}
                     onChange={handleChange}
-                    backgroundColor={theme.colorSecondary}
                     className={classes.select}
                     MenuProps={{
                         anchorOrigin: {
