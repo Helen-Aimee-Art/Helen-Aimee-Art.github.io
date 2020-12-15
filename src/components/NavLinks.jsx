@@ -48,7 +48,7 @@ export const NavLinks = (props) => {
             </Link>
             <Link to='/commissioninfo' className={props.currentPage === 'commissioninfo' ? classes.activeLink : classes.link}>
                 <li className={classes.li}>
-                    Comission Info
+                    Commission Info
                 </li>
             </Link>
             <Link to='/about' className={props.currentPage === 'about' ? classes.activeLink : classes.link}>
