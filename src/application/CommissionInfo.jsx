@@ -20,6 +20,10 @@ const useStyles = createUseStyles(theme => ({
             width: '1em',
             marginLeft: '-1em',
         }
+    },
+    commissionStatus: {
+        textAlign: 'left',
+        width: '100%'
     }
 }))
 
@@ -34,6 +38,7 @@ export const CommissionInfo = (props) => {
 
     return (
         <>
+            <h2 className={classes.commissionStatus}>Commissions status: <span>OPEN</span></h2>
             <Drawer title="Portrait / Bust" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={

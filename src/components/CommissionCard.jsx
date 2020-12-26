@@ -28,7 +28,7 @@ const useStyle = createUseStyles(theme => ({
         width: '100%',
         height: '100%',
         userDrag: 'none',
-        objectFir: 'cover'
+        objectFit: 'cover'
     }
 }))
 

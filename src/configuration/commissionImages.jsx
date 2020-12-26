@@ -24,11 +24,11 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/helen-aimee-neefia.jpg',
+        url: '/helen-aimee-lumystra.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-ribbon.jpg',
+        url: '/helen-aimee-aetor.jpg',
         type: 'bust'
     },
     {
@@ -44,11 +44,11 @@ export const commissionImages = [
         type: 'sketch'
     },
     {
-        url: '/helen-aimee-saethyra-nsfw.jpg',
+        url: '/helen-aimee-lumystra-nsfw.jpg',
         type: 'nsfw'
     },
     {
-        url: '/new-images-coming-soon.jpg',
+        url: '/helen-aimee-saethyra-nsfw.jpg',
         type: 'nsfw'
     },
     {

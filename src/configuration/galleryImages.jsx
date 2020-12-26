@@ -1,5 +1,17 @@
 export const galleryImages = [
     {
+        title: 'Lumystra',
+        desc: '',
+        url: '/helen-aimee-lumystra.jpg',
+        keywords: ['all', 'warcraft', 'fantasy', 'gaming']
+    },
+    {
+        title: 'Aetor',
+        desc: '',
+        url: '/helen-aimee-aetor.jpg',
+        keywords: ['all', 'warcraft', 'fantasy', 'gaming']
+    },
+    {
         title: 'Narni',
         desc: '',
         url: '/helen-aimee-narni.jpg',
