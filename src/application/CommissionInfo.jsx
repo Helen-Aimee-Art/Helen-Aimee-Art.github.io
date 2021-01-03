@@ -38,7 +38,7 @@ export const CommissionInfo = (props) => {
 
     return (
         <>
-            <h2 className={classes.commissionStatus}>Commissions status: <span>OPEN</span></h2>
+            <h2 className={classes.commissionStatus}>Commissions status: <span>WAIT LIST OPEN</span></h2>
             <Drawer title="Portrait / Bust" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
@@ -131,8 +131,9 @@ export const CommissionInfo = (props) => {
             <div>
                 <p style={{ textAlign: 'left', marginTop: 0 }}>
                     *Simple backgrounds are included in the price, at this time I am not offering more complicated backgrounds.<br />
-                *Adding additional characters will increase the cost by 80%.<br />
-                *Small pets can be included but will increase the price by 30%.
+                    *Adding additional characters will increase the cost by 80%.<br />
+                    *Small pets can be included but will increase the price by 30%.<br />
+                    *Complicated weapons or armour will increase the price. The exact amount will vary depending on the addition.
                 </p>
                 <h2>Process</h2>
                 <p>

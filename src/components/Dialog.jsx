@@ -1,3 +1,4 @@
+import { relative } from 'path'
 import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
@@ -15,7 +16,7 @@ const useStyles = createUseStyles(theme => ({
         backgroundColor: theme.colorPrimary,
         color: theme.colorSecondary,
         borderRadius: 5,
-        padding: 20,
+        padding: 20
     },
     actions: {
         display: 'flex',

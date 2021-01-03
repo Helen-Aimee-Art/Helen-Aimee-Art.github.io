@@ -10,7 +10,7 @@ const useStyles = createUseStyles(theme => ({
         left: 0,
         backgroundColor: 'rgba(0, 0, 0, 0.9)',
         display: open ? 'block' : 'none',
-        zIndex: 2
+        zIndex: 10000000
     }),
     modal: {
         display: 'flex',
