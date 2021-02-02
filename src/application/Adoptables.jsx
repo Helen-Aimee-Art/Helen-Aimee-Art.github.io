@@ -40,7 +40,7 @@ export const Adoptables = (props) => {
                         <>
                             <ul className={classes.cardul}>
                                 <li className={classes.li}>Prices vary per design</li>
-                                <li className={classes.li}>Please email me to enquire about purchase</li>
+                                <li className={classes.li}>Please email me to inquire about purchase</li>
                             </ul>
                         </>
                     }
