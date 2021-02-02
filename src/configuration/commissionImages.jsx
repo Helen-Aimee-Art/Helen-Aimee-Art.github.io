@@ -1,5 +1,9 @@
 export const commissionImages = [
     {
+        url: '/helen-aimee-panam.jpg',
+        type: 'halfbody'
+    },
+    {
         url: '/helen-aimee-isla.jpg',
         type: 'halfbody'
     },
@@ -18,6 +22,10 @@ export const commissionImages = [
     {
         url: '/helen-aimee-whitemane.jpg',
         type: 'halfbody'
+    },
+    {
+        url: '/helen-aimee-vapni.jpg',
+        type: 'bust'
     },
     {
         url: '/helen-aimee-akleja.jpg',
@@ -60,7 +68,7 @@ export const commissionImages = [
         type: 'nsfw'
     },
     {
-        url: '/new-images-coming-soon.jpg',
+        url: '/helen-aimee-panam-nsfw.jpg',
         type: 'nsfw'
-    },
+    }
 ]

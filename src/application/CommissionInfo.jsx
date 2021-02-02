@@ -43,10 +43,9 @@ export const CommissionInfo = (props) => {
                 <CommissionCard
                     details={
                         <>
-                            <p className={classes.cardul}>£74 - £94*</p>
+                            <p className={classes.cardul}>£94*</p>
                             <p className={classes.cardul}>Options:</p>
                             <ul className={classes.cardul}>
-                                <li className={classes.li}>Head to bust</li>
                                 <li className={classes.li}>Head to waist</li>
                             </ul>
                             <p className={classes.cardul}>Details:</p>

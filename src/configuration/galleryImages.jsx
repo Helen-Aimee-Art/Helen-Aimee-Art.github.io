@@ -1,5 +1,17 @@
 export const galleryImages = [
     {
+        title: 'Panam',
+        desc: '',
+        url: '/helen-aimee-panam.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'cyberpunk', 'commissions']
+    },
+    {
+        title: 'Vapni',
+        desc: '',
+        url: '/helen-aimee-vapni.jpg',
+        keywords: ['all', 'starwars', 'fantasy', 'gaming', 'commissions']
+    },
+    {
         title: 'Isla',
         desc: '',
         url: '/helen-aimee-isla.jpg',

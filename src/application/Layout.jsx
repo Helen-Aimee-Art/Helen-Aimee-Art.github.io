@@ -1,5 +1,6 @@
 import React from 'react'
 import { About } from './About'
+import { Adoptables } from './Adoptables'
 import { CommissionInfo } from './CommissionInfo'
 import { Footer } from '../components/Footer'
 import { Gallery } from './Gallery'
@@ -49,6 +50,12 @@ export const Layout = (props) => {
                         )} />
                         <Route path="/about" render={() => (
                             <About
+                                setCurrentPage={setCurrentPage}
+                                isDesktop={isDesktop}
+                            />
+                        )} />
+                        <Route path="/adoptables" render={() => (
+                            <Adoptables
                                 setCurrentPage={setCurrentPage}
                                 isDesktop={isDesktop}
                             />

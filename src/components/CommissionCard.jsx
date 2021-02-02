@@ -56,25 +56,29 @@ export const CommissionCard = (props) => {
     const theme = useTheme()
     const classes = useStyle(isDesktop, { theme })
 
+    const carousel = (
+        <Carousel
+            responsive={responsive}
+            infinite={true}
+            draggable={true}
+            itemClass={classes.slide}
+            containerClass={classes.carousel}
+        >
+            {images.map((image, index) => (
+                <div className={classes.imageContainer} key={index} >
+                    <img className={classes.image} src={image.url} alt="" />
+                </div>
+            ))}
+        </Carousel>
+    )
+
     return (
         <div className={classes.container}>
             <div className={classes.details}>
                 {title && <h2 className={classes.title}>{title}</h2>}
-                {details}
+                {details && details}
             </div>
-            <Carousel
-                responsive={responsive}
-                infinite={true}
-                draggable={true}
-                itemClass={classes.slide}
-                containerClass={classes.carousel}
-            >
-                {images.length && images.map((image, index) => (
-                    <div className={classes.imageContainer} key={index} >
-                        <img className={classes.image} src={image.url} alt="" />
-                    </div>
-                ))}
-            </Carousel>
+            {images.length > 0 && carousel}
         </div>
     )
 }
