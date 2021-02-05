@@ -32,25 +32,30 @@ export const Adoptables = (props) => {
         setCurrentPage('adoptables')
     }, [setCurrentPage])
 
+    const forSaleImages = adoptableImages.filter(image => image.type === 'forsale')
+    const adoptedImages = adoptableImages.filter(image => image.type === 'adopted')
+
     return (
         <>
-            <Drawer title="Adoptables for sale" defaultOpen={isDesktop}>
+            <Drawer title="Adoptables for sale" defaultOpen={forSaleImages.length > 0}>
                 <CommissionCard
                     details={
-                        <>
-                            <ul className={classes.cardul}>
-                                <li className={classes.li}>Prices vary per design</li>
-                                <li className={classes.li}>Please email me to inquire about purchase</li>
-                            </ul>
-                        </>
+                        forSaleImages.length > 0
+                            ? <>
+                                <ul className={classes.cardul}>
+                                    <li className={classes.li}>Prices vary per design</li>
+                                    <li className={classes.li}>Please email me to inquire about purchase</li>
+                                </ul>
+                            </>
+                            : <p className={classes.li}>More adoptables coming soon!</p>
                     }
-                    images={adoptableImages.filter(image => image.type === 'forsale')}
+                    images={forSaleImages}
                     isDesktop={isDesktop}
                 />
             </Drawer>
             <Drawer title="Sold adoptables" defaultOpen={false}>
                 <CommissionCard
-                    images={adoptableImages.filter(image => image.type === 'adopted')}
+                    images={adoptedImages}
                     isDesktop={isDesktop}
                 />
             </Drawer>

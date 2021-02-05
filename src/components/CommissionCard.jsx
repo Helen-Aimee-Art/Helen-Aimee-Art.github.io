@@ -27,6 +27,7 @@ const useStyle = createUseStyles(theme => ({
     image: {
         width: '100%',
         height: '100%',
+        maxWidth: 250,
         userDrag: 'none',
         objectFit: 'cover'
     }
@@ -74,10 +75,11 @@ export const CommissionCard = (props) => {
 
     return (
         <div className={classes.container}>
-            <div className={classes.details}>
-                {title && <h2 className={classes.title}>{title}</h2>}
-                {details && details}
-            </div>
+            {details
+                ? <div className={classes.details}>
+                    {details}
+                </div>
+                : null}
             {images.length > 0 && carousel}
         </div>
     )
