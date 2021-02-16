@@ -1,5 +1,11 @@
 export const galleryImages = [
     {
+        title: 'MikaMika and Estelle',
+        desc: '',
+        url: '/helen-aimee-mikamika-estelle.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
+    },
+    {
         title: 'Panam',
         desc: '',
         url: '/helen-aimee-panam.jpg',
