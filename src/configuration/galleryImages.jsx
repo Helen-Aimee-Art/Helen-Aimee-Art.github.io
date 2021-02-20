@@ -1,5 +1,11 @@
 export const galleryImages = [
     {
+        title: 'Daesal',
+        desc: '',
+        url: '/helen-aimee-daesal.jpg',
+        keywords: ['commissions', 'sketch']
+    },
+    {
         title: 'MikaMika and Estelle',
         desc: '',
         url: '/helen-aimee-mikamika-estelle.jpg',

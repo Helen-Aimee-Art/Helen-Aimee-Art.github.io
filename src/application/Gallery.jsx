@@ -8,7 +8,8 @@ import { FilterDropdown } from '../components/FilterDropdown'
 import { galleryImages } from '../configuration/galleryImages'
 
 const arrays = galleryImages.map(image => image.keywords)
-const keywords = [].concat(...arrays).filter((value, index, array) => array.indexOf(value) === index)
+const keywords = [].concat(...arrays).filter((value, index, array) => array.indexOf(value) === index && value !== 'all')
+keywords.unshift('all')
 
 export const Gallery = (props) => {
     const { isDesktop, setCurrentPage } = props

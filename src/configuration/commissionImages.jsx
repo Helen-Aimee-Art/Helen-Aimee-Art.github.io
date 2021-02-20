@@ -1,5 +1,9 @@
 export const commissionImages = [
     {
+        url: '/helen-aimee-mikamika-estelle.jpg',
+        type: 'halfbody'
+    },
+    {
         url: '/helen-aimee-panam.jpg',
         type: 'halfbody'
     },
@@ -48,6 +52,10 @@ export const commissionImages = [
         type: 'bust'
     },
     {
+        url: '/helen-aimee-daesal.jpg',
+        type: 'sketch'
+    },
+    {
         url: '/helen-aimee-strawberry.jpg',
         type: 'sketch'
     },
@@ -60,6 +68,10 @@ export const commissionImages = [
         type: 'sketch'
     },
     {
+        url: '/helen-aimee-mikamika-nsfw.jpg',
+        type: 'nsfw'
+    },
+    {
         url: '/helen-aimee-lumystra-nsfw.jpg',
         type: 'nsfw'
     },
@@ -69,10 +81,6 @@ export const commissionImages = [
     },
     {
         url: '/helen-aimee-panam-nsfw.jpg',
-        type: 'nsfw'
-    },
-    {
-        url: '/helen-aimee-mikamika-nsfw.jpg',
         type: 'nsfw'
     }
 ]
