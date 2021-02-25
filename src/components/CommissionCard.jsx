@@ -53,7 +53,7 @@ const responsive = {
 }
 
 export const CommissionCard = (props) => {
-    const { title, details, images, isDesktop } = props
+    const { details, images, isDesktop } = props
     const theme = useTheme()
     const classes = useStyle(isDesktop, { theme })
 
