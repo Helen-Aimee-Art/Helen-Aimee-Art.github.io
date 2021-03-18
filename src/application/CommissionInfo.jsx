@@ -188,6 +188,7 @@ export const CommissionInfo = (props) => {
                     <li>You have the right to use the artwork for personal use only. (Eg. prints for your wall, profile pictures and displaying online with credit)</li>
                     <li>I have the right to make a process video and publish it on my Youtube channel</li>
                     <li>You retain ownership of your original character(s) if depicted in the artwork</li>
+                    <li>My work cannot be used for NFTs or any crypto art, commissioned or otherwise</li>
                 </ul>
                 <h3>Revisions & Payment</h3>
                 <ul>
