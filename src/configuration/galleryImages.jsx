@@ -1,5 +1,35 @@
 export const galleryImages = [
     {
+        title: 'Allura',
+        desc: '',
+        url: '/helen-aimee-allura.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Akleja',
+        desc: '',
+        url: '/helen-aimee-akleja-sketch.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Rayn',
+        desc: '',
+        url: '/helen-aimee-rayn.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
+    },
+    {
+        title: 'Rinh',
+        desc: '',
+        url: '/helen-aimee-rinh.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
+    },
+    {
+        title: 'Amirie',
+        desc: '',
+        url: '/helen-aimee-amirie.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
         title: 'Daesal',
         desc: '',
         url: '/helen-aimee-daesal.jpg',

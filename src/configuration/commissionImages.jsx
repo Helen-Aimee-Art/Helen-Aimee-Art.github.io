@@ -28,6 +28,10 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
+        url: '/helen-aimee-rinh.jpg',
+        type: 'bust'
+    },
+    {
         url: '/helen-aimee-vapni.jpg',
         type: 'bust'
     },
