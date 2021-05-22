@@ -38,7 +38,7 @@ export const CommissionInfo = (props) => {
 
     return (
         <>
-            <h2 className={classes.commissionStatus}>Commissions status: <span>CLOSED</span></h2>
+            <h2 className={classes.commissionStatus}>Commissions status: <span>Opens 23rd May</span></h2>
             <Drawer title="Portrait / Bust" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={

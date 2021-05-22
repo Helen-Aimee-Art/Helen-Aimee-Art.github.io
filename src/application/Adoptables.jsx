@@ -20,6 +20,12 @@ const useStyles = createUseStyles(theme => ({
             width: '1em',
             marginLeft: '-1em',
         }
+    },
+    link: {
+        color: 'inherit',
+        '&:hover': {
+            color: theme.colorTertiary
+        }
     }
 }))
 
@@ -44,7 +50,7 @@ export const Adoptables = (props) => {
                             ? <>
                                 <ul className={classes.cardul}>
                                     <li className={classes.li}>Prices vary per design</li>
-                                    <li className={classes.li}>Please email me to inquire about purchase</li>
+                                    <li className={classes.li}>Please purchase through <a href="https://ko-fi.com/helenaimeeart" target="_blank" rel="noopener noreferrer" className={classes.link}>Ko-fi</a></li>
                                 </ul>
                             </>
                             : <p className={classes.li}>More adoptables coming soon!</p>

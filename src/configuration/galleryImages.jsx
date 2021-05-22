@@ -1,5 +1,29 @@
 export const galleryImages = [
     {
+        title: 'Shazeira',
+        desc: '',
+        url: '/helen-aimee-shazeira.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
+        title: 'Bella',
+        desc: '',
+        url: '/helen-aimee-bella.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
+        title: 'Forgiven',
+        desc: '',
+        url: '/helen-aimee-forgiven.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
+    },
+    {
+        title: 'Frost wyrm',
+        desc: '',
+        url: '/helen-aimee-adoptable-02.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
         title: 'Allura',
         desc: '',
         url: '/helen-aimee-allura.jpg',
@@ -15,7 +39,7 @@ export const galleryImages = [
         title: 'Rayn',
         desc: '',
         url: '/helen-aimee-rayn.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
+        keywords: ['sketch']
     },
     {
         title: 'Rinh',
