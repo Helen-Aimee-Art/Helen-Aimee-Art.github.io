@@ -36,15 +36,15 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/helen-aimee-akleja.jpg',
+        url: '/helen-aimee-charity.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-serana.jpg',
+        url: '/helen-aimee-adoptable-02.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-flameleaf.jpg',
+        url: '/helen-aimee-forgiven.jpg',
         type: 'bust'
     },
     {
@@ -52,7 +52,7 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/helen-aimee-aetor.jpg',
+        url: '/helen-aimee-neefia2.jpg',
         type: 'bust'
     },
     {

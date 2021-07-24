@@ -1,5 +1,35 @@
 export const galleryImages = [
     {
+        title: 'Charity prize',
+        desc: '',
+        url: '/helen-aimee-charity.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'starwars']
+    },
+    {
+        title: 'Halevuna',
+        desc: '',
+        url: '/helen-aimee-halevuna.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
+    },
+    {
+        title: 'Neefia',
+        desc: '',
+        url: '/helen-aimee-neefia2.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
+        title: 'Cypher',
+        desc: '',
+        url: '/helen-aimee-cypher.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'valorant', 'commissions']
+    },
+    {
+        title: "N'qelkara",
+        desc: '',
+        url: "/helen-aimee-n'qelkara.jpg",
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
+    },
+    {
         title: 'Shazeira',
         desc: '',
         url: '/helen-aimee-shazeira.jpg',
