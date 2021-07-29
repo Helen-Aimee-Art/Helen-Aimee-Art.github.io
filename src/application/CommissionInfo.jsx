@@ -99,7 +99,7 @@ export const CommissionInfo = (props) => {
                     isDesktop={isDesktop}
                 />
             </Drawer>
-            <Drawer
+            {/* <Drawer
                 title="Pinup / NSFW"
                 defaultOpen={false}
                 locked={true}
@@ -126,7 +126,7 @@ export const CommissionInfo = (props) => {
                     images={commissionImages.filter(image => image.type === 'nsfw')}
                     isDesktop={isDesktop}
                 />
-            </Drawer>
+            </Drawer> */}
             <div>
                 <p style={{ textAlign: 'left', marginTop: 0 }}>
                     *Simple backgrounds are included in the price, at this time I am not offering more complicated backgrounds.<br />
@@ -152,14 +152,14 @@ export const CommissionInfo = (props) => {
                     Once completed, I will send a low resolution JPEG of the final piece and if you are happy I will send the final invoice for the remaining amount.
                     When the payment has been recieved I will send the high resolution JPEG.
                 </p>
-                <h2>Pinup / NSFW varients</h2>
+                {/* <h2>Pinup / NSFW varients</h2>
                 <ul>
                     <li>Pinup / NSFW varients are available for the portrait and half body commission options</li>
                     <li>These can either be nude or underwear/lingerie. However if you choose the nude version I will also include a lingerie version (this will be included within the price at no extra cost)</li>
                     <li>All pinup / NSFW characters must be at least 18 years old</li>
                     <li>Please be aware that this is a pinup option, so it will not be explicit NSFW</li>
                     <li>I will not be accepting explicit NSFW commissions</li>
-                </ul>
+                </ul> */}
                 <h2>Terms and conditions</h2>
                 <p>I have the right to decline a commission request.</p>
                 <p>I will draw:</p>
@@ -167,7 +167,8 @@ export const CommissionInfo = (props) => {
                     <li>Personal, original characters</li>
                     <li>Original characters based in games such as World of Warcraft, ESO, etc.</li>
                     <li>Existing lore characters</li>
-                    <li>Nudity and sexual themes</li>
+                    {/* <li>Nudity and sexual themes</li> */}
+                    <li>Pinup</li>
                 </ul>
                 <p>I will not draw:</p>
                 <ul>
