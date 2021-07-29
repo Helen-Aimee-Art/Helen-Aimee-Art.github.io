@@ -147,10 +147,10 @@ export const CommissionInfo = (props) => {
                     <li>Character(s) personality</li>
                 </ul>
                 <p>
-                    Once we have agreed the outline, I will send you a rough sketch for approval. If you are happy with the sketch I will send a Paypal invoice for 50% of the total fee to your email.
+                    Once we have agreed the outline, I will send you a rough sketch for approval. If you are happy with the sketch I will send a Paypal invoice for 100% of the total fee to your email.
                     Once the invoice has been paid I will continue working on your project; I will send updates throughout the process where you can ask for minor changes.
-                    Once completed, I will send a low resolution JPEG of the final piece and if you are happy I will send the final invoice for the remaining amount.
-                    When the payment has been recieved I will send the high resolution JPEG.
+                    Once completed, I will send a low resolution JPEG of the final piece and then, if you are happy, I will send the high resolution JPEG.
+                    If you are a new customer I will ask for 50% of the fee to be paid before I start working on the sketch and the rest to be paid after the sketch has been approved.
                 </p>
                 {/* <h2>Pinup / NSFW varients</h2>
                 <ul>
