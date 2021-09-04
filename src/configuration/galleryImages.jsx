@@ -1,5 +1,11 @@
 export const galleryImages = [
     {
+        title: 'Allura',
+        desc: '',
+        url: '/helen-aimee-allura2.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'skyrim']
+    },
+    {
         title: 'Charity prize',
         desc: '',
         url: '/helen-aimee-charity.jpg',
