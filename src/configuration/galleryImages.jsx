@@ -1,5 +1,23 @@
 export const galleryImages = [
     {
+        title: 'Dex',
+        desc: '',
+        url: '/helen-aimee-dex.jpg',
+        keywords: ['commissions', 'sketch']
+    },
+    {
+        title: 'Allura',
+        desc: '',
+        url: '/helen-aimee-allurabw.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'skyrim']
+    },
+    {
+        title: 'Sabira',
+        desc: '',
+        url: '/helen-aimee-sabira.jpg',
+        keywords: ['all', 'fantasy', 'commissions']
+    },
+    {
         title: 'Allura',
         desc: '',
         url: '/helen-aimee-allura2.jpg',

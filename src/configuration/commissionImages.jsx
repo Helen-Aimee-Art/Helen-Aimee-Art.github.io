@@ -28,27 +28,35 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-allura2.jpg',
-        type: 'bust'
+        url: '/helen-aimee-sabira.jpg',
+        type: 'waist'
     },
     {
-        url: '/helen-aimee-rinh.jpg',
-        type: 'bust'
+        url: '/helen-aimee-allura2.jpg',
+        type: 'waist'
     },
     {
         url: '/helen-aimee-vapni.jpg',
-        type: 'bust'
+        type: 'waist'
     },
     {
         url: '/helen-aimee-charity.jpg',
-        type: 'bust'
+        type: 'waist'
     },
     {
         url: '/helen-aimee-adoptable-02.jpg',
-        type: 'bust'
+        type: 'waist'
     },
     {
         url: '/helen-aimee-forgiven.jpg',
+        type: 'waist'
+    },
+    {
+        url: '/helen-aimee-halevuna.jpg',
+        type: 'waist'
+    },
+    {
+        url: '/helen-aimee-allurabw.jpg',
         type: 'bust'
     },
     {
@@ -57,6 +65,18 @@ export const commissionImages = [
     },
     {
         url: '/helen-aimee-neefia2.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/helen-aimee-sae.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/helen-aimee-flameleaf.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/helen-aimee-rinh.jpg',
         type: 'bust'
     },
     {
@@ -76,19 +96,7 @@ export const commissionImages = [
         type: 'sketch'
     },
     {
-        url: '/helen-aimee-mikamika-nsfw.jpg',
-        type: 'nsfw'
-    },
-    {
-        url: '/helen-aimee-lumystra-nsfw.jpg',
-        type: 'nsfw'
-    },
-    {
-        url: '/helen-aimee-saethyra-nsfw.jpg',
-        type: 'nsfw'
-    },
-    {
-        url: '/helen-aimee-panam-nsfw.jpg',
-        type: 'nsfw'
+        url: '/helen-aimee-dex.jpg',
+        type: 'sketch'
     }
 ]

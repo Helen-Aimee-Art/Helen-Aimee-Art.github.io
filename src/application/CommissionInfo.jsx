@@ -39,17 +39,14 @@ export const CommissionInfo = (props) => {
     return (
         <>
             <h2 className={classes.commissionStatus}>Commissions status: <span>Closed</span></h2>
-            <Drawer title="Portrait / Bust" defaultOpen={isDesktop}>
+            <Drawer title="Portrait" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
                         <>
-                            <p className={classes.cardul}>£94*</p>
-                            <p className={classes.cardul}>Options:</p>
-                            <ul className={classes.cardul}>
-                                <li className={classes.li}>Head to waist</li>
-                            </ul>
+                            <p className={classes.cardul}>£75*</p>
                             <p className={classes.cardul}>Details:</p>
                             <ul className={classes.cardul}>
+                                <li className={classes.li}>Head to bust</li>
                                 <li className={classes.li}>2250px x 3300px</li>
                                 <li className={classes.li}>300dpi resolution</li>
                             </ul>
@@ -59,17 +56,31 @@ export const CommissionInfo = (props) => {
                     isDesktop={isDesktop}
                 />
             </Drawer>
+            <Drawer title="Head to waist" defaultOpen={isDesktop}>
+                <CommissionCard
+                    details={
+                        <>
+                            <p className={classes.cardul}>£100*</p>
+                            <p className={classes.cardul}>Details:</p>
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>Head to waist</li>
+                                <li className={classes.li}>2250px x 3300px</li>
+                                <li className={classes.li}>300dpi resolution</li>
+                            </ul>
+                        </>
+                    }
+                    images={commissionImages.filter(image => image.type === 'waist')}
+                    isDesktop={isDesktop}
+                />
+            </Drawer>
             <Drawer title="Half-body" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
                         <>
                             <p className={classes.cardul}>£140*</p>
-                            <p className={classes.cardul}>Options:</p>
-                            <ul className={classes.cardul}>
-                                <li className={classes.li}>Head to thigh (just above the knee)</li>
-                            </ul>
                             <p className={classes.cardul}>Details:</p>
                             <ul className={classes.cardul}>
+                                <li className={classes.li}>Head to thigh (just above the knee)</li>
                                 <li className={classes.li}>3400px x 4900px</li>
                                 <li className={classes.li}>300dpi resolution</li>
                             </ul>
@@ -84,12 +95,9 @@ export const CommissionInfo = (props) => {
                     details={
                         <>
                             <p className={classes.cardul}>£30*</p>
-                            <p className={classes.cardul}>Options:</p>
-                            <ul className={classes.cardul}>
-                                <li className={classes.li}>Head to bust</li>
-                            </ul>
                             <p className={classes.cardul}>Details:</p>
                             <ul className={classes.cardul}>
+                                <li className={classes.li}>Head to bust</li>
                                 <li className={classes.li}>3300px x 2550px</li>
                                 <li className={classes.li}>300dpi resolution</li>
                             </ul>
@@ -99,34 +107,6 @@ export const CommissionInfo = (props) => {
                     isDesktop={isDesktop}
                 />
             </Drawer>
-            {/* <Drawer
-                title="Pinup / NSFW"
-                defaultOpen={false}
-                locked={true}
-                lockedTitle="NSFW content"
-                lockedMessage="By clicking OK you are confirming that you are 18 years or older."
-            >
-                <CommissionCard
-                    details={
-                        <>
-                            <p className={classes.cardul}>£94 - £140*</p>
-                            <p className={classes.cardul}>Options:</p>
-                            <ul className={classes.cardul}>
-                                <li className={classes.li}>Head to waist</li>
-                                <li className={classes.li}>Head to thigh</li>
-                            </ul>
-                            <p className={classes.cardul}>Details:</p>
-                            <ul className={classes.cardul}>
-                                <li className={classes.li}>2250px x 3300px (Head to waist)</li>
-                                <li className={classes.li}>3400px x 4900px (Head to thigh)</li>
-                                <li className={classes.li}>300dpi resolution</li>
-                            </ul>
-                        </>
-                    }
-                    images={commissionImages.filter(image => image.type === 'nsfw')}
-                    isDesktop={isDesktop}
-                />
-            </Drawer> */}
             <div>
                 <p style={{ textAlign: 'left', marginTop: 0 }}>
                     *Simple backgrounds are included in the price, at this time I am not offering more complicated backgrounds.<br />
@@ -152,14 +132,6 @@ export const CommissionInfo = (props) => {
                     Once completed, I will send a low resolution JPEG of the final piece and then, if you are happy, I will send the high resolution JPEG.
                     If you are a new customer I will ask for 50% of the fee to be paid before I start working on the sketch and the rest to be paid after the sketch has been approved.
                 </p>
-                {/* <h2>Pinup / NSFW varients</h2>
-                <ul>
-                    <li>Pinup / NSFW varients are available for the portrait and half body commission options</li>
-                    <li>These can either be nude or underwear/lingerie. However if you choose the nude version I will also include a lingerie version (this will be included within the price at no extra cost)</li>
-                    <li>All pinup / NSFW characters must be at least 18 years old</li>
-                    <li>Please be aware that this is a pinup option, so it will not be explicit NSFW</li>
-                    <li>I will not be accepting explicit NSFW commissions</li>
-                </ul> */}
                 <h2>Terms and conditions</h2>
                 <p>I have the right to decline a commission request.</p>
                 <p>I will draw:</p>
@@ -167,7 +139,6 @@ export const CommissionInfo = (props) => {
                     <li>Personal, original characters</li>
                     <li>Original characters based in games such as World of Warcraft, ESO, etc.</li>
                     <li>Existing lore characters</li>
-                    {/* <li>Nudity and sexual themes</li> */}
                     <li>Pinup</li>
                 </ul>
                 <p>I will not draw:</p>
