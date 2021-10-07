@@ -36,6 +36,10 @@ export const commissionImages = [
         type: 'waist'
     },
     {
+        url: '/helen-aimee-halevuna.jpg',
+        type: 'waist'
+    },
+    {
         url: '/helen-aimee-vapni.jpg',
         type: 'waist'
     },
@@ -49,10 +53,6 @@ export const commissionImages = [
     },
     {
         url: '/helen-aimee-forgiven.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/helen-aimee-halevuna.jpg',
         type: 'waist'
     },
     {
@@ -80,6 +80,10 @@ export const commissionImages = [
         type: 'bust'
     },
     {
+        url: '/helen-aimee-dex.jpg',
+        type: 'sketch'
+    },
+    {
         url: '/helen-aimee-daesal.jpg',
         type: 'sketch'
     },
@@ -93,10 +97,6 @@ export const commissionImages = [
     },
     {
         url: '/helen-aimee-cecilia.jpg',
-        type: 'sketch'
-    },
-    {
-        url: '/helen-aimee-dex.jpg',
         type: 'sketch'
     }
 ]

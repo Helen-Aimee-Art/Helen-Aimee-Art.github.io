@@ -61,6 +61,11 @@ export const Adoptables = (props) => {
             </Drawer>
             <Drawer title="Sold adoptables" defaultOpen={false}>
                 <CommissionCard
+                    details={
+                        <ul className={classes.cardul}>
+                            <li className={classes.li}>Previously sold designs</li>
+                        </ul>
+                    }
                     images={adoptedImages}
                     isDesktop={isDesktop}
                 />
