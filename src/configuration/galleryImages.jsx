@@ -1,5 +1,11 @@
 export const galleryImages = [
     {
+        title: 'Maeve',
+        desc: '',
+        url: '/helen-aimee-maeve.jpg',
+        keywords: ['all', 'fantasy']
+    },
+    {
         title: 'Dex',
         desc: '',
         url: '/helen-aimee-dex.jpg',
