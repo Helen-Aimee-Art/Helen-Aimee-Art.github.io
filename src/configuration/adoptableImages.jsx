@@ -9,7 +9,7 @@ export const adoptableImages = [
     },
     {
         url: '/helen-aimee-adoptable-03.jpg',
-        type: 'forsale'
+        type: 'adopted'
     },
     {
         url: '/helen-aimee-ribbon.jpg',
