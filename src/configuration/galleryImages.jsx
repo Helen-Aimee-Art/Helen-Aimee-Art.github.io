@@ -1,5 +1,17 @@
 export const galleryImages = [
     {
+        title: 'Amethyst',
+        desc: '',
+        url: '/helen-aimee-amethyst.jpg',
+        keywords: ['commissions', 'sketch']
+    },
+    {
+        title: 'Promsrose',
+        desc: '',
+        url: '/helen-aimee-primrose.jpg',
+        keywords: ['all', 'pets', 'commissions']
+    },
+    {
         title: 'Maeve',
         desc: '',
         url: '/helen-aimee-maeve.jpg',
