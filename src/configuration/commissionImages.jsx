@@ -56,6 +56,18 @@ export const commissionImages = [
         type: 'waist'
     },
     {
+        url: '/helen-aimee-auresius.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/helen-aimee-bea.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/helen-aimee-akleja.jpg',
+        type: 'bust'
+    },
+    {
         url: '/helen-aimee-maeve.jpg',
         type: 'bust'
     },

@@ -1,5 +1,23 @@
 export const galleryImages = [
     {
+        title: 'Auresius',
+        desc: '',
+        url: '/helen-aimee-auresius.jpg',
+        keywords: ['all', 'FFXIV', 'gaming', 'fantasy']
+    },
+    {
+        title: 'Bea',
+        desc: '',
+        url: '/helen-aimee-bea.jpg',
+        keywords: ['all', 'warcraft', 'gaming', 'fantasy', 'commissions']
+    },
+    {
+        title: 'Akleja',
+        desc: '',
+        url: '/helen-aimee-akleja2.jpg',
+        keywords: ['all', 'warcraft', 'gaming', 'fantasy', 'commissions']
+    },
+    {
         title: 'Amethyst',
         desc: '',
         url: '/helen-aimee-amethyst.jpg',
