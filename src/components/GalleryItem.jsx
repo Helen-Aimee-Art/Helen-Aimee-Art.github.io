@@ -29,10 +29,11 @@ export const GalleryItem = (props) => {
     const classes = useStyles(isDesktop, { theme })
     const [open, setOpen] = useState(false)
 
-    const handleHover = () => setOpen(!open)
+    const handleMouseEnter = () => setOpen(true)
+    const handleMouseLeave = () => setOpen(false)
 
     return (
-        <div className={classes.container} onMouseEnter={handleHover} onMouseLeave={handleHover} onMouseDown={() => props.openModal(props.id)}>
+        <div className={classes.container} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onMouseDown={() => props.openModal(props.id)}>
             <img src={props.url} alt={props.desc} className={classes.img} />
             <Overlay title={props.title} open={open} />
         </div>

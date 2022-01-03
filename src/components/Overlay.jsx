@@ -8,6 +8,7 @@ const useStyles = createUseStyles(theme => ({
         backgroundImage: 'linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 55%, #282c34)',
         position: 'absolute',
         top: 0,
+        left: 0,
         display: 'flex',
         justifyContent: 'flex-start',
         alignItems: 'flex-end',
