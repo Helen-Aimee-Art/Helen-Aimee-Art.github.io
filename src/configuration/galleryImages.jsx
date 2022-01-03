@@ -24,7 +24,7 @@ export const galleryImages = [
         keywords: ['commissions', 'sketch']
     },
     {
-        title: 'Promsrose',
+        title: 'Primsrose',
         desc: '',
         url: '/helen-aimee-primrose.jpg',
         keywords: ['all', 'pets', 'commissions']
