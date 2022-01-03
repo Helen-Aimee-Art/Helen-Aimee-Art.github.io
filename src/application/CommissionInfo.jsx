@@ -25,6 +25,11 @@ const useStyles = createUseStyles(theme => ({
     commissionStatus: {
         textAlign: 'left',
         width: '100%'
+    },
+    monthlyTheme: {
+        marginTop: 0,
+        textAlign: 'left',
+        width: '100%'
     }
 }))
 
@@ -40,7 +45,7 @@ export const CommissionInfo = (props) => {
     return (
         <>
             <h2 className={classes.commissionStatus}>Commissions status: <span>{commissionStatus}</span></h2>
-            <h2 className={classes.commissionStatus}>Monthly theme: <span>{monthlyTheme}</span></h2>
+            <h2 className={classes.monthlyTheme}>Monthly theme: <span>{monthlyTheme}</span></h2>
             <Drawer title="Portrait" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
