@@ -1,9 +1,27 @@
 export const galleryImages = [
     {
+        title: 'Rosalie',
+        desc: '',
+        url: '/helen-aimee-rosalie.jpg',
+        keywords: ['all', 'fantasy']
+    },
+    {
+        title: 'Ahri',
+        desc: '',
+        url: '/helen-aimee-ahri.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
+    },
+    {
+        title: 'Kaylin',
+        desc: '',
+        url: '/helen-aimee-kaylin.jpg',
+        keywords: ['all', 'starwars', 'gaming', 'fantasy', 'commissions']
+    },
+    {
         title: 'Auresius',
         desc: '',
         url: '/helen-aimee-auresius.jpg',
-        keywords: ['all', 'FFXIV', 'gaming', 'fantasy']
+        keywords: ['all', 'starwars', 'gaming', 'fantasy']
     },
     {
         title: 'Bea',
@@ -24,7 +42,7 @@ export const galleryImages = [
         keywords: ['commissions', 'sketch']
     },
     {
-        title: 'Primsrose',
+        title: 'Primrose',
         desc: '',
         url: '/helen-aimee-primrose.jpg',
         keywords: ['all', 'pets', 'commissions']

@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { CommissionCard } from '../components/CommissionCard'
 import { Drawer } from '../components/Drawer'
 import { createUseStyles, useTheme } from 'react-jss'
-import { commissionStatus, commissionText } from '../configuration/commissionContent'
+import { commissionStatus, commissionText, monthlyTheme } from '../configuration/commissionContent'
 import { commissionImages } from '../configuration/commissionImages'
 
 const useStyles = createUseStyles(theme => ({
@@ -40,6 +40,7 @@ export const CommissionInfo = (props) => {
     return (
         <>
             <h2 className={classes.commissionStatus}>Commissions status: <span>{commissionStatus}</span></h2>
+            <h2 className={classes.commissionStatus}>Monthly theme: <span>{monthlyTheme}</span></h2>
             <Drawer title="Portrait" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={

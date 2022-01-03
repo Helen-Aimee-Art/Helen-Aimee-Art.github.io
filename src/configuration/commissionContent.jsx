@@ -2,6 +2,8 @@ import React from 'react'
 
 export const commissionStatus = 'Open'
 
+export const monthlyTheme = 'Water'
+
 export const commissionText = (
     <>
         <p style={{ textAlign: 'left', marginTop: 0 }}>
@@ -28,6 +30,9 @@ export const commissionText = (
             Once completed, I will send a low resolution JPEG of the final piece and then, if you are happy, I will send the high resolution JPEG.
             If you are a new customer I will ask for 50% of the fee to be paid before I start working on the sketch and the rest to be paid after the sketch has been approved.
         </p>
+        <h2>Monthly Themes</h2>
+        <p>I will be running monthly themes which may mean that your commission will receive a discount. If you sign up for a commission with a character which is related to the theme in some way you will receive a 10% discount. 
+           (Please note: This applies even if your commission is added to the wait list and not started right away, as long as you request the commission in the correct themed month the discount will be counted.)</p>
         <h2>Terms and conditions</h2>
         <p>I have the right to decline a commission request.</p>
         <p>I will draw:</p>
@@ -47,7 +52,7 @@ export const commissionText = (
             <li>Excessive violence or gore</li>
             <li>Fetishes</li>
             <li>Extreme body proportions</li>
-            <li>Standalone evironments</li>
+            <li>Standalone environments</li>
         </ul>
         <h3>Copyright & Ownership</h3>
         <ul>
