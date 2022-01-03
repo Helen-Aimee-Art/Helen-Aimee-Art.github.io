@@ -3,6 +3,7 @@ import React from 'react'
 const now = new Date()
 const dateBorn = new Date(1993, 2, 9)
 let years = now.getFullYear() - dateBorn.getFullYear()
+
 if (now.getMonth() < dateBorn.getMonth() || (now.getMonth() === dateBorn.getMonth() && now.getDate() < dateBorn.getDate())) {
     years--;
 }
