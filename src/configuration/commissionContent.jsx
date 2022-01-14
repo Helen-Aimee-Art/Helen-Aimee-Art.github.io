@@ -32,7 +32,7 @@ export const commissionText = (
         </p>
         <h2>Monthly Themes</h2>
         <p>I will be running monthly themes which may mean that your commission will receive a discount. If you sign up for a commission with a character which is related to the theme in some way you will receive a 10% discount. 
-           (Please note: This applies even if your commission is added to the wait list and not started right away, as long as you request the commission in the correct themed month the discount will be counted.)</p>
+           <br/>(Please note: This applies even if your commission is added to the wait list and not started right away, as long as you request the commission in the correct themed month the discount will be counted.)</p>
         <h2>Terms and conditions</h2>
         <p>I have the right to decline a commission request.</p>
         <p>I will draw:</p>
