@@ -1,5 +1,11 @@
 export const galleryImages = [
     {
+        title: 'Neefia',
+        desc: '',
+        url: '/helen-aimee-neefia3.jpg',
+        keywords: ['all', 'fantasy','gaming','warcraft']
+    },
+    {
         title: 'Rosalie',
         desc: '',
         url: '/helen-aimee-rosalie.jpg',
