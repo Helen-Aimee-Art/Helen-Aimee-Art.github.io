@@ -1,5 +1,9 @@
 export const commissionImages = [
     {
+        url: '/helen-aimee-hanua.jpg',
+        type: 'halfbody'
+    },
+    {
         url: '/helen-aimee-neefia3.jpg',
         type: 'halfbody'
     },
