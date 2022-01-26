@@ -1,5 +1,17 @@
 export const galleryImages = [
     {
+        title: 'Lirilya',
+        desc: '',
+        url: '/helen-aimee-lirilya.jpg',
+        keywords: ['all', 'fantasy','gaming','warcraft']
+    },
+    {
+        title: "Hanu'a",
+        desc: '',
+        url: '/helen-aimee-hanua.jpg',
+        keywords: ['all', 'starwars', 'gaming', 'fantasy', 'commissions']
+    },
+    {
         title: 'Neefia',
         desc: '',
         url: '/helen-aimee-neefia3.jpg',
