@@ -72,6 +72,10 @@ export const commissionImages = [
         type: 'waist'
     },
     {
+        url: '/helen-aimee-gwyddhienne.jpg',
+        type: 'bust'
+    },
+    {
         url: '/helen-aimee-lirilya.jpg',
         type: 'bust'
     },
