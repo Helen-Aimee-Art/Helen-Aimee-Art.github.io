@@ -16,6 +16,7 @@ export const commissionText = (
         <p>
             If you are interested in a commission, please email me with the information below.
             The number of projects I take on will vary, I will email you with confirmation if I am available to take on the project.
+            My commission queue can be viewed on my <a href='https://trello.com/b/dsJu8SNh/helen-aimee-art-commissions'>Trello</a>.
         </p>
         <ul>
             <li>Contact email address for updates and for the invoices</li>
@@ -38,7 +39,7 @@ export const commissionText = (
         <p>I will draw:</p>
         <ul>
             <li>Personal, original characters</li>
-            <li>Original characters based in games such as World of Warcraft, ESO, etc.</li>
+            <li>Original characters based in games such as World of Warcraft, FFXIV, ESO, etc.</li>
             <li>Existing lore characters</li>
             <li>Pinup</li>
         </ul>

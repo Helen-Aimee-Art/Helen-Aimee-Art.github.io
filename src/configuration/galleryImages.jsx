@@ -1,5 +1,17 @@
 export const galleryImages = [
     {
+        title: 'Aalea',
+        desc: '',
+        url: '/helen-aimee-aalea.jpg',
+        keywords: ['all', 'fantasy','gaming','warcraft']
+    },
+    {
+        title: 'Lyriah',
+        desc: '',
+        url: '/helen-aimee-lyriah.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
+    },
+    {
         title: 'Casper',
         desc: '',
         url: '/helen-aimee-casper.jpg',
@@ -51,7 +63,7 @@ export const galleryImages = [
         title: 'Auresius',
         desc: '',
         url: '/helen-aimee-auresius.jpg',
-        keywords: ['all', 'starwars', 'gaming', 'fantasy']
+        keywords: ['all', 'FFXIV', 'gaming', 'fantasy']
     },
     {
         title: 'Bea',
@@ -129,7 +141,7 @@ export const galleryImages = [
         title: 'Cypher',
         desc: '',
         url: '/helen-aimee-cypher.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'valorant', 'commissions']
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: "N'qelkara",
@@ -207,7 +219,7 @@ export const galleryImages = [
         title: 'Panam',
         desc: '',
         url: '/helen-aimee-panam.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'cyberpunk', 'commissions']
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Vapni',
@@ -333,7 +345,7 @@ export const galleryImages = [
         title: 'Serana',
         desc: '',
         url: '/helen-aimee-serana.jpg',
-        keywords: ['all', 'gaming', 'fantasy']
+        keywords: ['all', 'gaming', 'fantasy','skyrim']
     },
     {
         title: 'Ribbon',

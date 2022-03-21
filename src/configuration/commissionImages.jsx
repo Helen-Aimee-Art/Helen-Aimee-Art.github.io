@@ -72,11 +72,15 @@ export const commissionImages = [
         type: 'waist'
     },
     {
-        url: '/helen-aimee-gwyddhienne.jpg',
+        url: '/helen-aimee-aalea.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-lirilya.jpg',
+        url: '/helen-aimee-lyriah.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/helen-aimee-gwyddhienne.jpg',
         type: 'bust'
     },
     {
@@ -104,19 +108,7 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/helen-aimee-neefia2.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-sae.jpg',
-        type: 'bust'
-    },
-    {
         url: '/helen-aimee-flameleaf.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-rinh.jpg',
         type: 'bust'
     },
     {
