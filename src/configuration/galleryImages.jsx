@@ -1,5 +1,35 @@
 export const galleryImages = [
     {
+        title: "Sha'Tari",
+        desc: '',
+        url: '/helen-aimee-sha-tari.jpg',
+        keywords: ['sketch', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Luxanya',
+        desc: '',
+        url: '/helen-aimee-luxanya1.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Lunaara',
+        desc: '',
+        url: '/helen-aimee-lunaara.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Mai',
+        desc: '',
+        url: '/helen-aimee-mai.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
+    },
+    {
+        title: 'Emerald Herald',
+        desc: '',
+        url: '/helen-aimee-emerald-herald.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
+    },
+    {
         title: 'Aalea',
         desc: '',
         url: '/helen-aimee-aalea.jpg',
