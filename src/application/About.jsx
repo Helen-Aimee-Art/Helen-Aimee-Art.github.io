@@ -47,6 +47,10 @@ export const About = (props) => {
                 <h2>Tools and Proficiencies</h2>
                 <ul className={classes.list}>
                     <li className={classes.listItem}>
+                        <img src="/procreate.png" alt="Procreate icon" className={classes.image} />
+                        <span>Procreate</span>
+                    </li>
+                    <li className={classes.listItem}>
                         <img src="/photoshop.png" alt="Photoshop icon" className={classes.image} />
                         <span>Adobe Photoshop</span>
                     </li>

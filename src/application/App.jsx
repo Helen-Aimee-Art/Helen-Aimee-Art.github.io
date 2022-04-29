@@ -14,7 +14,7 @@ export const App = () => {
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 800)
 
     const updateMedia = () => {
-        setIsDesktop(window.innerWidth > 800)
+        setIsDesktop(window.innerWidth > 1000)
     }
 
     useEffect(() => {
