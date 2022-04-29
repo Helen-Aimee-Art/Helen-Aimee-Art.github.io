@@ -1,3 +1,5 @@
+export const PER_PAGE = 15
+
 export const galleryImages = [
     {
         title: 'Skyla',
