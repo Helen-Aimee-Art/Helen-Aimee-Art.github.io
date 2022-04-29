@@ -44,6 +44,10 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
+        url: '/helen-aimee-silaridel.jpg',
+        type: 'waist'
+    },
+    {
         url: '/helen-aimee-sabira.jpg',
         type: 'waist'
     },

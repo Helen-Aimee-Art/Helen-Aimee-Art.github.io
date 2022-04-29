@@ -1,5 +1,29 @@
 export const galleryImages = [
     {
+        title: 'Skyla',
+        desc: '',
+        url: '/helen-aimee-skyla.jpg',
+        keywords: ['all', 'star Wars', 'gaming', 'fantasy', 'commissions']
+    },
+    {
+        title: 'Domneth',
+        desc: '',
+        url: '/helen-aimee-domneth.jpg',
+        keywords: ['all', 'fantasy','gaming','warcraft']
+    },
+    {
+        title: 'Silaridel',
+        desc: '',
+        url: '/helen-aimee-silaridel.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
+        title: 'Luxanya',
+        desc: '',
+        url: '/helen-aimee-luxanya2.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
         title: "Sha'Tari",
         desc: '',
         url: '/helen-aimee-sha-tari.jpg',
@@ -63,7 +87,7 @@ export const galleryImages = [
         title: "Hanu'a",
         desc: '',
         url: '/helen-aimee-hanua.jpg',
-        keywords: ['all', 'starwars', 'gaming', 'fantasy', 'commissions']
+        keywords: ['all', 'star Wars', 'gaming', 'fantasy', 'commissions']
     },
     {
         title: 'Neefia',
@@ -87,7 +111,7 @@ export const galleryImages = [
         title: 'Kaylin',
         desc: '',
         url: '/helen-aimee-kaylin.jpg',
-        keywords: ['all', 'starwars', 'gaming', 'fantasy', 'commissions']
+        keywords: ['all', 'star Wars', 'gaming', 'fantasy', 'commissions']
     },
     {
         title: 'Auresius',
@@ -153,7 +177,7 @@ export const galleryImages = [
         title: 'Charity prize',
         desc: '',
         url: '/helen-aimee-charity.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'starwars']
+        keywords: ['all', 'fantasy', 'gaming', 'star Wars']
     },
     {
         title: 'Halevuna',
@@ -255,7 +279,7 @@ export const galleryImages = [
         title: 'Vapni',
         desc: '',
         url: '/helen-aimee-vapni.jpg',
-        keywords: ['all', 'starwars', 'fantasy', 'gaming', 'commissions']
+        keywords: ['all', 'star Wars', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Isla',

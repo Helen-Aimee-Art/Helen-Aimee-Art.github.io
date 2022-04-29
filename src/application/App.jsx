@@ -23,6 +23,24 @@ export const App = () => {
         return () => window.removeEventListener('resize', updateMedia)
     })
 
+    useEffect(() => {
+        const s = document.createElement('script')
+        s.type = 'text/javascript'
+        s.async = true
+        s.innerHTML = `
+            kofiWidgetOverlay.draw(
+                'helenaimeeart',
+                {
+                'type': 'floating-chat',
+                'floating-chat.donateButton.text': 'Support me',
+                'floating-chat.donateButton.background-color': '#CCC0EF',
+                'floating-chat.donateButton.text-color': '#000'
+                }
+            );
+        `
+        document.body.appendChild(s)
+    }, [])
+
     return (
         <ThemeProvider theme={theme}>
             <Layout

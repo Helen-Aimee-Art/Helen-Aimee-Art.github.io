@@ -13,6 +13,6 @@ export const adoptableImages = [
     },
     {
         url: '/helen-aimee-ribbon.jpg',
-        type: 'forsale'
+        type: 'adopted'
     }
 ]
