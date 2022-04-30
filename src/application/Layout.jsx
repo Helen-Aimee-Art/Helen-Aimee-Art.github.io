@@ -32,7 +32,7 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const Layout = (props) => {
-    const { currentPage, isDesktop, setCurrentPage } = props
+    const { currentPage, isDesktop, isLargeScreen, isMediumScreen, isSmallScreen, setCurrentPage } = props
     const theme = useTheme()
     const classes = useStyles(isDesktop, { theme })
 
@@ -64,6 +64,9 @@ export const Layout = (props) => {
                             <Gallery
                                 setCurrentPage={setCurrentPage}
                                 isDesktop={isDesktop}
+                                isLargeScreen={isLargeScreen}
+                                isMediumScreen={isMediumScreen}
+                                isSmallScreen={isSmallScreen}
                             />
                         )} />
                     </Switch>
