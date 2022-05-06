@@ -2,7 +2,7 @@ import React from 'react'
 
 export const commissionStatus = 'Open'
 
-export const monthlyTheme = 'Feathers'
+export const monthlyTheme = 'Mermaids'
 
 export const commissionText = (
     <>
