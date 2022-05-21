@@ -12,7 +12,7 @@ const keywords = [].concat(...arrays).filter((value, index, array) => array.inde
 keywords.unshift('all')
 
 export const Gallery = (props) => {
-    const { isDesktop, setCurrentPage } = props
+    const { isDesktop, isLargeScreen, isMediumScreen, isSmallScreen, setCurrentPage } = props
     const [currentImage, setCurrentImage] = useState(null)
     const [open, setOpen] = useState(false)
     const [filter, setFilter] = useState('all')
@@ -56,7 +56,12 @@ export const Gallery = (props) => {
     return (
         <div>
             <FilterDropdown keywords={keywords} setFilter={setFilter} />
-            <Grid isDesktop={isDesktop}>
+            <Grid
+                isDesktop={isDesktop}
+                isLargeScreen={isLargeScreen}
+                isMediumScreen={isMediumScreen}
+                isSmallScreen={isSmallScreen}
+            >
                 {filteredImages.slice(0, page * PER_PAGE).map((image, index) => (
                     <GalleryItem
                         key={index}

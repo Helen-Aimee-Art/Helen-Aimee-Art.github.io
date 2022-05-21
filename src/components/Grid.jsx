@@ -1,19 +1,25 @@
 import React from 'react'
-import { createUseStyles, useTheme } from 'react-jss'
+import { createUseStyles } from 'react-jss'
 
-const useStyles = createUseStyles(theme => ({
+const useStyles = createUseStyles(() => ({
     gallery: {
         display: 'grid',
-        gridTemplate: isDesktop => isDesktop ? '1fr / 1fr 1fr 1fr 1fr 1fr' : '1fr / 1fr 1fr 1fr',
+        gridTemplate: (props) => {
+            if (props.isLargeScreen) {
+                return '1fr / 1fr 1fr 1fr 1fr 1fr'
+            } else if (props.isMediumScreen) {
+                return '1fr / 1fr 1fr 1fr 1fr'
+            } else {
+                return '1fr / 1fr 1fr 1fr'
+            }
+        },
         gridAutoFlow: 'row',
         gridGap: 10
     }
 }))
 
 export const Grid = (props) => {
-    const isDesktop = props.isDesktop
-    const theme = useTheme()
-    const classes = useStyles(isDesktop, { theme })
+    const classes = useStyles(props)
 
     return (
         <div className={classes.gallery}>

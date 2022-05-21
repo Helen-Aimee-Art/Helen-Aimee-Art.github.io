@@ -59,6 +59,10 @@ export const About = (props) => {
                         <span>Clip Studio Paint Pro</span>
                     </li>
                     <li className={classes.listItem}>
+                        <img src="/apple.png" alt="Apple icon" className={classes.image} />
+                        <span>IPad Pro</span>
+                    </li>
+                    <li className={classes.listItem}>
                         <img src="/wacom.png" alt="Wacom icon" className={classes.image} />
                         <span>Wacom Cintiq 27QHD</span>
                     </li>

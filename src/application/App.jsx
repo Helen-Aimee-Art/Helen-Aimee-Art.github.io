@@ -11,14 +11,22 @@ const theme = {
 
 export const App = () => {
     const [currentPage, setCurrentPage] = useState('')
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 800)
+    const [isDesktop, setIsDesktop] = useState(true)
+    const [isLargeScreen, setIsLargeScreen] = useState(true)
+    const [isMediumScreen, setIsMediumScreen] = useState(false)
+    const [isSmallScreen, setIsSmallScreen] = useState(false)
 
     const updateMedia = () => {
         setIsDesktop(window.innerWidth > 1000)
+
+        setIsLargeScreen(window.innerWidth >= 1920)
+        setIsMediumScreen(window.innerWidth < 1920 && window.innerWidth >= 1280)
+        setIsSmallScreen(window.innerWidth < 1280)
     }
 
     useEffect(() => {
         window.addEventListener('resize', updateMedia)
+        updateMedia()
 
         return () => window.removeEventListener('resize', updateMedia)
     })
@@ -39,7 +47,7 @@ export const App = () => {
             );
         `
         document.body.appendChild(s)
-    }, [])
+    })
 
     return (
         <ThemeProvider theme={theme}>
@@ -47,6 +55,9 @@ export const App = () => {
                 currentPage={currentPage}
                 setCurrentPage={setCurrentPage}
                 isDesktop={isDesktop}
+                isLargeScreen={isLargeScreen}
+                isMediumScreen={isMediumScreen}
+                isSmallScreen={isSmallScreen}
             />
         </ThemeProvider>
     )
