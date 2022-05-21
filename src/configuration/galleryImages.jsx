@@ -2,6 +2,42 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Ephyra',
+        desc: '',
+        url: '/helen-aimee-ephyra.jpg',
+        keywords: ['all', 'fantasy']
+    },
+    {
+        title: "Ker'tina",
+        desc: '',
+        url: '/helen-aimee-ker-tina.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft', 'commissions']
+    },
+    {
+        title: 'Half-Elf',
+        desc: '',
+        url: '/helen-aimee-half-elf.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
+        title: 'Luxanya',
+        desc: '',
+        url: '/helen-aimee-luxanya-pinup.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft', 'commissions']
+    },    
+    {
+        title: 'Mana Wyrm Mermaid',
+        desc: '',
+        url: '/helen-aimee-mermaid.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
+        title: 'Kalizeth',
+        desc: '',
+        url: '/helen-aimee-kalizeth.jpg',
+        keywords: ['all', 'fantasy', 'gaming']
+    },
+    {
         title: 'Skyla',
         desc: '',
         url: '/helen-aimee-skyla.jpg',
