@@ -5,6 +5,7 @@ import { CommissionInfo } from './CommissionInfo'
 import { Footer } from '../components/Footer'
 import { Gallery } from './Gallery'
 import { Header } from '../components/Header'
+import { Links } from './Links'
 import { Switch, Route, HashRouter as Router } from 'react-router-dom'
 import { createUseStyles, useTheme } from 'react-jss'
 
@@ -42,6 +43,12 @@ export const Layout = (props) => {
                 <Header currentPage={currentPage} isDesktop={isDesktop} />
                 <div className={classes.main}>
                     <Switch>
+                        <Route path="/links" render={() => (
+                            <Links
+                                setCurrentPage={setCurrentPage}
+                                isDesktop={isDesktop}
+                            />
+                        )} />
                         <Route path="/commissioninfo" render={() => (
                             <CommissionInfo
                                 setCurrentPage={setCurrentPage}
@@ -71,7 +78,7 @@ export const Layout = (props) => {
                         )} />
                     </Switch>
                 </div>
-                <Footer isDesktop={isDesktop} />
+                <Footer isDesktop={isDesktop} currentPage={currentPage} />
             </div>
         </Router>
     )

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { createUseStyles, useTheme } from 'react-jss'
+import { createUseStyles } from 'react-jss'
 
-const useStyles = createUseStyles(theme => ({
+const useStyles = createUseStyles(() => ({
     container: {
+        textAlign: (props) => props.currentPage !== 'links' ? 'left' : 'center',
         padding: '0 10px'
     },
     mainLink: {
@@ -22,9 +23,8 @@ const useStyles = createUseStyles(theme => ({
     }
 }))
 
-export const Logo = () => {
-    const theme = useTheme()
-    const classes = useStyles(theme)
+export const Logo = (props) => {
+    const classes = useStyles(props)
 
     return (
         <div className={classes.container}>

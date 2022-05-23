@@ -1,0 +1,13 @@
+export const links = [
+    { title: 'Website', link: 'https://www.helenaimee.art' },
+    { title: 'Commission Prices: OPEN', link: 'https://www.helenaimee.art/#/commissioninfo' },
+    { title: 'Commission Queue (Trello)', link: 'https://trello.com/b/dsJu8SNh/helen-aimee-art-commissions' },
+    { title: 'Twitter', link: 'https://twitter.com/HelenAimee1' },
+    { title: 'Instagram', link: 'https://www.instagram.com/helen_aimee.art/' },
+    { title: 'DeviantArt', link: 'https://www.deviantart.com/helen-aimee-art' },
+    { title: 'Ko-Fi', link: 'https://ko-fi.com/helenaimeeart' },
+    { title: 'Artstation', link: 'https://www.artstation.com/helen_aimee' },
+    { title: 'Youtube', link: 'https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA' },
+    { title: 'Redbubble', link: 'https://www.redbubble.com/people/helenaimee/shop' },
+    { title: 'Artfol', link: 'https://artfol.me/helenaimeeart' },
+]

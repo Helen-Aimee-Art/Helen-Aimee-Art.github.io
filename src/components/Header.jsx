@@ -28,10 +28,12 @@ export const Header = (props) => {
 
     return (
         <nav className={classes.nav}>
-            <Logo />
-            {isDesktop
-                ? (<NavLinks currentPage={props.currentPage} />)
-                : (<MobileNavLinks currentPage={props.currentPage} />)}
+            <Logo currentPage={props.currentPage} />
+            {props.currentPage !== 'links'
+                ? isDesktop
+                    ? (<NavLinks currentPage={props.currentPage} />)
+                    : (<MobileNavLinks currentPage={props.currentPage} />)
+                : undefined}
         </nav>
     )
 }

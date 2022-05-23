@@ -30,7 +30,7 @@ export const Footer = (props) => {
     const classes = useStyles(theme)
     return (
         <footer className={classes.footer}>
-            <SocialList />
+            {props.currentPage !== 'links' ? <SocialList /> : null}
             <div className={classes.copyright}>
                 <p>{`© ${new Date().getFullYear()} Helen Aimee Art. All rights reserved.`}</p>
             </div>
