@@ -1,5 +1,13 @@
 export const adoptableImages = [
     {
+        url: '/helen-aimee-dracthyr.jpg',
+        type: 'forsale'
+    },
+    {
+        url: '/helen-aimee-mermaid.jpg',
+        type: 'forsale'
+    },
+    {
         url: '/helen-aimee-half-elf.jpg',
         type: 'forsale'
     },

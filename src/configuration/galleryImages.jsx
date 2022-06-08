@@ -2,6 +2,18 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Diana',
+        desc: '',
+        url: '/helen-aimee-diana.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
+    },    
+    {
+        title: 'Dracthyr',
+        desc: '',
+        url: '/helen-aimee-dracthyr.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
         title: 'Ephyra',
         desc: '',
         url: '/helen-aimee-ephyra.jpg',
