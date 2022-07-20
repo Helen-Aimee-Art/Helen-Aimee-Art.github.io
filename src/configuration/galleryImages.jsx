@@ -2,6 +2,108 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Viseira',
+        desc: '',
+        url: '/viseira.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Tassera',
+        desc: '',
+        url: '/tassera.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Fleur',
+        desc: '',
+        url: '/fleur2.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Alissera',
+        desc: '',
+        url: '/alissera.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Nyx',
+        desc: '',
+        url: '/nyx.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Ecatée',
+        desc: '',
+        url: '/ecatee.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Norrei',
+        desc: '',
+        url: '/norrei.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Freyja',
+        desc: '',
+        url: '/freyja.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Celeste',
+        desc: '',
+        url: '/celeste.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Amirie',
+        desc: '',
+        url: '/helen-aimee-amirie2.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
+        title: 'Lurala',
+        desc: '',
+        url: '/helen-aimee-lurala.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Kyriel',
+        desc: '',
+        url: '/helen-aimee-kyriel.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions', 'sketch']
+    },
+    {
+        title: 'Jaelryn',
+        desc: '',
+        url: '/helen-aimee-jaelryn.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'sketch']
+    },
+    {
+        title: 'Nuelnehti',
+        desc: '',
+        url: '/helen-aimee-nuelnehti.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
+    },
+    {
+        title: 'Zhaleh',
+        desc: '',
+        url: '/helen-aimee-zhaleh.jpg',
+        keywords: ['all', 'fantasy']
+    },
+    {
+        title: 'Ethiriel',
+        desc: '',
+        url: '/helen-aimee-ethiriel.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Willow',
+        desc: '',
+        url: '/helen-aimee-willow2.jpg',
+        keywords: ['all', 'pets', 'commissions']
+    },
+    {
         title: 'Diana',
         desc: '',
         url: '/helen-aimee-diana.jpg',
@@ -56,7 +158,7 @@ export const galleryImages = [
         keywords: ['all', 'star Wars', 'gaming', 'fantasy', 'commissions']
     },
     {
-        title: 'Domneth',
+        title: 'Voidelf',
         desc: '',
         url: '/helen-aimee-domneth.jpg',
         keywords: ['all', 'fantasy','gaming','warcraft']
@@ -104,7 +206,7 @@ export const galleryImages = [
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
-        title: 'Aalea',
+        title: 'Draenei',
         desc: '',
         url: '/helen-aimee-aalea.jpg',
         keywords: ['all', 'fantasy','gaming','warcraft']
@@ -458,7 +560,7 @@ export const galleryImages = [
         keywords: ['all', 'warcraft', 'gaming', 'fantasy']
     },
     {
-        title: 'Flameleaf',
+        title: 'Fleur',
         desc: '',
         url: '/helen-aimee-flameleaf.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy']

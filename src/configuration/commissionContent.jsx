@@ -2,7 +2,7 @@ import React from 'react'
 
 export const commissionStatus = 'Open'
 
-export const monthlyTheme = 'Pastel Colours'
+export const monthlyTheme = 'Cats'
 
 export const commissionText = (
     <>
@@ -35,7 +35,7 @@ export const commissionText = (
         <p>I will be running monthly themes which may mean that your commission will receive a discount. If you sign up for a commission with a character which is related to the theme in some way you will receive a 10% discount. 
            <br/>(Please note: This applies even if your commission is added to the wait list and not started right away, as long as you request the commission in the correct themed month the discount will be counted.)</p>
         <h2>Terms and conditions</h2>
-        <p>I have the right to decline a commission request.</p>
+        <p>I have the right to decline any commission request.</p>
         <p>I will draw:</p>
         <ul>
             <li>Personal, original characters</li>
@@ -48,7 +48,7 @@ export const commissionText = (
             <li>Real people</li>
             <li>Explicit content</li>
             <li>Anything that portrays illegal activity</li>
-            <li>Characters under the age of 18</li>
+            <li>Characters under the age of 18 or childlike characters</li>
             <li>Furries</li>
             <li>Excessive violence or gore</li>
             <li>Fetishes</li>

@@ -54,6 +54,7 @@ export const CommissionInfo = (props) => {
                             <p className={classes.cardul}>Details:</p>
                             <ul className={classes.cardul}>
                                 <li className={classes.li}>Head to bust</li>
+                                <li className={classes.li}>Head to collar (more detail)</li>
                                 <li className={classes.li}>2250px x 3300px</li>
                                 <li className={classes.li}>300dpi resolution</li>
                             </ul>

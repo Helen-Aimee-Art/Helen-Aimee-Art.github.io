@@ -47,13 +47,13 @@ export const SocialList = (props) => {
 
     return (
         <div className={classes.socials}>
-            <SocialLink link="https://www.twitter.com/helenaimee1/" title="Twitter">
+            <SocialLink link="https://www.twitter.com/HelenAimeeArt/" title="Twitter">
                 <Twitter />
             </SocialLink>
-            <SocialLink link="https://www.instagram.com/helen_aimee.art/" title="Instagram">
+            <SocialLink link="https://www.instagram.com/helenaimeeart/" title="Instagram">
                 <Instagram />
             </SocialLink>
-            <SocialLink link="https://www.deviantart.com/missshazira" title="DeviantArt">
+            <SocialLink link="https://www.deviantart.com/helenaimeeart" title="DeviantArt">
                 <DeviantArt />
             </SocialLink>
             <SocialLink link="https://www.artstation.com/helen_aimee" title="ArtStation">

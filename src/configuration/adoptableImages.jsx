@@ -8,10 +8,6 @@ export const adoptableImages = [
         type: 'forsale'
     },
     {
-        url: '/helen-aimee-half-elf.jpg',
-        type: 'forsale'
-    },
-    {
         url: '/helen-aimee-aalea.jpg',
         type: 'forsale'
     },

@@ -15,7 +15,15 @@ const useStyles = createUseStyles(theme => ({
         padding: 0,
         margin: '10px 0',
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        '&:before': {
+            content: "'♡'",
+            color: theme.colorTertiary,
+            fontWeight: 'bold',
+            display: 'inline-block',
+            width: '1em',
+            marginLeft: '-1em',
+        }
     },
     image: {
         width: 50,
@@ -46,30 +54,12 @@ export const About = (props) => {
                 {aboutMeText}
                 <h2>Tools and Proficiencies</h2>
                 <ul className={classes.list}>
-                    <li className={classes.listItem}>
-                        <img src="/procreate.png" alt="Procreate icon" className={classes.image} />
-                        <span>Procreate</span>
-                    </li>
-                    <li className={classes.listItem}>
-                        <img src="/photoshop.png" alt="Photoshop icon" className={classes.image} />
-                        <span>Adobe Photoshop</span>
-                    </li>
-                    <li className={classes.listItem}>
-                        <img src="/clipstudio.png" alt="Clip Studio Paint Pro icon" className={classes.clipImage} />
-                        <span>Clip Studio Paint Pro</span>
-                    </li>
-                    <li className={classes.listItem}>
-                        <img src="/apple.png" alt="Apple icon" className={classes.image} />
-                        <span>IPad Pro</span>
-                    </li>
-                    <li className={classes.listItem}>
-                        <img src="/wacom.png" alt="Wacom icon" className={classes.image} />
-                        <span>Wacom Cintiq 27QHD</span>
-                    </li>
-                    <li className={classes.listItem}>
-                        <img src="/microsoft.png" alt="Microsoft icon" className={classes.image} />
-                        <span>Microsoft Surface Pro 7</span>
-                    </li>
+                    <li className={classes.listItem}>Procreate</li>
+                    <li className={classes.listItem}>Adobe Photoshop</li>
+                    <li className={classes.listItem}>Clip Studio Paint Pro</li>
+                    <li className={classes.listItem}>IPad Pro</li>
+                    <li className={classes.listItem}>Wacom Cintiq 27QHD</li>
+                    <li className={classes.listItem}>Microsoft Surface Pro 7</li>
                 </ul>
             </div>
         </>
