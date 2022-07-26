@@ -77,13 +77,13 @@ export const galleryImages = [
         title: 'Kyriel',
         desc: '',
         url: '/helen-aimee-kyriel.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions', 'sketch']
+        keywords: ['fantasy', 'gaming', 'FFXIV', 'commissions', 'sketch']
     },
     {
         title: 'Jaelryn',
         desc: '',
         url: '/helen-aimee-jaelryn.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'sketch']
+        keywords: ['fantasy', 'gaming', 'commissions', 'sketch']
     },
     {
         title: 'Nuelnehti',
