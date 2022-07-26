@@ -2,6 +2,12 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Galaxy Draenei',
+        desc: '',
+        url: '/helen-aimee-galaxy-draenei.jpg',
+        keywords: ['all', 'fantasy','gaming','warcraft']
+    },
+    {
         title: 'Viseira',
         desc: '',
         url: '/viseira.jpg',
@@ -462,12 +468,6 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-narni.jpg',
         keywords: ['all', 'warcraft', 'fantasy', 'gaming']
-    },
-    {
-        title: 'Poppy',
-        desc: '',
-        url: '/helen-aimee-poppy.jpg',
-        keywords: ['all']
     },
     {
         title: 'Ellyra',
