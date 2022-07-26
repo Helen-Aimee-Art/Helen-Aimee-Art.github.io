@@ -1,8 +1,5 @@
 export const adoptableImages = [
-    {
-        url: '/helen-aimee-dracthyr.jpg',
-        type: 'forsale'
-    },
+
     {
         url: '/helen-aimee-mermaid.jpg',
         type: 'forsale'
@@ -14,6 +11,10 @@ export const adoptableImages = [
     {
         url: '/helen-aimee-domneth.jpg',
         type: 'forsale'
+    },
+    {
+        url: '/helen-aimee-dracthyr.jpg',
+        type: 'adopted'
     },
     {
         url: '/helen-aimee-adoptable-01.jpg',

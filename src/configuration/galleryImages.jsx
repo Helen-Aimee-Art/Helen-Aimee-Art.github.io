@@ -578,27 +578,10 @@ export const galleryImages = [
         keywords: ['all', 'warcraft', 'gaming', 'fantasy']
     },
     {
-        title: 'Kait Diaz',
-        desc: '',
-        url: '/helen-aimee-kait-diaz.jpg',
-        keywords: ['all', 'gaming']
-    },
-    {
-        title: 'Juliette',
-        desc: '',
-        url: '/helen-aimee-juliette.jpg',
-        keywords: ['all', 'gaming']
-    },
-    {
         title: 'Blue and Quincy',
         desc: '',
         url: '/helen-aimee-blue-and-quincy-c.jpg',
         keywords: ['all', 'pets', 'commissions']
     },
-    {
-        title: 'Sorceress',
-        desc: '',
-        url: '/helen-aimee-sorceressrgbweb.jpg',
-        keywords: ['all', 'fantasy']
-    }
+
 ]
