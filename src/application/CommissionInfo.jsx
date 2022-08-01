@@ -46,6 +46,23 @@ export const CommissionInfo = (props) => {
         <>
             <h2 className={classes.commissionStatus}>Commissions status: <span>{commissionStatus}</span></h2>
             <h2 className={classes.monthlyTheme}>Monthly theme: <span>{monthlyTheme}</span></h2>
+            <Drawer title="Sketch" defaultOpen={isDesktop}>
+                <CommissionCard
+                    details={
+                        <>
+                            <p className={classes.cardul}>£20*</p>
+                            <p className={classes.cardul}>Details:</p>
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>Head to bust</li>
+                                <li className={classes.li}>2250px x 3300px</li>
+                                <li className={classes.li}>300dpi resolution</li>
+                            </ul>
+                        </>
+                    }
+                    images={commissionImages.filter(image => image.type === 'sketch')}
+                    isDesktop={isDesktop}
+                />
+            </Drawer>
             <Drawer title="Portrait" defaultOpen={isDesktop}>
                 <CommissionCard
                     details={
@@ -95,23 +112,6 @@ export const CommissionInfo = (props) => {
                         </>
                     }
                     images={commissionImages.filter(image => image.type === 'halfbody')}
-                    isDesktop={isDesktop}
-                />
-            </Drawer>
-            <Drawer title="Sketch" defaultOpen={isDesktop}>
-                <CommissionCard
-                    details={
-                        <>
-                            <p className={classes.cardul}>£30*</p>
-                            <p className={classes.cardul}>Details:</p>
-                            <ul className={classes.cardul}>
-                                <li className={classes.li}>Head to bust</li>
-                                <li className={classes.li}>3300px x 2250px</li>
-                                <li className={classes.li}>300dpi resolution</li>
-                            </ul>
-                        </>
-                    }
-                    images={commissionImages.filter(image => image.type === 'sketch')}
                     isDesktop={isDesktop}
                 />
             </Drawer>

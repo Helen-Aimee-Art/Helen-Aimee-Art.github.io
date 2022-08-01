@@ -104,31 +104,31 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/helen-aimee-jaelryn.jpg',
+        url: '/norrei.jpg',
         type: 'sketch'
     },
     {
-        url: '/helen-aimee-amethyst.jpg',
+        url: '/viseira.jpg',
         type: 'sketch'
     },
     {
-        url: '/helen-aimee-dex.jpg',
+        url: '/tassera.jpg',
         type: 'sketch'
     },
     {
-        url: '/helen-aimee-daesal.jpg',
+        url: '/alissera.jpg',
         type: 'sketch'
     },
     {
-        url: '/helen-aimee-strawberry.jpg',
+        url: '/ecatee.jpg',
         type: 'sketch'
     },
     {
-        url: '/helen-aimee-darktide.jpg',
+        url: '/nyx.jpg',
         type: 'sketch'
     },
     {
-        url: '/helen-aimee-cecilia.jpg',
+        url: '/freyja.jpg',
         type: 'sketch'
     }
 ]
