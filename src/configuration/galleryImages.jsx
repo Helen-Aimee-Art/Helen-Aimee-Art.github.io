@@ -2,6 +2,30 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Lisa',
+        desc: '',
+        url: '/helen-aimee-lisa.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
+    }, 
+        {
+        title: 'Jaedesria',
+        desc: '',
+        url: '/helen-aimee-jaedesria.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
+        title: 'Fuz',
+        desc: '',
+        url: '/helen-aimee-fuz.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
+    },
+    {
+        title: 'Pucker',
+        desc: '',
+        url: '/helen-aimee-pucker.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
         title: 'Galaxy Draenei',
         desc: '',
         url: '/helen-aimee-galaxy-draenei.jpg',
