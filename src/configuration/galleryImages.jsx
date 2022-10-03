@@ -83,7 +83,7 @@ export const galleryImages = [
         title: 'Dité',
         desc: '',
         url: '/helen-aimee-dite.jpg',
-        keywords: ['fantasy', 'gaming', 'warcraft', 'commissions', 'sketch']
+        keywords: ['commissions', 'sketch']
     },
     {
         title: 'Viseira',
@@ -263,7 +263,7 @@ export const galleryImages = [
         title: "Sha'Tari",
         desc: '',
         url: '/helen-aimee-sha-tari.jpg',
-        keywords: ['sketch', 'fantasy', 'gaming', 'commissions', 'warcraft']
+        keywords: ['sketch', 'commissions']
     },
     {
         title: 'Luxanya',
