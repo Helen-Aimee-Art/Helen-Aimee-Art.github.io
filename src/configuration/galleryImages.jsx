@@ -22,13 +22,13 @@ export const galleryImages = [
     {
         title: 'Neefia',
         desc: '',
-        url: '/helen-aimee-galaxy-neefia-repaint.jpg',
+        url: '/helen-aimee-neefia-repaint.jpg',
         keywords: ['all', 'fantasy','gaming','warcraft']
     },
     {
         title: 'Iris',
         desc: '',
-        url: '/helen-aimee-iris-portait.jpg',
+        url: '/helen-aimee-iris-portrait.jpg',
         keywords: ['all', 'fantasy', 'commissions']
     }, 
     {
@@ -40,7 +40,7 @@ export const galleryImages = [
     {
         title: 'Elara',
         desc: '',
-        url: '/helen-aimee-galaxy-elara.jpg',
+        url: '/helen-aimee-elara.jpg',
         keywords: ['all', 'fantasy','gaming','skyrim']
     },
     {
@@ -78,6 +78,12 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-galaxy-draenei.jpg',
         keywords: ['all', 'fantasy','gaming','warcraft']
+    },
+    {
+        title: 'Dité',
+        desc: '',
+        url: '/helen-aimee-dite.jpg',
+        keywords: ['fantasy', 'gaming', 'warcraft', 'commissions', 'sketch']
     },
     {
         title: 'Viseira',
@@ -144,12 +150,6 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-lurala.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
-    },
-    {
-        title: 'Dité',
-        desc: '',
-        url: '/helen-aimee-dite.jpg',
-        keywords: ['fantasy', 'gaming', 'warcraft', 'commissions', 'sketch']
     },
     {
         title: 'Kyriel',
