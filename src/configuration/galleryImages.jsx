@@ -155,7 +155,7 @@ export const galleryImages = [
         title: 'Kyriel',
         desc: '',
         url: '/helen-aimee-kyriel.jpg',
-        keywords: ['fantasy', 'gaming', 'FFXIV', 'commissions', 'sketch']
+        keywords: ['commissions', 'sketch']
     },
     {
         title: 'Jaelryn',
