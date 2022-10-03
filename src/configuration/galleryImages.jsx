@@ -2,6 +2,54 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Lumystra',
+        desc: '',
+        url: '/helen-aimee-lumystra1.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Syrinah',
+        desc: '',
+        url: '/helen-aimee-syrinah.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Ninara',
+        desc: '',
+        url: '/helen-aimee-ninara.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Neefia',
+        desc: '',
+        url: '/helen-aimee-galaxy-neefia-repaint.jpg',
+        keywords: ['all', 'fantasy','gaming','warcraft']
+    },
+    {
+        title: 'Iris',
+        desc: '',
+        url: '/helen-aimee-iris-portait.jpg',
+        keywords: ['all', 'fantasy', 'commissions']
+    }, 
+    {
+        title: 'Iris',
+        desc: '',
+        url: '/helen-aimee-iris.jpg',
+        keywords: ['all', 'fantasy', 'commissions']
+    }, 
+    {
+        title: 'Elara',
+        desc: '',
+        url: '/helen-aimee-galaxy-elara.jpg',
+        keywords: ['all', 'fantasy','gaming','skyrim']
+    },
+    {
+        title: 'Tana',
+        desc: '',
+        url: '/helen-aimee-tana.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
+    }, 
+    {
         title: 'Lisa',
         desc: '',
         url: '/helen-aimee-lisa.jpg',
@@ -96,6 +144,12 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-lurala.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Dité',
+        desc: '',
+        url: '/helen-aimee-dite.jpg',
+        keywords: ['fantasy', 'gaming', 'warcraft', 'commissions', 'sketch']
     },
     {
         title: 'Kyriel',
