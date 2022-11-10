@@ -209,7 +209,7 @@ export const galleryImages = [
         title: 'Dark Draenei',
         desc: '',
         url: '/helen-aimee-dark-draenei.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Helene',
