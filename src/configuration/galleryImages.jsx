@@ -2,6 +2,222 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Rin',
+        desc: '',
+        url: '/rin.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Saryxih',
+        desc: '',
+        url: '/saryxih.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Rinh',
+        desc: '',
+        url: '/rinh3.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Rayn',
+        desc: '',
+        url: '/rayn2.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Lorelai',
+        desc: '',
+        url: '/lorelai.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Alora',
+        desc: '',
+        url: '/alora.jpg',
+        keywords: ['commissions', 'sketch']
+    },
+    {
+        title: 'Undyne',
+        desc: '',
+        url: '/undyne2.jpg',
+        keywords: ['commissions', 'sketch']
+    },
+    {
+        title: 'Undyne',
+        desc: '',
+        url: '/undyne.jpg',
+        keywords: ['commissions', 'sketch']
+    },
+    {
+        title: 'Vhalei',
+        desc: '',
+        url: '/vhalei.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Lyluna',
+        desc: '',
+        url: '/lyluna.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Mileni',
+        desc: '',
+        url: '/mileni.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Dahlia',
+        desc: '',
+        url: '/dahlia.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Saethyra',
+        desc: '',
+        url: '/saethyra3.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Gwyn',
+        desc: '',
+        url: '/gwyn.jpg',
+        keywords: ['commissions', 'sketch']
+    },
+    {
+        title: 'Rinh',
+        desc: '',
+        url: '/rinh2.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Neefia',
+        desc: '',
+        url: '/neefia5.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Myfanwy',
+        desc: '',
+        url: '/amirie3.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Amirie',
+        desc: '',
+        url: '/amirie3.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Elara',
+        desc: '',
+        url: '/elara2.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: "Nefer'Llieth",
+        desc: '',
+        url: '/neferllieth.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Allura',
+        desc: '',
+        url: '/allura4.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Imylea',
+        desc: '',
+        url: '/imylea.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Zaiesme',
+        desc: '',
+        url: '/zaiesme.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Amaryllis',
+        desc: '',
+        url: '/amaryllis.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Ellyra',
+        desc: '',
+        url: '/ellyra2.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Shazeira',
+        desc: '',
+        url: '/shazeira2.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Evalynn',
+        desc: '',
+        url: '/evalynn.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Rosalie',
+        desc: '',
+        url: '/rosalie2.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Ephyra',
+        desc: '',
+        url: '/ephyra2.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Sinraeyal',
+        desc: '',
+        url: '/sinraeyal.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Zhaleh',
+        desc: '',
+        url: '/zhaleh2.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Amuhnet',
+        desc: '',
+        url: '/amuhnet.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Maeve',
+        desc: '',
+        url: '/maeve.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Serana',
+        desc: '',
+        url: '/helen-aimee-serana2022.jpg',
+        keywords: ['all', 'fantasy','gaming','skyrim']
+    },
+    {
+        title: 'Dark Draenei',
+        desc: '',
+        url: '/helen-aimee-dark-draenei.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Helene',
+        desc: '',
+        url: '/helen-aimee-helene.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
         title: 'Lumystra',
         desc: '',
         url: '/helen-aimee-lumystra1.jpg',
