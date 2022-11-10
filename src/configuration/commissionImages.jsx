@@ -1,5 +1,9 @@
 export const commissionImages = [
     {
+        url: '/helen-aimee-diana.jpg',
+        type: 'halfbody'
+    },
+    {
         url: '/helen-aimee-ker-tina.jpg',
         type: 'halfbody'
     },
@@ -13,10 +17,6 @@ export const commissionImages = [
     },
     {
         url: '/helen-aimee-ahri.jpg',
-        type: 'halfbody'
-    },
-    {
-        url: '/helen-aimee-kaylin.jpg',
         type: 'halfbody'
     },
     {
@@ -40,11 +40,11 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-lurala.jpg',
+        url: '/helen-aimee-iris.jpg',
         type: 'waist'
     },
     {
-        url: '/helen-aimee-silaridel.jpg',
+        url: '/helen-aimee-helene.jpg',
         type: 'waist'
     },
     {
@@ -60,7 +60,7 @@ export const commissionImages = [
         type: 'waist'
     },
     {
-        url: '/helen-aimee-charity.jpg',
+        url: '/helen-aimee-pucker.jpg',
         type: 'waist'
     },
     {
@@ -80,7 +80,7 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/helen-aimee-ephyra.jpg',
+        url: '/helen-aimee-elara.jpg',
         type: 'bust'
     },
     {
@@ -92,7 +92,7 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/helen-aimee-gwyddhienne.jpg',
+        url: '/helen-aimee-neefia-repaint.jpg',
         type: 'bust'
     },
     {
@@ -104,31 +104,31 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/norrei.jpg',
+        url: '/neefia.jpg',
         type: 'sketch'
     },
     {
-        url: '/viseira.jpg',
+        url: '/amirie.jpg',
         type: 'sketch'
     },
     {
-        url: '/tassera.jpg',
+        url: '/undyne.jpg',
         type: 'sketch'
     },
     {
-        url: '/alissera.jpg',
+        url: '/alora.jpg',
         type: 'sketch'
     },
     {
-        url: '/ecatee.jpg',
+        url: '/rin.jpg',
         type: 'sketch'
     },
     {
-        url: '/nyx.jpg',
+        url: '/allura4.jpg',
         type: 'sketch'
     },
     {
-        url: '/freyja.jpg',
+        url: '/rin3.jpg',
         type: 'sketch'
     }
 ]
