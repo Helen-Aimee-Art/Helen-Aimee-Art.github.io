@@ -100,7 +100,7 @@ export const galleryImages = [
     {
         title: 'Myfanwy',
         desc: '',
-        url: '/amirie3.jpg',
+        url: '/myfanwy.jpg',
         keywords: ['sketch']
     },
     {
