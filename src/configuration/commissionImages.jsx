@@ -104,11 +104,11 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/neefia.jpg',
+        url: '/neefia5.jpg',
         type: 'sketch'
     },
     {
-        url: '/amirie.jpg',
+        url: '/amirie3.jpg',
         type: 'sketch'
     },
     {
@@ -128,7 +128,7 @@ export const commissionImages = [
         type: 'sketch'
     },
     {
-        url: '/rin3.jpg',
+        url: '/rinh3.jpg',
         type: 'sketch'
     }
 ]
