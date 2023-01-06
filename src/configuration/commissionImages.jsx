@@ -1,134 +1,134 @@
 export const commissionImages = [
     {
-        url: '/helen-aimee-diana.jpg',
+        filename: 'helen-aimee-diana.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-ker-tina.jpg',
+        filename: 'helen-aimee-ker-tina.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-hanua.jpg',
+        filename: 'helen-aimee-hanua.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-neefia3.jpg',
+        filename: 'helen-aimee-neefia3.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-ahri.jpg',
+        filename: 'helen-aimee-ahri.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-mikamika-estelle.jpg',
+        filename: 'helen-aimee-mikamika-estelle.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-panam.jpg',
+        filename: 'helen-aimee-panam.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-isla.jpg',
+        filename: 'helen-aimee-isla.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-darkshift-web.jpg',
+        filename: 'helen-aimee-darkshift-web.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-whitemane.jpg',
+        filename: 'helen-aimee-whitemane.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-iris.jpg',
+        filename: 'helen-aimee-iris.jpg',
         type: 'waist'
     },
     {
-        url: '/helen-aimee-helene.jpg',
+        filename: 'helen-aimee-helene.jpg',
         type: 'waist'
     },
     {
-        url: '/helen-aimee-sabira.jpg',
+        filename: 'helen-aimee-sabira.jpg',
         type: 'waist'
     },
     {
-        url: '/helen-aimee-allura2.jpg',
+        filename: 'helen-aimee-allura2.jpg',
         type: 'waist'
     },
     {
-        url: '/helen-aimee-halevuna.jpg',
+        filename: 'helen-aimee-halevuna.jpg',
         type: 'waist'
     },
     {
-        url: '/helen-aimee-pucker.jpg',
+        filename: 'helen-aimee-pucker.jpg',
         type: 'waist'
     },
     {
-        url: '/helen-aimee-adoptable-02.jpg',
+        filename: 'helen-aimee-adoptable-02.jpg',
         type: 'waist'
     },
     {
-        url: '/helen-aimee-forgiven.jpg',
+        filename: 'helen-aimee-forgiven.jpg',
         type: 'waist'
     },
     {
-        url: '/helen-aimee-amirie2.jpg',
+        filename: 'helen-aimee-amirie2.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-nuelnehti.jpg',
+        filename: 'helen-aimee-nuelnehti.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-elara.jpg',
+        filename: 'helen-aimee-elara.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-kalizeth.jpg',
+        filename: 'helen-aimee-kalizeth.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-lyriah.jpg',
+        filename: 'helen-aimee-lyriah.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-neefia-repaint.jpg',
+        filename: 'helen-aimee-neefia-repaint.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-auresius.jpg',
+        filename: 'helen-aimee-auresius.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-bea.jpg',
+        filename: 'helen-aimee-bea.jpg',
         type: 'bust'
     },
     {
-        url: '/neefia5.jpg',
+        filename: 'neefia5.jpg',
         type: 'sketch'
     },
     {
-        url: '/amirie3.jpg',
+        filename: 'amirie3.jpg',
         type: 'sketch'
     },
     {
-        url: '/undyne.jpg',
+        filename: 'undyne.jpg',
         type: 'sketch'
     },
     {
-        url: '/alora.jpg',
+        filename: 'alora.jpg',
         type: 'sketch'
     },
     {
-        url: '/rin.jpg',
+        filename: 'rin.jpg',
         type: 'sketch'
     },
     {
-        url: '/allura4.jpg',
+        filename: 'allura4.jpg',
         type: 'sketch'
     },
     {
-        url: '/rinh3.jpg',
+        filename: 'rinh3.jpg',
         type: 'sketch'
     }
 ]

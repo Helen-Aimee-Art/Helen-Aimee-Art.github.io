@@ -1,35 +1,35 @@
 export const adoptableImages = [
 
     {
-        url: '/helen-aimee-mermaid.jpg',
+        filename: 'helen-aimee-mermaid.jpg',
         type: 'forsale'
     },
     {
-        url: '/helen-aimee-aalea.jpg',
+        filename: 'helen-aimee-aalea.jpg',
         type: 'forsale'
     },
     {
-        url: '/helen-aimee-domneth.jpg',
+        filename: 'helen-aimee-domneth.jpg',
         type: 'forsale'
     },
     {
-        url: '/helen-aimee-dracthyr.jpg',
+        filename: 'helen-aimee-dracthyr.jpg',
         type: 'adopted'
     },
     {
-        url: '/helen-aimee-adoptable-01.jpg',
+        filename: 'helen-aimee-adoptable-01.jpg',
         type: 'adopted'
     },
     {
-        url: '/helen-aimee-flameleaf.jpg',
+        filename: 'helen-aimee-flameleaf.jpg',
         type: 'adopted'
     },
     {
-        url: '/helen-aimee-adoptable-03.jpg',
+        filename: 'helen-aimee-adoptable-03.jpg',
         type: 'adopted'
     },
     {
-        url: '/helen-aimee-ribbon.jpg',
+        filename: 'helen-aimee-ribbon.jpg',
         type: 'adopted'
     }
 ]

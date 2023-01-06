@@ -68,7 +68,7 @@ export const Gallery = (props) => {
                         id={index}
                         title={image.title}
                         desc={image.desc}
-                        url={image.url}
+                        filename={image.filename}
                         keywords={image.keywords}
                         openModal={openModal}
                         isDesktop={isDesktop}

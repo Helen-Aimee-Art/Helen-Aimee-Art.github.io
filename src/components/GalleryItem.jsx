@@ -34,7 +34,7 @@ export const GalleryItem = (props) => {
 
     return (
         <div className={classes.container} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onMouseDown={() => props.openModal(props.id)}>
-            <img src={props.url} alt={props.desc} className={classes.img} />
+            <img src={`images/${props.filename}`} alt={props.desc} className={classes.img} />
             <Overlay title={props.title} open={open} />
         </div>
     )

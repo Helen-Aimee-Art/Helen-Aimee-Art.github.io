@@ -4,877 +4,877 @@ export const galleryImages = [
     {
         title: 'Rin',
         desc: '',
-        url: '/rin.jpg',
+        filename: 'rin.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Saryxih',
         desc: '',
-        url: '/saryxih.jpg',
+        filename: 'saryxih.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Rinh',
         desc: '',
-        url: '/rinh3.jpg',
+        filename: 'rinh3.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Rayn',
         desc: '',
-        url: '/rayn2.jpg',
+        filename: 'rayn2.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Lorelai',
         desc: '',
-        url: '/lorelai.jpg',
+        filename: 'lorelai.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Alora',
         desc: '',
-        url: '/alora.jpg',
+        filename: 'alora.jpg',
         keywords: ['commissions', 'sketch']
     },
     {
         title: 'Undyne',
         desc: '',
-        url: '/undyne2.jpg',
+        filename: 'undyne2.jpg',
         keywords: ['commissions', 'sketch']
     },
     {
         title: 'Undyne',
         desc: '',
-        url: '/undyne.jpg',
+        filename: 'undyne.jpg',
         keywords: ['commissions', 'sketch']
     },
     {
         title: 'Vhalei',
         desc: '',
-        url: '/vhalei.jpg',
+        filename: 'vhalei.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Lyluna',
         desc: '',
-        url: '/lyluna.jpg',
+        filename: 'lyluna.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Mileni',
         desc: '',
-        url: '/mileni.jpg',
+        filename: 'mileni.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Dahlia',
         desc: '',
-        url: '/dahlia.jpg',
+        filename: 'dahlia.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Saethyra',
         desc: '',
-        url: '/saethyra3.jpg',
+        filename: 'saethyra3.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Gwyn',
         desc: '',
-        url: '/gwyn.jpg',
+        filename: 'gwyn.jpg',
         keywords: ['commissions', 'sketch']
     },
     {
         title: 'Rinh',
         desc: '',
-        url: '/rinh2.jpg',
+        filename: 'rinh2.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Neefia',
         desc: '',
-        url: '/neefia5.jpg',
+        filename: 'neefia5.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Myfanwy',
         desc: '',
-        url: '/myfanwy.jpg',
+        filename: 'myfanwy.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Amirie',
         desc: '',
-        url: '/amirie3.jpg',
+        filename: 'amirie3.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Elara',
         desc: '',
-        url: '/elara2.jpg',
+        filename: 'elara2.jpg',
         keywords: ['sketch']
     },
     {
         title: "Nefer'Llieth",
         desc: '',
-        url: '/neferllieth.jpg',
+        filename: 'neferllieth.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Allura',
         desc: '',
-        url: '/allura4.jpg',
+        filename: 'allura4.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Imylea',
         desc: '',
-        url: '/imylea.jpg',
+        filename: 'imylea.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Zaiesme',
         desc: '',
-        url: '/zaiesme.jpg',
+        filename: 'zaiesme.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Amaryllis',
         desc: '',
-        url: '/amaryllis.jpg',
+        filename: 'amaryllis.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Ellyra',
         desc: '',
-        url: '/ellyra2.jpg',
+        filename: 'ellyra2.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Shazeira',
         desc: '',
-        url: '/shazeira2.jpg',
+        filename: 'shazeira2.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Evalynn',
         desc: '',
-        url: '/evalynn.jpg',
+        filename: 'evalynn.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Rosalie',
         desc: '',
-        url: '/rosalie2.jpg',
+        filename: 'rosalie2.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Ephyra',
         desc: '',
-        url: '/ephyra2.jpg',
+        filename: 'ephyra2.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Sinraeyal',
         desc: '',
-        url: '/sinraeyal.jpg',
+        filename: 'sinraeyal.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Zhaleh',
         desc: '',
-        url: '/zhaleh2.jpg',
+        filename: 'zhaleh2.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Amuhnet',
         desc: '',
-        url: '/amuhnet.jpg',
+        filename: 'amuhnet.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Maeve',
         desc: '',
-        url: '/maeve.jpg',
+        filename: 'maeve.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Serana',
         desc: '',
-        url: '/helen-aimee-serana2022.jpg',
-        keywords: ['all', 'fantasy','gaming','skyrim']
+        filename: 'helen-aimee-serana2022.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'skyrim']
     },
     {
         title: 'Dark Draenei',
         desc: '',
-        url: '/helen-aimee-dark-draenei.jpg',
+        filename: 'helen-aimee-dark-draenei.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Helene',
         desc: '',
-        url: '/helen-aimee-helene.jpg',
+        filename: 'helen-aimee-helene.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
     },
     {
         title: 'Lumystra',
         desc: '',
-        url: '/helen-aimee-lumystra1.jpg',
+        filename: 'helen-aimee-lumystra1.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Syrinah',
         desc: '',
-        url: '/helen-aimee-syrinah.jpg',
+        filename: 'helen-aimee-syrinah.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Ninara',
         desc: '',
-        url: '/helen-aimee-ninara.jpg',
+        filename: 'helen-aimee-ninara.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Neefia',
         desc: '',
-        url: '/helen-aimee-neefia-repaint.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        filename: 'helen-aimee-neefia-repaint.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Iris',
         desc: '',
-        url: '/helen-aimee-iris-portrait.jpg',
+        filename: 'helen-aimee-iris-portrait.jpg',
         keywords: ['all', 'fantasy', 'commissions']
-    }, 
+    },
     {
         title: 'Iris',
         desc: '',
-        url: '/helen-aimee-iris.jpg',
+        filename: 'helen-aimee-iris.jpg',
         keywords: ['all', 'fantasy', 'commissions']
-    }, 
+    },
     {
         title: 'Elara',
         desc: '',
-        url: '/helen-aimee-elara.jpg',
-        keywords: ['all', 'fantasy','gaming','skyrim']
+        filename: 'helen-aimee-elara.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'skyrim']
     },
     {
         title: 'Tana',
         desc: '',
-        url: '/helen-aimee-tana.jpg',
+        filename: 'helen-aimee-tana.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
-    }, 
+    },
     {
         title: 'Lisa',
         desc: '',
-        url: '/helen-aimee-lisa.jpg',
+        filename: 'helen-aimee-lisa.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
-    }, 
-        {
+    },
+    {
         title: 'Jaedesria',
         desc: '',
-        url: '/helen-aimee-jaedesria.jpg',
+        filename: 'helen-aimee-jaedesria.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Fuz',
         desc: '',
-        url: '/helen-aimee-fuz.jpg',
+        filename: 'helen-aimee-fuz.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
     },
     {
         title: 'Pucker',
         desc: '',
-        url: '/helen-aimee-pucker.jpg',
+        filename: 'helen-aimee-pucker.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
     },
     {
         title: 'Galaxy Draenei',
         desc: '',
-        url: '/helen-aimee-galaxy-draenei.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        filename: 'helen-aimee-galaxy-draenei.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Dité',
         desc: '',
-        url: '/helen-aimee-dite.jpg',
+        filename: 'helen-aimee-dite.jpg',
         keywords: ['commissions', 'sketch']
     },
     {
         title: 'Viseira',
         desc: '',
-        url: '/viseira.jpg',
+        filename: 'viseira.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Tassera',
         desc: '',
-        url: '/tassera.jpg',
+        filename: 'tassera.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Fleur',
         desc: '',
-        url: '/fleur2.jpg',
+        filename: 'fleur2.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Alissera',
         desc: '',
-        url: '/alissera.jpg',
+        filename: 'alissera.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Nyx',
         desc: '',
-        url: '/nyx.jpg',
+        filename: 'nyx.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Ecatée',
         desc: '',
-        url: '/ecatee.jpg',
+        filename: 'ecatee.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Norrei',
         desc: '',
-        url: '/norrei.jpg',
+        filename: 'norrei.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Freyja',
         desc: '',
-        url: '/freyja.jpg',
+        filename: 'freyja.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Celeste',
         desc: '',
-        url: '/celeste.jpg',
+        filename: 'celeste.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Amirie',
         desc: '',
-        url: '/helen-aimee-amirie2.jpg',
+        filename: 'helen-aimee-amirie2.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Lurala',
         desc: '',
-        url: '/helen-aimee-lurala.jpg',
+        filename: 'helen-aimee-lurala.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
     },
     {
         title: 'Kyriel',
         desc: '',
-        url: '/helen-aimee-kyriel.jpg',
+        filename: 'helen-aimee-kyriel.jpg',
         keywords: ['commissions', 'sketch']
     },
     {
         title: 'Jaelryn',
         desc: '',
-        url: '/helen-aimee-jaelryn.jpg',
+        filename: 'helen-aimee-jaelryn.jpg',
         keywords: ['fantasy', 'gaming', 'commissions', 'sketch']
     },
     {
         title: 'Nuelnehti',
         desc: '',
-        url: '/helen-aimee-nuelnehti.jpg',
+        filename: 'helen-aimee-nuelnehti.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Zhaleh',
         desc: '',
-        url: '/helen-aimee-zhaleh.jpg',
+        filename: 'helen-aimee-zhaleh.jpg',
         keywords: ['all', 'fantasy']
     },
     {
         title: 'Ethiriel',
         desc: '',
-        url: '/helen-aimee-ethiriel.jpg',
+        filename: 'helen-aimee-ethiriel.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
     },
     {
         title: 'Willow',
         desc: '',
-        url: '/helen-aimee-willow2.jpg',
+        filename: 'helen-aimee-willow2.jpg',
         keywords: ['all', 'pets', 'commissions']
     },
     {
         title: 'Diana',
         desc: '',
-        url: '/helen-aimee-diana.jpg',
+        filename: 'helen-aimee-diana.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
-    },    
+    },
     {
         title: 'Dracthyr',
         desc: '',
-        url: '/helen-aimee-dracthyr.jpg',
+        filename: 'helen-aimee-dracthyr.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Ephyra',
         desc: '',
-        url: '/helen-aimee-ephyra.jpg',
+        filename: 'helen-aimee-ephyra.jpg',
         keywords: ['all', 'fantasy']
     },
     {
         title: "Ker'tina",
         desc: '',
-        url: '/helen-aimee-ker-tina.jpg',
+        filename: 'helen-aimee-ker-tina.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft', 'commissions']
     },
     {
         title: 'Half-Elf',
         desc: '',
-        url: '/helen-aimee-half-elf.jpg',
+        filename: 'helen-aimee-half-elf.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Luxanya',
         desc: '',
-        url: '/helen-aimee-luxanya-pinup.jpg',
+        filename: 'helen-aimee-luxanya-pinup.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft', 'commissions']
-    },    
+    },
     {
         title: 'Mana Wyrm Mermaid',
         desc: '',
-        url: '/helen-aimee-mermaid.jpg',
+        filename: 'helen-aimee-mermaid.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Kalizeth',
         desc: '',
-        url: '/helen-aimee-kalizeth.jpg',
+        filename: 'helen-aimee-kalizeth.jpg',
         keywords: ['all', 'fantasy', 'gaming']
     },
     {
         title: 'Skyla',
         desc: '',
-        url: '/helen-aimee-skyla.jpg',
+        filename: 'helen-aimee-skyla.jpg',
         keywords: ['all', 'star Wars', 'gaming', 'fantasy', 'commissions']
     },
     {
         title: 'Voidelf',
         desc: '',
-        url: '/helen-aimee-domneth.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        filename: 'helen-aimee-domneth.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Silaridel',
         desc: '',
-        url: '/helen-aimee-silaridel.jpg',
+        filename: 'helen-aimee-silaridel.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Luxanya',
         desc: '',
-        url: '/helen-aimee-luxanya2.jpg',
+        filename: 'helen-aimee-luxanya2.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
     },
     {
         title: "Sha'Tari",
         desc: '',
-        url: '/helen-aimee-sha-tari.jpg',
+        filename: 'helen-aimee-sha-tari.jpg',
         keywords: ['sketch', 'commissions']
     },
     {
         title: 'Luxanya',
         desc: '',
-        url: '/helen-aimee-luxanya1.jpg',
+        filename: 'helen-aimee-luxanya1.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
     },
     {
         title: 'Lunaara',
         desc: '',
-        url: '/helen-aimee-lunaara.jpg',
+        filename: 'helen-aimee-lunaara.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
     },
     {
         title: 'Mai',
         desc: '',
-        url: '/helen-aimee-mai.jpg',
+        filename: 'helen-aimee-mai.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Emerald Herald',
         desc: '',
-        url: '/helen-aimee-emerald-herald.jpg',
+        filename: 'helen-aimee-emerald-herald.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Draenei',
         desc: '',
-        url: '/helen-aimee-aalea.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        filename: 'helen-aimee-aalea.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Lyriah',
         desc: '',
-        url: '/helen-aimee-lyriah.jpg',
+        filename: 'helen-aimee-lyriah.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
     },
     {
         title: 'Casper',
         desc: '',
-        url: '/helen-aimee-casper.jpg',
+        filename: 'helen-aimee-casper.jpg',
         keywords: ['all', 'pets', 'commissions']
     },
     {
         title: 'Gwyddhienne',
         desc: '',
-        url: '/helen-aimee-gwyddhienne.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        filename: 'helen-aimee-gwyddhienne.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Lirilya',
         desc: '',
-        url: '/helen-aimee-lirilya.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        filename: 'helen-aimee-lirilya.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: "Hanu'a",
         desc: '',
-        url: '/helen-aimee-hanua.jpg',
+        filename: 'helen-aimee-hanua.jpg',
         keywords: ['all', 'star Wars', 'gaming', 'fantasy', 'commissions']
     },
     {
         title: 'Neefia',
         desc: '',
-        url: '/helen-aimee-neefia3.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        filename: 'helen-aimee-neefia3.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Rosalie',
         desc: '',
-        url: '/helen-aimee-rosalie.jpg',
+        filename: 'helen-aimee-rosalie.jpg',
         keywords: ['all', 'fantasy']
     },
     {
         title: 'Ahri',
         desc: '',
-        url: '/helen-aimee-ahri.jpg',
+        filename: 'helen-aimee-ahri.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
     },
     {
         title: 'Kaylin',
         desc: '',
-        url: '/helen-aimee-kaylin.jpg',
+        filename: 'helen-aimee-kaylin.jpg',
         keywords: ['all', 'star Wars', 'gaming', 'fantasy', 'commissions']
     },
     {
         title: 'Auresius',
         desc: '',
-        url: '/helen-aimee-auresius.jpg',
+        filename: 'helen-aimee-auresius.jpg',
         keywords: ['all', 'FFXIV', 'gaming', 'fantasy']
     },
     {
         title: 'Bea',
         desc: '',
-        url: '/helen-aimee-bea.jpg',
+        filename: 'helen-aimee-bea.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy', 'commissions']
     },
     {
         title: 'Akleja',
         desc: '',
-        url: '/helen-aimee-akleja2.jpg',
+        filename: 'helen-aimee-akleja2.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy', 'commissions']
     },
     {
         title: 'Amethyst',
         desc: '',
-        url: '/helen-aimee-amethyst.jpg',
+        filename: 'helen-aimee-amethyst.jpg',
         keywords: ['commissions', 'sketch']
     },
     {
         title: 'Primrose',
         desc: '',
-        url: '/helen-aimee-primrose.jpg',
+        filename: 'helen-aimee-primrose.jpg',
         keywords: ['all', 'pets', 'commissions']
     },
     {
         title: 'Maeve',
         desc: '',
-        url: '/helen-aimee-maeve.jpg',
+        filename: 'helen-aimee-maeve.jpg',
         keywords: ['all', 'fantasy']
     },
     {
         title: 'Dex',
         desc: '',
-        url: '/helen-aimee-dex.jpg',
+        filename: 'helen-aimee-dex.jpg',
         keywords: ['commissions', 'sketch']
     },
     {
         title: 'Allura',
         desc: '',
-        url: '/helen-aimee-allurabw.jpg',
+        filename: 'helen-aimee-allurabw.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'skyrim']
     },
     {
         title: 'Sabira',
         desc: '',
-        url: '/helen-aimee-sabira.jpg',
+        filename: 'helen-aimee-sabira.jpg',
         keywords: ['all', 'fantasy', 'commissions']
     },
     {
         title: 'Allura',
         desc: '',
-        url: '/helen-aimee-allura2.jpg',
+        filename: 'helen-aimee-allura2.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'skyrim']
     },
     {
         title: 'Charity prize',
         desc: '',
-        url: '/helen-aimee-charity.jpg',
+        filename: 'helen-aimee-charity.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'star Wars']
     },
     {
         title: 'Halevuna',
         desc: '',
-        url: '/helen-aimee-halevuna.jpg',
+        filename: 'helen-aimee-halevuna.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
     },
     {
         title: 'Neefia',
         desc: '',
-        url: '/helen-aimee-neefia2.jpg',
+        filename: 'helen-aimee-neefia2.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Cypher',
         desc: '',
-        url: '/helen-aimee-cypher.jpg',
+        filename: 'helen-aimee-cypher.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: "N'qelkara",
         desc: '',
-        url: "/helen-aimee-n'qelkara.jpg",
+        filename: "helen-aimee-n'qelkara.jpg",
         keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
     },
     {
         title: 'Shazeira',
         desc: '',
-        url: '/helen-aimee-shazeira.jpg',
+        filename: 'helen-aimee-shazeira.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Bella',
         desc: '',
-        url: '/helen-aimee-bella.jpg',
+        filename: 'helen-aimee-bella.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Forgiven',
         desc: '',
-        url: '/helen-aimee-forgiven.jpg',
+        filename: 'helen-aimee-forgiven.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
     },
     {
         title: 'Frost wyrm',
         desc: '',
-        url: '/helen-aimee-adoptable-02.jpg',
+        filename: 'helen-aimee-adoptable-02.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Allura',
         desc: '',
-        url: '/helen-aimee-allura.jpg',
+        filename: 'helen-aimee-allura.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Akleja',
         desc: '',
-        url: '/helen-aimee-akleja-sketch.jpg',
+        filename: 'helen-aimee-akleja-sketch.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Rayn',
         desc: '',
-        url: '/helen-aimee-rayn.jpg',
+        filename: 'helen-aimee-rayn.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Rinh',
         desc: '',
-        url: '/helen-aimee-rinh.jpg',
+        filename: 'helen-aimee-rinh.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
     },
     {
         title: 'Amirie',
         desc: '',
-        url: '/helen-aimee-amirie.jpg',
+        filename: 'helen-aimee-amirie.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Daesal',
         desc: '',
-        url: '/helen-aimee-daesal.jpg',
+        filename: 'helen-aimee-daesal.jpg',
         keywords: ['commissions', 'sketch']
     },
     {
         title: 'MikaMika and Estelle',
         desc: '',
-        url: '/helen-aimee-mikamika-estelle.jpg',
+        filename: 'helen-aimee-mikamika-estelle.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
     },
     {
         title: 'Panam',
         desc: '',
-        url: '/helen-aimee-panam.jpg',
+        filename: 'helen-aimee-panam.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Vapni',
         desc: '',
-        url: '/helen-aimee-vapni.jpg',
+        filename: 'helen-aimee-vapni.jpg',
         keywords: ['all', 'star Wars', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Isla',
         desc: '',
-        url: '/helen-aimee-isla.jpg',
+        filename: 'helen-aimee-isla.jpg',
         keywords: ['all', 'warcraft', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Sirree',
         desc: '',
-        url: '/helen-aimee-sirree.jpg',
+        filename: 'helen-aimee-sirree.jpg',
         keywords: ['all', 'warcraft', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Lumystra',
         desc: '',
-        url: '/helen-aimee-lumystra.jpg',
+        filename: 'helen-aimee-lumystra.jpg',
         keywords: ['all', 'warcraft', 'fantasy', 'gaming']
     },
     {
         title: 'Aetor',
         desc: '',
-        url: '/helen-aimee-aetor.jpg',
+        filename: 'helen-aimee-aetor.jpg',
         keywords: ['all', 'warcraft', 'fantasy', 'gaming']
     },
     {
         title: 'Narni',
         desc: '',
-        url: '/helen-aimee-narni.jpg',
+        filename: 'helen-aimee-narni.jpg',
         keywords: ['all', 'warcraft', 'fantasy', 'gaming']
     },
     {
         title: 'Ellyra',
         desc: '',
-        url: '/helen-aimee-ellyra.jpg',
+        filename: 'helen-aimee-ellyra.jpg',
         keywords: ['all', 'fantasy']
     },
     {
         title: 'Justice',
         desc: '',
-        url: '/helen-aimee-justicefinal1.jpg',
+        filename: 'helen-aimee-justicefinal1.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
         title: 'Whitemane',
         desc: '',
-        url: '/helen-aimee-whitemane.jpg',
+        filename: 'helen-aimee-whitemane.jpg',
         keywords: ['all', 'warcraft', 'fantasy', 'gaming']
     },
     {
         title: 'Cecilia',
         desc: '',
-        url: '/helen-aimee-cecilia.jpg',
+        filename: 'helen-aimee-cecilia.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Strawberry',
         desc: '',
-        url: '/helen-aimee-strawberry.jpg',
+        filename: 'helen-aimee-strawberry.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Darktide',
         desc: '',
-        url: '/helen-aimee-darktide.jpg',
+        filename: 'helen-aimee-darktide.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Demon girl',
         desc: '',
-        url: '/helen-aimee-demon-girl.jpg',
+        filename: 'helen-aimee-demon-girl.jpg',
         keywords: ['sketch']
     },
     {
         title: 'Saethyra portrait',
         desc: '',
-        url: '/helen-aimee-sae.jpg',
+        filename: 'helen-aimee-sae.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy']
     },
     {
         title: 'Akleja',
         desc: '',
-        url: '/helen-aimee-akleja.jpg',
+        filename: 'helen-aimee-akleja.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy', 'commissions']
     },
     {
         title: 'Saethyra',
         desc: '',
-        url: '/helen-aimee-saethyra.jpg',
+        filename: 'helen-aimee-saethyra.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy']
     },
     {
         title: 'Willow',
         desc: '',
-        url: '/helen-aimee-willow.jpg',
+        filename: 'helen-aimee-willow.jpg',
         keywords: ['all', 'pets']
     },
     {
         title: 'Buttons',
         desc: '',
-        url: '/helen-aimee-buttons.jpg',
+        filename: 'helen-aimee-buttons.jpg',
         keywords: ['all', 'pets']
     },
     {
         title: 'Serena',
         desc: '',
-        url: '/helen-aimee-serena.jpg',
+        filename: 'helen-aimee-serena.jpg',
         keywords: ['all', 'gaming', 'fantasy']
     },
     {
         title: 'Serana',
         desc: '',
-        url: '/helen-aimee-serana.jpg',
-        keywords: ['all', 'gaming', 'fantasy','skyrim']
+        filename: 'helen-aimee-serana.jpg',
+        keywords: ['all', 'gaming', 'fantasy', 'skyrim']
     },
     {
         title: 'Ribbon',
         desc: '',
-        url: '/helen-aimee-ribbon.jpg',
+        filename: 'helen-aimee-ribbon.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy']
     },
     {
         title: 'Fleur',
         desc: '',
-        url: '/helen-aimee-flameleaf.jpg',
+        filename: 'helen-aimee-flameleaf.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy']
     },
     {
         title: 'Darkshift',
         desc: '',
-        url: '/helen-aimee-darkshift-web.jpg',
+        filename: 'helen-aimee-darkshift-web.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy']
     },
     {
         title: 'Neefia',
         desc: '',
-        url: '/helen-aimee-neefia.jpg',
+        filename: 'helen-aimee-neefia.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy']
     },
     {
         title: 'Blue and Quincy',
         desc: '',
-        url: '/helen-aimee-blue-and-quincy-c.jpg',
+        filename: 'helen-aimee-blue-and-quincy-c.jpg',
         keywords: ['all', 'pets', 'commissions']
     },
 

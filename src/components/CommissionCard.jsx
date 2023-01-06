@@ -67,7 +67,7 @@ export const CommissionCard = (props) => {
         >
             {images.map((image, index) => (
                 <div className={classes.imageContainer} key={index} >
-                    <img className={classes.image} src={image.url} alt="" />
+                    <img className={classes.image} src={`images/${image.filename}`} alt="" />
                 </div>
             ))}
         </Carousel>
