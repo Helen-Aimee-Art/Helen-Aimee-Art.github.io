@@ -15,7 +15,7 @@
     "react-jss": "^10.5.0",
     "react-multi-carousel": "^2.5.5",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.0"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -39,6 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {}
+  }
 }
