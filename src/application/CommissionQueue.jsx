@@ -1,5 +1,4 @@
-import React from 'react'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
@@ -8,7 +7,7 @@ const useStyles = createUseStyles(theme => ({
     },
     frame: {
         width: '100%',
-        height: '675px'
+        height: '710px'
     }
 }))
 
@@ -28,13 +27,13 @@ export const CommissionQueue = (props) => {
                     className={classes.frame}
                     title="Queue"
                     src="https://trello.com/b/dsJu8SNh.html"
-                    frameborder="0"
-                    marginheight="0"
-                    marginwidth="0">
+                    frameBorder="0"
+                    marginHeight="0"
+                    marginWidth="0">
                     Loading…
                 </iframe>
             </div>
         </>
-        
+
     )
 }

@@ -28,16 +28,16 @@ const useStyles = createUseStyles(theme => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        width: isDesktop => isDesktop ? '65%' : '90%',
+        width: props => props.isDesktop ? props.currentPage === 'commissionqueue' ? '100%' : '65%' : '90%',
         flex: 1,
-        margin: '25px 0'
+        margin: props => props.currentPage === 'commissionqueue' ? '0' : '25px 0'
     }
 }))
 
 export const Layout = (props) => {
     const { currentPage, isDesktop, isLargeScreen, isMediumScreen, isSmallScreen, setCurrentPage } = props
     const theme = useTheme()
-    const classes = useStyles(isDesktop, { theme })
+    const classes = useStyles(props, { theme })
 
     return (
         <Router>
