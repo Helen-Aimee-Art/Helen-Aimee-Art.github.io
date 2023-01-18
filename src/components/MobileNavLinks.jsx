@@ -66,9 +66,14 @@ export const MobileNavLinks = (props) => {
                         Commission Info
                     </li>
                 </Link>
-                <Link to='/adoptables' className={classes.link} onClick={() => setActive(false)} >
-                    <li className={props.currentPage === 'adoptables' ? classes.activeLi : classes.li}>
-                        Adoptables
+                <Link to='/commissionform' className={classes.link} onClick={() => setActive(false)} >
+                    <li className={props.currentPage === 'commissionform' ? classes.activeLi : classes.li}>
+                        Commission Form
+                    </li>
+                </Link>
+                <Link to='/commissionqueue' className={classes.link} onClick={() => setActive(false)} >
+                    <li className={props.currentPage === 'commissionqueue' ? classes.activeLi : classes.li}>
+                        Queue
                     </li>
                 </Link>
                 <Link to='/about' className={classes.link} onClick={() => setActive(false)} >

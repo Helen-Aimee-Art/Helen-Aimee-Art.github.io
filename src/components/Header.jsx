@@ -14,7 +14,7 @@ const useStyles = createUseStyles(theme => ({
         backgroundColor: theme.colorPrimary,
         color: theme.colorSecondary,
         width: '100%',
-        height: 100,
+        height: 125,
         borderBottom: '3px solid',
         borderBottomColor: theme.colorTertiary
     })

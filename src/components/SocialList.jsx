@@ -4,9 +4,10 @@ import { SocialLink } from './SocialLink'
 import { SvgIcon } from '@material-ui/core'
 import { createUseStyles, useTheme } from 'react-jss'
 
-const useStyles = createUseStyles(theme => ({
+const useStyles = createUseStyles(props => ({
     socials: {
-        display: 'flex'
+        display: 'flex',
+        margin: props => props.mini ? '10px 0' : 0
     },
     icon: {
         width: '100%',
@@ -56,29 +57,29 @@ const Redbubble = (props) => {
 
 export const SocialList = (props) => {
     const theme = useTheme()
-    const classes = useStyles(theme)
+    const classes = useStyles(props)
 
     return (
         <div className={classes.socials}>
-            <SocialLink link="https://www.twitter.com/HelenAimeeArt/" title="Twitter">
+            <SocialLink link="https://www.twitter.com/HelenAimeeArt/" title="Twitter" mini={!!props.mini} noLeftPadding>
                 <Twitter />
             </SocialLink>
-            <SocialLink link="https://www.instagram.com/helenaimeeart/" title="Instagram">
+            <SocialLink link="https://www.instagram.com/helenaimeeart/" title="Instagram" mini={!!props.mini}>
                 <Instagram />
             </SocialLink>
-            <SocialLink link="https://www.deviantart.com/helenaimeeart" title="DeviantArt">
+            <SocialLink link="https://www.deviantart.com/helenaimeeart" title="DeviantArt" mini={!!props.mini}>
                 <DeviantArt />
             </SocialLink>
-            <SocialLink link="https://www.artstation.com/helen_aimee" title="ArtStation">
+            <SocialLink link="https://www.artstation.com/helen_aimee" title="ArtStation" mini={!!props.mini}>
                 <ArtStation />
             </SocialLink>
-            <SocialLink link="https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA" title="YouTube">
+            <SocialLink link="https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA" title="YouTube" mini={!!props.mini}>
                 <YouTube />
             </SocialLink>
-            <SocialLink link="https://ko-fi.com/helenaimeeart" title="Ko-fi">
+            <SocialLink link="https://ko-fi.com/helenaimeeart" title="Ko-fi" mini={!!props.mini}>
                 <Kofi />
             </SocialLink>
-            <SocialLink link="https://www.redbubble.com/people/helenaimee/shop?asc=u" title="Redbubble">
+            <SocialLink link="https://www.redbubble.com/people/helenaimee/shop?asc=u" title="Redbubble" mini={!!props.mini}>
                 <Redbubble />
             </SocialLink>
         </div >

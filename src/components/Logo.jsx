@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { createUseStyles } from 'react-jss'
+import { SocialList } from './SocialList'
 
 const useStyles = createUseStyles(() => ({
     container: {
@@ -34,6 +35,7 @@ export const Logo = (props) => {
             <div className={classes.contact} >
                 <a href="mailto:helen.aimee.art@gmail.com" className={classes.link}>helen.aimee.art@gmail.com</a>
             </div>
+            <SocialList mini />
         </div>
     )
 }

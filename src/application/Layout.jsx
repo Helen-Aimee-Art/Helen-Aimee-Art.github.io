@@ -2,6 +2,8 @@ import React from 'react'
 import { About } from './About'
 import { Adoptables } from './Adoptables'
 import { CommissionInfo } from './CommissionInfo'
+import { CommissionForm } from './CommissionForm'
+import { CommissionQueue } from './CommissionQueue'
 import { Footer } from '../components/Footer'
 import { Gallery } from './Gallery'
 import { Header } from '../components/Header'
@@ -51,6 +53,18 @@ export const Layout = (props) => {
                         )} />
                         <Route path="/commissioninfo" render={() => (
                             <CommissionInfo
+                                setCurrentPage={setCurrentPage}
+                                isDesktop={isDesktop}
+                            />
+                        )} />
+                        <Route path="/commissionform" render={() => (
+                            <CommissionForm
+                                setCurrentPage={setCurrentPage}
+                                isDesktop={isDesktop}
+                            />
+                        )} />
+                        <Route path="/commissionqueue" render={() => (
+                            <CommissionQueue
                                 setCurrentPage={setCurrentPage}
                                 isDesktop={isDesktop}
                             />
