@@ -1,7 +1,7 @@
 export const links = [
     { title: 'Website', link: 'https://www.helenaimee.art' },
     { title: 'Commission Prices: OPEN', link: 'https://www.helenaimee.art/#/commissioninfo' },
-    { title: 'Commission Queue (Trello)', link: 'https://trello.com/b/dsJu8SNh/helen-aimee-art-commissions' },
+    { title: 'Commission Queue', link: 'https://www.helenaimee.art/#/commissionqueue' },
     { title: 'Twitter', link: 'https://twitter.com/HelenAimeeArt' },
     { title: 'Instagram', link: 'https://www.instagram.com/helenaimeeart/' },
     { title: 'DeviantArt', link: 'https://www.deviantart.com/HelenAimeeArt' },
@@ -10,4 +10,5 @@ export const links = [
     { title: 'Youtube', link: 'https://www.youtube.com/channel/UCsJn3W5RUnKKQKwHiMbiFKA' },
     { title: 'Redbubble', link: 'https://www.redbubble.com/people/helenaimee/shop' },
     { title: 'Artfol', link: 'https://artfol.me/helenaimeeart' },
+    { title: 'Tumblr', link: 'https://helenaimeeart.tumblr.com/' },
 ]

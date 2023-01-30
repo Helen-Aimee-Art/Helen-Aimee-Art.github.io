@@ -2,7 +2,7 @@ import React from 'react'
 
 export const commissionStatus = 'Open'
 
-export const monthlyTheme = 'Scales'
+export const monthlyTheme = 'Goth Glamour'
 
 export const commissionText = (
     <>
@@ -14,22 +14,15 @@ export const commissionText = (
         </p>
         <h2>Process</h2>
         <p>
-            If you are interested in a commission, please email me with the information below.
+            If you are interested in a commission, please fill out the form on my Commission Form page. This will ensure that I receive all the relevant information and means I will be able to get back to you quickly.
+            When sending reference images please only send images in JPEG or PNG formats and not in ZIP files. RefSheet and Imgur links are also accepted. 
             The number of projects I take on will vary, I will email you with confirmation if I am available to take on the project.
-            My commission queue can be viewed on my <a href='https://trello.com/b/dsJu8SNh/helen-aimee-art-commissions'>Trello</a>.
+            My commission queue can be viewed on my queue page.
         </p>
-        <ul>
-            <li>Contact email address for updates and for the invoices</li>
-            <li>Your name and the name of your character(s)</li>
-            <li>Commission type</li>
-            <li>Physical description of your character(s), including race, age etc. (any reference pictures are appreciated)</li>
-            <li>Character(s) personality</li>
-        </ul>
         <p>
-            Once we have agreed the outline, I will send you a rough sketch for approval. If you are happy with the sketch I will send a Paypal invoice for 100% of the total fee to your email.
-            Once the invoice has been paid I will continue working on your project; I will send updates throughout the process where you can ask for minor changes.
-            Once completed, I will send a low resolution JPEG of the final piece and then, if you are happy, I will send the high resolution JPEG.
-            If you are a new customer I will ask for 50% of the fee to be paid before I start working on the sketch and the rest to be paid after the sketch has been approved.
+            Once we have agreed the outline, I will send you the PayPal invoice. This invoice can be paid 100% upfront or 50% upfront and 50% after your approval of the sketch.
+            Once the invoice has been paid I will start work on your sketch; I will send updates throughout the process where you can ask for minor changes.
+            Once completed, I will send a low resolution, watermarked JPEG of the final piece and then, if you are happy, I will send the high resolution JPEG through to your email.
         </p>
         <h2>Monthly Themes</h2>
         <p>I will be running monthly themes which may mean that your commission will receive a discount. If you sign up for a commission with a character which is related to the theme in some way you will receive a 10% discount. 
@@ -57,22 +50,23 @@ export const commissionText = (
         </ul>
         <h3>Copyright & Ownership</h3>
         <ul>
-            <li>I will retain copyright to the artwork. You are not permitted to change or resell the artwork</li>
-            <li>I have the right to use the artwork in my portfolio, social media and to sell prints</li>
+            <li>I will retain copyright to the artwork. You are not permitted to change or resell the artwork.</li>
+            <li>I have the right to use the artwork in my portfolio, social media and to sell prints.</li>
             <li>You have the right to use the artwork for personal use only. (Eg. prints for your wall, profile pictures and displaying online with credit)</li>
-            <li>I have the right to make a process video and publish it on my Youtube channel</li>
-            <li>You retain ownership of your original character(s) if depicted in the artwork</li>
-            <li>My work cannot be used for NFTs or any crypto art, commissioned or otherwise</li>
-            <li>My work cannot be used to train AI learning, commissioned or otherwise</li>
+            <li>I have the right to make a process video and publish it on my Youtube channel.</li>
+            <li>You retain ownership of your original character(s) if depicted in the artwork.</li>
+            <li>My work cannot be used for NFTs or any crypto art, commissioned or otherwise.</li>
+            <li>My work cannot be used to train AI learning, commissioned or otherwise.</li>
         </ul>
         <h3>Revisions & Payment</h3>
         <ul>
             <li>
                 Any major revisions must be agreed before the sketch is approved, after this stage any major adjustments will be charged.
-                You may request up to three minor changes throughout the process, after this any minor changes may be charged
+                You may request up to three minor changes throughout the process, after this any minor changes may be charged.
             </li>
-            <li>Payment must be made through Paypal once I send you the invoices</li>
-            <li>If for any reason I cannot complete your project, you will receive a refund for the full cost through Paypal</li>
+            <li>Payment must be made through Paypal once I send you the invoice.</li>
+            <li>If you cancel your commission at the sketch stage I will refund 50% of the total commission cost (not applicable for sketch commissions), if you cancel after the colouring has started I will not provide any refunds.</li>
+            <li>If for any reason I cannot complete your project, you will receive a refund for the full cost through Paypal.</li>
         </ul>
     </>
 )

@@ -1,5 +1,9 @@
 export const commissionImages = [
     {
+        url: '/myriani.jpg',
+        type: 'halfbody'
+    },
+    {
         url: '/helen-aimee-diana.jpg',
         type: 'halfbody'
     },
@@ -28,16 +32,16 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-isla.jpg',
-        type: 'halfbody'
-    },
-    {
         url: '/helen-aimee-darkshift-web.jpg',
         type: 'halfbody'
     },
     {
         url: '/helen-aimee-whitemane.jpg',
         type: 'halfbody'
+    },
+    {
+        url: '/erelah.jpg',
+        type: 'waist'
     },
     {
         url: '/helen-aimee-iris.jpg',
@@ -64,12 +68,12 @@ export const commissionImages = [
         type: 'waist'
     },
     {
-        url: '/helen-aimee-adoptable-02.jpg',
+        url: '/helen-aimee-forgiven.jpg',
         type: 'waist'
     },
     {
-        url: '/helen-aimee-forgiven.jpg',
-        type: 'waist'
+        url: '/lunariia.jpg',
+        type: 'bust'
     },
     {
         url: '/helen-aimee-amirie2.jpg',
@@ -97,10 +101,6 @@ export const commissionImages = [
     },
     {
         url: '/helen-aimee-auresius.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-bea.jpg',
         type: 'bust'
     },
     {

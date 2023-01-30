@@ -2,6 +2,48 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Razlaria',
+        desc: '',
+        url: '/razlaria.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'elder Scrolls']
+    },
+    {
+        title: 'Lunariia',
+        desc: '',
+        url: '/lunariia.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Pearl',
+        desc: '',
+        url: '/pearl.jpg',
+        keywords: ['all', 'fantasy', 'gaming',]
+    },
+    {
+        title: 'Lisa',
+        desc: '',
+        url: '/lisa.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
+    },
+    {
+        title: 'Vapni',
+        desc: '',
+        url: '/vapni.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'star Wars']
+    },
+    {
+        title: 'Myriani',
+        desc: '',
+        url: '/myriani.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'FFXIV']
+    },
+    {
+        title: 'Erelah',
+        desc: '',
+        url: '/erelah.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
         title: 'Rin',
         desc: '',
         url: '/rin.jpg',
@@ -203,7 +245,7 @@ export const galleryImages = [
         title: 'Serana',
         desc: '',
         url: '/helen-aimee-serana2022.jpg',
-        keywords: ['all', 'fantasy','gaming','skyrim']
+        keywords: ['all', 'fantasy', 'gaming', 'elder Scrolls']
     },
     {
         title: 'Dark Draenei',
@@ -239,39 +281,39 @@ export const galleryImages = [
         title: 'Neefia',
         desc: '',
         url: '/helen-aimee-neefia-repaint.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Iris',
         desc: '',
         url: '/helen-aimee-iris-portrait.jpg',
         keywords: ['all', 'fantasy', 'commissions']
-    }, 
+    },
     {
         title: 'Iris',
         desc: '',
         url: '/helen-aimee-iris.jpg',
         keywords: ['all', 'fantasy', 'commissions']
-    }, 
+    },
     {
         title: 'Elara',
         desc: '',
         url: '/helen-aimee-elara.jpg',
-        keywords: ['all', 'fantasy','gaming','skyrim']
+        keywords: ['all', 'fantasy', 'gaming', 'elder Scrolls']
     },
     {
         title: 'Tana',
         desc: '',
         url: '/helen-aimee-tana.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
-    }, 
+    },
     {
         title: 'Lisa',
         desc: '',
         url: '/helen-aimee-lisa.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
-    }, 
-        {
+    },
+    {
         title: 'Jaedesria',
         desc: '',
         url: '/helen-aimee-jaedesria.jpg',
@@ -293,7 +335,7 @@ export const galleryImages = [
         title: 'Galaxy Draenei',
         desc: '',
         url: '/helen-aimee-galaxy-draenei.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Dité',
@@ -408,7 +450,7 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-diana.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
-    },    
+    },
     {
         title: 'Dracthyr',
         desc: '',
@@ -438,7 +480,7 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-luxanya-pinup.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft', 'commissions']
-    },    
+    },
     {
         title: 'Mana Wyrm Mermaid',
         desc: '',
@@ -461,7 +503,7 @@ export const galleryImages = [
         title: 'Voidelf',
         desc: '',
         url: '/helen-aimee-domneth.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Silaridel',
@@ -509,7 +551,7 @@ export const galleryImages = [
         title: 'Draenei',
         desc: '',
         url: '/helen-aimee-aalea.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Lyriah',
@@ -527,13 +569,13 @@ export const galleryImages = [
         title: 'Gwyddhienne',
         desc: '',
         url: '/helen-aimee-gwyddhienne.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Lirilya',
         desc: '',
         url: '/helen-aimee-lirilya.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: "Hanu'a",
@@ -545,7 +587,7 @@ export const galleryImages = [
         title: 'Neefia',
         desc: '',
         url: '/helen-aimee-neefia3.jpg',
-        keywords: ['all', 'fantasy','gaming','warcraft']
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Rosalie',
@@ -611,7 +653,7 @@ export const galleryImages = [
         title: 'Allura',
         desc: '',
         url: '/helen-aimee-allurabw.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'skyrim']
+        keywords: ['all', 'fantasy', 'gaming', 'elder Scrolls']
     },
     {
         title: 'Sabira',
@@ -623,7 +665,7 @@ export const galleryImages = [
         title: 'Allura',
         desc: '',
         url: '/helen-aimee-allura2.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'skyrim']
+        keywords: ['all', 'fantasy', 'gaming', 'elder Scrolls']
     },
     {
         title: 'Charity prize',
@@ -676,7 +718,7 @@ export const galleryImages = [
     {
         title: 'Frost wyrm',
         desc: '',
-        url: '/helen-aimee-adoptable-02.jpg',
+        url: '/frostwyrm.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
@@ -845,7 +887,7 @@ export const galleryImages = [
         title: 'Serana',
         desc: '',
         url: '/helen-aimee-serana.jpg',
-        keywords: ['all', 'gaming', 'fantasy','skyrim']
+        keywords: ['all', 'gaming', 'fantasy', 'elder Scrolls']
     },
     {
         title: 'Ribbon',
