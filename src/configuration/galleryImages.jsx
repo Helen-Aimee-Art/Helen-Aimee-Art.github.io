@@ -2,6 +2,18 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Fayra',
+        desc: '',
+        url: '/fayra.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions']
+    },
+    {
+        title: "Nari'el",
+        desc: '',
+        url: '/nariel.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
         title: 'Razlaria',
         desc: '',
         url: '/razlaria.jpg',
