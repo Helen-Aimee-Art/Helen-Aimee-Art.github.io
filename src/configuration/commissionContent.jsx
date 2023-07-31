@@ -2,7 +2,32 @@ import React from 'react'
 
 export const commissionStatus = 'Open'
 
-export const monthlyTheme = 'Purple'
+export const drawerConfigs = [
+    {
+        title: 'Sketch',
+        price: '20',
+        imageType: 'sketch',
+        bullets: ['Head to bust', '2250px x 3300px', '300dpi resolution']
+    },
+    {
+        title: 'Portrait',
+        price: '75',
+        imageType: 'bust',
+        bullets: ['Head to bust', 'Head to collar (more detail)', '3400px x 4900px', '300dpi resolution']
+    },
+    {
+        title: 'Head to waist',
+        price: '100',
+        imageType: 'waist',
+        bullets: ['Head to waist', '3400px x 4900px', '300dpi resolution']
+    },
+    {
+        title: 'Half-body',
+        price: '140',
+        imageType: 'halfbody',
+        bullets: ['Head to thigh (just above the knee)', '3400px x 4900px', '300dpi resolution']
+    }
+]
 
 export const commissionText = (
     <>
@@ -15,7 +40,7 @@ export const commissionText = (
         <h2>Process</h2>
         <p>
             If you are interested in a commission, please fill out the form on my Commission Form page. This will ensure that I receive all the relevant information and means I will be able to get back to you quickly.
-            When sending reference images please only send images in JPEG or PNG formats and not in ZIP files. RefSheet and Imgur links are also accepted. 
+            When sending reference images please only send images in JPEG or PNG formats and not in ZIP files. RefSheet and Imgur links are also accepted.
             The number of projects I take on will vary, I will email you with confirmation if I am available to take on the project.
             My commission queue can be viewed on my queue page.
         </p>
@@ -24,9 +49,6 @@ export const commissionText = (
             Once the invoice has been paid I will start work on your sketch; I will send updates throughout the process where you can ask for minor changes.
             Once completed, I will send a low resolution, watermarked JPEG of the final piece and then, if you are happy, I will send the high resolution JPEG through to your email.
         </p>
-        <h2>Monthly Themes</h2>
-        <p>I will be running monthly themes which may mean that your commission will receive a discount. If you sign up for a commission with a character which is related to the theme in some way you will receive a 10% discount. 
-           <br/>(Please note: This applies even if your commission is added to the wait list and not started right away, as long as you request the commission in the correct themed month the discount will be counted.)</p>
         <h2>Terms and conditions</h2>
         <p>I have the right to decline any commission request.</p>
         <p>I will draw:</p>
