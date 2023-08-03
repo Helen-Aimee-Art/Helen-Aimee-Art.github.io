@@ -2,6 +2,12 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Bubblegum Viera',
+        desc: '',
+        url: '/myriani.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
+    },
+    {
         title: 'Fayra',
         desc: '',
         url: '/fayra.jpg',
