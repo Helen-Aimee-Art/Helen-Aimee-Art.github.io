@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { createUseStyles } from 'react-jss'
 import { SocialList } from './SocialList'
 
-const useStyles = createUseStyles(() => ({
+const useStyles = createUseStyles(theme => ({
     container: {
         textAlign: (props) => props.currentPage !== 'links' ? 'left' : 'center',
         padding: '0 10px'
@@ -13,7 +13,7 @@ const useStyles = createUseStyles(() => ({
         color: 'inherit'
     },
     link: {
-        color: 'inherit'
+        color: theme.colorQuaternary
     },
     title: {
         fontSize: 36

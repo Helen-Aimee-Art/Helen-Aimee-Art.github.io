@@ -6,7 +6,8 @@ import { useEffect, useState } from 'react'
 const theme = {
     colorPrimary: '#2D3032',
     colorSecondary: '#F6F6F6',
-    colorTertiary: '#CCC0EF'
+    colorTertiary: '#CCC0EF',
+    colorQuaternary: '#33A1A3'
 }
 
 export const App = () => {
