@@ -4,7 +4,7 @@ export const galleryImages = [
     {
         title: 'Bubblegum Viera',
         desc: '',
-        url: '/bubblebunny.jpg',
+        url: '/bubblebunny.jpeg',
         keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
     },
     {
