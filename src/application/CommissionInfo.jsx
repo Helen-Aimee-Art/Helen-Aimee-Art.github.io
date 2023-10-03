@@ -11,6 +11,11 @@ const useStyles = createUseStyles(theme => ({
         fontSize: 18,
         listStyleType: 'none'
     },
+    cardulprice: {
+        fontSize: 18,
+        listStyleType: 'none',
+        color: theme.colorQuaternary
+    },
     li: {
         marginBottom: 10,
         '&:before': {
@@ -50,7 +55,7 @@ export const CommissionInfo = (props) => {
                     <CommissionCard
                         details={
                             <>
-                                <p className={classes.cardul}>{`£${drawerConfig.price}`}</p>
+                                <p className={classes.cardulprice}>{`£${drawerConfig.price}`}</p>
                                 <p className={classes.cardul}>Details:</p>
                                 <ul className={classes.cardul}>
                                     {drawerConfig.bullets.map(bullet => <li className={classes.li}>{bullet}</li>)}
