@@ -1,5 +1,21 @@
 export const commissionImages = [
     {
+        url: '/mileni2.jpg',
+        type: 'symm'
+    },
+    {
+        url: '/zaielsie.jpg',
+        type: 'symm'
+    },
+    {
+        url: '/ceres.jpg',
+        type: 'symm'
+    },
+    {
+        url: '/helen-aimee-dark-draenei.jpg',
+        type: 'symm'
+    },
+    {
         url: '/myriani.jpg',
         type: 'halfbody'
     },

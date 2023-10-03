@@ -2,6 +2,48 @@ export const PER_PAGE = 15
 
 export const galleryImages = [
     {
+        title: 'Aldharn',
+        desc: '',
+        url: '/aldharn.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: 'Ithilios',
+        desc: '',
+        url: '/ithilios.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Levani',
+        desc: '',
+        url: '/levani.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Neeravina',
+        desc: '',
+        url: '/neeravina.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: 'Nothel',
+        desc: '',
+        url: '/nothel.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Illiyana',
+        desc: '',
+        url: '/illiyana.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Niaari',
+        desc: '',
+        url: '/niaari.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
         title: 'Bubblegum Viera',
         desc: '',
         url: '/bubblebunny.jpeg',
@@ -35,7 +77,7 @@ export const galleryImages = [
         title: 'Pearl',
         desc: '',
         url: '/pearl.jpg',
-        keywords: ['all', 'fantasy', 'gaming',]
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Lisa',
@@ -65,7 +107,7 @@ export const galleryImages = [
         title: 'Rin',
         desc: '',
         url: '/rin.jpg',
-        keywords: ['sketch']
+        keywords: ['commissions', 'sketch']
     },
     {
         title: 'Saryxih',
