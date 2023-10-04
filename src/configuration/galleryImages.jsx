@@ -40,7 +40,7 @@ export const galleryImages = [
     {
         title: 'Niaari',
         desc: '',
-        url: '/niaari.jpg',
+        url: '/niaari1.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
