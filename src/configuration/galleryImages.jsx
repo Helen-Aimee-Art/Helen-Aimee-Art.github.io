@@ -1,6 +1,330 @@
 export const PER_PAGE = 15
 
-export const galleryImages = [
+export const galleryImages = [  
+    {
+        title: "G'errikah",
+        desc: '',
+        url: '/gerrikah.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Jaeltha",
+        desc: '',
+        url: '/jaeltha.jpg',
+        keywords: ['sketch']
+    },  
+    {
+    title: 'Neefia',
+    desc: '',
+    url: '/neefia6.jpg',
+    keywords: ['all', 'fantasy', 'gaming', 'elder Scrolls']
+},
+    {
+        title: 'Mileni',
+        desc: '',
+        url: '/mileni3.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'elder Scrolls']
+    },
+    {
+        title: "Auronia",
+        desc: '',
+        url: '/auronia.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: "Saria",
+        desc: '',
+        url: '/saria.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Sienna",
+        desc: '',
+        url: '/sienna.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: 'Calyssra',
+        desc: '',
+        url: '/calyssra2.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Tristane',
+        desc: '',
+        url: '/tristane.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'elder Scrolls']
+    },
+    {
+        title: "Lunaeira",
+        desc: '',
+        url: '/lunaeira.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Naterea",
+        desc: '',
+        url: '/naterea.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: 'Juliyana',
+        desc: '',
+        url: '/juliyana.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
+        title: 'Quartise',
+        desc: '',
+        url: '/quartise.jpg',
+        keywords: ['all', 'fantasy',]
+    },
+    {
+        title: 'Lirilya',
+        desc: '',
+        url: '/lirilya2.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
+    {
+        title: "Theldrenn",
+        desc: '',
+        url: '/theldrenn.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Elara",
+        desc: '',
+        url: '/elara4.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: "Laufilia",
+        desc: '',
+        url: '/laufilia.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Manon",
+        desc: '',
+        url: '/manon.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Kaldris",
+        desc: '',
+        url: '/kaldris.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Savari",
+        desc: '',
+        url: '/savari.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Drustella",
+        desc: '',
+        url: '/drustella.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Stephanie",
+        desc: '',
+        url: '/stephanie.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Unnamed",
+        desc: '',
+        url: '/unamed2.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: "Unnamed",
+        desc: '',
+        url: '/unamed.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: "Nya'lani",
+        desc: '',
+        url: '/nyalani.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Olivia",
+        desc: '',
+        url: '/olivia.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Luxidor",
+        desc: '',
+        url: '/luxidor.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Elwynde",
+        desc: '',
+        url: '/elwynde.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Kaianna",
+        desc: '',
+        url: '/kaianna.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Leyla",
+        desc: '',
+        url: '/leyla.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Aloenna",
+        desc: '',
+        url: '/aloenna.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Zahira",
+        desc: '',
+        url: '/zahira.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Lunariia",
+        desc: '',
+        url: '/lunariia2.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: 'Kayda',
+        desc: '',
+        url: '/kayda.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'Baldurs Gate 3']
+    },
+    {
+        title: "Vaelianna",
+        desc: '',
+        url: '/vaelianna.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Calyssra",
+        desc: '',
+        url: '/calyssra.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: 'Ti',
+        desc: '',
+        url: '/ti.jpg',
+        keywords: ['all', 'fantasy', 'commissions']
+    },
+    {
+        title: "Soreeyah",
+        desc: '',
+        url: '/soreeyah.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Nera",
+        desc: '',
+        url: '/nera.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: "Akaepi",
+        desc: '',
+        url: '/akaepi.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: "Navastra",
+        desc: '',
+        url: '/navastra.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: "Iris",
+        desc: '',
+        url: '/iris.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: "Vasati",
+        desc: '',
+        url: '/vasati.jpg',
+        keywords: ['sketch']
+    },
+    {
+        title: "Kaldorei",
+        desc: '',
+        url: '/kaldorei.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Aurendiel",
+        desc: '',
+        url: '/aurendiel.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: 'Lythorean',
+        desc: '',
+        url: '/lythorean.jpg',
+        keywords: ['all', 'fantasy', 'warcraft']
+    },
+    {
+        title: 'Neefia Halloween',
+        desc: '',
+        url: '/neefia-costume.jpg',
+        keywords: ['all', 'fantasy', 'warcraft']
+    },
+    {
+        title: 'Elara',
+        desc: '',
+        url: '/elara3.jpg',
+        keywords: ['all', 'fantasy', 'elder Scrolls']
+    },
+    {
+        title: 'Mileni',
+        desc: '',
+        url: '/mileni2.jpg',
+        keywords: ['all', 'fantasy', 'elder Scrolls']
+    },
+    {
+        title: 'Ceres',
+        desc: '',
+        url: '/ceres.jpg',
+        keywords: ['all', 'fantasy']
+    },
+    {
+        title: 'Zaielsie',
+        desc: '',
+        url: '/zaielsie.jpg',
+        keywords: ['all', 'fantasy', 'Baldurs Gate 3']
+    },
+    {
+        title: 'Rinh',
+        desc: '',
+        url: '/rinh4.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
+    },
+    {
+        title: 'Luna',
+        desc: '',
+        url: '/luna.jpg',
+        keywords: ['all', 'fantasy']
+    },
+    {
+        title: 'Anastaise',
+        desc: '',
+        url: '/anastaise.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
     {
         title: 'Aldharn',
         desc: '',
@@ -336,12 +660,6 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-ninara.jpg',
         keywords: ['sketch']
-    },
-    {
-        title: 'Neefia',
-        desc: '',
-        url: '/helen-aimee-neefia-repaint.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Iris',

@@ -16,6 +16,14 @@ export const commissionImages = [
         type: 'symm'
     },
     {
+        url: '/tristane.jpg',
+        type: 'halfbody'
+    },
+    {
+        url: '/quartise.jpg',
+        type: 'halfbody'
+    },
+    {
         url: '/myriani.jpg',
         type: 'halfbody'
     },
@@ -28,10 +36,6 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-hanua.jpg',
-        type: 'halfbody'
-    },
-    {
         url: '/helen-aimee-neefia3.jpg',
         type: 'halfbody'
     },
@@ -40,20 +44,12 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-mikamika-estelle.jpg',
-        type: 'halfbody'
+        url: '/mileni3.jpg',
+        type: 'waist'
     },
     {
-        url: '/helen-aimee-panam.jpg',
-        type: 'halfbody'
-    },
-    {
-        url: '/helen-aimee-darkshift-web.jpg',
-        type: 'halfbody'
-    },
-    {
-        url: '/helen-aimee-whitemane.jpg',
-        type: 'halfbody'
+        url: '/kayda.jpg',
+        type: 'waist'
     },
     {
         url: '/erelah.jpg',
@@ -84,35 +80,27 @@ export const commissionImages = [
         type: 'waist'
     },
     {
-        url: '/helen-aimee-forgiven.jpg',
-        type: 'waist'
+        url: '/neefia6.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/calyssra2.jpg',
+        type: 'bust'
+    },
+    {
+        url: '/elara3.jpg',
+        type: 'bust'
     },
     {
         url: '/lunariia.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-amirie2.jpg',
+        url: '/ti.jpg',
         type: 'bust'
     },
     {
-        url: '/helen-aimee-nuelnehti.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-elara.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-kalizeth.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-lyriah.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/helen-aimee-neefia-repaint.jpg',
+        url: '/lythorean.jpg',
         type: 'bust'
     },
     {
@@ -120,31 +108,39 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/neefia5.jpg',
+        url: '/savari.jpg',
         type: 'sketch'
     },
     {
-        url: '/amirie3.jpg',
+        url: '/olivia.jpg',
         type: 'sketch'
     },
     {
-        url: '/undyne.jpg',
+        url: '/theldrenn.jpg',
         type: 'sketch'
     },
     {
-        url: '/alora.jpg',
+        url: '/unamed2.jpg',
         type: 'sketch'
     },
     {
-        url: '/rin.jpg',
+        url: '/naterea.jpg',
         type: 'sketch'
     },
     {
-        url: '/allura4.jpg',
+        url: '/saria.jpg',
         type: 'sketch'
     },
     {
-        url: '/rinh3.jpg',
+        url: '/leyla.jpg',
         type: 'sketch'
-    }
+    },
+    {
+        url: '/soreeyah.jpg',
+        type: 'sketch'
+    },
+    {
+        url: '/luxidor.jpg',
+        type: 'sketch'
+    }   
 ]
