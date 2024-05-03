@@ -17,7 +17,7 @@ export const galleryImages = [
     title: 'Neefia',
     desc: '',
     url: '/neefia6.jpg',
-    keywords: ['all', 'fantasy', 'gaming', 'elder Scrolls']
+    keywords: ['all', 'fantasy', 'gaming', 'warcraft']
 },
     {
         title: 'Mileni',
