@@ -1,20 +1,5 @@
 export const commissionImages = [
-    {
-        url: '/mileni2.jpg',
-        type: 'symm'
-    },
-    {
-        url: '/zaielsie.jpg',
-        type: 'symm'
-    },
-    {
-        url: '/ceres.jpg',
-        type: 'symm'
-    },
-    {
-        url: '/helen-aimee-dark-draenei.jpg',
-        type: 'symm'
-    },
+
     {
         url: '/tristane.jpg',
         type: 'halfbody'
@@ -42,6 +27,14 @@ export const commissionImages = [
     {
         url: '/helen-aimee-ahri.jpg',
         type: 'halfbody'
+    },
+    {
+        url: '/opal.jpg',
+        type: 'waist'
+    },
+    {
+        url: '/kalendar.jpg',
+        type: 'waist'
     },
     {
         url: '/mileni3.jpg',
@@ -72,14 +65,6 @@ export const commissionImages = [
         type: 'waist'
     },
     {
-        url: '/helen-aimee-halevuna.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/helen-aimee-pucker.jpg',
-        type: 'waist'
-    },
-    {
         url: '/neefia6.jpg',
         type: 'bust'
     },
@@ -104,23 +89,19 @@ export const commissionImages = [
         type: 'bust'
     },
     {
-        url: '/helen-aimee-auresius.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/savari.jpg',
+        url: '/zoriana.jpg',
         type: 'sketch'
     },
     {
-        url: '/olivia.jpg',
+        url: '/alora2.jpg',
         type: 'sketch'
     },
     {
-        url: '/theldrenn.jpg',
+        url: '/nightborne.jpg',
         type: 'sketch'
     },
     {
-        url: '/unamed2.jpg',
+        url: '/sindormu.jpg',
         type: 'sketch'
     },
     {
@@ -142,5 +123,33 @@ export const commissionImages = [
     {
         url: '/luxidor.jpg',
         type: 'sketch'
-    }   
+    },   
+    {
+        url: '/elyanthe.jpg',
+        type: 'hbsketch'
+    },  
+    {
+        url: '/mariko.jpg',
+        type: 'hbsketch'
+    }, 
+    {
+        url: '/rhynali.jpg',
+        type: 'hbsketch'
+    }, 
+    {
+        url: '/zhaleh.jpg',
+        type: 'hbsketch'
+    },
+    {
+        url: '/iridessa.jpg',
+        type: 'hbsketch'
+    },
+    {
+        url: '/zalorii.jpg',
+        type: 'hbsketch'
+    },  
+    {
+        url: '/rinh5.jpg',
+        type: 'hbsketch'
+    },
 ]

@@ -1,6 +1,138 @@
 export const PER_PAGE = 15
 
-export const galleryImages = [  
+export const galleryImages = [ 
+    {
+        title: 'Opal',
+        desc: '',
+        url: '/opal.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
+    },
+    {
+        title: 'Evalynn',
+        desc: '',
+        url: '/evalynn2.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+        },
+    {
+        title: "Wraith",
+        desc: '',
+        url: '/wraith.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Mariko",
+        desc: '',
+        url: '/mariko.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Alora",
+        desc: '',
+        url: '/alora2.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Aateran",
+        desc: '',
+        url: '/aateran.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Nightborne",
+        desc: '',
+        url: '/nightborne.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Elyanthe",
+        desc: '',
+        url: '/elyanthe.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Miryu",
+        desc: '',
+        url: '/miryu.jpg',
+        keywords: ['sketch']
+    }, 
+    {
+        title: "Rhynali",
+        desc: '',
+        url: '/rhynali.jpg',
+        keywords: ['sketch']
+    }, 
+    {
+        title: "Zalorii",
+        desc: '',
+        url: '/zalorii.jpg',
+        keywords: ['sketch']
+    }, 
+    {
+        title: 'Kalendar',
+        desc: '',
+        url: '/kalendar.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'Baldurs Gate 3']
+    },
+    {
+        title: "Zoriana",
+        desc: '',
+        url: '/zoriana.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Rinh",
+        desc: '',
+        url: '/rinh5.jpg',
+        keywords: ['sketch']
+    }, 
+    {
+        title: "Ellyra",
+        desc: '',
+        url: '/ellyra.jpg',
+        keywords: ['sketch']
+    }, 
+    {
+        title: "Iridessa",
+        desc: '',
+        url: '/iridessa.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Mira",
+        desc: '',
+        url: '/mira.jpg',
+        keywords: ['sketch', 'commissions']
+    }, 
+    {
+        title: "Sindormu",
+        desc: '',
+        url: '/sindormu.jpg',
+        keywords: ['sketch', 'commissions']
+    },
+    {
+        title: "Zhaleh",
+        desc: '',
+        url: '/zhaleh.jpg',
+        keywords: ['sketch']
+    },  
+    {
+        title: "Syrinah",
+        desc: '',
+        url: '/syrinah.jpg',
+        keywords: ['sketch']
+    },  
+    {
+        title: "Jaeltha",
+        desc: '',
+        url: '/jaeltha2.jpg',
+        keywords: ['sketch']
+    },  
+    {
+        title: "Zaielsie",
+        desc: '',
+        url: '/zaielsie2.jpg',
+        keywords: ['sketch']
+    }, 
     {
         title: "G'errikah",
         desc: '',
@@ -14,11 +146,11 @@ export const galleryImages = [
         keywords: ['sketch']
     },  
     {
-    title: 'Neefia',
-    desc: '',
-    url: '/neefia6.jpg',
-    keywords: ['all', 'fantasy', 'gaming', 'warcraft']
-},
+        title: 'Neefia',
+        desc: '',
+        url: '/neefia6.jpg',
+        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
+    },
     {
         title: 'Mileni',
         desc: '',
@@ -54,12 +186,6 @@ export const galleryImages = [
         desc: '',
         url: '/tristane.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'elder Scrolls']
-    },
-    {
-        title: "Lunaeira",
-        desc: '',
-        url: '/lunaeira.jpg',
-        keywords: ['sketch', 'commissions']
     },
     {
         title: "Naterea",
@@ -101,18 +227,6 @@ export const galleryImages = [
         title: "Laufilia",
         desc: '',
         url: '/laufilia.jpg',
-        keywords: ['sketch', 'commissions']
-    },
-    {
-        title: "Manon",
-        desc: '',
-        url: '/manon.jpg',
-        keywords: ['sketch', 'commissions']
-    },
-    {
-        title: "Kaldris",
-        desc: '',
-        url: '/kaldris.jpg',
         keywords: ['sketch', 'commissions']
     },
     {
@@ -182,12 +296,6 @@ export const galleryImages = [
         keywords: ['sketch', 'commissions']
     },
     {
-        title: "Aloenna",
-        desc: '',
-        url: '/aloenna.jpg',
-        keywords: ['sketch', 'commissions']
-    },
-    {
         title: "Zahira",
         desc: '',
         url: '/zahira.jpg',
@@ -242,12 +350,6 @@ export const galleryImages = [
         keywords: ['sketch']
     },
     {
-        title: "Navastra",
-        desc: '',
-        url: '/navastra.jpg',
-        keywords: ['sketch']
-    },
-    {
         title: "Iris",
         desc: '',
         url: '/iris.jpg',
@@ -288,24 +390,6 @@ export const galleryImages = [
         desc: '',
         url: '/elara3.jpg',
         keywords: ['all', 'fantasy', 'elder Scrolls']
-    },
-    {
-        title: 'Mileni',
-        desc: '',
-        url: '/mileni2.jpg',
-        keywords: ['all', 'fantasy', 'elder Scrolls']
-    },
-    {
-        title: 'Ceres',
-        desc: '',
-        url: '/ceres.jpg',
-        keywords: ['all', 'fantasy']
-    },
-    {
-        title: 'Zaielsie',
-        desc: '',
-        url: '/zaielsie.jpg',
-        keywords: ['all', 'fantasy', 'Baldurs Gate 3']
     },
     {
         title: 'Rinh',
@@ -445,25 +529,7 @@ export const galleryImages = [
         url: '/rinh3.jpg',
         keywords: ['sketch']
     },
-    {
-        title: 'Rayn',
-        desc: '',
-        url: '/rayn2.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Lorelai',
-        desc: '',
-        url: '/lorelai.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Alora',
-        desc: '',
-        url: '/alora.jpg',
-        keywords: ['commissions', 'sketch']
-    },
-    {
+     {
         title: 'Undyne',
         desc: '',
         url: '/undyne2.jpg',
@@ -474,12 +540,6 @@ export const galleryImages = [
         desc: '',
         url: '/undyne.jpg',
         keywords: ['commissions', 'sketch']
-    },
-    {
-        title: 'Vhalei',
-        desc: '',
-        url: '/vhalei.jpg',
-        keywords: ['sketch']
     },
     {
         title: 'Lyluna',
@@ -512,21 +572,9 @@ export const galleryImages = [
         keywords: ['commissions', 'sketch']
     },
     {
-        title: 'Rinh',
-        desc: '',
-        url: '/rinh2.jpg',
-        keywords: ['sketch']
-    },
-    {
         title: 'Neefia',
         desc: '',
         url: '/neefia5.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Myfanwy',
-        desc: '',
-        url: '/myfanwy.jpg',
         keywords: ['sketch']
     },
     {
@@ -554,15 +602,9 @@ export const galleryImages = [
         keywords: ['sketch']
     },
     {
-        title: 'Imylea',
+        title: 'Velruna',
         desc: '',
         url: '/imylea.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Zaiesme',
-        desc: '',
-        url: '/zaiesme.jpg',
         keywords: ['sketch']
     },
     {
@@ -581,12 +623,6 @@ export const galleryImages = [
         title: 'Shazeira',
         desc: '',
         url: '/shazeira2.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Evalynn',
-        desc: '',
-        url: '/evalynn.jpg',
         keywords: ['sketch']
     },
     {
@@ -632,22 +668,10 @@ export const galleryImages = [
         keywords: ['all', 'fantasy', 'gaming', 'elder Scrolls']
     },
     {
-        title: 'Dark Draenei',
-        desc: '',
-        url: '/helen-aimee-dark-draenei.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
-    },
-    {
         title: 'Helene',
         desc: '',
         url: '/helen-aimee-helene.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
-    },
-    {
-        title: 'Lumystra',
-        desc: '',
-        url: '/helen-aimee-lumystra1.jpg',
-        keywords: ['sketch']
     },
     {
         title: 'Syrinah',
@@ -664,20 +688,8 @@ export const galleryImages = [
     {
         title: 'Iris',
         desc: '',
-        url: '/helen-aimee-iris-portrait.jpg',
-        keywords: ['all', 'fantasy', 'commissions']
-    },
-    {
-        title: 'Iris',
-        desc: '',
         url: '/helen-aimee-iris.jpg',
         keywords: ['all', 'fantasy', 'commissions']
-    },
-    {
-        title: 'Elara',
-        desc: '',
-        url: '/helen-aimee-elara.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'elder Scrolls']
     },
     {
         title: 'Tana',
@@ -716,66 +728,6 @@ export const galleryImages = [
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
-        title: 'Dité',
-        desc: '',
-        url: '/helen-aimee-dite.jpg',
-        keywords: ['commissions', 'sketch']
-    },
-    {
-        title: 'Viseira',
-        desc: '',
-        url: '/viseira.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Tassera',
-        desc: '',
-        url: '/tassera.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Fleur',
-        desc: '',
-        url: '/fleur2.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Alissera',
-        desc: '',
-        url: '/alissera.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Nyx',
-        desc: '',
-        url: '/nyx.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Ecatée',
-        desc: '',
-        url: '/ecatee.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Norrei',
-        desc: '',
-        url: '/norrei.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Freyja',
-        desc: '',
-        url: '/freyja.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Celeste',
-        desc: '',
-        url: '/celeste.jpg',
-        keywords: ['sketch']
-    },
-    {
         title: 'Amirie',
         desc: '',
         url: '/helen-aimee-amirie2.jpg',
@@ -786,18 +738,6 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-lurala.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
-    },
-    {
-        title: 'Kyriel',
-        desc: '',
-        url: '/helen-aimee-kyriel.jpg',
-        keywords: ['commissions', 'sketch']
-    },
-    {
-        title: 'Jaelryn',
-        desc: '',
-        url: '/helen-aimee-jaelryn.jpg',
-        keywords: ['fantasy', 'gaming', 'commissions', 'sketch']
     },
     {
         title: 'Nuelnehti',
@@ -848,40 +788,16 @@ export const galleryImages = [
         keywords: ['all', 'fantasy', 'gaming', 'warcraft', 'commissions']
     },
     {
-        title: 'Half-Elf',
-        desc: '',
-        url: '/helen-aimee-half-elf.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
-    },
-    {
         title: 'Luxanya',
         desc: '',
         url: '/helen-aimee-luxanya-pinup.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft', 'commissions']
     },
-    {
-        title: 'Mana Wyrm Mermaid',
-        desc: '',
-        url: '/helen-aimee-mermaid.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
-    },
-    {
+     {
         title: 'Kalizeth',
         desc: '',
         url: '/helen-aimee-kalizeth.jpg',
         keywords: ['all', 'fantasy', 'gaming']
-    },
-    {
-        title: 'Skyla',
-        desc: '',
-        url: '/helen-aimee-skyla.jpg',
-        keywords: ['all', 'star Wars', 'gaming', 'fantasy', 'commissions']
-    },
-    {
-        title: 'Voidelf',
-        desc: '',
-        url: '/helen-aimee-domneth.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
         title: 'Silaridel',
@@ -889,19 +805,7 @@ export const galleryImages = [
         url: '/helen-aimee-silaridel.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
-    {
-        title: 'Luxanya',
-        desc: '',
-        url: '/helen-aimee-luxanya2.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'commissions', 'warcraft']
-    },
-    {
-        title: "Sha'Tari",
-        desc: '',
-        url: '/helen-aimee-sha-tari.jpg',
-        keywords: ['sketch', 'commissions']
-    },
-    {
+     {
         title: 'Luxanya',
         desc: '',
         url: '/helen-aimee-luxanya1.jpg',
@@ -926,18 +830,6 @@ export const galleryImages = [
         keywords: ['all', 'fantasy', 'gaming', 'commissions']
     },
     {
-        title: 'Draenei',
-        desc: '',
-        url: '/helen-aimee-aalea.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
-    },
-    {
-        title: 'Lyriah',
-        desc: '',
-        url: '/helen-aimee-lyriah.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
-    },
-    {
         title: 'Casper',
         desc: '',
         url: '/helen-aimee-casper.jpg',
@@ -950,28 +842,10 @@ export const galleryImages = [
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
-        title: 'Lirilya',
-        desc: '',
-        url: '/helen-aimee-lirilya.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
-    },
-    {
-        title: "Hanu'a",
-        desc: '',
-        url: '/helen-aimee-hanua.jpg',
-        keywords: ['all', 'star Wars', 'gaming', 'fantasy', 'commissions']
-    },
-    {
         title: 'Neefia',
         desc: '',
         url: '/helen-aimee-neefia3.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
-    },
-    {
-        title: 'Rosalie',
-        desc: '',
-        url: '/helen-aimee-rosalie.jpg',
-        keywords: ['all', 'fantasy']
     },
     {
         title: 'Ahri',
@@ -986,12 +860,6 @@ export const galleryImages = [
         keywords: ['all', 'star Wars', 'gaming', 'fantasy', 'commissions']
     },
     {
-        title: 'Auresius',
-        desc: '',
-        url: '/helen-aimee-auresius.jpg',
-        keywords: ['all', 'FFXIV', 'gaming', 'fantasy']
-    },
-    {
         title: 'Bea',
         desc: '',
         url: '/helen-aimee-bea.jpg',
@@ -1002,12 +870,6 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-akleja2.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy', 'commissions']
-    },
-    {
-        title: 'Amethyst',
-        desc: '',
-        url: '/helen-aimee-amethyst.jpg',
-        keywords: ['commissions', 'sketch']
     },
     {
         title: 'Primrose',
@@ -1021,19 +883,7 @@ export const galleryImages = [
         url: '/helen-aimee-maeve.jpg',
         keywords: ['all', 'fantasy']
     },
-    {
-        title: 'Dex',
-        desc: '',
-        url: '/helen-aimee-dex.jpg',
-        keywords: ['commissions', 'sketch']
-    },
-    {
-        title: 'Allura',
-        desc: '',
-        url: '/helen-aimee-allurabw.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'elder Scrolls']
-    },
-    {
+     {
         title: 'Sabira',
         desc: '',
         url: '/helen-aimee-sabira.jpg',
@@ -1064,76 +914,16 @@ export const galleryImages = [
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
-        title: 'Cypher',
-        desc: '',
-        url: '/helen-aimee-cypher.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'commissions']
-    },
-    {
-        title: "N'qelkara",
-        desc: '',
-        url: "/helen-aimee-n'qelkara.jpg",
-        keywords: ['all', 'fantasy', 'gaming', 'FFXIV', 'commissions']
-    },
-    {
-        title: 'Shazeira',
-        desc: '',
-        url: '/helen-aimee-shazeira.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
-    },
-    {
-        title: 'Bella',
-        desc: '',
-        url: '/helen-aimee-bella.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
-    },
-    {
-        title: 'Forgiven',
-        desc: '',
-        url: '/helen-aimee-forgiven.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
-    },
-    {
         title: 'Frost wyrm',
         desc: '',
         url: '/frostwyrm.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'warcraft']
     },
     {
-        title: 'Allura',
-        desc: '',
-        url: '/helen-aimee-allura.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Akleja',
-        desc: '',
-        url: '/helen-aimee-akleja-sketch.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Rayn',
-        desc: '',
-        url: '/helen-aimee-rayn.jpg',
-        keywords: ['sketch']
-    },
-    {
         title: 'Rinh',
         desc: '',
         url: '/helen-aimee-rinh.jpg',
         keywords: ['all', 'fantasy', 'gaming', 'FFXIV']
-    },
-    {
-        title: 'Amirie',
-        desc: '',
-        url: '/helen-aimee-amirie.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'warcraft']
-    },
-    {
-        title: 'Daesal',
-        desc: '',
-        url: '/helen-aimee-daesal.jpg',
-        keywords: ['commissions', 'sketch']
     },
     {
         title: 'MikaMika and Estelle',
@@ -1160,21 +950,9 @@ export const galleryImages = [
         keywords: ['all', 'warcraft', 'fantasy', 'gaming', 'commissions']
     },
     {
-        title: 'Sirree',
-        desc: '',
-        url: '/helen-aimee-sirree.jpg',
-        keywords: ['all', 'warcraft', 'fantasy', 'gaming', 'commissions']
-    },
-    {
         title: 'Lumystra',
         desc: '',
         url: '/helen-aimee-lumystra.jpg',
-        keywords: ['all', 'warcraft', 'fantasy', 'gaming']
-    },
-    {
-        title: 'Aetor',
-        desc: '',
-        url: '/helen-aimee-aetor.jpg',
         keywords: ['all', 'warcraft', 'fantasy', 'gaming']
     },
     {
@@ -1190,40 +968,10 @@ export const galleryImages = [
         keywords: ['all', 'fantasy']
     },
     {
-        title: 'Justice',
-        desc: '',
-        url: '/helen-aimee-justicefinal1.jpg',
-        keywords: ['all', 'fantasy', 'gaming', 'commissions']
-    },
-    {
         title: 'Whitemane',
         desc: '',
         url: '/helen-aimee-whitemane.jpg',
         keywords: ['all', 'warcraft', 'fantasy', 'gaming']
-    },
-    {
-        title: 'Cecilia',
-        desc: '',
-        url: '/helen-aimee-cecilia.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Strawberry',
-        desc: '',
-        url: '/helen-aimee-strawberry.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Darktide',
-        desc: '',
-        url: '/helen-aimee-darktide.jpg',
-        keywords: ['sketch']
-    },
-    {
-        title: 'Demon girl',
-        desc: '',
-        url: '/helen-aimee-demon-girl.jpg',
-        keywords: ['sketch']
     },
     {
         title: 'Saethyra portrait',
@@ -1238,12 +986,6 @@ export const galleryImages = [
         keywords: ['all', 'warcraft', 'gaming', 'fantasy', 'commissions']
     },
     {
-        title: 'Saethyra',
-        desc: '',
-        url: '/helen-aimee-saethyra.jpg',
-        keywords: ['all', 'warcraft', 'gaming', 'fantasy']
-    },
-    {
         title: 'Willow',
         desc: '',
         url: '/helen-aimee-willow.jpg',
@@ -1254,18 +996,6 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-buttons.jpg',
         keywords: ['all', 'pets']
-    },
-    {
-        title: 'Serena',
-        desc: '',
-        url: '/helen-aimee-serena.jpg',
-        keywords: ['all', 'gaming', 'fantasy']
-    },
-    {
-        title: 'Serana',
-        desc: '',
-        url: '/helen-aimee-serana.jpg',
-        keywords: ['all', 'gaming', 'fantasy', 'elder Scrolls']
     },
     {
         title: 'Ribbon',
@@ -1284,18 +1014,6 @@ export const galleryImages = [
         desc: '',
         url: '/helen-aimee-darkshift-web.jpg',
         keywords: ['all', 'warcraft', 'gaming', 'fantasy']
-    },
-    {
-        title: 'Neefia',
-        desc: '',
-        url: '/helen-aimee-neefia.jpg',
-        keywords: ['all', 'warcraft', 'gaming', 'fantasy']
-    },
-    {
-        title: 'Blue and Quincy',
-        desc: '',
-        url: '/helen-aimee-blue-and-quincy-c.jpg',
-        keywords: ['all', 'pets', 'commissions']
     },
 
 ]

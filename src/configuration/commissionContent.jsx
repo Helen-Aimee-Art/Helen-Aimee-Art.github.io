@@ -10,10 +10,10 @@ export const drawerConfigs = [
         bullets: ['Head to bust', '2250px x 3300px', '300dpi resolution', 'Coloured Eyes Option', 'Full Flat Colour £2 extra']
     },
     {
-        title: 'Symmetry Portrait',
-        price: '65',
-        imageType: 'symm',
-        bullets: ['Head to collar', '3400px x 4900px', '300dpi resolution']
+        title: 'Half-body Sketch',
+        price: '55',
+        imageType: 'hbsketch',
+        bullets: ['Head to thigh (just above the knee)', '2250px x 3300px', '300dpi resolution']
     },
     {
         title: 'Portrait',
