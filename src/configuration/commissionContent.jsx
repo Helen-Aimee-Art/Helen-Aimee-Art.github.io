@@ -10,7 +10,7 @@ export const drawerConfigs = [
         bullets: ['Head to bust', '2250px x 3300px', '300dpi resolution']
     },
     {
-        title: 'Half-body Sketch',
+        title: 'Half-Body Sketch',
         price: '55',
         imageType: 'hbsketch',
         bullets: ['Head to thigh (just above the knee)', '2250px x 3300px', '300dpi resolution']
@@ -22,13 +22,13 @@ export const drawerConfigs = [
         bullets: ['Head to bust', '3400px x 4900px', '300dpi resolution']
     },
     {
-        title: 'Head to waist',
+        title: 'Head to Waist',
         price: '120*',
         imageType: 'waist',
         bullets: ['Head to waist', '3400px x 4900px', '300dpi resolution']
     },
     {
-        title: 'Half-body',
+        title: 'Half-Body',
         price: '160*',
         imageType: 'halfbody',
         bullets: ['Head to thigh (just above the knee)', '3400px x 4900px', '300dpi resolution']
