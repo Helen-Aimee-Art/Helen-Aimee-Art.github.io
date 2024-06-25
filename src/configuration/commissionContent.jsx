@@ -5,9 +5,9 @@ export const commissionStatus = 'Open'
 export const drawerConfigs = [
     {
         title: 'Sketch',
-        price: '25',
+        price: '27',
         imageType: 'sketch',
-        bullets: ['Head to bust', '2250px x 3300px', '300dpi resolution', 'Coloured Eyes Option', 'Full Flat Colour £2 extra']
+        bullets: ['Head to bust', '2250px x 3300px', '300dpi resolution']
     },
     {
         title: 'Half-body Sketch',
