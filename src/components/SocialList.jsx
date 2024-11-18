@@ -99,9 +99,9 @@ export const SocialList = (props) => {
             <SocialLink link="https://ko-fi.com/helenaimeeart" title="Ko-fi" mini={!!props.mini}>
                 <Kofi />
             </SocialLink>
-            <SocialLink link="https://www.redbubble.com/people/helenaimee/shop?asc=u" title="Redbubble" mini={!!props.mini}>
+            {/* <SocialLink link="https://www.redbubble.com/people/helenaimee/shop?asc=u" title="Redbubble" mini={!!props.mini}>
                 <Redbubble />
-            </SocialLink>
+            </SocialLink> */}
         </div >
     )
 }
