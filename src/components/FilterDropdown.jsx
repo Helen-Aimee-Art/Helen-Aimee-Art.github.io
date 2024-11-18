@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormControl, InputLabel, MenuItem, Select } from '@material-ui/core'
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material'
 import { useState } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 

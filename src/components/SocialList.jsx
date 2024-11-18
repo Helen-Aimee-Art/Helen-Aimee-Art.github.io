@@ -1,7 +1,7 @@
 import React from 'react'
-import { Instagram, Twitter, YouTube } from '@material-ui/icons'
+import { Instagram, Twitter, YouTube } from '@mui/icons-material'
 import { SocialLink } from './SocialLink'
-import { SvgIcon } from '@material-ui/core'
+import { SvgIcon } from '@mui/material'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(props => ({
