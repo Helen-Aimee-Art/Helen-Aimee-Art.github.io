@@ -110,7 +110,7 @@ export const galleryImages = [
         keywords: ['all', 'commissions', 'Dungeons and Dragons', 'sketch']
     },
     {
-        title: 'Miko',
+        title: "M'iko",
         desc: '',
         url: '/miko.jpg',
         keywords: ['all', 'commissions', 'FFXIV', 'sketch']
