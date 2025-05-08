@@ -6,6 +6,7 @@ import { GalleryViewer } from '../components/GalleryViewer'
 import { Modal } from '../components/Modal'
 import { FilterDropdown } from '../components/FilterDropdown'
 import { galleryImages, PER_PAGE } from '../configuration/galleryImages'
+import { ScrollToTopButton } from '../components/ScrollToTopButton'
 
 const arrays = galleryImages.map(image => image.keywords)
 const keywords = [].concat(...arrays).filter((value, index, array) => array.indexOf(value) === index && value !== 'all')
@@ -96,6 +97,7 @@ export const Gallery = (props) => {
                     closeModal={closeModal}
                 />
             </Modal>
+            <ScrollToTopButton />
         </div >
     )
 }
