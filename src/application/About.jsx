@@ -55,11 +55,9 @@ export const About = (props) => {
                 <h2>Tools and Proficiencies</h2>
                 <ul className={classes.list}>
                     <li className={classes.listItem}>Procreate</li>
-                    <li className={classes.listItem}>Adobe Photoshop</li>
                     <li className={classes.listItem}>Clip Studio Paint Pro</li>
                     <li className={classes.listItem}>IPad Pro</li>
-                    <li className={classes.listItem}>Wacom Cintiq 27QHD</li>
-                    <li className={classes.listItem}>Microsoft Surface Pro 7</li>
+                    <li className={classes.listItem}>Huion Kamvas Pro 16</li>
                 </ul>
             </div>
         </>

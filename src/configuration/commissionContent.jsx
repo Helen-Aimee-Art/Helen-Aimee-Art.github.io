@@ -5,15 +5,21 @@ export const commissionStatus = 'Open'
 export const drawerConfigs = [
     {
         title: 'Sketch',
-        price: '27',
+        price: '30*',
         imageType: 'sketch',
-        bullets: ['Head to bust', '2250px x 3300px', '300dpi resolution']
+        bullets: ['Head to bust', '3400px x 4900px', '300dpi resolution']
     },
     {
         title: 'Half-Body Sketch',
-        price: '55',
+        price: '55*',
         imageType: 'hbsketch',
-        bullets: ['Head to thigh (just above the knee)', '2250px x 3300px', '300dpi resolution']
+        bullets: ['Head to thigh (just above the knee)', '3400px x 4900px', '300dpi resolution']
+    },
+    {
+        title: 'Full Body Sketch',
+        price: '70*',
+        imageType: 'fbsketch',
+        bullets: ['Full body', '4500px x 6400px', '300dpi resolution']
     },
     {
         title: 'Portrait',
@@ -22,14 +28,8 @@ export const drawerConfigs = [
         bullets: ['Head to bust', '3400px x 4900px', '300dpi resolution']
     },
     {
-        title: 'Head to Waist',
-        price: '120*',
-        imageType: 'waist',
-        bullets: ['Head to waist', '3400px x 4900px', '300dpi resolution']
-    },
-    {
         title: 'Half-Body',
-        price: '160*',
+        price: '150*',
         imageType: 'halfbody',
         bullets: ['Head to thigh (just above the knee)', '3400px x 4900px', '300dpi resolution']
     }
@@ -38,10 +38,11 @@ export const drawerConfigs = [
 export const commissionText = (
     <>
         <p style={{ textAlign: 'left', marginTop: 0 }}>
-            *Simple backgrounds are included in the price, at this time I am not offering more complicated backgrounds.<br />
-            *Adding additional characters will increase the cost by 80%.<br />
-            *Small pets can be included but will increase the price by 30%.<br />
-            *Complicated weapons or armour will increase the price. The exact amount will vary depending on the addition.
+            * Simple backgrounds are included in the price, at this time I am not offering more complicated backgrounds.<br />
+            * Adding additional characters will increase the cost by 80%.<br />
+            * Small pets can be included but will increase the price by 30%.<br />
+            * Complicated weapons or armour will increase the price. The exact amount will vary depending on the addition.<br />
+            * Characters requiring design work (Eg. custom outfits) will increase the price.
         </p>
         <h2>Process</h2>
         <p>

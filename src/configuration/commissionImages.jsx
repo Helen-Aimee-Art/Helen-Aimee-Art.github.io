@@ -1,7 +1,15 @@
 export const commissionImages = [
 
     {
-        url: '/tristane.jpg',
+        url: '/tae.jpg',
+        type: 'halfbody'
+    },
+    {
+        url: '/zalorii.jpg',
+        type: 'halfbody'
+    },
+    {
+        url: '/whitemane.jpg',
         type: 'halfbody'
     },
     {
@@ -9,147 +17,75 @@ export const commissionImages = [
         type: 'halfbody'
     },
     {
-        url: '/myriani.jpg',
+        url: '/tristane.jpg',
         type: 'halfbody'
     },
     {
-        url: '/helen-aimee-diana.jpg',
-        type: 'halfbody'
-    },
-    {
-        url: '/helen-aimee-ker-tina.jpg',
-        type: 'halfbody'
-    },
-    {
-        url: '/helen-aimee-neefia3.jpg',
-        type: 'halfbody'
-    },
-    {
-        url: '/helen-aimee-ahri.jpg',
-        type: 'halfbody'
-    },
-    {
-        url: '/opal.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/kalendar.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/mileni3.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/kayda.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/erelah.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/helen-aimee-iris.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/helen-aimee-helene.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/helen-aimee-sabira.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/helen-aimee-allura2.jpg',
-        type: 'waist'
-    },
-    {
-        url: '/neefia6.jpg',
+        url: '/rose.jpg',
         type: 'bust'
     },
     {
-        url: '/calyssra2.jpg',
+        url: '/kalrissa.jpg',
         type: 'bust'
     },
     {
-        url: '/elara3.jpg',
+        url: '/saedre.jpg',
         type: 'bust'
     },
     {
-        url: '/lunariia.jpg',
+        url: '/maeve.jpg',
         type: 'bust'
     },
     {
-        url: '/ti.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/lythorean.jpg',
-        type: 'bust'
-    },
-    {
-        url: '/zoriana.jpg',
+        url: '/lillian.jpg',
         type: 'sketch'
     },
     {
-        url: '/alora2.jpg',
+        url: '/valerial.jpg',
         type: 'sketch'
     },
     {
-        url: '/nightborne.jpg',
+        url: '/amrathor.jpg',
         type: 'sketch'
     },
     {
-        url: '/sindormu.jpg',
+        url: '/ceto.jpg',
         type: 'sketch'
     },
     {
-        url: '/naterea.jpg',
+        url: '/helyne.jpg',
         type: 'sketch'
     },
     {
-        url: '/saria.jpg',
-        type: 'sketch'
-    },
+        url: '/haelissa.jpg',
+        type: 'hbsketch'
+    }, 
     {
-        url: '/leyla.jpg',
-        type: 'sketch'
-    },
+        url: '/athriel.jpg',
+        type: 'hbsketch'
+    },  
     {
-        url: '/soreeyah.jpg',
-        type: 'sketch'
-    },
-    {
-        url: '/luxidor.jpg',
-        type: 'sketch'
+        url: '/sellene.jpg',
+        type: 'hbsketch'
     },   
     {
         url: '/elyanthe.jpg',
         type: 'hbsketch'
     },  
     {
-        url: '/mariko.jpg',
-        type: 'hbsketch'
+        url: '/cloverhoney.jpg',
+        type: 'fbsketch'
     }, 
     {
-        url: '/rhynali.jpg',
-        type: 'hbsketch'
+        url: '/draenei.jpg',
+        type: 'fbsketch'
     }, 
     {
-        url: '/zhaleh.jpg',
-        type: 'hbsketch'
-    },
+        url: '/demon.jpg',
+        type: 'fbsketch'
+    }, 
     {
-        url: '/iridessa.jpg',
-        type: 'hbsketch'
-    },
-    {
-        url: '/zalorii.jpg',
-        type: 'hbsketch'
-    },  
-    {
-        url: '/rinh5.jpg',
-        type: 'hbsketch'
-    },
+        url: '/rinh6.jpg',
+        type: 'fbsketch'
+    }, 
 ]
