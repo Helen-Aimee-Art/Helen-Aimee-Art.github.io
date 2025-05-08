@@ -1,4 +1,5 @@
 import React from 'react'
+import { createUseStyles, useTheme } from 'react-jss'
 import { useEffect, useState } from 'react'
 import { Grid } from '../components/Grid'
 import { GalleryItem } from '../components/GalleryItem'
@@ -8,15 +9,23 @@ import { FilterDropdown } from '../components/FilterDropdown'
 import { galleryImages, PER_PAGE } from '../configuration/galleryImages'
 import { ScrollToTopButton } from '../components/ScrollToTopButton'
 
+const useStyles = createUseStyles(theme => ({
+    gallery: {
+        width: '100%'
+    }
+}))
+
 const arrays = galleryImages.map(image => image.keywords)
-const keywords = [].concat(...arrays).filter((value, index, array) => array.indexOf(value) === index && value !== 'all')
-keywords.unshift('all')
+const keywords = Array.from(new Set([].concat(...arrays)))
 
 export const Gallery = (props) => {
+    const theme = useTheme()
+    const classes = useStyles(theme)
+
     const { isDesktop, isLargeScreen, isMediumScreen, isSmallScreen, setCurrentPage } = props
     const [currentImage, setCurrentImage] = useState(null)
     const [open, setOpen] = useState(false)
-    const [filter, setFilter] = useState('all')
+    const [filters, setFilters] = useState([])
     const [page, setPage] = useState(1)
     const [canLoadMore, setCanLoadMore] = useState(true)
 
@@ -24,7 +33,7 @@ export const Gallery = (props) => {
         setCurrentPage('gallery')
     }, [setCurrentPage])
 
-    const filteredImages = galleryImages.filter(image => image.keywords.includes(filter))
+    const filteredImages = filters.length === 0 ? galleryImages : galleryImages.filter(image => filters.every(filter => image.keywords.includes(filter)))
 
     const checkScroll = () => {
         if (
@@ -55,8 +64,8 @@ export const Gallery = (props) => {
     }
 
     return (
-        <div>
-            <FilterDropdown keywords={keywords} setFilter={setFilter} />
+        <div className={classes.gallery}>
+            <FilterDropdown keywords={keywords} setFilter={setFilters} />
             <Grid
                 isDesktop={isDesktop}
                 isLargeScreen={isLargeScreen}

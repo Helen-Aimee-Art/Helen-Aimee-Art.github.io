@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormControl, InputLabel, MenuItem, Select } from '@mui/material'
+import { FormControl, InputLabel, MenuItem, Select, Checkbox, ListItemText } from '@mui/material'
 import { useState } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
@@ -22,7 +22,7 @@ const useStyles = createUseStyles(theme => ({
 export const FilterDropdown = (props) => {
     const theme = useTheme()
     const classes = useStyles(theme)
-    const [selected, setSelected] = useState('')
+    const [selected, setSelected] = useState([])
 
     const handleChange = e => {
         setSelected(e.target.value)
@@ -49,9 +49,14 @@ export const FilterDropdown = (props) => {
                         },
                         getContentAnchorEl: null
                     }}
+                    multiple
+                    renderValue={(selected) => selected.map(kw => kw.charAt(0).toUpperCase() + kw.slice(1)).join(', ')}
                 >
                     {props.keywords.map((keyword, index) => (
-                        <MenuItem key={index} value={keyword}>{keyword.charAt(0).toUpperCase() + keyword.slice(1)}</MenuItem>
+                        <MenuItem key={index} value={keyword}>
+                            <Checkbox checked={selected.includes(keyword)}></Checkbox>
+                            <ListItemText>{keyword.charAt(0).toUpperCase() + keyword.slice(1)}</ListItemText>
+                        </MenuItem>
                     ))}
                 </Select>
             </FormControl>
