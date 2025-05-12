@@ -8,7 +8,7 @@ const useStyles = createUseStyles(() => ({
             if (props.isLargeScreen) {
                 return '1fr / 1fr 1fr 1fr 1fr 1fr'
             } else if (props.isMediumScreen) {
-                return '1fr / 1fr 1fr 1fr 1fr'
+                return '1fr / 1fr 1fr 1fr 1fr 1fr'
             } else {
                 return '1fr / 1fr 1fr 1fr'
             }
