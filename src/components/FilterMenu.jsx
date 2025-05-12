@@ -14,6 +14,8 @@ const useStyles = createUseStyles(theme => ({
 }))
 
 export const FilterMenu = (props) => {
+    const { setFilters } = props
+
     const theme = useTheme()
     const classes = useStyles(theme)
     const [selected, setSelected] = useState({ settings: [], imageSizes: [], finishes: [], isCommission: null })
@@ -43,12 +45,12 @@ export const FilterMenu = (props) => {
     }
 
     useEffect(() => {
-        setSelected({ ...selected, isCommission: commissionSelected && !notCommissionSelected ? true : !commissionSelected && notCommissionSelected ? false : null })
+        setSelected(s => ({ ...s, isCommission: commissionSelected && !notCommissionSelected ? true : !commissionSelected && notCommissionSelected ? false : null }))
     }, [commissionSelected, notCommissionSelected])
 
     useEffect(() => {
-        props.setFilters(selected)
-    }, [selected])
+        setFilters(selected)
+    }, [selected, setFilters])
 
     return (
         <div className={classes.container}>
