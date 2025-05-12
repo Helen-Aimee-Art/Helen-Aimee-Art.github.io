@@ -6,37 +6,41 @@ import { Modal } from '../components/Modal'
 import { FilterMenu } from '../components/FilterMenu'
 import { galleryImages } from '../configuration/galleryImages'
 import { ScrollToTopButton } from '../components/ScrollToTopButton'
-import { ImageList, ImageListItem, useMediaQuery } from '@mui/material'
+import { Drawer, ImageList, ImageListItem, useMediaQuery } from '@mui/material'
+import { Button } from '../components/Button'
+import { Overlay } from '../components/Overlay'
 
 const useStyles = createUseStyles(theme => ({
-    container: {
+    container: (isExtraSmallScreen) => ({
         display: 'grid',
-        gridTemplateColumns: '1fr 5fr',
+        gridTemplateColumns: isExtraSmallScreen ? '1fr' : '1fr 5fr',
         gap: '12px',
         width: '100%'
-    },
+    }),
     image: { cursor: 'pointer' }
 }))
 
-const settings = Array.from(new Set(galleryImages.map(image => image.setting))).filter(Boolean)
+const universes = Array.from(new Set(galleryImages.map(image => image.universe))).filter(Boolean)
 const imageSizes = Array.from(new Set(galleryImages.map(image => image.imageSize).filter(Boolean)))
 const finishes = Array.from(new Set(galleryImages.map(image => image.finish).filter(Boolean)))
 
 export const Gallery = (props) => {
-    const theme = useTheme()
-    const classes = useStyles(theme)
-
-    const { setCurrentPage } = props
-    const [currentImage, setCurrentImage] = useState(null)
-    const [open, setOpen] = useState(false)
-    const [filters, setFilters] = useState({ settings: [], imageSizes: [], finishes: [], isCommission: null })
-    const [filteredImages, setFilteredImages] = useState(galleryImages)
-
     const isExtraSmallScreen = useMediaQuery('only screen and (max-width:600px)');
     const isSmallScreen = useMediaQuery('only screen and (min-width:600px)');
     const isMediumScreen = useMediaQuery('only screen and (min-width:768px)');
     const isLargeScreen = useMediaQuery('only screen and (min-width:992px)');
     const isExtraLargeScreen = useMediaQuery('only screen and (min-width:1200px)');
+
+    const theme = useTheme()
+    const classes = useStyles(isExtraSmallScreen, { theme })
+
+    const { setCurrentPage } = props
+    const [currentImage, setCurrentImage] = useState(null)
+    const [open, setOpen] = useState(false)
+    const [filters, setFilters] = useState({ universes: [], imageSizes: [], finishes: [], isCommission: false })
+    const [filteredImages, setFilteredImages] = useState(galleryImages)
+    const [drawerOpen, setDrawerOpen] = useState(false)
+    const [hoveredImage, setHoveredImage] = useState(null)
 
     const calculateCols = () => {
         let cols = 0
@@ -56,7 +60,7 @@ export const Gallery = (props) => {
         setFilteredImages(galleryImages.filter(image => {
             let isIncluded = true;
 
-            if (filters.settings.length && !filters.settings.includes(image.setting)) {
+            if (filters.universes.length && !filters.universes.includes(image.universe)) {
                 isIncluded = false
             }
 
@@ -68,7 +72,7 @@ export const Gallery = (props) => {
                 isIncluded = false
             }
 
-            if (filters.isCommission !== null && filters.isCommission !== image.isCommission) {
+            if (filters.isCommission && !image.isCommission) {
                 isIncluded = false
             }
 
@@ -86,19 +90,25 @@ export const Gallery = (props) => {
         setOpen(false)
     }
 
+    const toggleDrawer = (newOpen) => () => {
+        setDrawerOpen(newOpen);
+    };
+
     return (
         <>
+            {isExtraSmallScreen && <Button alignSelf="flex-start" margin="0 0 8px 0" label="Filter" click={toggleDrawer(true)}></Button>}
             <div className={classes.container}>
-                <FilterMenu settings={settings} imageSizes={imageSizes} finishes={finishes} setFilters={setFilters}></FilterMenu>
-                {filteredImages.length > 0 ? <ImageList variant='masonry' sx={{ width: '100%', height: '100%' }} cols={calculateCols()}>
+                {!isExtraSmallScreen && <FilterMenu universes={universes} imageSizes={imageSizes} finishes={finishes} setFilters={setFilters}></FilterMenu>}
+                {filteredImages.length > 0 ? <ImageList variant='masonry' sx={{ width: '100%', height: '100%', marginTop: 0 }} cols={calculateCols()}>
                     {filteredImages.map((item, index) => (
-                        <ImageListItem className={classes.image} key={index} onMouseDown={() => openModal(index)}>
+                        <ImageListItem className={classes.image} key={index} onMouseDown={() => openModal(index)} onMouseEnter={() => setHoveredImage(index)} onMouseLeave={() => setHoveredImage(null)}>
                             <img
                                 srcSet={`${item.url}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                 src={`${item.url}?w=248&fit=crop&auto=format`}
                                 alt={item.title}
                                 loading="eager"
                             />
+                            <Overlay title={item.title} open={hoveredImage === index} />
                         </ImageListItem>
                     ))}
                 </ImageList> : <h3 style={{ width: "100%" }}>The selected filters returned no results.</h3>}
@@ -123,6 +133,9 @@ export const Gallery = (props) => {
                 />
             </Modal>
             <ScrollToTopButton />
+            <Drawer open={drawerOpen} onClose={toggleDrawer(false)} keepMounted>
+                <FilterMenu margin="8px" universes={universes} imageSizes={imageSizes} finishes={finishes} setFilters={setFilters}></FilterMenu>
+            </Drawer>
         </>
     )
 }

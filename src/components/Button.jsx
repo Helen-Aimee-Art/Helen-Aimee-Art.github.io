@@ -2,7 +2,7 @@ import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 
 const useStyles = createUseStyles(theme => ({
-    button: margin => ({
+    button: props => ({
         backgroundColor: theme.colorTertiary,
         boxShadow: '0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12)',
         color: 'rgba(0, 0, 0, 0.87)',
@@ -26,21 +26,22 @@ const useStyles = createUseStyles(theme => ({
         justifyContent: 'center',
         textDecoration: 'none',
         textAlign: 'center',
-        margin: margin || 8,
+        margin: props.margin || 8,
         fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
         '&:hover': {
             opacity: 0.8
         },
         '&:active': {
             opacity: 0.5
-        }
+        },
+        alignSelf: props.alignSelf || 'initial'
     })
 }))
 
 export const Button = (props) => {
-    const { label, click, margin } = props
+    const { label, click } = props
     const theme = useTheme()
-    const classes = useStyles(margin, { theme })
+    const classes = useStyles(props, { theme })
 
     return (
         <button className={classes.button} onClick={click}>{label}</button>

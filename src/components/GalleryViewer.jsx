@@ -14,7 +14,6 @@ const useStyles = createUseStyles(theme => ({
     img: {
         height: '85vh',
     },
-    title: { color: theme.colorSecondary },
     arrow: {
         position: 'absolute',
         width: 75,
@@ -71,7 +70,6 @@ export const GalleryViewer = (props) => {
     return (
         <div className={classes.imgContainer}>
             <img className={classes.img} src={src} alt={alt} />
-            <h1 className={classes.title}>{currentImage?.title}</h1>
             <img
                 className={classes.arrow}
                 style={{ left: 5, opacity: leftActive ? 1 : 0.25, cursor: leftActive ? 'pointer' : 'default' }}
