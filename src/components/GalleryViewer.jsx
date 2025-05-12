@@ -6,13 +6,15 @@ import { useEffect } from 'react'
 const useStyles = createUseStyles(theme => ({
     imgContainer: {
         display: 'flex',
+        flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        gap: '12px'
     },
     img: {
         height: '85vh',
-        position: 'absolute',
     },
+    title: { color: theme.colorSecondary },
     arrow: {
         position: 'absolute',
         width: 75,
@@ -64,10 +66,12 @@ export const GalleryViewer = (props) => {
     }
 
     const src = currentImage ? currentImage.url : ''
+    const alt = currentImage ? currentImage.title : ''
 
     return (
         <div className={classes.imgContainer}>
-            <img className={classes.img} src={src} alt="" />
+            <img className={classes.img} src={src} alt={alt} />
+            <h1 className={classes.title}>{currentImage?.title}</h1>
             <img
                 className={classes.arrow}
                 style={{ left: 5, opacity: leftActive ? 1 : 0.25, cursor: leftActive ? 'pointer' : 'default' }}

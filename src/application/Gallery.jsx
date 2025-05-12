@@ -1,13 +1,12 @@
 import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 import { useEffect, useState } from 'react'
-import { Grid } from '../components/Grid'
-import { GalleryItem } from '../components/GalleryItem'
 import { GalleryViewer } from '../components/GalleryViewer'
 import { Modal } from '../components/Modal'
 import { FilterMenu } from '../components/FilterMenu'
-import { galleryImages, PER_PAGE } from '../configuration/galleryImages'
+import { galleryImages } from '../configuration/galleryImages'
 import { ScrollToTopButton } from '../components/ScrollToTopButton'
+import { ImageList, ImageListItem, useMediaQuery } from '@mui/material'
 
 const useStyles = createUseStyles(theme => ({
     container: {
@@ -15,7 +14,8 @@ const useStyles = createUseStyles(theme => ({
         gridTemplateColumns: '1fr 5fr',
         gap: '12px',
         width: '100%'
-    }
+    },
+    image: { cursor: 'pointer' }
 }))
 
 const settings = Array.from(new Set(galleryImages.map(image => image.setting))).filter(Boolean)
@@ -26,13 +26,27 @@ export const Gallery = (props) => {
     const theme = useTheme()
     const classes = useStyles(theme)
 
-    const { isDesktop, isLargeScreen, isMediumScreen, isSmallScreen, setCurrentPage } = props
+    const { setCurrentPage } = props
     const [currentImage, setCurrentImage] = useState(null)
     const [open, setOpen] = useState(false)
     const [filters, setFilters] = useState({ settings: [], imageSizes: [], finishes: [], isCommission: null })
     const [filteredImages, setFilteredImages] = useState(galleryImages)
-    const [page, setPage] = useState(1)
-    const [canLoadMore, setCanLoadMore] = useState(true)
+
+    const isExtraSmallScreen = useMediaQuery('only screen and (max-width:600px)');
+    const isSmallScreen = useMediaQuery('only screen and (min-width:600px)');
+    const isMediumScreen = useMediaQuery('only screen and (min-width:768px)');
+    const isLargeScreen = useMediaQuery('only screen and (min-width:992px)');
+    const isExtraLargeScreen = useMediaQuery('only screen and (min-width:1200px)');
+
+    const calculateCols = () => {
+        let cols = 0
+        if (isExtraLargeScreen) return 5
+        if (isLargeScreen) return 4
+        if (isMediumScreen) return 3
+        if (isSmallScreen) return 2
+        if (isExtraSmallScreen) return 1
+        return cols
+    }
 
     useEffect(() => {
         setCurrentPage('gallery')
@@ -62,24 +76,6 @@ export const Gallery = (props) => {
         }))
     }, [filters])
 
-    const checkScroll = () => {
-        if (
-            ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 50) &&
-            canLoadMore &&
-            (page * PER_PAGE < filteredImages.length)
-        ) {
-            setPage(page + 1)
-            setCanLoadMore(false)
-            setTimeout(() => setCanLoadMore(true), 100)
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', checkScroll)
-
-        return () => window.removeEventListener('scroll', checkScroll)
-    })
-
     const openModal = (id) => {
         setCurrentImage(id)
         setOpen(true)
@@ -94,30 +90,22 @@ export const Gallery = (props) => {
         <>
             <div className={classes.container}>
                 <FilterMenu settings={settings} imageSizes={imageSizes} finishes={finishes} setFilters={setFilters}></FilterMenu>
-                {filteredImages.length > 0 ? <Grid
-                    isDesktop={isDesktop}
-                    isLargeScreen={isLargeScreen}
-                    isMediumScreen={isMediumScreen}
-                    isSmallScreen={isSmallScreen}
-                >
-                    {filteredImages.slice(0, page * PER_PAGE).map((image, index) => (
-                        <GalleryItem
-                            key={index}
-                            id={index}
-                            title={image.title}
-                            desc={image.desc}
-                            url={image.url}
-                            keywords={image.keywords}
-                            openModal={openModal}
-                            isDesktop={isDesktop}
-                        />
+                {filteredImages.length > 0 ? <ImageList variant='masonry' sx={{ width: '100%', height: '100%' }} cols={calculateCols()}>
+                    {filteredImages.map((item, index) => (
+                        <ImageListItem className={classes.image} key={index} onMouseDown={() => openModal(index)}>
+                            <img
+                                srcSet={`${item.url}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${item.url}?w=248&fit=crop&auto=format`}
+                                alt={item.title}
+                                loading="eager"
+                            />
+                        </ImageListItem>
                     ))}
-                </Grid> : <h3 style={{ width: "100%" }}>The selected filters returned no results.</h3>}
+                </ImageList> : <h3 style={{ width: "100%" }}>The selected filters returned no results.</h3>}
             </div>
             <Modal
                 open={open}
                 closeModal={closeModal}
-                isDesktop={isDesktop}
             >
                 <GalleryViewer
                     currentImageId={currentImage}
@@ -131,7 +119,6 @@ export const Gallery = (props) => {
                         e.preventDefault()
                         setCurrentImage(prevImage => Math.max(prevImage - 1, 0))
                     }}
-                    isDesktop={isDesktop}
                     closeModal={closeModal}
                 />
             </Modal>
