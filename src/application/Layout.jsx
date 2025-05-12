@@ -28,7 +28,7 @@ const useStyles = createUseStyles(theme => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        width: props => props.isDesktop ? props.currentPage === 'commissionqueue' ? '100%' : props.currentPage === 'gallery' ? '' : '65%' : '90%',
+        width: props => props.isDesktop ? props.currentPage === 'commissionqueue' ? '100%' : props.currentPage === 'gallery' ? 'calc(100% - 50px)' : '65%' : '90%',
         flex: 1,
         margin: props => props.currentPage === 'commissionqueue' ? '0' : props.currentPage === 'gallery' ? '25px' : '25px 0'
     }

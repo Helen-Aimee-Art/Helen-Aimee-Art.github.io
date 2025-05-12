@@ -13,11 +13,12 @@ const useStyles = createUseStyles(theme => ({
     container: {
         display: 'grid',
         gridTemplateColumns: '1fr 5fr',
-        gap: '12px'
+        gap: '12px',
+        width: '100%'
     }
 }))
 
-const tags = Array.from(new Set([].concat(...galleryImages.map(image => image.tags))))
+const settings = Array.from(new Set(galleryImages.map(image => image.setting))).filter(Boolean)
 const imageSizes = Array.from(new Set(galleryImages.map(image => image.imageSize).filter(Boolean)))
 const finishes = Array.from(new Set(galleryImages.map(image => image.finish).filter(Boolean)))
 
@@ -28,7 +29,8 @@ export const Gallery = (props) => {
     const { isDesktop, isLargeScreen, isMediumScreen, isSmallScreen, setCurrentPage } = props
     const [currentImage, setCurrentImage] = useState(null)
     const [open, setOpen] = useState(false)
-    const [filters, setFilters] = useState({ tags: [], imageSizes: [], finishes: [] })
+    const [filters, setFilters] = useState({ settings: [], imageSizes: [], finishes: [], isCommission: null })
+    const [filteredImages, setFilteredImages] = useState(galleryImages)
     const [page, setPage] = useState(1)
     const [canLoadMore, setCanLoadMore] = useState(true)
 
@@ -36,8 +38,29 @@ export const Gallery = (props) => {
         setCurrentPage('gallery')
     }, [setCurrentPage])
 
-    // const filteredImages = filters.length === 0 ? galleryImages : galleryImages.filter(image => filters.every(filter => image.keywords.includes(filter)))
-    const filteredImages = galleryImages
+    useEffect(() => {
+        setFilteredImages(galleryImages.filter(image => {
+            let isIncluded = true;
+
+            if (filters.settings.length && !filters.settings.includes(image.setting)) {
+                isIncluded = false
+            }
+
+            if (filters.imageSizes.length && !filters.imageSizes.includes(image.imageSize)) {
+                isIncluded = false
+            }
+
+            if (filters.finishes.length && !filters.finishes.includes(image.finish)) {
+                isIncluded = false
+            }
+
+            if (filters.isCommission !== null && filters.isCommission !== image.isCommission) {
+                isIncluded = false
+            }
+
+            return isIncluded
+        }))
+    }, [filters])
 
     const checkScroll = () => {
         if (
@@ -68,10 +91,10 @@ export const Gallery = (props) => {
     }
 
     return (
-        <div>
+        <>
             <div className={classes.container}>
-                <FilterMenu tags={tags} imageSizes={imageSizes} finishes={finishes} setFilters={setFilters}></FilterMenu>
-                <Grid
+                <FilterMenu settings={settings} imageSizes={imageSizes} finishes={finishes} setFilters={setFilters}></FilterMenu>
+                {filteredImages.length > 0 ? <Grid
                     isDesktop={isDesktop}
                     isLargeScreen={isLargeScreen}
                     isMediumScreen={isMediumScreen}
@@ -89,7 +112,7 @@ export const Gallery = (props) => {
                             isDesktop={isDesktop}
                         />
                     ))}
-                </Grid>
+                </Grid> : <h3 style={{ width: "100%" }}>The selected filters returned no results.</h3>}
             </div>
             <Modal
                 open={open}
@@ -113,6 +136,6 @@ export const Gallery = (props) => {
                 />
             </Modal>
             <ScrollToTopButton />
-        </div >
+        </>
     )
 }

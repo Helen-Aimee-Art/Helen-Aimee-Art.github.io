@@ -5,472 +5,531 @@ export const galleryImages = [
         title: 'Eros and Iris',
         desc: '',
         url: '/eros+iris.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: 'portrait',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Ser Duncan',
         desc: '',
         url: '/serduncan.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Dionysus',
         desc: '',
         url: '/dionysus2.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Dionysus',
         desc: '',
         url: '/dionysus.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Benjamin',
         desc: '',
         url: '/benjamin.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Lillian',
         desc: '',
         url: '/lillian.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Auxélie and Lucy',
         desc: '',
         url: '/auxelie+lucy.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Haelissa',
         desc: '',
         url: '/haelissa.jpg',
-        tags: ['commissions'],
+        setting: '',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Tae',
         desc: '',
         url: '/tae.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Cloverhoney',
         desc: '',
         url: '/cloverhoney.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Rose',
         desc: '',
         url: '/rose.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Amrathor',
         desc: '',
         url: '/amrathor.jpg',
-        tags: ['warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: false
     },
     {
         title: 'Saedre',
         desc: '',
         url: '/saedre.jpg',
-        tags: ['warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Valerial',
         desc: '',
         url: '/valerial.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Kalrissa',
         desc: '',
         url: '/kalrissa.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Scyene',
         desc: '',
         url: '/scyene.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Kasania',
         desc: '',
         url: '/kasania.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Llewellyn',
         desc: '',
         url: '/llewellyn.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: "M'iko",
         desc: '',
         url: '/miko.jpg',
-        tags: ['commissions', 'FFXIV'],
+        setting: 'FFXIV',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Helyne',
         desc: '',
         url: '/helyne.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Ceto',
         desc: '',
         url: '/ceto.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Demon',
         desc: '',
         url: '/demon.jpg',
-        tags: ['warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: false
     },
     {
         title: 'Draenei',
         desc: '',
         url: '/draenei.jpg',
-        tags: ['warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: false
     },
     {
         title: 'Sellène',
         desc: '',
         url: '/sellene.jpg',
-        tags: ['commissions'],
+        setting: '',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Ti',
         desc: '',
         url: '/ti.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Whitemane',
         desc: '',
         url: '/whitemane.jpg',
-        tags: ['warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Rinh',
         desc: '',
         url: '/rinh6.jpg',
-        tags: ['FFXIV'],
+        setting: 'FFXIV',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: false
     },
     {
         title: 'Lehen',
         desc: '',
         url: '/lehen.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Zalorii',
         desc: '',
         url: '/zalorii.jpg',
-        tags: ['warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Maeve',
         desc: '',
         url: '/maeve.jpg',
-        tags: [],
+        setting: '',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Athriel',
         desc: '',
         url: '/athriel.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Rin',
         desc: '',
         url: '/rin.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Eirian',
         desc: '',
         url: '/eirian.jpg',
-        tags: ['commissions'],
+        setting: '',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Opal',
         desc: '',
         url: '/opal.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Wraith',
         desc: '',
         url: '/wraith.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Mariko',
         desc: '',
         url: '/mariko.jpg',
-        tags: ['commissions', 'FFXIV'],
+        setting: 'FFXIV',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Elyanthe',
         desc: '',
         url: '/elyanthe.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Rhynali',
         desc: '',
         url: '/rhynali.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Kalendar',
         desc: '',
         url: '/kalendar.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: true
     },
     {
         title: 'Zhaleh',
         desc: '',
         url: '/zhaleh.jpg',
-        tags: [],
+        setting: '',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: false
     },
     {
         title: 'Syrinah',
         desc: '',
         url: '/syrinah.jpg',
-        tags: ['warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: false
     },
     {
         title: 'Jaeltha',
         desc: '',
         url: '/jaeltha.jpg',
-        tags: ['Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: false
     },
     {
         title: 'Zaielsie',
         desc: '',
         url: '/zaielsie.jpg',
-        tags: ['Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'sketch'
+        finish: 'sketch',
+        isCommission: false
     },
     {
         title: 'Neefia',
         desc: '',
         url: '/neefia6.jpg',
-        tags: ['warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Mileni',
         desc: '',
         url: '/mileni3.jpg',
-        tags: ['Elder Scrolls'],
+        setting: 'Elder Scrolls',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Calyssra',
         desc: '',
         url: '/calyssra.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Tristane',
         desc: '',
         url: '/tristane.jpg',
-        tags: ['commissions', 'Elder Scrolls'],
+        setting: 'Elder Scrolls',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Quartise',
         desc: '',
         url: '/quartise.jpg',
-        tags: [],
+        setting: '',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Neefia',
         desc: '',
         url: '/neefia-costume.jpg',
-        tags: ['warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Elara',
         desc: '',
         url: '/elara.jpg',
-        tags: ['Elder Scrolls'],
+        setting: 'Elder Scrolls',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Rinh',
         desc: '',
         url: '/rinh4.jpg',
-        tags: ['FFXIV'],
+        setting: 'FFXIV',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Luna',
         desc: '',
         url: '/luna.jpg',
-        tags: [],
+        setting: '',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
     {
         title: 'Anastaise',
         desc: '',
         url: '/anastaise.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Fayra',
         desc: '',
         url: '/fayra.jpg',
-        tags: ['commissions', 'Dungeons and Dragons'],
+        setting: 'Dungeons and Dragons',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Razlaria',
         desc: '',
         url: '/razlaria.jpg',
-        tags: ['commissions', 'Elder Scrolls'],
+        setting: 'Elder Scrolls',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Lunariia',
         desc: '',
         url: '/lunariia.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Myriani',
         desc: '',
         url: '/myriani.jpg',
-        tags: ['commissions', 'FFXIV'],
+        setting: 'FFXIV',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Erelah',
         desc: '',
         url: '/erelah.jpg',
-        tags: ['commissions', 'warcraft'],
+        setting: 'warcraft',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: true
     },
     {
         title: 'Serana',
         desc: '',
         url: '/serana.jpg',
-        tags: ['Elder Scrolls'],
+        setting: 'Elder Scrolls',
         imageSize: '',
-        finish: 'painted'
+        finish: 'painted',
+        isCommission: false
     },
 ]
