@@ -1,4 +1,4 @@
-import React, { cloneElement } from "react";
+import React from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { Switch, Route, HashRouter as Router } from "react-router-dom";
@@ -65,9 +65,7 @@ export const Layout = (props: LayoutProps) => {
               <Route
                 key={page.title}
                 path={page.path}
-                render={() =>
-                  cloneElement(page.component, { setCurrentPage, isDesktop })
-                }
+                render={() => page.render(isDesktop, setCurrentPage)}
               />
             ))}
           </Switch>

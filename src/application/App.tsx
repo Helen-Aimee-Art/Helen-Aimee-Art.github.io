@@ -28,37 +28,64 @@ export const pages = [
   {
     title: "links",
     path: "/links",
-    component: <Links />,
+    render: (
+      isDesktop: boolean,
+      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
+    ) => <Links isDesktop={isDesktop} setCurrentPage={setCurrentPage} />,
   },
   {
     title: "commissioninfo",
     path: "/commissioninfo",
-    component: <CommissionInfo />,
+    render: (
+      isDesktop: boolean,
+      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
+    ) => (
+      <CommissionInfo isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
+    ),
   },
   {
     title: "commissionform",
     path: "/commissionform",
-    component: <CommissionForm />,
+    render: (
+      isDesktop: boolean,
+      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
+    ) => (
+      <CommissionForm isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
+    ),
   },
   {
     title: "commissionqueue",
     path: "/commissionqueue",
-    component: <CommissionQueue />,
+    render: (
+      isDesktop: boolean,
+      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
+    ) => (
+      <CommissionQueue isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
+    ),
   },
   {
     title: "about",
     path: "/about",
-    component: <About />,
+    render: (
+      isDesktop: boolean,
+      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
+    ) => <About isDesktop={isDesktop} setCurrentPage={setCurrentPage} />,
   },
   {
     title: "adoptables",
     path: "/adoptables",
-    component: <Adoptables />,
+    render: (
+      isDesktop: boolean,
+      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
+    ) => <Adoptables isDesktop={isDesktop} setCurrentPage={setCurrentPage} />,
   },
   {
     title: "gallery",
     path: "/",
-    component: <Gallery />,
+    render: (
+      isDesktop: boolean,
+      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
+    ) => <Gallery isDesktop={isDesktop} setCurrentPage={setCurrentPage} />,
   },
 ] as const;
 
