@@ -1,52 +1,49 @@
-import React from "react";
 import { aboutMeText } from "../configuration/aboutContent";
-import { useEffect } from "react";
+import { Dispatch, SetStateAction, useEffect } from "react";
 import { createUseStyles, useTheme } from "react-jss";
 import { CustomTheme, Page } from "./App";
 
 interface AboutProps {
   isDesktop: boolean;
-  setCurrentPage: React.Dispatch<React.SetStateAction<Page>>;
+  setCurrentPage: Dispatch<SetStateAction<Page>>;
 }
 
 type RuleNames = "content" | "list" | "listItem" | "image" | "clipImage";
 
-const useStyles = createUseStyles<RuleNames, Partial<AboutProps>, CustomTheme>(
-  (theme) => ({
-    content: {
-      textAlign: "left",
-      width: (isDesktop) => (isDesktop ? "75%" : "100%"),
+const useStyles = createUseStyles<RuleNames, Partial<AboutProps>, CustomTheme>((theme) => ({
+  content: {
+    textAlign: "left",
+    width: (isDesktop) => (isDesktop ? "75%" : "100%"),
+  },
+  list: {
+    listStyle: "none",
+  },
+  listItem: {
+    padding: 0,
+    margin: "10px 0",
+    display: "flex",
+    alignItems: "center",
+    "&:before": {
+      content: "'♡'",
+      color: theme.colorTertiary,
+      fontWeight: "bold",
+      display: "inline-block",
+      width: "1em",
+      marginLeft: "-1em",
     },
-    list: {
-      listStyle: "none",
-    },
-    listItem: {
-      padding: 0,
-      margin: "10px 0",
-      display: "flex",
-      alignItems: "center",
-      "&:before": {
-        content: "'♡'",
-        color: theme.colorTertiary,
-        fontWeight: "bold",
-        display: "inline-block",
-        width: "1em",
-        marginLeft: "-1em",
-      },
-    },
-    image: {
-      width: 50,
-      height: "auto",
-      marginRight: 10,
-    },
-    clipImage: {
-      width: 40,
-      height: "auto",
-      marginRight: 10,
-      padding: 5,
-    },
-  })
-);
+  },
+  image: {
+    width: 50,
+    height: "auto",
+    marginRight: 10,
+  },
+  clipImage: {
+    width: 40,
+    height: "auto",
+    marginRight: 10,
+    padding: 5,
+  },
+}));
 
 export const About = (props: AboutProps) => {
   const { isDesktop, setCurrentPage } = props;

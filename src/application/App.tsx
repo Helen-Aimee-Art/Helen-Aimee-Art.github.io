@@ -1,7 +1,6 @@
-import React from "react";
 import { Layout } from "./Layout";
 import { ThemeProvider } from "react-jss";
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { Links } from "./Links";
 import { Gallery } from "./Gallery";
 import { About } from "./About";
@@ -28,64 +27,51 @@ export const pages = [
   {
     title: "links",
     path: "/links",
-    render: (
-      isDesktop: boolean,
-      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
-    ) => <Links isDesktop={isDesktop} setCurrentPage={setCurrentPage} />,
+    render: (isDesktop: boolean, setCurrentPage: Dispatch<SetStateAction<any>>) => (
+      <Links isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
+    ),
   },
   {
     title: "commissioninfo",
     path: "/commissioninfo",
-    render: (
-      isDesktop: boolean,
-      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
-    ) => (
+    render: (isDesktop: boolean, setCurrentPage: Dispatch<SetStateAction<any>>) => (
       <CommissionInfo isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
     ),
   },
   {
     title: "commissionform",
     path: "/commissionform",
-    render: (
-      isDesktop: boolean,
-      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
-    ) => (
+    render: (isDesktop: boolean, setCurrentPage: Dispatch<SetStateAction<any>>) => (
       <CommissionForm isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
     ),
   },
   {
     title: "commissionqueue",
     path: "/commissionqueue",
-    render: (
-      isDesktop: boolean,
-      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
-    ) => (
-      <CommissionQueue isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
+    render: (isDesktop: boolean, setCurrentPage: Dispatch<SetStateAction<any>>) => (
+      <CommissionQueue setCurrentPage={setCurrentPage} />
     ),
   },
   {
     title: "about",
     path: "/about",
-    render: (
-      isDesktop: boolean,
-      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
-    ) => <About isDesktop={isDesktop} setCurrentPage={setCurrentPage} />,
+    render: (isDesktop: boolean, setCurrentPage: Dispatch<SetStateAction<any>>) => (
+      <About isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
+    ),
   },
   {
     title: "adoptables",
     path: "/adoptables",
-    render: (
-      isDesktop: boolean,
-      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
-    ) => <Adoptables isDesktop={isDesktop} setCurrentPage={setCurrentPage} />,
+    render: (isDesktop: boolean, setCurrentPage: Dispatch<SetStateAction<any>>) => (
+      <Adoptables isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
+    ),
   },
   {
     title: "gallery",
     path: "/",
-    render: (
-      isDesktop: boolean,
-      setCurrentPage: React.Dispatch<React.SetStateAction<any>>
-    ) => <Gallery isDesktop={isDesktop} setCurrentPage={setCurrentPage} />,
+    render: (isDesktop: boolean, setCurrentPage: Dispatch<SetStateAction<any>>) => (
+      <Gallery setCurrentPage={setCurrentPage} />
+    ),
   },
 ] as const;
 
@@ -126,11 +112,7 @@ export const App = () => {
 
   return (
     <ThemeProvider theme={customTheme}>
-      <Layout
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-        isDesktop={isDesktop}
-      />
+      <Layout currentPage={currentPage} setCurrentPage={setCurrentPage} isDesktop={isDesktop} />
     </ThemeProvider>
   );
 };
