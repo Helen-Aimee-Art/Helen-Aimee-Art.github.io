@@ -6,8 +6,8 @@ type RuleNames = "button";
 
 interface ButtonProps {
   label: string;
-  margin: string;
-  alignSelf: string;
+  margin?: string;
+  alignSelf?: string;
   click: MouseEventHandler<HTMLButtonElement>;
 }
 

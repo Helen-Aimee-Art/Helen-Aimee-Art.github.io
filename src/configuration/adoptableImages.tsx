@@ -1,5 +1,5 @@
-interface AdoptableImage {
-  url: String;
+export interface AdoptableImage {
+  url: string;
   type: "forsale" | "adopted";
 }
 

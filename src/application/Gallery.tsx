@@ -2,7 +2,7 @@ import { createUseStyles, useTheme } from "react-jss";
 import { Dispatch, SetStateAction, SyntheticEvent, useEffect, useState } from "react";
 import { GalleryViewer } from "../components/GalleryViewer";
 import { Modal } from "../components/Modal";
-import { FilterMenu } from "../components/FilterMenu";
+import { DEFAULT_FILTERS, FilterMenu, Filters } from "../components/FilterMenu";
 import { galleryImages } from "../configuration/galleryImages";
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
 import { Drawer, ImageList, ImageListItem, useMediaQuery } from "@mui/material";
@@ -19,20 +19,6 @@ interface GalleryProps {
 interface GalleryStylesProps extends GalleryProps {
   isExtraSmallScreen: boolean;
 }
-
-interface Filters {
-  universes: string[];
-  imageSizes: string[];
-  finishes: string[];
-  isCommission: boolean;
-}
-
-const DEFAULT_FILTERS: Filters = {
-  universes: [],
-  imageSizes: [],
-  finishes: [],
-  isCommission: false,
-};
 
 const useStyles = createUseStyles<RuleNames, Partial<GalleryStylesProps>, CustomTheme>((theme) => ({
   container: {
