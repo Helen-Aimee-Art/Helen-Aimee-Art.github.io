@@ -8,7 +8,7 @@ import { Dispatch, SetStateAction } from "react";
 type RuleNames = "app" | "main";
 
 interface LayoutProps {
-  currentPage: string;
+  currentPage: Page;
   isDesktop: boolean;
   setCurrentPage: Dispatch<SetStateAction<Page>>;
 }
@@ -68,7 +68,7 @@ export const Layout = (props: LayoutProps) => {
             ))}
           </Switch>
         </div>
-        <Footer isDesktop={isDesktop} currentPage={currentPage} />
+        <Footer currentPage={currentPage} />
       </div>
     </Router>
   );
