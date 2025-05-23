@@ -13,11 +13,11 @@ interface HeaderProps {
 }
 
 const useStyles = createUseStyles<RuleNames, HeaderProps, CustomTheme>((theme) => ({
-  nav: (isDesktop) => ({
+  nav: (props) => ({
     display: "flex",
     // flexDirection: isDesktop ? 'row' : 'row-reverse',
     flexDirection: "row",
-    justifyContent: isDesktop ? "space-around" : "space-between",
+    justifyContent: props.isDesktop ? "space-around" : "space-between",
     alignItems: "center",
     backgroundColor: theme.colorPrimary,
     color: theme.colorSecondary,

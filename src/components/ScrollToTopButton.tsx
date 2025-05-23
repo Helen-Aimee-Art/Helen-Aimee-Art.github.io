@@ -10,8 +10,8 @@ interface ScrollToTopButtonStyleProps {
 }
 
 const useStyles = createUseStyles<RuleNames, ScrollToTopButtonStyleProps, CustomTheme>((theme) => ({
-  scrollButton: ({ showButton }) => ({
-    display: showButton ? "block" : "none",
+  scrollButton: (props) => ({
+    display: props.showButton ? "block" : "none",
     position: "fixed",
     bottom: 20,
     right: 30,

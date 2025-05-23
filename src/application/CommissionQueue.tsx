@@ -12,7 +12,7 @@ const useStyles = createUseStyles((theme) => ({
   },
   frame: {
     width: "100%",
-    height: "710px",
+    height: "calc(100vh - 235px)",
     border: "none",
   },
 }));
