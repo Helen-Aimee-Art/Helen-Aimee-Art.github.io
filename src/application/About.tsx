@@ -13,7 +13,7 @@ type RuleNames = "content" | "list" | "listItem" | "image" | "clipImage";
 const useStyles = createUseStyles<RuleNames, Partial<AboutProps>, CustomTheme>((theme) => ({
   content: {
     textAlign: "left",
-    width: (isDesktop) => (isDesktop ? "75%" : "100%"),
+    width: (props) => (props.isDesktop ? "75%" : "100%"),
   },
   list: {
     listStyle: "none",

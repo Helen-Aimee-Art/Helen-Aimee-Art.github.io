@@ -37,7 +37,7 @@ const DEFAULT_FILTERS: Filters = {
 const useStyles = createUseStyles<RuleNames, Partial<GalleryStylesProps>, CustomTheme>((theme) => ({
   container: {
     display: "grid",
-    gridTemplateColumns: (isExtraSmallScreen) => (isExtraSmallScreen ? "1fr" : "1fr 5fr"),
+    gridTemplateColumns: (props) => (props.isExtraSmallScreen ? "1fr" : "1fr 5fr"),
     gap: "12px",
     width: "100%",
   },
