@@ -3,58 +3,51 @@ import { Link } from "react-router-dom";
 import { createUseStyles, useTheme } from "react-jss";
 import { useState } from "react";
 import { CustomTheme, Page } from "../application/App";
+import MenuIcon from "@mui/icons-material/Menu";
+import { Drawer, List, ListItem, ListItemText } from "@mui/material";
 
-type RuleNames = "ul" | "li" | "activeLi" | "link" | "burger";
+type RuleNames = "li" | "activeLi" | "burger";
 
 interface MobileNavLinksProps {
   currentPage: Page;
 }
+
+const LINKS = [
+  { name: "Gallery", page: "gallery", link: "/" },
+  { name: "Commission Info", page: "commissioninfo", link: "/commissioninfo" },
+  { name: "Commission Form", page: "commissionform", link: "/commissionform" },
+  { name: "Commission Queue", page: "commissionqueue", link: "/commissionqueue" },
+  { name: "About", page: "about", link: "/about" },
+] as const;
 
 const useStyles = createUseStyles<
   RuleNames,
   MobileNavLinksProps & { active: boolean },
   CustomTheme
 >((theme) => ({
-  ul: {
-    listStyle: "none",
-    position: "absolute",
-    right: 0,
-    top: 100,
-    backgroundColor: theme.colorPrimary,
-    zIndex: 1,
-    padding: 0,
-    margin: 0,
-    width: (props) => (props.active ? 175 : 0),
-    height: "calc(100% - 200px)",
-    transition: "width 0.25s ease",
-  },
   li: {
-    fontSize: 20,
     padding: "15px 10px",
-    width: 150,
+    width: 220,
     color: theme.colorSecondary,
-    display: (props) => (props.active ? "block" : "none"),
     overflow: "hidden",
     transition: "0.2s ease",
     borderLeft: "5px solid rgba(0, 0, 0, 0)",
   },
   activeLi: {
-    fontSize: 20,
     padding: "15px 10px",
-    width: 150,
+    width: 220,
     color: theme.colorSecondary,
-    display: (props) => (props.active ? "block" : "none"),
     overflow: "hidden",
     transition: "0.2s ease",
     borderLeft: "5px solid",
     borderLeftColor: theme.colorTertiary,
   },
-  link: {
-    textDecoration: "none",
-  },
   burger: {
-    width: 32,
     marginRight: 10,
+    cursor: "pointer",
+    "&:hover": {
+      color: theme.colorTertiary,
+    },
   },
 }));
 
@@ -63,39 +56,36 @@ export const MobileNavLinks = (props: MobileNavLinksProps) => {
   const [active, setActive] = useState(false);
   const classes = useStyles({ ...props, active, theme });
 
+  const toggleDrawer = (newOpen: boolean) => () => {
+    setActive(newOpen);
+  };
+
   return (
     <>
-      <img
-        src="/Hamburger_icon.png"
-        alt=""
-        onClick={() => setActive(!active)}
-        className={classes.burger}
-      />
-      <ul className={classes.ul}>
-        <Link to="/" className={classes.link} onClick={() => setActive(false)}>
-          <li className={props.currentPage === "gallery" ? classes.activeLi : classes.li}>
-            Gallery
-          </li>
-        </Link>
-        <Link to="/commissioninfo" className={classes.link} onClick={() => setActive(false)}>
-          <li className={props.currentPage === "commissioninfo" ? classes.activeLi : classes.li}>
-            Commission Info
-          </li>
-        </Link>
-        <Link to="/commissionform" className={classes.link} onClick={() => setActive(false)}>
-          <li className={props.currentPage === "commissionform" ? classes.activeLi : classes.li}>
-            Commission Form
-          </li>
-        </Link>
-        <Link to="/commissionqueue" className={classes.link} onClick={() => setActive(false)}>
-          <li className={props.currentPage === "commissionqueue" ? classes.activeLi : classes.li}>
-            Queue
-          </li>
-        </Link>
-        <Link to="/about" className={classes.link} onClick={() => setActive(false)}>
-          <li className={props.currentPage === "about" ? classes.activeLi : classes.li}>About</li>
-        </Link>
-      </ul>
+      <MenuIcon className={classes.burger} fontSize="large" onClick={toggleDrawer(true)} />
+      <Drawer
+        open={active}
+        anchor="right"
+        onClose={toggleDrawer(false)}
+        slotProps={{ paper: { style: { backgroundColor: theme.colorPrimary } } }}
+        variant="temporary"
+      >
+        <nav>
+          <List>
+            {LINKS.map((link) => (
+              <ListItem
+                className={props.currentPage === link.page ? classes.activeLi : classes.li}
+                component={Link}
+                to={link.link}
+                key={link.page}
+                onClick={toggleDrawer(false)}
+              >
+                <ListItemText primary={link.name} slotProps={{ primary: { variant: "h6" } }} />
+              </ListItem>
+            ))}
+          </List>
+        </nav>
+      </Drawer>
     </>
   );
 };
