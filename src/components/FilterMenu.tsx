@@ -15,7 +15,6 @@ import { CustomTheme } from "../application/App";
 type RuleNames = "container" | "details";
 
 interface FilterMenuProps {
-  margin?: string;
   setFilters: Dispatch<SetStateAction<Filters>>;
   universes: string[];
   imageSizes: string[];
@@ -37,7 +36,7 @@ export const DEFAULT_FILTERS: Filters = {
 };
 
 const useStyles = createUseStyles<RuleNames, FilterMenuProps, CustomTheme>((theme) => ({
-  container: (props) => ({ height: 0, margin: props.margin || 0 }),
+  container: { height: "0", margin: "12px" },
   details: {
     display: "flex",
     flexDirection: "column",

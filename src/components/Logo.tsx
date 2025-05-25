@@ -12,7 +12,7 @@ interface LogoProps {
 
 const useStyles = createUseStyles<RuleNames, LogoProps, CustomTheme>((theme) => ({
   container: {
-    textAlign: (props) => (props.currentPage !== "links" ? "left" : "center"),
+    textAlign: "left",
     padding: "0 10px",
   },
   mainLink: {

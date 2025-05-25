@@ -1,5 +1,5 @@
 import { createUseStyles, useTheme } from "react-jss";
-import { Dispatch, SetStateAction, SyntheticEvent, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, SyntheticEvent, useEffect, useMemo, useState } from "react";
 import { GalleryViewer } from "../components/GalleryViewer";
 import { Modal } from "../components/Modal";
 import { DEFAULT_FILTERS, FilterMenu, Filters } from "../components/FilterMenu";
@@ -10,7 +10,7 @@ import { Button } from "../components/Button";
 import { Overlay } from "../components/Overlay";
 import { CustomTheme, Page } from "./App";
 
-type RuleNames = "container" | "image";
+type RuleNames = "image";
 
 interface GalleryProps {
   setCurrentPage: Dispatch<SetStateAction<Page>>;
@@ -21,12 +21,6 @@ interface GalleryStylesProps extends GalleryProps {
 }
 
 const useStyles = createUseStyles<RuleNames, Partial<GalleryStylesProps>, CustomTheme>((theme) => ({
-  container: {
-    display: "grid",
-    gridTemplateColumns: (props) => (props.isExtraSmallScreen ? "1fr" : "1fr 5fr"),
-    gap: "12px",
-    width: "100%",
-  },
   image: { cursor: "pointer" },
 }));
 
@@ -54,6 +48,15 @@ export const Gallery = (props: GalleryProps) => {
   const [filteredImages, setFilteredImages] = useState(galleryImages);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [hoveredImage, setHoveredImage] = useState<number | null>(null);
+
+  const numFiltersSelected = useMemo(
+    () =>
+      filters.universes.length +
+      filters.finishes.length +
+      filters.imageSizes.length +
+      (filters.isCommission ? 1 : 0),
+    [filters]
+  );
 
   const calculateCols = () => {
     let cols = 0;
@@ -111,51 +114,40 @@ export const Gallery = (props: GalleryProps) => {
 
   return (
     <>
-      {isExtraSmallScreen && (
-        <Button
-          alignSelf="flex-start"
-          margin="0 0 8px 0"
-          label="Filter"
-          click={toggleDrawer(true)}
-        ></Button>
+      <Button
+        alignSelf="flex-start"
+        margin="0 0 8px 0"
+        label={`Filter ${numFiltersSelected > 0 ? `(${numFiltersSelected})` : ""}`}
+        click={toggleDrawer(true)}
+      ></Button>
+      {filteredImages.length > 0 ? (
+        <ImageList
+          variant="masonry"
+          sx={{ width: "100%", height: "100%", marginTop: 0 }}
+          cols={calculateCols()}
+          gap={8}
+        >
+          {filteredImages.map((item, index) => (
+            <ImageListItem
+              className={classes.image}
+              key={item.url}
+              onMouseDown={() => openModal(index)}
+              onMouseEnter={() => setHoveredImage(index)}
+              onMouseLeave={() => setHoveredImage(null)}
+            >
+              <img
+                srcSet={`${item.url}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.url}?w=248&fit=crop&auto=format`}
+                alt={item.title}
+                loading="eager"
+              />
+              <Overlay title={item.title} open={hoveredImage === index} />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      ) : (
+        <h3 style={{ width: "100%" }}>The selected filters returned no results.</h3>
       )}
-      <div className={classes.container}>
-        {!isExtraSmallScreen && (
-          <FilterMenu
-            universes={universes}
-            imageSizes={imageSizes}
-            finishes={finishes}
-            setFilters={setFilters}
-          ></FilterMenu>
-        )}
-        {filteredImages.length > 0 ? (
-          <ImageList
-            variant="masonry"
-            sx={{ width: "100%", height: "100%", marginTop: 0 }}
-            cols={calculateCols()}
-          >
-            {filteredImages.map((item, index) => (
-              <ImageListItem
-                className={classes.image}
-                key={index}
-                onMouseDown={() => openModal(index)}
-                onMouseEnter={() => setHoveredImage(index)}
-                onMouseLeave={() => setHoveredImage(null)}
-              >
-                <img
-                  srcSet={`${item.url}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                  src={`${item.url}?w=248&fit=crop&auto=format`}
-                  alt={item.title}
-                  loading="eager"
-                />
-                <Overlay title={item.title} open={hoveredImage === index} />
-              </ImageListItem>
-            ))}
-          </ImageList>
-        ) : (
-          <h3 style={{ width: "100%" }}>The selected filters returned no results.</h3>
-        )}
-      </div>
       <Modal open={open} closeModal={closeModal}>
         <GalleryViewer
           currentImageId={currentImage}
@@ -177,7 +169,6 @@ export const Gallery = (props: GalleryProps) => {
       <ScrollToTopButton />
       <Drawer open={drawerOpen} onClose={toggleDrawer(false)} keepMounted>
         <FilterMenu
-          margin="8px"
           universes={universes}
           imageSizes={imageSizes}
           finishes={finishes}

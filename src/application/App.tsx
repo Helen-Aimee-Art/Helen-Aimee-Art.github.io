@@ -1,10 +1,8 @@
 import { Layout } from "./Layout";
 import { ThemeProvider } from "react-jss";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { Links } from "./Links";
 import { Gallery } from "./Gallery";
 import { About } from "./About";
-import { Adoptables } from "./Adoptables";
 import { CommissionInfo } from "./CommissionInfo";
 import { CommissionForm } from "./CommissionForm";
 import { CommissionQueue } from "./CommissionQueue";
@@ -24,13 +22,6 @@ export interface CustomTheme {
 }
 
 export const pages = [
-  {
-    title: "links",
-    path: "/links",
-    render: (isDesktop: boolean, setCurrentPage: Dispatch<SetStateAction<any>>) => (
-      <Links isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
-    ),
-  },
   {
     title: "commissioninfo",
     path: "/commissioninfo",
@@ -57,13 +48,6 @@ export const pages = [
     path: "/about",
     render: (isDesktop: boolean, setCurrentPage: Dispatch<SetStateAction<any>>) => (
       <About isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
-    ),
-  },
-  {
-    title: "adoptables",
-    path: "/adoptables",
-    render: (isDesktop: boolean, setCurrentPage: Dispatch<SetStateAction<any>>) => (
-      <Adoptables isDesktop={isDesktop} setCurrentPage={setCurrentPage} />
     ),
   },
   {

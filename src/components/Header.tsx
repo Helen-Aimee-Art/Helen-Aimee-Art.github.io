@@ -17,7 +17,7 @@ const useStyles = createUseStyles<RuleNames, HeaderProps, CustomTheme>((theme) =
     display: "flex",
     // flexDirection: isDesktop ? 'row' : 'row-reverse',
     flexDirection: "row",
-    justifyContent: props.isDesktop ? "space-around" : "space-between",
+    justifyContent: "space-between",
     alignItems: "center",
     backgroundColor: theme.colorPrimary,
     color: theme.colorSecondary,
@@ -35,13 +35,11 @@ export const Header = (props: HeaderProps) => {
   return (
     <nav className={classes.nav}>
       <Logo currentPage={props.currentPage} />
-      {props.currentPage !== "links" ? (
-        props.isDesktop ? (
-          <NavLinks currentPage={props.currentPage} />
-        ) : (
-          <MobileNavLinks currentPage={props.currentPage} />
-        )
-      ) : undefined}
+      {props.isDesktop ? (
+        <NavLinks currentPage={props.currentPage} />
+      ) : (
+        <MobileNavLinks currentPage={props.currentPage} />
+      )}
     </nav>
   );
 };
