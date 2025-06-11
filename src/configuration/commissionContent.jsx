@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const commissionStatus = 'Open'
+export const commissionStatus = 'Closed'
 
 export const drawerConfigs = [
     {
