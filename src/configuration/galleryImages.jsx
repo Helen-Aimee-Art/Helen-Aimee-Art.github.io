@@ -1,5 +1,203 @@
 export const galleryImages = [
     {
+        title: 'Vallory',
+        desc: '',
+        url: '/vallory.jpg',
+        universe: '',
+        imageSize: 'portrait',
+        finish: 'sketch',
+        isCommission: true
+    },
+    {
+        title: 'Ryndri',
+        desc: '',
+        url: '/ryndri2.jpg',
+        universe: 'warcraft',
+        imageSize: 'portrait',
+        finish: 'painted',
+        isCommission: false
+    },
+    {
+        title: 'Ryndri',
+        desc: '',
+        url: '/ryndri.jpg',
+        universe: 'warcraft',
+        imageSize: 'full body',
+        finish: 'watercolour',
+        isCommission: false
+    },
+    {
+        title: 'Neefia',
+        desc: '',
+        url: '/neefia7.jpg',
+        universe: 'warcraft',
+        imageSize: 'half body',
+        finish: 'painted',
+        isCommission: false
+    },
+    {
+        title: 'Allura and Mileni',
+        desc: '',
+        url: '/allura+mileni.jpg',
+        universe: 'Elder Scrolls',
+        imageSize: 'portrait',
+        finish: 'watercolour',
+        isCommission: false
+    },
+    {
+        title: 'Aekirus',
+        desc: '',
+        url: '/aekirus.jpg',
+        universe: 'warcraft',
+        imageSize: 'half body',
+        finish: 'painted',
+        isCommission: false
+    },
+    {
+        title: 'Gilnean',
+        desc: '',
+        url: '/gilnean.jpg',
+        universe: 'warcraft',
+        imageSize: 'portrait',
+        finish: 'watercolour',
+        isCommission: true
+    },
+    {
+        title: 'Draenei',
+        desc: '',
+        url: '/draenei2.jpg',
+        universe: 'warcraft',
+        imageSize: 'portrait',
+        finish: 'watercolour',
+        isCommission: true
+    },
+    {
+        title: 'Celenthiel',
+        desc: '',
+        url: '/celenthiel2.jpg',
+        universe: 'warcraft',
+        imageSize: 'portrait',
+        finish: 'sketch',
+        isCommission: true
+    },
+    {
+        title: 'Celenthiel',
+        desc: '',
+        url: '/celenthiel.jpg',
+        universe: 'warcraft',
+        imageSize: 'half body',
+        finish: 'watercolour',
+        isCommission: true
+    },
+    {
+        title: 'Tabitha',
+        desc: '',
+        url: '/tabitha.jpg',
+        universe: '',
+        imageSize: 'portrait',
+        finish: 'painted',
+        isCommission: false
+    },
+    {
+        title: 'Maia',
+        desc: '',
+        url: '/maia.jpg',
+        universe: 'Dungeons and Dragons',
+        imageSize: 'portrait',
+        finish: 'painted',
+        isCommission: false
+    },
+    {
+        title: 'Zoysia and Kahalari',
+        desc: '',
+        url: '/zoysia.jpg',
+        universe: 'Dungeons and Dragons',
+        imageSize: 'half body',
+        finish: 'sketch',
+        isCommission: true
+    },
+    {
+        title: 'Quilynn',
+        desc: '',
+        url: '/quilynn.jpg',
+        universe: 'Dungeons and Dragons',
+        imageSize: 'portrait',
+        finish: 'painted',
+        isCommission: true
+    },
+    {
+        title: 'Iraebryn',
+        desc: '',
+        url: '/iraebryn.jpg',
+        universe: 'Dungeons and Dragons',
+        imageSize: 'portrait',
+        finish: 'sketch',
+        isCommission: true
+    },
+{
+        title: 'Sirenagosa',
+        desc: '',
+        url: '/sirenagosa.jpg',
+        universe: 'warcraft',
+        imageSize: 'portrait',
+        finish: 'sketch',
+        isCommission: true
+    },
+    {
+        title: 'Ecatée',
+        desc: '',
+        url: '/ecatee2.jpg',
+        universe: '',
+        imageSize: 'half body',
+        finish: 'sketch',
+        isCommission: false
+    },
+    {
+        title: 'Sea Nymph',
+        desc: '',
+        url: '/nymph.jpg',
+        universe: '',
+        imageSize: 'half body',
+        finish: 'watercolour',
+        isCommission: false
+    },
+    {
+        title: 'Belisra',
+        desc: '',
+        url: '/belisra.jpg',
+        universe: 'warcraft',
+        imageSize: 'portrait',
+        finish: 'sketch',
+        isCommission: true
+    },
+    {
+        title: 'Fayra',
+        desc: '',
+        url: '/fayra2.jpg',
+        universe: 'Dungeons and Dragons',
+        imageSize: 'portrait',
+        finish: 'painted',
+        isCommission: true
+    },
+    {
+        title: 'Rinh',
+        desc: '',
+        url: '/rinh7.jpg',
+        universe: 'FFXIV',
+        imageSize: 'portrait',
+        finish: 'watercolour',
+        isCommission: false
+    },
+    {
+        title: 'Elara',
+        desc: '',
+        url: '/elara2.jpg',
+        universe: 'Elder Scrolls',
+        imageSize: 'portrait',
+        finish: 'painted',
+        isCommission: false
+    },
+    {
         title: 'Eros and Iris',
         desc: '',
         url: '/eros+iris.jpg',
@@ -13,7 +211,7 @@ export const galleryImages = [
         desc: '',
         url: '/serduncan.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -22,7 +220,7 @@ export const galleryImages = [
         desc: '',
         url: '/dionysus2.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -31,7 +229,7 @@ export const galleryImages = [
         desc: '',
         url: '/dionysus.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -40,7 +238,7 @@ export const galleryImages = [
         desc: '',
         url: '/benjamin.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -49,7 +247,7 @@ export const galleryImages = [
         desc: '',
         url: '/lillian.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -58,7 +256,7 @@ export const galleryImages = [
         desc: '',
         url: '/auxelie+lucy.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -67,7 +265,7 @@ export const galleryImages = [
         desc: '',
         url: '/haelissa.jpg',
         universe: '',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -76,7 +274,7 @@ export const galleryImages = [
         desc: '',
         url: '/tae.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -85,7 +283,7 @@ export const galleryImages = [
         desc: '',
         url: '/cloverhoney.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'full body',
         finish: 'sketch',
         isCommission: true
     },
@@ -94,7 +292,7 @@ export const galleryImages = [
         desc: '',
         url: '/rose.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: true
     },
@@ -103,7 +301,7 @@ export const galleryImages = [
         desc: '',
         url: '/amrathor.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: false
     },
@@ -112,7 +310,7 @@ export const galleryImages = [
         desc: '',
         url: '/saedre.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: false
     },
@@ -121,7 +319,7 @@ export const galleryImages = [
         desc: '',
         url: '/valerial.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -130,7 +328,7 @@ export const galleryImages = [
         desc: '',
         url: '/kalrissa.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: true
     },
@@ -139,7 +337,7 @@ export const galleryImages = [
         desc: '',
         url: '/scyene.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -148,7 +346,7 @@ export const galleryImages = [
         desc: '',
         url: '/kasania.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -157,7 +355,7 @@ export const galleryImages = [
         desc: '',
         url: '/llewellyn.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -166,7 +364,7 @@ export const galleryImages = [
         desc: '',
         url: '/miko.jpg',
         universe: 'FFXIV',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -175,7 +373,7 @@ export const galleryImages = [
         desc: '',
         url: '/helyne.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -184,7 +382,7 @@ export const galleryImages = [
         desc: '',
         url: '/ceto.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -193,7 +391,7 @@ export const galleryImages = [
         desc: '',
         url: '/demon.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'full body',
         finish: 'sketch',
         isCommission: false
     },
@@ -202,7 +400,7 @@ export const galleryImages = [
         desc: '',
         url: '/draenei.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'full body',
         finish: 'sketch',
         isCommission: false
     },
@@ -211,7 +409,7 @@ export const galleryImages = [
         desc: '',
         url: '/sellene.jpg',
         universe: '',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -220,7 +418,7 @@ export const galleryImages = [
         desc: '',
         url: '/ti.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: true
     },
@@ -229,7 +427,7 @@ export const galleryImages = [
         desc: '',
         url: '/whitemane.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: false
     },
@@ -238,7 +436,7 @@ export const galleryImages = [
         desc: '',
         url: '/rinh6.jpg',
         universe: 'FFXIV',
-        imageSize: '',
+        imageSize: 'full body',
         finish: 'sketch',
         isCommission: false
     },
@@ -247,7 +445,7 @@ export const galleryImages = [
         desc: '',
         url: '/lehen.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -256,7 +454,7 @@ export const galleryImages = [
         desc: '',
         url: '/zalorii.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: false
     },
@@ -265,7 +463,7 @@ export const galleryImages = [
         desc: '',
         url: '/maeve.jpg',
         universe: '',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: false
     },
@@ -274,7 +472,7 @@ export const galleryImages = [
         desc: '',
         url: '/athriel.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -283,7 +481,7 @@ export const galleryImages = [
         desc: '',
         url: '/rin.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -292,7 +490,7 @@ export const galleryImages = [
         desc: '',
         url: '/eirian.jpg',
         universe: '',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -301,7 +499,7 @@ export const galleryImages = [
         desc: '',
         url: '/opal.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: true
     },
@@ -310,7 +508,7 @@ export const galleryImages = [
         desc: '',
         url: '/wraith.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'sketch',
         isCommission: true
     },
@@ -319,7 +517,7 @@ export const galleryImages = [
         desc: '',
         url: '/mariko.jpg',
         universe: 'FFXIV',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -328,7 +526,7 @@ export const galleryImages = [
         desc: '',
         url: '/elyanthe.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -337,7 +535,7 @@ export const galleryImages = [
         desc: '',
         url: '/rhynali.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -346,7 +544,7 @@ export const galleryImages = [
         desc: '',
         url: '/kalendar.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: true
     },
@@ -355,7 +553,7 @@ export const galleryImages = [
         desc: '',
         url: '/zhaleh.jpg',
         universe: '',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: false
     },
@@ -364,7 +562,7 @@ export const galleryImages = [
         desc: '',
         url: '/syrinah.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: false
     },
@@ -373,7 +571,7 @@ export const galleryImages = [
         desc: '',
         url: '/jaeltha.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: false
     },
@@ -382,7 +580,7 @@ export const galleryImages = [
         desc: '',
         url: '/zaielsie.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'sketch',
         isCommission: false
     },
@@ -391,7 +589,7 @@ export const galleryImages = [
         desc: '',
         url: '/neefia6.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: false
     },
@@ -400,7 +598,7 @@ export const galleryImages = [
         desc: '',
         url: '/mileni3.jpg',
         universe: 'Elder Scrolls',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: false
     },
@@ -409,7 +607,7 @@ export const galleryImages = [
         desc: '',
         url: '/calyssra.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: true
     },
@@ -418,7 +616,7 @@ export const galleryImages = [
         desc: '',
         url: '/tristane.jpg',
         universe: 'Elder Scrolls',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: true
     },
@@ -427,7 +625,7 @@ export const galleryImages = [
         desc: '',
         url: '/quartise.jpg',
         universe: '',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: false
     },
@@ -436,7 +634,7 @@ export const galleryImages = [
         desc: '',
         url: '/neefia-costume.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'full body',
         finish: 'painted',
         isCommission: false
     },
@@ -445,7 +643,7 @@ export const galleryImages = [
         desc: '',
         url: '/elara.jpg',
         universe: 'Elder Scrolls',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: false
     },
@@ -454,7 +652,7 @@ export const galleryImages = [
         desc: '',
         url: '/rinh4.jpg',
         universe: 'FFXIV',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: false
     },
@@ -463,7 +661,7 @@ export const galleryImages = [
         desc: '',
         url: '/luna.jpg',
         universe: '',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: false
     },
@@ -472,7 +670,7 @@ export const galleryImages = [
         desc: '',
         url: '/anastaise.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: true
     },
@@ -481,7 +679,7 @@ export const galleryImages = [
         desc: '',
         url: '/fayra.jpg',
         universe: 'Dungeons and Dragons',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: true
     },
@@ -490,7 +688,7 @@ export const galleryImages = [
         desc: '',
         url: '/razlaria.jpg',
         universe: 'Elder Scrolls',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: true
     },
@@ -499,7 +697,7 @@ export const galleryImages = [
         desc: '',
         url: '/lunariia.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: true
     },
@@ -508,7 +706,7 @@ export const galleryImages = [
         desc: '',
         url: '/myriani.jpg',
         universe: 'FFXIV',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: true
     },
@@ -517,7 +715,7 @@ export const galleryImages = [
         desc: '',
         url: '/erelah.jpg',
         universe: 'warcraft',
-        imageSize: '',
+        imageSize: 'half body',
         finish: 'painted',
         isCommission: true
     },
@@ -526,7 +724,7 @@ export const galleryImages = [
         desc: '',
         url: '/serana.jpg',
         universe: 'Elder Scrolls',
-        imageSize: '',
+        imageSize: 'portrait',
         finish: 'painted',
         isCommission: false
     },
