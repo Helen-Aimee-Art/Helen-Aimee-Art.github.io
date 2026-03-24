@@ -2,6 +2,7 @@ import React from 'react'
 import { Layout } from './Layout'
 import { ThemeProvider } from 'react-jss'
 import { useEffect, useState } from 'react'
+import { ThemeProvider as MuiThemeProvider, createTheme } from '@mui/material'
 
 const theme = {
     colorPrimary: '#2D3032',
@@ -10,6 +11,15 @@ const theme = {
     colorQuaternary: '#33A1A3',
     breakpoints: {}
 }
+
+const muiTheme = createTheme({
+    palette: {
+        mode: 'dark',
+        primary: { main: '#2D3032' },
+        secondary: { main: '#CCC0EF' },
+        background: { main: '#2D3032', paper: '#2D3032' }
+    }
+})
 
 export const App = () => {
     const [currentPage, setCurrentPage] = useState('')
@@ -24,7 +34,7 @@ export const App = () => {
         updateMedia()
 
         return () => window.removeEventListener('resize', updateMedia)
-    })
+    }, [])
 
     useEffect(() => {
         const s = document.createElement('script')
@@ -46,11 +56,13 @@ export const App = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Layout
-                currentPage={currentPage}
-                setCurrentPage={setCurrentPage}
-                isDesktop={isDesktop}
-            />
+            <MuiThemeProvider theme={muiTheme}>
+                <Layout
+                    currentPage={currentPage}
+                    setCurrentPage={setCurrentPage}
+                    isDesktop={isDesktop}
+                />
+            </MuiThemeProvider>
         </ThemeProvider>
     )
 }

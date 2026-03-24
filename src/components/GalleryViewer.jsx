@@ -1,7 +1,9 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, forwardRef, useCallback } from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 import { useEffect } from 'react'
+import { useMediaQuery } from '@mui/material'
+import { ArrowForwardIos, ArrowBackIos, Close } from '@mui/icons-material'
 
 const useStyles = createUseStyles(theme => ({
     imgContainer: {
@@ -9,30 +11,25 @@ const useStyles = createUseStyles(theme => ({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: '12px'
+        height: '100%'
     },
     img: {
-        height: '85vh',
+        height: 'auto',
+        borderRadius: '12px'
     },
     arrow: {
         position: 'absolute',
-        width: 75,
         userSelect: 'none',
         opacity: 0.25,
-        transition: 'opacity 0.2s',
-        backgroundColor: 'black'
+        transition: 'opacity 0.2s'
     },
     cross: {
         position: 'absolute',
-        width: 35,
-        height: 35,
         userSelect: 'none',
         opacity: 0.5,
         transition: 'opacity 0.2s',
-        backgroundColor: 'black',
         right: 0,
         top: 0,
-        borderRadius: '50%',
         cursor: 'pointer',
         '&:hover': {
             opacity: 1
@@ -40,12 +37,62 @@ const useStyles = createUseStyles(theme => ({
     }
 }))
 
-export const GalleryViewer = (props) => {
+export const GalleryViewer = forwardRef((props, ref) => {
+    const isExtraSmallScreen = useMediaQuery('only screen and (max-width:600px)');
+    const isSmallScreen = useMediaQuery('only screen and (min-width:600px)');
+    const isMediumScreen = useMediaQuery('only screen and (min-width:768px)');
+    const isLargeScreen = useMediaQuery('only screen and (min-width:992px)');
+    const isExtraLargeScreen = useMediaQuery('only screen and (min-width:1200px)');
+    const isMassiveScreen = useMediaQuery('only screen and (min-width:1600px)');
+
     const { closeModal, currentImage, currentImageId, decrementImage, incrementImage, numImages } = props
     const theme = useTheme()
     const classes = useStyles(theme)
     const [leftActive, setLeftActive] = useState(false)
     const [rightActive, setRightActive] = useState(false)
+    const [touchStart, setTouchStart] = useState(null)
+    const [touchEnd, setTouchEnd] = useState(null)
+
+    const MIN_SWIPE_DISTANCE = 50
+
+    const calculateImageWidth = () => {
+        let width = '100vw'
+        if (isMassiveScreen) return '30vw'
+        if (isExtraLargeScreen) return '50vw'
+        if (isLargeScreen) return '60vw'
+        if (isMediumScreen) return '70vw'
+        if (isSmallScreen) return '80vw'
+        if (isExtraSmallScreen) return '90vw'
+        return width
+    }
+
+    const close = useCallback(() => {
+        closeModal()
+        setLeftActive(false)
+        setRightActive(false)
+    }, [closeModal, setLeftActive, setRightActive])
+
+    const onTouchStart = e => {
+        setTouchEnd(null)
+        setTouchStart(e.targetTouches[0].clientX)
+    }
+
+    const onTouchMove = e => setTouchEnd(e.targetTouches[0].clientX)
+
+    const onTouchEnd = () => {
+        if (!touchStart || !touchEnd) return
+        const distance = touchStart - touchEnd
+        const isLeftSwipe = distance > MIN_SWIPE_DISTANCE
+        const isRightSwipe = distance < -MIN_SWIPE_DISTANCE
+
+        if (isLeftSwipe) {
+            incrementImage()
+        }
+
+        if (isRightSwipe) {
+            decrementImage()
+        }
+    }
 
     useEffect(() => {
         if (currentImageId === 0) {
@@ -58,42 +105,63 @@ export const GalleryViewer = (props) => {
 
     }, [currentImageId, numImages])
 
-    const close = () => {
-        closeModal()
-        setLeftActive(false)
-        setRightActive(false)
+    useEffect(() => {
+        const handleKeyDown = e => {
+            if (e.key === 'ArrowLeft') {
+                decrementImage()
+            } else if (e.key === 'ArrowRight') {
+                incrementImage()
+            } else if (e.key === 'Escape') {
+                close()
+            }
+        }
+
+        document.addEventListener('keydown', handleKeyDown)
+
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown)
+        }
+    }, [decrementImage, incrementImage, close])
+
+    const onBackdropClick = e => {
+        if (e.target.id === 'container') {
+            close()
+        }
     }
 
     const src = currentImage ? currentImage.url : ''
     const alt = currentImage ? currentImage.title : ''
 
     return (
-        <div className={classes.imgContainer}>
-            <img className={classes.img} src={src} alt={alt} />
-            <img
+        <div id='container'
+            className={classes.imgContainer}
+            ref={ref}
+            onClick={onBackdropClick}
+            onTouchStart={onTouchStart}
+            onTouchEnd={onTouchEnd}
+            onTouchMove={onTouchMove}
+        >
+            <img className={classes.img} src={src} alt={alt} style={{ maxWidth: calculateImageWidth() }} />
+            <ArrowBackIos
                 className={classes.arrow}
-                style={{ left: 5, opacity: leftActive ? 1 : 0.25, cursor: leftActive ? 'pointer' : 'default' }}
-                src="/arrow-left.png"
-                alt="left arrow"
-                onClick={currentImageId > 0 ? decrementImage : undefined}
+                style={{ left: 10, opacity: leftActive ? 1 : 0.25, cursor: leftActive ? 'pointer' : 'default' }}
+                sx={{ fontSize: 50, color: theme.colorSecondary }}
+                onClick={decrementImage}
                 onMouseEnter={currentImageId > 0 ? (() => setLeftActive(!leftActive)) : undefined}
                 onMouseLeave={currentImageId > 0 ? (() => setLeftActive(!leftActive)) : undefined}
             />
-            <img
+            <ArrowForwardIos
                 className={classes.arrow}
-                style={{ right: 5, opacity: rightActive ? 1 : 0.25, cursor: rightActive ? 'pointer' : 'default' }}
-                src="/arrow-right.png"
-                alt="right arrow"
-                onClick={currentImageId < numImages ? incrementImage : undefined}
+                style={{ right: 10, opacity: rightActive ? 1 : 0.25, cursor: rightActive ? 'pointer' : 'default' }}
+                sx={{ fontSize: 50, color: theme.colorSecondary }}
+                onClick={incrementImage}
                 onMouseEnter={currentImageId < numImages ? (() => setRightActive(!rightActive)) : undefined}
                 onMouseLeave={currentImageId < numImages ? (() => setRightActive(!rightActive)) : undefined}
             />
-            <img
-                src="/cross.png"
-                alt="cross"
+            <Close
                 className={classes.cross}
-                onClick={close}
-            />
+                sx={{ fontSize: 50, color: theme.colorSecondary }}
+                onClick={close} />
         </div>
     )
-}
+})

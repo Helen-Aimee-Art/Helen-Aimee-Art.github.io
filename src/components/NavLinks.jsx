@@ -2,6 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { createUseStyles, useTheme } from 'react-jss'
 
+export const links = [
+    { route: '/', page: 'gallery', title: 'Gallery' },
+    { route: '/commissioninfo', page: 'commissioninfo', title: 'Commission Info' },
+    { route: '/commissionform', page: 'commissionform', title: 'Commission Form' },
+    { route: '/commissionqueue', page: 'commissionqueue', title: 'Queue' },
+    { route: '/about', page: 'about', title: 'About' },
+]
+
 const useStyles = createUseStyles(theme => ({
     ul: {
         listStyle: 'none',
@@ -41,31 +49,13 @@ export const NavLinks = (props) => {
 
     return (
         <ul className={classes.ul}>
-            <Link to='/' className={props.currentPage === 'gallery' ? classes.activeLink : classes.link}>
-                <li className={classes.li}>
-                    Gallery
-                </li>
-            </Link>
-            <Link to='/commissioninfo' className={props.currentPage === 'commissioninfo' ? classes.activeLink : classes.link}>
-                <li className={classes.li}>
-                    Commission Info
-                </li>
-            </Link>
-            <Link to='/commissionform' className={props.currentPage === 'commissionform' ? classes.activeLink : classes.link}>
-                <li className={classes.li}>
-                    Commission Form
-                </li>
-            </Link>
-            <Link to='/commissionqueue' className={props.currentPage === 'commissionqueue' ? classes.activeLink : classes.link}>
-                <li className={classes.li}>
-                    Queue
-                </li>
-            </Link>
-            <Link to='/about' className={props.currentPage === 'about' ? classes.activeLink : classes.link}>
-                <li className={classes.li}>
-                    About
-                </li>
-            </Link>
+            {links.map(link => (
+                <Link key={link.route} to={link.route} className={props.currentPage === link.page ? classes.activeLink : classes.link}>
+                    <li className={classes.li}>
+                        {link.title}
+                    </li>
+                </Link>
+            ))}
         </ul>
     )
 }

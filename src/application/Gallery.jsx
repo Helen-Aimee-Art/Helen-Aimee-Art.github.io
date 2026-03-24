@@ -2,11 +2,10 @@ import React from 'react'
 import { createUseStyles, useTheme } from 'react-jss'
 import { useEffect, useState } from 'react'
 import { GalleryViewer } from '../components/GalleryViewer'
-import { Modal } from '../components/Modal'
 import { FilterMenu } from '../components/FilterMenu'
 import { galleryImages } from '../configuration/galleryImages'
 import { ScrollToTopButton } from '../components/ScrollToTopButton'
-import { Drawer, ImageList, ImageListItem, useMediaQuery } from '@mui/material'
+import { Drawer, ImageList, ImageListItem, useMediaQuery, Modal } from '@mui/material'
 import { Button } from '../components/Button'
 import { Overlay } from '../components/Overlay'
 
@@ -17,7 +16,7 @@ const useStyles = createUseStyles(theme => ({
         gap: '12px',
         width: '100%'
     }),
-    image: { cursor: 'pointer' }
+    image: { cursor: 'pointer', '& img': { borderRadius: '12px' } }
 }))
 
 const universes = Array.from(new Set(galleryImages.map(image => image.universe))).filter(Boolean)
@@ -35,20 +34,20 @@ export const Gallery = (props) => {
     const classes = useStyles(isExtraSmallScreen, { theme })
 
     const { setCurrentPage } = props
-    const [currentImage, setCurrentImage] = useState(null)
+    const [currentImageIndex, setCurrentImageIndex] = useState(0)
     const [open, setOpen] = useState(false)
     const [filters, setFilters] = useState({ universes: [], imageSizes: [], finishes: [], isCommission: false })
     const [filteredImages, setFilteredImages] = useState(galleryImages)
     const [drawerOpen, setDrawerOpen] = useState(false)
-    const [hoveredImage, setHoveredImage] = useState(null)
+    const [hoveredImage, setHoveredImage] = useState(0)
 
     const calculateCols = () => {
         let cols = 0
-        if (isExtraLargeScreen) return 5
-        if (isLargeScreen) return 4
-        if (isMediumScreen) return 3
-        if (isSmallScreen) return 2
-        if (isExtraSmallScreen) return 1
+        if (isExtraLargeScreen) return 6
+        if (isLargeScreen) return 5
+        if (isMediumScreen) return 4
+        if (isSmallScreen) return 3
+        if (isExtraSmallScreen) return 2
         return cols
     }
 
@@ -80,13 +79,13 @@ export const Gallery = (props) => {
         }))
     }, [filters])
 
-    const openModal = (id) => {
-        setCurrentImage(id)
+    const openModal = index => {
+        setCurrentImageIndex(index)
         setOpen(true)
     }
 
     const closeModal = () => {
-        setCurrentImage(null)
+        setCurrentImageIndex(0)
         setOpen(false)
     }
 
@@ -94,17 +93,24 @@ export const Gallery = (props) => {
         setDrawerOpen(newOpen);
     };
 
+    const incrementImage = () => {
+        setCurrentImageIndex(prevIndex => Math.min(prevIndex + 1, filteredImages.length - 1))
+    }
+
+    const decrementImage = () => {
+        setCurrentImageIndex(prevIndex => Math.max(prevIndex - 1, 0))
+    }
+
     return (
         <>
             {isExtraSmallScreen && <Button alignSelf="flex-start" margin="0 0 8px 0" label="Filter" click={toggleDrawer(true)}></Button>}
             <div className={classes.container}>
                 {!isExtraSmallScreen && <FilterMenu universes={universes} imageSizes={imageSizes} finishes={finishes} setFilters={setFilters}></FilterMenu>}
-                {filteredImages.length > 0 ? <ImageList variant='masonry' sx={{ width: '100%', height: '100%', marginTop: 0 }} cols={calculateCols()}>
+                {filteredImages.length > 0 ? <ImageList variant='masonry' gap={12} sx={{ width: '100%', height: '100%', marginTop: 0 }} cols={calculateCols()}>
                     {filteredImages.map((item, index) => (
                         <ImageListItem className={classes.image} key={index} onMouseDown={() => openModal(index)} onMouseEnter={() => setHoveredImage(index)} onMouseLeave={() => setHoveredImage(null)}>
                             <img
-                                srcSet={`${item.url}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                src={`${item.url}?w=248&fit=crop&auto=format`}
+                                src={`${item.url}`}
                                 alt={item.title}
                                 loading="eager"
                             />
@@ -115,22 +121,19 @@ export const Gallery = (props) => {
             </div>
             <Modal
                 open={open}
-                closeModal={closeModal}
+                onClose={closeModal}
+                slotProps={{ backdrop: { sx: { backgroundColor: 'rgba(0, 0, 0, 0.8)' } } }}
             >
-                <GalleryViewer
-                    currentImageId={currentImage}
-                    currentImage={filteredImages[currentImage]}
-                    numImages={filteredImages.length - 1}
-                    incrementImage={(e) => {
-                        e.preventDefault()
-                        setCurrentImage(prevImage => Math.min(prevImage + 1, filteredImages.length - 1))
-                    }}
-                    decrementImage={(e) => {
-                        e.preventDefault()
-                        setCurrentImage(prevImage => Math.max(prevImage - 1, 0))
-                    }}
-                    closeModal={closeModal}
-                />
+                <>
+                    <GalleryViewer
+                        currentImageId={currentImageIndex}
+                        currentImage={filteredImages[currentImageIndex]}
+                        numImages={filteredImages.length - 1}
+                        incrementImage={incrementImage}
+                        decrementImage={decrementImage}
+                        closeModal={closeModal}
+                    />
+                </>
             </Modal>
             <ScrollToTopButton />
             <Drawer open={drawerOpen} onClose={toggleDrawer(false)} keepMounted>

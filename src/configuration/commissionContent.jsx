@@ -7,7 +7,8 @@ export const drawerConfigs = [
         title: 'Sketch',
         price: '30*',
         imageType: 'sketch',
-        bullets: ['Head to bust', '3400px x 4900px', '300dpi resolution']
+        bullets: ['Head to bust', '3400px x 4900px', '300dpi resolution'],
+        defaultOpen: true
     },
     {
         title: 'Half-Body Sketch',

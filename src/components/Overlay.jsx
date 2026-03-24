@@ -13,7 +13,8 @@ const useStyles = createUseStyles(theme => ({
         justifyContent: 'flex-start',
         alignItems: 'flex-end',
         transition: 'opacity 0.25s',
-        opacity: opacity
+        opacity: opacity,
+        borderRadius: '12px'
     }),
     overlayContent: {
         color: '#f2f2f2',

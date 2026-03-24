@@ -1,10 +1,11 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { CommissionCard } from '../components/CommissionCard'
-import { Drawer } from '../components/Drawer'
 import { createUseStyles, useTheme } from 'react-jss'
 import { adoptableImages } from '../configuration/adoptableImages'
 import { adoptableText } from '../configuration/adoptableContent'
+import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material'
+import { ExpandMore } from '@mui/icons-material'
 
 const useStyles = createUseStyles(theme => ({
     cardul: {
@@ -27,7 +28,20 @@ const useStyles = createUseStyles(theme => ({
         '&:hover': {
             color: theme.colorTertiary
         }
-    }
+    },
+    text: {
+        marginTop: '12px'
+    },
+    accordion: {
+        width: '100%',
+        border: `1px solid ${theme.colorSecondary}`,
+        '&:not(:last-child)': {
+            borderBottom: 0,
+        },
+        '&::before': {
+            display: 'none',
+        },
+    },
 }))
 
 export const Adoptables = (props) => {
@@ -44,34 +58,40 @@ export const Adoptables = (props) => {
 
     return (
         <>
-            <Drawer title="Adoptables for sale" defaultOpen={forSaleImages.length > 0}>
-                <CommissionCard
-                    details={
-                        forSaleImages.length > 0
-                            ? <>
-                                <ul className={classes.cardul}>
-                                    <li className={classes.li}>Prices vary per design</li>
-                                    <li className={classes.li}>Please purchase through <a href="https://ko-fi.com/helenaimeeart" target="_blank" rel="noopener noreferrer" className={classes.link}>Ko-fi</a></li>
-                                </ul>
-                            </>
-                            : <p className={classes.li}>More adoptables coming soon!</p>
-                    }
-                    images={forSaleImages}
-                    isDesktop={isDesktop}
-                />
-            </Drawer>
-            <Drawer title="Sold adoptables" defaultOpen={false}>
-                <CommissionCard
-                    details={
-                        <ul className={classes.cardul}>
-                            <li className={classes.li}>Previously sold designs</li>
-                        </ul>
-                    }
-                    images={adoptedImages}
-                    isDesktop={isDesktop}
-                />
-            </Drawer>
-            <div>
+            <Accordion className={classes.accordion} defaultExpanded={forSaleImages.length > 0}>
+                <AccordionSummary expandIcon={<ExpandMore />}><Typography>Adoptables for sale</Typography></AccordionSummary>
+                <AccordionDetails>
+                    <CommissionCard
+                        details={
+                            forSaleImages.length > 0
+                                ? <>
+                                    <ul className={classes.cardul}>
+                                        <li className={classes.li}>Prices vary per design</li>
+                                        <li className={classes.li}>Please purchase through <a href="https://ko-fi.com/helenaimeeart" target="_blank" rel="noopener noreferrer" className={classes.link}>Ko-fi</a></li>
+                                    </ul>
+                                </>
+                                : <p className={classes.li}>More adoptables coming soon!</p>
+                        }
+                        images={forSaleImages}
+                        isDesktop={isDesktop}
+                    />
+                </AccordionDetails>
+            </Accordion>
+            <Accordion className={classes.accordion}>
+                <AccordionSummary expandIcon={<ExpandMore />}><Typography>Sold adoptables</Typography></AccordionSummary>
+                <AccordionDetails>
+                    <CommissionCard
+                        details={
+                            <ul className={classes.cardul}>
+                                <li className={classes.li}>Previously sold designs</li>
+                            </ul>
+                        }
+                        images={adoptedImages}
+                        isDesktop={isDesktop}
+                    />
+                </AccordionDetails>
+            </Accordion>
+            <div className={classes.text}>
                 {adoptableText}
             </div>
         </>

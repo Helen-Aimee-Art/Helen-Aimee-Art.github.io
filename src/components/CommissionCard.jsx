@@ -20,7 +20,7 @@ const useStyle = createUseStyles(theme => ({
         justifyContent: 'center'
     },
     imageContainer: {
-        margin: '0 20px',
+        margin: '0 12px',
         width: '100%',
         height: '100%'
     },
@@ -29,17 +29,18 @@ const useStyle = createUseStyles(theme => ({
         height: '100%',
         maxWidth: 250,
         userDrag: 'none',
-        objectFit: 'cover'
+        objectFit: 'cover',
+        borderRadius: '12px'
     }
 }))
 
 const responsive = {
     superLargeDesktop: {
-        breakpoint: { max: 4000, min: 3000 },
+        breakpoint: { max: 4000, min: 2200 },
         items: 5
     },
     desktop: {
-        breakpoint: { max: 3000, min: 1224 },
+        breakpoint: { max: 2200, min: 1224 },
         items: 3
     },
     tablet: {
