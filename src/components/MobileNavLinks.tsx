@@ -39,7 +39,7 @@ export const MobileNavLinks = (props: MobileNavLinksProps) => {
           {links.map((link) => (
             <ListItemButton
               key={link.route}
-              sx={{ "&.Mui-selected": { color: theme.colorTertiary } }}
+              sx={{ "&.Mui-selected": { color: theme.colorQuaternary } }}
               onClick={onNavLink(link.route)}
               selected={props.currentPage === link.page}
             >
