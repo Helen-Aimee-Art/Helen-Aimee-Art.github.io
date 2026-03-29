@@ -69,6 +69,7 @@ export const Layout = (props: LayoutProps) => {
                   />
                 );
               }
+              return null;
             })}
           </Switch>
         </div>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { createUseStyles, useTheme } from "react-jss";
 import { CustomTheme } from "../application/App";
 
@@ -34,9 +34,9 @@ export const ScrollToTopButton = () => {
   const [showButton, setShowButton] = useState(false);
   const classes = useStyles({ showButton, theme });
 
-  const checkScroll = () => {
+  const checkScroll = useCallback(() => {
     setShowButton(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20);
-  };
+  }, [setShowButton]);
 
   const scrollToTop = () => {
     window.scroll({ top: 0, left: 0, behavior: "smooth" });
