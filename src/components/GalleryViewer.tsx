@@ -34,6 +34,7 @@ const useStyles = createUseStyles<RuleNames, GalleryViewerProps, CustomTheme>((t
     userSelect: "none",
     opacity: 0.25,
     transition: "opacity 0.2s",
+    cursor: "pointer",
   },
   cross: {
     position: "absolute",
@@ -166,7 +167,7 @@ export const GalleryViewer = forwardRef<HTMLDivElement, GalleryViewerProps>((pro
         style={{
           left: 10,
           opacity: leftActive ? 1 : 0.25,
-          cursor: leftActive ? "pointer" : "default",
+          display: currentImageId === 0 ? "none" : "initial",
         }}
         sx={{ fontSize: 50, color: theme.colorSecondary }}
         onClick={decrementImage}
@@ -178,7 +179,7 @@ export const GalleryViewer = forwardRef<HTMLDivElement, GalleryViewerProps>((pro
         style={{
           right: 10,
           opacity: rightActive ? 1 : 0.25,
-          cursor: rightActive ? "pointer" : "default",
+          display: currentImageId === numImages ? "none" : "initial",
         }}
         sx={{ fontSize: 50, color: theme.colorSecondary }}
         onClick={incrementImage}
