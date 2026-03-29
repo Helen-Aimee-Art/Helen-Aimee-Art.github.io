@@ -8,7 +8,7 @@ import { Overlay } from "../components/Overlay";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { CustomTheme, PageTitle } from "./App";
 
-type RuleNames = "container" | "image";
+type RuleNames = "container" | "image" | "button";
 
 interface GalleryProps {
   setCurrentPage: Dispatch<SetStateAction<PageTitle>>;
@@ -33,6 +33,7 @@ const useStyles = createUseStyles<
     width: "100%",
   }),
   image: { cursor: "pointer", "& img": { borderRadius: "12px" } },
+  button: { marginBottom: 8 },
 }));
 
 const universes = Array.from(new Set(galleryImages.map((image) => image.universe))).filter(Boolean);
@@ -128,7 +129,16 @@ export const Gallery = (props: GalleryProps) => {
 
   return (
     <>
-      {isExtraSmallScreen && <Button onClick={toggleDrawer(true)}>Filter</Button>}
+      {isExtraSmallScreen && (
+        <Button
+          className={classes.button}
+          variant="contained"
+          color="secondary"
+          onClick={toggleDrawer(true)}
+        >
+          Filter
+        </Button>
+      )}
       <div className={classes.container}>
         {!isExtraSmallScreen && (
           <FilterMenu
