@@ -15,20 +15,20 @@ export const drawerConfigs: DrawerConfig[] = [
     title: "Sketch",
     price: "30*",
     imageType: "sketch",
-    bullets: ["Head to bust", "3400px x 4900px", "300dpi resolution"],
+    bullets: ["Head to bust", "3400px x 4900px", "300dpi resolution", "Watercolour version available"],
     defaultOpen: true,
   },
   {
     title: "Half-Body Sketch",
     price: "55*",
     imageType: "hbsketch",
-    bullets: ["Head to thigh (just above the knee)", "3400px x 4900px", "300dpi resolution"],
+    bullets: ["Head to thigh (just above the knee)", "3400px x 4900px", "300dpi resolution", "Watercolour version available"],
   },
   {
     title: "Full Body Sketch",
     price: "70*",
     imageType: "fbsketch",
-    bullets: ["Full body", "4500px x 6400px", "300dpi resolution"],
+    bullets: ["Full body", "4500px x 6400px", "300dpi resolution", "Watercolour version available"],
   },
   {
     title: "Portrait",

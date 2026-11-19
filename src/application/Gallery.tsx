@@ -45,7 +45,7 @@ const useStyles = createUseStyles<
 const universes = Array.from(new Set(galleryImages.map((image) => image.universe))).filter(Boolean);
 const imageSizes = Array.from(
   new Set(galleryImages.map((image) => image.imageSize).filter(Boolean)),
-);
+).sort().reverse();
 const finishes = Array.from(new Set(galleryImages.map((image) => image.finish).filter(Boolean)));
 
 export const Gallery = (props: GalleryProps) => {
