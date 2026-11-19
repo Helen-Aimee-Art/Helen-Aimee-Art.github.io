@@ -96,6 +96,7 @@ export const CommissionInfo = (props: CommissionInfoProps) => {
                 </>
               }
               images={commissionImages.filter((image) => image.type === drawerConfig.imageType)}
+              useWatercolourFilter={!!drawerConfig.useWatercolourFilter}
             />
           </AccordionDetails>
         </Accordion>

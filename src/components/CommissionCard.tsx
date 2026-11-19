@@ -1,14 +1,16 @@
-import { JSX, useContext } from "react";
+import { JSX, useContext, useEffect, useState } from "react";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 import { createUseStyles, useTheme } from "react-jss";
 import { CommissionImage } from "../configuration/commissionImages";
 import { CustomTheme, IsDesktopContext, WithIsDesktop } from "../application/App";
+import { FormControl, FormControlLabel, RadioGroup, Radio } from "@mui/material";
 
 type RuleNames = "container" | "details" | "carousel" | "slide" | "imageContainer" | "image";
 
 interface CommissionCardProps {
   details: JSX.Element;
   images: CommissionImage[];
+  useWatercolourFilter?: boolean;
 }
 
 const useStyle = createUseStyles<RuleNames, WithIsDesktop<CommissionCardProps>, CustomTheme>(
@@ -65,10 +67,25 @@ const responsive: ResponsiveType = {
 };
 
 export const CommissionCard = (props: CommissionCardProps) => {
-  const { details, images } = props;
+  const { details, images, useWatercolourFilter } = props;
   const isDesktop = useContext(IsDesktopContext);
   const theme = useTheme<CustomTheme>();
   const classes = useStyle({ ...props, isDesktop, theme });
+  const [type, setType] = useState("all");
+  const [filteredImages, setFilteredImages] = useState(images)
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setType((event.target as HTMLInputElement).value);
+  };
+
+  useEffect(() => {
+    setFilteredImages(images.filter(image => {
+      if (type === "all") return true;
+      if (type === "sketch") return !image.isWatercolour;
+      if (type === "watercolour") return image.isWatercolour;
+      return false;
+    }))
+  }, [type, images])
 
   const carousel = (
     <Carousel
@@ -78,7 +95,7 @@ export const CommissionCard = (props: CommissionCardProps) => {
       itemClass={classes.slide}
       containerClass={classes.carousel}
     >
-      {images.map((image, index) => (
+      {filteredImages.map((image, index) => (
         <div className={classes.imageContainer} key={index}>
           <img className={classes.image} src={image.url} alt="" />
         </div>
@@ -86,10 +103,29 @@ export const CommissionCard = (props: CommissionCardProps) => {
     </Carousel>
   );
 
+  const watercolourFilter = (
+    <FormControl>
+      <RadioGroup
+        defaultValue="both"
+        name="type"
+        row
+        value={type}
+        onChange={handleChange}
+      >
+        <FormControlLabel value="sketch" control={<Radio color="secondary" />} label="Sketch" />
+        <FormControlLabel value="watercolour" control={<Radio color="secondary" />} label="Watercolour" />
+        <FormControlLabel value="all" control={<Radio color="secondary" />} label="All" />
+      </RadioGroup>
+    </FormControl>
+  );
+
   return (
-    <div className={classes.container}>
-      {details ? <div className={classes.details}>{details}</div> : null}
-      {images.length > 0 && carousel}
-    </div>
+    <>
+      <div className={classes.container}>
+        {details ? <div className={classes.details}>{details}</div> : null}
+        {filteredImages.length > 0 && carousel}
+      </div>
+      {!!useWatercolourFilter && watercolourFilter}
+    </>
   );
 };

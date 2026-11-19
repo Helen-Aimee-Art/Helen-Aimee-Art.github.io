@@ -514,9 +514,9 @@ export const galleryImages: GalleryImage[] = [
     isCommission: false,
   },
   {
-    title: "Valithra",
+    title: "Velithra",
     desc: "",
-    url: "/valithra.jpg",
+    url: "/velithra.jpg",
     universe: "warcraft",
     imageSize: "portrait",
     finish: "sketch",

@@ -6,6 +6,7 @@ interface DrawerConfig {
   imageType: string;
   bullets: string[];
   defaultOpen?: boolean;
+  useWatercolourFilter?: boolean;
 }
 
 export const commissionStatus: CommissionStatus = "Open";
@@ -17,18 +18,21 @@ export const drawerConfigs: DrawerConfig[] = [
     imageType: "sketch",
     bullets: ["Head to bust", "3400px x 4900px", "300dpi resolution", "Watercolour version available"],
     defaultOpen: true,
+    useWatercolourFilter: true,
   },
   {
     title: "Half-Body Sketch",
     price: "55*",
     imageType: "hbsketch",
     bullets: ["Head to thigh (just above the knee)", "3400px x 4900px", "300dpi resolution", "Watercolour version available"],
+    useWatercolourFilter: true,
   },
   {
     title: "Full Body Sketch",
     price: "70*",
     imageType: "fbsketch",
     bullets: ["Full body", "4500px x 6400px", "300dpi resolution", "Watercolour version available"],
+    useWatercolourFilter: true,
   },
   {
     title: "Portrait",
