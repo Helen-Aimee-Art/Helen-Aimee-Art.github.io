@@ -47,12 +47,12 @@ export const commissionImages: CommissionImage[] = [
     isWatercolour: false,
   },
   {
-    url: "/valerial.jpg",
+    url: "/valithra.jpg",
     type: "sketch",
     isWatercolour: false,
   },
   {
-    url: "/lynethra-web.jpg",
+    url: "/lynethra.jpg",
     type: "sketch",
     isWatercolour: true,
   },
@@ -82,17 +82,17 @@ export const commissionImages: CommissionImage[] = [
     isWatercolour: false,
   },
   {
-    url: "/eterastrasza-web.jpg",
+    url: "/eterastrasza.jpg",
     type: "hbsketch",
     isWatercolour: true,
   },
   {
-    url: "/neefia8-web.jpg",
+    url: "/neefia8.jpg",
     type: "hbsketch",
     isWatercolour: true,
   },
   {
-    url: "/silanaa-web.jpg",
+    url: "/silanaa.jpg",
     type: "hbsketch",
     isWatercolour: true,
   },
@@ -112,7 +112,7 @@ export const commissionImages: CommissionImage[] = [
     isWatercolour: false,
   },
   {
-    url: "/celenthiel_web1.jpg",
+    url: "/celenthiel3.jpg",
     type: "fbsketch",
     isWatercolour: true,
   },

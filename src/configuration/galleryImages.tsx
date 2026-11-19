@@ -12,7 +12,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Eterastrasza",
     desc: "",
-    url: "/eterastrasza-web.jpg",
+    url: "/eterastrasza.jpg",
     universe: "warcraft",
     imageSize: "half body",
     finish: "watercolour",
@@ -21,7 +21,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Lynethra",
     desc: "",
-    url: "/lynethra-web.jpg",
+    url: "/lynethra.jpg",
     universe: "warcraft",
     imageSize: "portrait",
     finish: "watercolour",
@@ -30,7 +30,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Aekirus and Zalorii",
     desc: "",
-    url: "/aekirus and zalorii-web.jpg",
+    url: "/aekirusandzalorii.jpg",
     universe: "warcraft",
     imageSize: "full body",
     finish: "painted",
@@ -39,7 +39,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Celenthiel",
     desc: "",
-    url: "/celenthiel_web1.jpg",
+    url: "/celenthiel3.jpg",
     universe: "warcraft",
     imageSize: "full body",
     finish: "watercolour",
@@ -48,7 +48,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Nadira",
     desc: "",
-    url: "/nadira-web.jpg",
+    url: "/nadira.jpg",
     universe: "",
     imageSize: "portrait",
     finish: "sketch",
@@ -57,7 +57,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "V",
     desc: "",
-    url: "/v-web.jpg",
+    url: "/v.jpg",
     universe: "cyberpunk 2077",
     imageSize: "half body",
     finish: "sketch",
@@ -66,7 +66,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Zehrhi",
     desc: "",
-    url: "/zehrhi-web.jpg",
+    url: "/zehrhi.jpg",
     universe: "FFXIV",
     imageSize: "portrait",
     finish: "sketch",
@@ -75,7 +75,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Oudrah",
     desc: "",
-    url: "/oudrah-web.jpg",
+    url: "/oudrah.jpg",
     universe: "warcraft",
     imageSize: "portrait",
     finish: "painted",
@@ -84,7 +84,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Ankhe",
     desc: "",
-    url: "/ankhe-web.jpg",
+    url: "/ankhe.jpg",
     universe: "warcraft",
     imageSize: "portrait",
     finish: "painted",
@@ -93,7 +93,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Urania",
     desc: "",
-    url: "/urania-web.jpg",
+    url: "/urania.jpg",
     universe: "Dungeons and Dragons",
     imageSize: "half body",
     finish: "painted",
@@ -102,7 +102,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Vixen",
     desc: "",
-    url: "/vixen2_web.jpg",
+    url: "/vixen2.jpg",
     universe: "cyberpunk 2077",
     imageSize: "portrait",
     finish: "painted",
@@ -111,7 +111,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Kleorei",
     desc: "",
-    url: "/kleorei-web.jpg",
+    url: "/kleorei.jpg",
     universe: "warcraft",
     imageSize: "full body",
     finish: "painted",
@@ -120,7 +120,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Celeyina",
     desc: "",
-    url: "/celeyina-web.jpg",
+    url: "/celeyina.jpg",
     universe: "warcraft",
     imageSize: "half body",
     finish: "watercolour",
@@ -129,7 +129,7 @@ export const galleryImages: GalleryImage[] = [
   {
   title: "Vaen'dril",
   desc: "",
-  url: "/vaen'dril-web.jpg",
+  url: "/vaendril.jpg",
   universe: "warcraft",
   imageSize: "portrait",
   finish: "watercolour",
@@ -138,7 +138,7 @@ export const galleryImages: GalleryImage[] = [
   {
   title: "Vixen",
   desc: "",
-  url: "/vixen_web.jpg",
+  url: "/vixen.jpg",
   universe: "cyberpunk 2077",
   imageSize: "half body",
   finish: "watercolour",
@@ -147,7 +147,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Silanaa",
     desc: "",
-    url: "/silanaa-web.jpg",
+    url: "/silanaa.jpg",
     universe: "warcraft",
     imageSize: "half body",
     finish: "watercolour",
@@ -156,7 +156,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Neefia",
     desc: "",
-    url: "/neefia8-web.jpg",
+    url: "/neefia8.jpg",
     universe: "warcraft",
     imageSize: "half body",
     finish: "watercolour",
@@ -165,7 +165,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Winter",
     desc: "",
-    url: "/winter-web.jpg",
+    url: "/winter.jpg",
     universe: "",
     imageSize: "portrait",
     finish: "watercolour",
@@ -174,7 +174,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Hazel",
     desc: "",
-    url: "/hazel2_web.jpg",
+    url: "/hazel2.jpg",
     universe: "Dungeons and Dragons",
     imageSize: "portrait",
     finish: "sketch",
@@ -183,7 +183,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Hazel",
     desc: "",
-    url: "/hazel_web.jpg",
+    url: "/hazel.jpg",
     universe: "Dungeons and Dragons",
     imageSize: "portrait",
     finish: "sketch",
@@ -192,7 +192,7 @@ export const galleryImages: GalleryImage[] = [
   {
     title: "Velithra",
     desc: "",
-    url: "/velithra-web.jpg",
+    url: "/velithra2.jpg",
     universe: "warcraft",
     imageSize: "half body",
     finish: "watercolour",
@@ -514,9 +514,9 @@ export const galleryImages: GalleryImage[] = [
     isCommission: false,
   },
   {
-    title: "Valerial",
+    title: "Valithra",
     desc: "",
-    url: "/valerial.jpg",
+    url: "/valithra.jpg",
     universe: "warcraft",
     imageSize: "portrait",
     finish: "sketch",
