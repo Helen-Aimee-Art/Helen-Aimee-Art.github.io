@@ -47,7 +47,7 @@ export const commissionImages: CommissionImage[] = [
     isWatercolour: false,
   },
   {
-    url: "/valithra.jpg",
+    url: "/velithra.jpg",
     type: "sketch",
     isWatercolour: false,
   },
